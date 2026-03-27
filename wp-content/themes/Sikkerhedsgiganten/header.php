@@ -41,4 +41,4 @@ echo '<link rel="alternate" hreflang="x-default" href="' . esc_url($current_url)
 </head>
 
 <body <?php body_class() ?>>
-    anders er en kæææææmpe jeiner
+    <p>anders er en kæææææmpe jeiner</p>
