@@ -11,7 +11,7 @@ function mytheme_enqueue_styles() {
 }
 add_action('wp_enqueue_scripts', 'mytheme_enqueue_styles');
 function bst_load_resources() {
-    wp_enqueue_style("main-css", get_template_directory_uri() . "/style.css");
+    wp_enqueue_style("main-css", get_template_directory_uri() . "/css/forside.css");
 }
 add_action("wp_enqueue_scripts", "bst_load_resources");
 function disable_gutenberg() {
