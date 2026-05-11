@@ -41,4 +41,71 @@ echo '<link rel="alternate" hreflang="x-default" href="' . esc_url($current_url)
 </head>
 
 <body <?php body_class() ?>>
-    <p>anders er en kæææææmpe jeiner</p>
+    <header id="header">
+        <div class="headerBillede"></div>
+        <div id="headerOverlay"></div>
+        <nav id="nav">
+            <div class="navTop">
+                <div class="navLeftSide">
+                    <ul>
+                        <li><a href="#forside">Forside</a></li>
+                        <li><a href="#omos">Om os</a></li>
+                        <li><a href="#kontakt">Kontakt</a></li>
+                        <li><a href="#kundeservice">Kundeservice</a></li>
+                    </ul>
+                </div>
+                <div class="navMiddle">
+                    <div class="logo"><img src="img/logostor.png" alt=""></div>
+                </div>
+                <div class="navRightSide">
+                    <ul>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#erhvervskunde">Erhvervskunde</a></li>
+                        <li><a href="#favoritter"><img src="img/favourite.svg" alt="Favoritter"></a></li>
+                        <li><a href="#kurv"><img src="img/cart.svg" alt="Kurv"></a></li>
+                        <li><a href="#sidemenu"><img src="img/menu.svg" alt="sidemenu"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navBottom"><input type="text" placeholder="Søg her..."></div>
+        </nav>
+
+        <div class="headerContent">
+            <h1 id="headerTitle">Vi værner om dig</h1>
+            <h4 id="headerUndertitel">Sikkerhedsudstyr, Arbejdstøj & Rengøring til erhverv og privat</h4>
+            <input type="text" placeholder="Søg her..." id="headerInput">
+            <div class="headerContentLower">
+                <p>Ofte søgt</p>
+                <ul class="headerContentList">
+                    <li><a href="#handsker">F2CB Masker</a></li>
+                    <li><a href="#fodtøj">Sikkerhedssko</a></li>
+                    <li><a href="#værnemidler">Faldsikring</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="headerSideMenuCategories">
+            <button class="closeBtn">X</button>
+            <h3>Kategorier</h3>
+            <ul>
+                <li><a href="#arbejdsudstyr">Arbejdsudstyr</a></li>
+                <li><a href="#arbejdstoj">Arbejdstøj</a></li>
+                <li><a href="#andedretsvern">Åndedrætsværn</a></li>
+                <li><a href="#faldsikring">Faldsikring</a></li>
+                <li><a href="#forstehjelp">Førstehjælp</a></li>
+                <li><a href="#skilte">Skilte</a></li>
+                <li><a href="#hygiejne">Hygiejne</a></li>
+                <li><a href="#rengoring">Rengøring</a></li>
+                <li><a href="#skadedyr">Skadedyr</a></li>
+                <li><a href="#outlet">Outlet</a></li>
+            </ul>
+            <h3>Profil</h3>
+            <ul>
+                <li><a href="#minprofil">Profil</a></li>
+                <li><a href="#favoritter">Favoritter</a></li>
+                <li><a href="#kurv">Kurv</a></li>
+            </ul>
+        </div>
+        <div class="headerAds">
+
+        </div>
+    </header>
