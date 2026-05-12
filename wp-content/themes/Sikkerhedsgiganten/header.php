@@ -43,6 +43,9 @@ echo '<link rel="alternate" hreflang="x-default" href="' . esc_url($current_url)
 <?php
 $headervideo = get_field("header_video");
 $headerlogotop = get_field("logo_top");
+$Navhjerteikon = get_field("nav_hjerte_ikon");
+$Navkurvikon = get_field("nav_kurv_ikon");
+$Navburgerikon = get_field("nav_burger_ikon");
 
 ?>
 <body <?php body_class() ?>>
@@ -75,9 +78,9 @@ $headerlogotop = get_field("logo_top");
                     <ul>
                         <li><a href="#shop">Shop</a></li>
                         <li><a href="#erhvervskunde">Erhvervskunde</a></li>
-                        <li><a href="#favoritter"><img src="img/favourite.svg" alt="Favoritter"></a></li>
-                        <li><a href="#kurv"><img src="img/cart.svg" alt="Kurv"></a></li>
-                        <li><a href="#sidemenu"><img src="img/menu.svg" alt="sidemenu"></a></li>
+                        <li><a href="#favoritter"><img src="<?php echo esc_url($Navhjerteikon["url"]); ?>" alt="<?php echo $Navhjerteikon ["alt"]?>"></a></li>
+                        <li><a href="#kurv"><img src="<?php echo esc_url($Navkurvikon["url"]); ?>" alt="<?php echo $Navkurvikon ["alt"]?>"></a></li>
+                        <li><a href="#sidemenu">img src="<?php echo esc_url($Navburgerikon["url"]); ?>" alt="<?php echo $Navburgerikon ["alt"]?>"></a></li>
                     </ul>
                 </div>
             </div>
