@@ -2,7 +2,7 @@
 
 <?php
 $footermailikon = get_field("footer_mail_ikon");
-$footermailikon = get_field("footer_mail_ikon");
+$footertlfikon = get_field("footer_tlf_ikon");
 $footeradresseikon = get_field("footer_adresse_ikon");
 $footerinstagramikon = get_field("footer_instagram_ikon");
 $footerfacebooknikon = get_field("footer_facebook_ikon");
