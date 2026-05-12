@@ -1,12 +1,23 @@
 <?php get_header(); ?>
 
+
+<?php
+$toiletpapir = get_field("toiletpapir_tilbud_billede");
+$faldsikring = get_field("faldsikring_tilbud_billede");
+$andedraetsvaern = get_field("andedraetsvaern_tilbud_billede");
+$snickerslogo = get_field("snickers_logo");
+?>
+
+
+
+
 <main>
     <main>
         <section id="bedsteTilbud">
             <h2>De nyeste tilbud</h2>
             <div class="tilbudsContainer">
                 <div class="tilbud">
-                    <img src="img/jakke.png" alt="Toiletpapir">
+                    <img src="<?php echo esc_url($toiletpapir["url"]); ?>" alt="<?php echo $toiletpapir ["alt"]?>">
                     <div class="tilbudContent">
                         <h3>Toiletpapir</h3>
                         <p><strike>500,00 kr.</strike><span> 300,00 kr.</span></p>
@@ -17,7 +28,7 @@
                     </div>
                 </div>
                 <div class="tilbud">
-                    <img src="img/faldsikring.png" alt="">
+                <img src="<?php echo esc_url($faldsikring["url"]); ?>" alt="<?php echo $faldsikring ["alt"]?>">
                     <div class="tilbudContent">
                         <h3>Sikkerhedssko</h3>
                         <p><strike>800,00 kr.</strike><span> 600,00 kr.</span></p>
@@ -28,7 +39,7 @@
                     </div>
                 </div>
                 <div class="tilbud">
-                    <img src="img/maske.png" alt="">
+                <img src="<?php echo esc_url($andedraetsvaern["url"]); ?>" alt="<?php echo $andedraetsvaern ["alt"]?>">
                     <div class="tilbudContent">
                         <h3>Faldsikring</h3>
                         <p><strike>1000,00 kr.</strike><span> 750,00 kr.</span></p>
@@ -43,8 +54,8 @@
         <section id="brandSection">
             <div class="logoLine">
                 <div class="brandscontainer">
-                    <img src="img/snicker.png" alt="Snicker">
-                    <img src="img/tork.png" alt="Tork">
+                <img src="<?php echo esc_url($snickerslogo["url"]); ?>" alt="<?php echo $snickerslogo ["alt"]?>">
+                <img src="<?php echo esc_url($snickerslogo["url"]); ?>" alt="<?php echo $snickerslogo ["alt"]?>">
                     <img src="img/kask.png" alt="Kask">
                     <img src="img/helberg.png" alt="Helberg">
                     <img src="img/petzl.png" alt="Petzl">
