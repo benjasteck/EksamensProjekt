@@ -21,6 +21,17 @@ $faldsikringbillede = get_field("faldsikring_billede");
 $ojenskylbillede = get_field("ojenskyl_billede");
 $sikkerhedshjelmbillede = get_field("sikkerhedshjelm_billede");
 $arbejdskvindebillede = get_field("arbejds_kvinde_billede");
+$instagramikon = get_field("instagram_ikon");
+$facebookikon = get_field("facebook_ikon");
+$linkedinikon = get_field("linkedin_ikon");
+$blogsikkerhedsskobillede = get_field("blog_sikkerhedssko_billede");
+$blogarbejdstoejbillede = get_field("blog_arbejdstoj_billede");
+$blogandedraetsvaernbillede = get_field("blog_andedraetsvaern_billede");
+$blogsikkerhedshjelmbillede = get_field("blog_sikkerhedshjelm_billede");
+$findosikon = get_field("find_os_ikon");
+$nyhedsbrevikon = get_field("nyhedsbrev_ikon");
+$mailikon = get_field("mail_ikon");
+$omosikon = get_field("om_os_ikon");
 
 ?>
 
@@ -167,9 +178,9 @@ $arbejdskvindebillede = get_field("arbejds_kvinde_billede");
         <section id="socialSektion">
             <h3 class="socialTitel">Følg Sikkerhedsgiganten</h3>
             <div class="someContainer">
-                <a href="" target="_blank"><img src="img/InstagramIkon.svg" alt=""></a>
-                <a href="" target="_blank"><img src="img/facebookIcon.svg" alt=""></a>
-                <a href="" target="_blank"><img src="img/LinkedinIkon.svg" alt=""></a>
+                <a href="" target="_blank"><img src="<?php echo esc_url($instagramikon["url"]); ?>" alt="<?php echo $instagramikon ["alt"]?>"></a>
+                <a href="" target="_blank"><img src="<?php echo esc_url($facebookikon["url"]); ?>" alt="<?php echo $facebookikon ["alt"]?>"></a>
+                <a href="" target="_blank"><img src="<?php echo esc_url($linkedinikon["url"]); ?>" alt="<?php echo $linkedinikon ["alt"]?>"></a>
             </div>
             <div class="newsletterContainer">
                 <div class="newsletterLeft">
@@ -340,7 +351,7 @@ $arbejdskvindebillede = get_field("arbejds_kvinde_billede");
                         </p>
                     </div>
                     <div class="blogItem">
-                        <img src="img/blogSikkerhedssko.jpg" alt="">
+                    <img src="<?php echo esc_url($blogsikkerhedsskobillede["url"]); ?>" alt="<?php echo $blogsikkerhedsskobillede ["alt"]?>">
                         <h3>Valg af sikkerhedssko</h3>
                         <p>Da ingen fødder er ens, kan det være en jungle at finde det mærke eller den model som passer
                             dig bedst. Via denne guide, kan vi guide dig igennem de forskellige standarder og typer, så
@@ -348,7 +359,7 @@ $arbejdskvindebillede = get_field("arbejds_kvinde_billede");
                         <a href="">Læs blog</a>
                     </div>
                     <div class="blogItem">
-                        <img src="img/blogArbejdstoj.jpg" alt="">
+                    <img src="<?php echo esc_url($blogarbejdstoejbillede["url"]); ?>" alt="<?php echo $blogarbejdstoejbillede ["alt"]?>">
                         <h3>Valg af arbejdstøj</h3>
                         <p>Der stilles større og større krav til sikkerheden på arbejdspladsen, dette gælder også vores
                             påklædning. Vores påklædning er en vigtig del for at opfylde disse sikkerhedsmæssige krav. I
@@ -358,7 +369,7 @@ $arbejdskvindebillede = get_field("arbejds_kvinde_billede");
                 </div>
                 <div class="blogSectionInnerRight">
                     <div class="blogItem">
-                        <img src="img/blogAnderdret.jpg" alt="">
+                    <img src="<?php echo esc_url($blogandedraetsvaernbillede["url"]); ?>" alt="<?php echo $blogandedraetsvaernbillede ["alt"]?>">
                         <h3>Valg af åndedrætsværn</h3>
                         <p>Et åndedrætsværn er et personligt værnemiddel, der anvendes til beskyttelse mod indånding af
                             forurenet luft. Det afhænger af åndedrætsværnet, hvilke partikler, gasser og dampe det
@@ -366,7 +377,7 @@ $arbejdskvindebillede = get_field("arbejds_kvinde_billede");
                         <a href="">Læs blog</a>
                     </div>
                     <div class="blogItem">
-                        <img src="img/blogSikkerhedshjelm.jpg" alt="">
+                    <img src="<?php echo esc_url($blogsikkerhedshjelmbillede["url"]); ?>" alt="<?php echo $blogsikkerhedshjelmbillede ["alt"]?>">
                         <h3>Valg af sikkerhedshjelme</h3>
                         <p>Hvis arbejdsgiveren vurderer, at den ansatte udsættes for risiko for hovedskader som følge af
                             faldende genstande, stød eller andre farer på arbejdspladsen, skal der anvendes
@@ -407,17 +418,17 @@ $arbejdskvindebillede = get_field("arbejds_kvinde_billede");
         <section id="socialSektion">
             <h3 class="socialTitel">Følg Sikkerhedsgiganten</h3>
             <div class="someContainer">
-                <a href="" target="_blank"><img src="img/InstagramIkon.svg" alt=""></a>
-                <a href="" target="_blank"><img src="img/facebookIcon.svg" alt=""></a>
-                <a href="" target="_blank"><img src="img/LinkedinIkon.svg" alt=""></a>
+            <a href="" target="_blank"><img src="<?php echo esc_url($instagramikon["url"]); ?>" alt="<?php echo $instagramikon ["alt"]?>"></a>
+            <a href="" target="_blank"><img src="<?php echo esc_url($facebookikon["url"]); ?>" alt="<?php echo $facebookikon ["alt"]?>"></a>
+            <a href="" target="_blank"><img src="<?php echo esc_url($linkedinikon["url"]); ?>" alt="<?php echo $linkedinikon ["alt"]?>"></a>
             </div>
         </section>
         <section id="bottomLinks">
             <div class="bottomLinksContainer">
-                <a href=""><img src="img/bottomLinkFind.svg" alt="">Find os her</a>
-                <a href=""><img src="img/bottomLinkNyhed.svg" alt="">Tilmeld nyhedsbrev</a>
-                <a href=""><img src="img/bottomLinkKontakt.svg" alt="">Kontakt os</a>
-                <a href=""><img src="img/bottomLinkOmOs.svg" alt="">Om os</a>
+                <a href=""><a href="" target="_blank"><img src="<?php echo esc_url($findosikon["url"]); ?>" alt="<?php echo $findosikon ["alt"]?>">Find os her</a>
+                <a href=""><a href="" target="_blank"><img src="<?php echo esc_url($nyhedsbrevikon["url"]); ?>" alt="<?php echo $nyhedsbrevikon ["alt"]?>">Tilmeld nyhedsbrev</a>
+                <a href=""><a href="" target="_blank"><img src="<?php echo esc_url($mailikon["url"]); ?>" alt="<?php echo $mailikon ["alt"]?>">Kontakt os</a>
+                <a href=""><a href="" target="_blank"><img src="<?php echo esc_url($omosikon["url"]); ?>" alt="<?php echo $omosikon ["alt"]?>">Om os</a>
             </div>
         </section>
     </main>
