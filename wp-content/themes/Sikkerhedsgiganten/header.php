@@ -80,7 +80,7 @@ $Navburgerikon = get_field("nav_burger_ikon");
                         <li><a href="#erhvervskunde">Erhvervskunde</a></li>
                         <li><a href="#favoritter"><img src="<?php echo esc_url($Navhjerteikon["url"]); ?>" alt="<?php echo $Navhjerteikon ["alt"]?>"></a></li>
                         <li><a href="#kurv"><img src="<?php echo esc_url($Navkurvikon["url"]); ?>" alt="<?php echo $Navkurvikon ["alt"]?>"></a></li>
-                        <li><a href="#sidemenu">img src="<?php echo esc_url($Navburgerikon["url"]); ?>" alt="<?php echo $Navburgerikon ["alt"]?>"></a></li>
+                        <li><a href="#sidemenu"><img src="<?php echo esc_url($Navburgerikon["url"]); ?>" alt="<?php echo $Navburgerikon ["alt"]?>"></a></li>
                     </ul>
                 </div>
             </div>
