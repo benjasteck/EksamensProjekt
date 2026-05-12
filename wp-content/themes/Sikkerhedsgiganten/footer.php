@@ -67,9 +67,9 @@ $footerlogo = get_field("footer_logo");
                 <div class="footerContentBottomContainer">
                     <h2 class="titelFooter">Socialt</h2>
                     <div class="footerText">
-                        <a href=""><img src="<?php echo esc_url($footerinstagramikon["url"]); ?>" alt="<?php echo $footerinstagramikon ["alt"]?>">class="footerSocial"></a>
-                        <a href=""><img src="<?php echo esc_url($footerfacebooknikon["url"]); ?>" alt="<?php echo $footerfacebooknikon ["alt"]?>">class="footerSocial"></a>
-                        <a href=""><img src="<?php echo esc_url($footerlinkedinikon["url"]); ?>" alt="<?php echo $footerlinkedinikon ["alt"]?>">class="footerSocial"></a>
+                        <a href=""><img src="<?php echo esc_url($footerinstagramikon["url"]); ?>" alt="<?php echo $footerinstagramikon ["alt"]?>" class="footerSocial"></a>
+                        <a href=""><img src="<?php echo esc_url($footerfacebooknikon["url"]); ?>" alt="<?php echo $footerfacebooknikon ["alt"]?>" class="footerSocial"></a>
+                        <a href=""><img src="<?php echo esc_url($footerlinkedinikon["url"]); ?>" alt="<?php echo $footerlinkedinikon ["alt"]?>" class="footerSocial"></a>
                     </div>
                 </div>
             </div>
