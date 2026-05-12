@@ -8,8 +8,6 @@ $footerinstagramikon = get_field("footer_instagram_ikon");
 $footerfacebooknikon = get_field("footer_facebook_ikon");
 $footerlinkedinikon = get_field("footer_linkedin_ikon");
 $footerlogo = get_field("footer_logo");
-
-
 ?>
 
 

@@ -40,6 +40,11 @@ echo '<link rel="alternate" hreflang="x-default" href="' . esc_url($current_url)
     <?php wp_head(); ?>
 </head>
 
+<?php
+$headervideo = get_field("header_video");
+$headerlogotop = get_field("logo_top");
+
+?>
 <body <?php body_class() ?>>
     <header id="header">
         <div class="headerBillede"></div>
@@ -55,7 +60,16 @@ echo '<link rel="alternate" hreflang="x-default" href="' . esc_url($current_url)
                     </ul>
                 </div>
                 <div class="navMiddle">
-                    <div class="logo"><img src="img/logostor.png" alt=""></div>
+                <div class="logo">
+    <?php 
+    $video_felt = get_field('logo_top'); // Erstat med dit faktiske felt-navn
+
+    if ( $video_felt ) : 
+        echo $video_felt; 
+    else : ?>
+        <img src="<?php echo esc_url($footermailikon["url"]); ?>" alt="<?php echo $footermailikon["alt"]; ?>">
+    <?php endif; ?>
+</div>
                 </div>
                 <div class="navRightSide">
                     <ul>
