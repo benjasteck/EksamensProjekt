@@ -1,4 +1,21 @@
 <footer>
+
+<?php
+$footermailikon = get_field("footer_mail_ikon");
+$footermailikon = get_field("footer_mail_ikon");
+$footeradresseikon = get_field("footer_adresse_ikon");
+$footerinstagramikon = get_field("footer_instagram_ikon");
+$footerfacebooknikon = get_field("footer_facebook_ikon");
+$footerlinkedinikon = get_field("footer_linkedin_ikon");
+$footerlogo = get_field("footer_logo");
+
+
+?>
+
+
+
+
+
     <div class="footerContent">
         <div class="footerContentLeft">
             <div class="footerContentTop">
@@ -15,15 +32,15 @@
                 <div class="footerContentBottomContainer">
                     <h2 class="titelFooter">Kontakt</h2>
                     <div class="footerText">
-                        <img src="img/mailIkon.svg" alt="">
+                    <img src="<?php echo esc_url($footermailikon["url"]); ?>" alt="<?php echo $footermailikon ["alt"]?>">
                         <p>info@sikkerhedsgiganten.dk</p>
                     </div>
                     <div class="footerText">
-                        <img src="img/telefonIkon.svg" alt="">
+                    <img src="<?php echo esc_url($footertlfikon["url"]); ?>" alt="<?php echo $footertlfikon ["alt"]?>">
                         <p>+45 71 99 32 60</p>
                     </div>
                     <div class="footerText">
-                        <img src="img/husIkon.svg" alt="">
+                    <img src="<?php echo esc_url($footeradresseikon["url"]); ?>" alt="<?php echo $footeradresseikon ["alt"]?>">
                         <p>Lillebæltsvej 6 · A/B 6715 Esbjerg N</p>
                     </div>
                 </div>
@@ -50,15 +67,15 @@
                 <div class="footerContentBottomContainer">
                     <h2 class="titelFooter">Socialt</h2>
                     <div class="footerText">
-                        <a href=""><img src="img/instagramIKon.svg" alt="" class="footerSocial"></a>
-                        <a href=""><img src="img/facebookIcon.svg" alt="" class="footerSocial"></a>
-                        <a href=""><img src="img/LinkedinIkon.svg" alt="" class="footerSocial"></a>
+                        <a href=""><img src="<?php echo esc_url($footerinstagramikon["url"]); ?>" alt="<?php echo $footerinstagramikon ["alt"]?>">class="footerSocial"></a>
+                        <a href=""><img src="<?php echo esc_url($footerfacebooknikon["url"]); ?>" alt="<?php echo $footerfacebooknikon ["alt"]?>">class="footerSocial"></a>
+                        <a href=""><img src="<?php echo esc_url($footerlinkedinikon["url"]); ?>" alt="<?php echo $footerlinkedinikon ["alt"]?>">class="footerSocial"></a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="footerContentRight">
-            <a href=""><img src="img/lillelogo.png" alt=""></a>
+        <img src="<?php echo esc_url($footerlogo["url"]); ?>" alt="<?php echo $footerlogo ["alt"]?>">
         </div>
     </div>
 
