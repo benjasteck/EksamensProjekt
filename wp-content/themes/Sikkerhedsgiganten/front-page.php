@@ -6,6 +6,22 @@ $toiletpapir = get_field("toiletpapir_tilbud_billede");
 $faldsikring = get_field("faldsikring_tilbud_billede");
 $andedraetsvaern = get_field("andedraetsvaern_tilbud_billede");
 $snickerslogo = get_field("snickers_logo");
+$torklogo = get_field("tork_logo");
+$kasklogo = get_field("kask_logo");
+$hellberglogo = get_field("hellberg_logo");
+$petzllogo = get_field("petzl_logo");
+$elkalogo = get_field("elka_logo");
+$blakladerlogo = get_field("blaklader_logo");
+$horevaern = get_field("horevaerns_billede");
+$arbejdshandsker = get_field("arbejdshandsker_billede");
+$sikkerhedssko = get_field("sikkerhedssko_billede");
+$arbejdsjakke = get_field("arbejdsjakke_billede");
+$andedraetsvaernbillede = get_field("andedraetsvaern_billede");
+$faldsikringbillede = get_field("faldsikring_billede");
+$ojenskylbillede = get_field("ojenskyl_billede");
+$sikkerhedshjelmbillede = get_field("sikkerhedshjelm_billede");
+$arbejdskvindebillede = get_field("arbejds_kvinde_billede");
+
 ?>
 
 
@@ -55,21 +71,23 @@ $snickerslogo = get_field("snickers_logo");
             <div class="logoLine">
                 <div class="brandscontainer">
                 <img src="<?php echo esc_url($snickerslogo["url"]); ?>" alt="<?php echo $snickerslogo ["alt"]?>">
-                <img src="<?php echo esc_url($snickerslogo["url"]); ?>" alt="<?php echo $snickerslogo ["alt"]?>">
-                    <img src="img/kask.png" alt="Kask">
-                    <img src="img/helberg.png" alt="Helberg">
-                    <img src="img/petzl.png" alt="Petzl">
-                    <img src="img/elka.png" alt="Elka">
-                    <img src="img/blaklader.png" alt="Blaklader">
+                <img src="<?php echo esc_url($torklogo["url"]); ?>" alt="<?php echo $torklogo ["alt"]?>">
+                <img src="<?php echo esc_url($kasklogo["url"]); ?>" alt="<?php echo $kasklogo ["alt"]?>">
+                <img src="<?php echo esc_url($hellberglogo["url"]); ?>" alt="<?php echo $hellberglogo ["alt"]?>">
+                <img src="<?php echo esc_url($petzllogo["url"]); ?>" alt="<?php echo $petzllogo ["alt"]?>">
+                <img src="<?php echo esc_url($elkalogo["url"]); ?>" alt="<?php echo $elkalogo ["alt"]?>">
+                <img src="<?php echo esc_url($petzllogo["url"]); ?>" alt="<?php echo $petzllogo ["alt"]?>">
+                <img src="<?php echo esc_url($blakladerlogo["url"]); ?>" alt="<?php echo $blakladerlogo ["alt"]?>">
                 </div>
                 <div class="brandscontainer">
-                    <img src="img/snicker.png" alt="Snicker">
-                    <img src="img/tork.png" alt="Tork">
-                    <img src="img/kask.png" alt="Kask">
-                    <img src="img/helberg.png" alt="Helberg">
-                    <img src="img/petzl.png" alt="Petzl">
-                    <img src="img/elka.png" alt="Elka">
-                    <img src="img/blaklader.png" alt="Blaklader">
+                <img src="<?php echo esc_url($snickerslogo["url"]); ?>" alt="<?php echo $snickerslogo ["alt"]?>">
+                <img src="<?php echo esc_url($torklogo["url"]); ?>" alt="<?php echo $torklogo ["alt"]?>">
+                <img src="<?php echo esc_url($kasklogo["url"]); ?>" alt="<?php echo $kasklogo ["alt"]?>">
+                <img src="<?php echo esc_url($hellberglogo["url"]); ?>" alt="<?php echo $hellberglogo ["alt"]?>">
+                <img src="<?php echo esc_url($petzllogo["url"]); ?>" alt="<?php echo $petzllogo ["alt"]?>">
+                <img src="<?php echo esc_url($elkalogo["url"]); ?>" alt="<?php echo $elkalogo ["alt"]?>">
+                <img src="<?php echo esc_url($petzllogo["url"]); ?>" alt="<?php echo $petzllogo ["alt"]?>">
+                <img src="<?php echo esc_url($blakladerlogo["url"]); ?>" alt="<?php echo $blakladerlogo ["alt"]?>">
                 </div>
             </div>
         </section>
@@ -83,7 +101,7 @@ $snickerslogo = get_field("snickers_logo");
             </div>
             <div class="udvalgGrid">
                 <div class="itemUdvalg">
-                    <img src="img/hørebøffer.jpg" alt="">
+                <img src="<?php echo esc_url($horevaern["url"]); ?>" alt="<?php echo $horevaern ["alt"]?>">
                     <div class="itemUdvalgFlex">
                         <p>Høreværn</p>
                         <a href="">Se mere</a>
@@ -92,7 +110,7 @@ $snickerslogo = get_field("snickers_logo");
                     </p>
                 </div>
                 <div class="itemUdvalg">
-                    <img src="img/arbejdshandsker.jpg" alt="Arbejdshandsker">
+                <img src="<?php echo esc_url($arbejdshandsker["url"]); ?>" alt="<?php echo $arbejdshandsker ["alt"]?>">
                     <div class="itemUdvalgFlex">
                         <p>Arbejdshandsker</p>
                         <a href="">Se mere</a>
@@ -100,7 +118,7 @@ $snickerslogo = get_field("snickers_logo");
                     <p>Slidstærke arbejdshandsker med komfort og godt greb.</p>
                 </div>
                 <div class="itemUdvalg">
-                    <img src="img/sikkerhedssko.jpg" alt="Sikkerhedssko">
+                <img src="<?php echo esc_url($sikkerhedssko["url"]); ?>" alt="<?php echo $sikkerhedssko ["alt"]?>">
                     <div class="itemUdvalgFlex">
                         <p>Sikkerhedssko</p>
                         <a href="">Se mere</a>
@@ -108,14 +126,14 @@ $snickerslogo = get_field("snickers_logo");
                     <p>Sikkerhedssko med komfortabel pasform og solid beskyttelse, der sikrer godt greb og stabilitet.
                     </p>
                 </div>
-                <div class="itemUdvalg"><img src="img/arbejdsjakke.jpg" alt="Arbejdsjakker">
+                <img src="<?php echo esc_url($arbejdsjakke["url"]); ?>" alt="<?php echo $arbejdsjakke ["alt"]?>">
                     <div class="itemUdvalgFlex">
                         <p>Arbejdsjakker</p>
                         <a href="">Se mere</a>
                     </div>
                     <p>Arbejdsjakker med komfort og slidstærk beskyttelse, der sikrer bevægelse hele dagen.</p>
                 </div>
-                <div class="itemUdvalg"><img src="img/åndedræt.jpg" alt="Åndedrætsværn">
+                <img src="<?php echo esc_url($andedraetsvaernbillede["url"]); ?>" alt="<?php echo $andedraetsvaernbillede ["alt"]?>">
                     <div class="itemUdvalgFlex">
                         <p>Åndedrætsværn</p>
                         <a href="">Se mere</a>
@@ -123,21 +141,21 @@ $snickerslogo = get_field("snickers_logo");
                     <p>Åndedrætsværn med komfortabel pasform og god filtrering, der beskytter mod skadelige partikler.
                     </p>
                 </div>
-                <div class="itemUdvalg"><img src="img/faldsikring.jpg" alt="Faldsikring">
+                <img src="<?php echo esc_url($faldsikringbillede["url"]); ?>" alt="<?php echo $faldsikringbillede ["alt"]?>">
                     <div class="itemUdvalgFlex">
                         <p>Faldsikring</p>
                         <a href="">Se mere</a>
                     </div>
                     <p>Faldsikring med høj sikkerhed og komfort, der beskytter effektivt ved arbejde i højden.</p>
                 </div>
-                <div class="itemUdvalg"><img src="img/øjenskyld.jpg" alt="Øjenskyl">
+                <img src="<?php echo esc_url($ojenskylbillede["url"]); ?>" alt="<?php echo $ojenskylbillede ["alt"]?>">
                     <div class="itemUdvalgFlex">
                         <p>Øjenskyl</p>
                         <a href="">Se mere</a>
                     </div>
                     <p>Øjenskyl til hurtig og effektiv rensning, der beskytter dine øjne ved uheld.</p>
                 </div>
-                <div class="itemUdvalg"><img src="img/sikkerhedsshjelm.jpg" alt="Sikkerhedshjelm">
+                <img src="<?php echo esc_url($ojenskylbillede["url"]); ?>" alt="<?php echo $ojenskylbillede ["alt"]?>">
                     <div class="itemUdvalgFlex">
                         <p>Sikkerhedshjelm</p>
                         <a href="">Se mere</a>
@@ -166,7 +184,7 @@ $snickerslogo = get_field("snickers_logo");
                     </form>
                 </div>
                 <div class="newsLetterRight">
-                    <img src="img/byggertøs.png" alt="">
+                <img src="<?php echo esc_url($arbejdskvindebillede["url"]); ?>" alt="<?php echo $arbejdskvindebillede ["alt"]?>">
                 </div>
             </div>
         </section>
