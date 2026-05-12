@@ -62,13 +62,13 @@ $headerlogotop = get_field("logo_top");
                 <div class="navMiddle">
                 <div class="logo">
     <?php 
-    $video_felt = get_field('logo_top'); // Erstat med dit faktiske felt-navn
+    $video_felt = get_field('logo_top');
 
     if ( $video_felt ) : 
-        echo $video_felt; 
-    else : ?>
-        <img src="<?php echo esc_url($footermailikon["url"]); ?>" alt="<?php echo $footermailikon["alt"]; ?>">
-    <?php endif; ?>
+        // Dette gør at [video...] shortcoden bliver lavet om til en afspiller
+        echo apply_filters('the_content', $video_felt); 
+    endif; 
+    ?>
 </div>
                 </div>
                 <div class="navRightSide">
