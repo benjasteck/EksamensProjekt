@@ -1,14 +1,37 @@
 <?php
 function mytheme_enqueue_styles() {
-    
 
+    // Load everywhere
     wp_enqueue_style(
         'global',
-        get_template_directory_uri() . '/css/global.css',
-        array(),
-        false
+        get_template_directory_uri() . '/css/global.css'
     );
+
+    // Only on homepage
+    if (is_front_page()) {
+        wp_enqueue_style(
+            'home',
+            get_template_directory_uri() . '/css/forside.css'
+        );
+    }
+
+    // Only on contact page
+    if (is_page('kundeservice')) {
+        wp_enqueue_style(
+            'contact',
+            get_template_directory_uri() . '/css/kundeservice.css'
+        );
+    }
+
+    if (is_page('erhvervside')) {
+        wp_enqueue_style(
+            'contact',
+            get_template_directory_uri() . '/css/erhverv.css'
+        );
+    }
 }
+
+add_action('wp_enqueue_scripts', 'mytheme_enqueue_styles');
 add_action('wp_enqueue_scripts', 'mytheme_enqueue_styles');
 function bst_load_resources() {
     wp_enqueue_style("main-css", get_template_directory_uri() . "/css/forside.css");
