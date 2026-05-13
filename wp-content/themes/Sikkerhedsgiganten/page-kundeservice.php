@@ -7,6 +7,13 @@ $faqikonbetaling = get_field("faq_ikon_betaling");
 $faqikonreturnering = get_field("faq_ikon_returnering");
 $vipasserpådig1 = get_field("vi_passer_pa_dig_1");
 $vipasserpådig2 = get_field("vi_passer_pa_dig_2");
+$kundeservicesomeinstagram = get_field("kundeservice_some_instagram");
+$kundeservicesomefacebook = get_field("kundeservice_some_facebook");
+$kundeservicesomelinkedin = get_field("kundeservice_some_linkedin");
+$kundeservicefindos = get_field("kundeservice_find_os");
+$kundeservicenyhedsbrev = get_field("kundeservice_nyhedsbrev");
+$kundeservicekontaktos = get_field("kundeservice_kontakt_os");
+$kundeserviceomos = get_field("kundeservice_om_os");
 ?>
 <main>
     <section id="kontakt">
@@ -621,17 +628,17 @@ $vipasserpådig2 = get_field("vi_passer_pa_dig_2");
     <section id="socialSektion">
         <h3 class="socialTitel">Følg Sikkerhedsgiganten</h3>
         <div class="someContainer">
-            <a href="" target="_blank"><img src="img/InstagramIkon.svg" alt=""></a>
-            <a href="" target="_blank"><img src="img/facebookIcon.svg" alt=""></a>
-            <a href="" target="_blank"><img src="img/LinkedinIkon.svg" alt=""></a>
+            <a href="" target="_blank"><img src="<?php echo esc_url($kundeservicesomeinstagram["url"]); ?>" alt="<?php echo $kundeservicesomeinstagram ["alt"]?>"></a>
+            <a href="" target="_blank"><img src="<?php echo esc_url($kundeservicesomefacebook["url"]); ?>" alt="<?php echo $kundeservicesomefacebook ["alt"]?>"></a>
+            <a href="" target="_blank"><img src="<?php echo esc_url($kundeservicesomelinkedin["url"]); ?>" alt="<?php echo $kundeservicesomelinkedin ["alt"]?>"></a>
         </div>
     </section>
     <section id="bottomLinks">
         <div class="bottomLinksContainer">
-            <a href=""><img src="img/bottomLinkFind.svg" alt="">Find os her</a>
-            <a href=""><img src="img/bottomLinkNyhed.svg" alt="">Tilmeld nyhedsbrev</a>
-            <a href=""><img src="img/bottomLinkKontakt.svg" alt="">Kontakt os</a>
-            <a href=""><img src="img/bottomLinkOmOs.svg" alt="">Om os</a>
+            <a href=""><img src="<?php echo esc_url($kundeservicefindos["url"]); ?>" alt="<?php echo $kundeservicefindos ["alt"]?>">Find os her</a>
+            <a href=""><img src="<?php echo esc_url($kundeservicenyhedsbrev["url"]); ?>" alt="<?php echo $kundeservicenyhedsbrev ["alt"]?>">Tilmeld nyhedsbrev</a>
+            <a href=""><img src="<?php echo esc_url($kundeservicekontaktos["url"]); ?>" alt="<?php echo $kundeservicekontaktos ["alt"]?>">Kontakt os</a>
+            <a href=""><img src="<?php echo esc_url($kundeserviceomos["url"]); ?>" alt="<?php echo $kundeserviceomos ["alt"]?>">Om os</a>
         </div>
     </section>
 </main>
