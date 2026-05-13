@@ -48,9 +48,12 @@ $Navkurvikon = get_field("nav_kurv_ikon");
 $Navburgerikon = get_field("nav_burger_ikon");
 
 ?>
+
 <body <?php body_class() ?>>
     <header id="header">
-        <div class="headerBillede"></div>
+        <video class="headerBillede" autoplay muted loop playsinline>
+            <source src="<?php echo esc_url($headervideo['url']); ?>" type="video/mp4">
+        </video>
         <div id="headerOverlay"></div>
         <nav id="nav">
             <div class="navTop">
@@ -63,24 +66,22 @@ $Navburgerikon = get_field("nav_burger_ikon");
                     </ul>
                 </div>
                 <div class="navMiddle">
-                <div class="logo">
-    <?php 
-    $video_felt = get_field('logo_top');
-
-    if ( $video_felt ) : 
-        // Dette gør at [video...] shortcoden bliver lavet om til en afspiller
-        echo apply_filters('the_content', $video_felt); 
-    endif; 
-    ?>
-</div>
+                    <div class="logo">
+                        <video autoplay muted loop playsinline>
+                            <source src="<?php echo esc_url($headerlogotop['url']); ?>" type="video/mp4">
+                        </video>
+                    </div>
                 </div>
                 <div class="navRightSide">
                     <ul>
                         <li><a href="#shop">Shop</a></li>
                         <li><a href="#erhvervskunde">Erhvervskunde</a></li>
-                        <li><a href="#favoritter"><img src="<?php echo esc_url($Navhjerteikon["url"]); ?>" alt="<?php echo $Navhjerteikon ["alt"]?>"></a></li>
-                        <li><a href="#kurv"><img src="<?php echo esc_url($Navkurvikon["url"]); ?>" alt="<?php echo $Navkurvikon ["alt"]?>"></a></li>
-                        <li><a href="#sidemenu"><img src="<?php echo esc_url($Navburgerikon["url"]); ?>" alt="<?php echo $Navburgerikon ["alt"]?>"></a></li>
+                        <li><a href="#favoritter"><img src="<?php echo esc_url($Navhjerteikon["url"]); ?>"
+                                    alt="<?php echo $Navhjerteikon ["alt"]?>"></a></li>
+                        <li><a href="#kurv"><img src="<?php echo esc_url($Navkurvikon["url"]); ?>"
+                                    alt="<?php echo $Navkurvikon ["alt"]?>"></a></li>
+                        <li><a href="#sidemenu"><img src="<?php echo esc_url($Navburgerikon["url"]); ?>"
+                                    alt="<?php echo $Navburgerikon ["alt"]?>"></a></li>
                     </ul>
                 </div>
             </div>

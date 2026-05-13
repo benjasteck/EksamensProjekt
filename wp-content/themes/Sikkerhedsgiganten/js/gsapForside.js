@@ -102,7 +102,7 @@ ScrollTrigger.create({
 
  
 
-
+document.querySelector('.headerBillede').playbackRate = 0.8;
 
 const grid = document.getElementById("logoGrid");
 const bigCount = 11;

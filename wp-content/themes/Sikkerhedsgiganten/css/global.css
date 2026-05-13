@@ -36,18 +36,17 @@ header{
     height: 100vh;
     position: relative;
 }
-.headerBillede{
+.headerBillede {
     width: 95%;
     height: 90vh;
-    background-image: url("img/headerImg.jpg");
-    background-size: cover;
-    background-position: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     z-index: 0;
+    border-radius: 8px; /* optional, matches your style */
+    overflow: hidden;   /* clips the video to the rounded corners */
+    object-fit: cover;  /* makes the video fill the space like background-size: cover */
 }
 input{
     padding: 0px 10px;
@@ -122,6 +121,10 @@ input:focus{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+}
+.navMiddle video {
+    height: 60px;  /* adjust to fit your nav height */
+    width: auto;
 }
 .navBottom{
     margin: 0 auto;
