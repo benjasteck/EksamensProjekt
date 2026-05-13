@@ -22,6 +22,13 @@ function mytheme_enqueue_styles() {
             get_template_directory_uri() . '/css/kundeservice.css'
         );
     }
+
+    if (is_page('erhvervside')) {
+        wp_enqueue_style(
+            'contact',
+            get_template_directory_uri() . '/css/erhverv.css'
+        );
+    }
 }
 
 add_action('wp_enqueue_scripts', 'mytheme_enqueue_styles');

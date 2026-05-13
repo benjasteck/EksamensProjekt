@@ -1,0 +1,430 @@
+.logoGridSection {
+    position: relative;
+    width: var(--screen-width);
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: var(--margin-top-small);
+    margin-top: var(--margin-top-big);
+    position: sticky;
+    top: 0;
+    height: 90vh;
+    
+}
+
+
+
+.logoGrid {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+     justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    -webkit-mask-image: radial-gradient(circle 120px at var(--mx, 50%) var(--my, 50%), transparent 0%, white 100%);
+    mask-image: radial-gradient(circle 120px at var(--mx, 50%) var(--my, 50%), transparent 0%, white 100%);
+}
+
+.logoRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     width: 100%;
+}
+
+.logoRow.small-row {
+    padding: 0 100px; /* shifts small logos to sit between big ones */
+}
+
+.logoRow div {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.logoRow.large-row div {
+    width: 80px;
+    height: 80px;
+}
+
+.logoRow.small-row div {
+    width: 35px;
+    height: 35px;
+}
+.logoGridContent {
+    position: relative;
+    z-index: 999;
+    text-align: center;
+}
+
+#logoGridFog {
+    position: absolute;
+    width: 50%;
+    height: 80%;
+    border-radius: 10%;
+    background: radial-gradient(circle, rgba(250,250,250,1) 70%, rgba(250,250,250,0.8));
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    pointer-events: none;
+    transition: top 0.4s ease, left 0.4s ease;
+}
+.logoGridContent h2{
+    font-size: var(--fontsize-title-medium);
+    color: var(--main-color);
+    font-family: "Inter", sans-serif;
+    z-index: 100;
+}
+.erhvervHeroSection{
+    padding-bottom: 100px;
+}
+.erhvervHero{
+    position: relative;
+    width: 50%;
+    height: 500px;
+    margin: 0 auto;
+    
+    
+    gap: 20px;
+    
+}
+.erhvervHeroBg {
+    position: absolute;
+    inset: 0;
+    background-image: url(img/erhvervimg.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+.erhvervsHeroTop{
+    display: flex;
+    flex-direction: column;
+    width: var(--screen-width);
+    margin: 0 auto;
+    margin-top: var(--fontsize-title-medium);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.erhvervsHeroTop h2{
+    font-size: var(--fontsize-title-medium);
+    color: var(--main-color);
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+.erhvervsHeroTopLinks{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.erhvervsHeroTopLinks a{
+    color: var(--main-color);
+    
+}
+.ervhervsHeroBottom{
+    height: calc(100% - 400px);
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+    width: var(--screen-width);
+    margin: 0 auto;
+    margin-top: auto;
+    align-items: end;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.erhvervHeroItem{
+    flex: 1;
+    height: 130px;
+    background-color: #00000091;
+    border-radius: var(--medium-border-radious);
+    border: 1px solid #fff;
+    display: flex;
+    backdrop-filter: blur(8px);
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+    box-sizing: border-box;
+}
+.erhvervHeroItem p{
+    width: 85%;
+}
+.erhvervsHeroTop.visible, .ervhervsHeroBottom.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.erhvervsHeroTop.hidden {
+    opacity: 0 !important;
+    transform: translateY(30px) !important;
+}
+.erhvervHeroItem:hover{
+    background-color: #fafafa;
+    border: 1px solid transparent;
+    color: #020202;
+}
+.erhvervHeroItem:hover img{
+    filter: brightness(0);
+}
+.top1Wrapper{
+    position: relative;
+    width: var(--screen-width);
+    margin: 0 auto;
+}
+.erhvervsHeroTop1 {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+.erhvervsHeroTop1 h2{
+    font-size: var(--fontsize-title-medium);
+    color: var(--main-color);
+    font-family: "Inter", sans-serif;
+}
+.erhvervsHeroTop1 p{
+    color: var(--background-colour);
+    font-size: var(--fontsize-text-big);
+    width: 50%;
+    margin-top: var(--margin-top-small);
+}
+.erhvervsHeroTop1.active {
+    opacity: 1;
+    pointer-events: all;
+}
+#booking{
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(45deg, #CC4D00 0%, #993A00 100%);
+    
+    justify-content: center;
+    display: flex;
+    color: #eeeeee;
+}
+.bookingContent{
+    width: var(--screen-width);
+    height: calc(100% - 100px);
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.bookingLeft{
+    height: 100%;
+    flex-basis: 55%;
+    overflow: hidden;
+}
+
+.bookingTitle{
+    font-size: 40px;
+    font-weight: 700;
+    
+}
+.bookingSubTitle{
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.bookingLine{
+    width: 40%;
+    height: 3px;
+   background: #ffffff;
+   margin-top: 30px;
+}
+.bookingText{
+    height: 80%;
+    width: 100%;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+}
+.bookingText1{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.bookingText2{
+    flex-grow: 2;
+   display: flex;
+   justify-content: space-between;
+}
+.bookingText3{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.bookingTextLeft{
+    height: 100%;
+    flex-basis: 10%;
+}
+.bookingTextLeft h1{
+    font-size: 96px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    line-height: 96px;
+}
+.bookingTextRight h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+}
+.bookingTextRight{
+    height: 100%;
+    flex-basis: 90%;
+}
+.bookingRight{
+    height: 100%;
+    flex-basis: 35%;
+    
+    display: flex;
+    align-items: center;
+
+}
+.formularContainer{
+    width: 100%;
+    height: fit-content;
+    
+
+}
+.inputContainer{
+    position: relative;
+    margin-bottom: 50px;
+}
+.inputContainer label{
+    font-size: 24px;
+    font-weight: 700;
+    position: absolute; /* Position the label relative to the container */
+  top: -18px; /* Adjust this value to move the label up */
+  left: 0; /* Adjust this to move it left/right */
+  width: 100%;
+  padding-left: 30px;
+
+}
+.nameInput{
+    background: none;
+    border: 2px solid white;
+    border-radius: 15px ;
+    width: 100%;
+    height: 60px;
+    border-top: 0.5px solid transparent; 
+}
+.nameInput::placeholder{
+    color: white;
+    padding-left: 30px;
+    font-size: 16px;
+}
+
+.inputContainer label::before {
+  content: '';
+  position: absolute;
+  top: 60%;
+  width: 7px; /* Adjust the length of the lines as needed */
+  height: 2px;
+  background: white;
+  transform: translateY(-50%);
+}
+.inputContainer label::after {
+  content: '';
+  position: absolute;
+  top: 60%;
+  width: 77%; /* Adjust the length of the lines as needed */
+  height: 2px;
+  background: white;
+  transform: translateY(-50%);
+}
+
+.inputContainer label::before {
+  left: 8px; /* Position the left line */
+}
+
+.inputContainer label::after {
+  right: 8px; /* Position the right line */
+}
+
+.twoinputsContainer{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}
+.shortInput{
+    background: none;
+    border: 2px solid white;
+    border-radius: 15px ;
+    width: 100%;
+    height: 60px;
+    border-top: 0.5px solid transparent; 
+}
+.shortInput::placeholder{
+    color: white;
+    padding-left: 30px;
+    font-size: 16px;
+}
+.inputRight{
+    width: 100%;
+}
+.inputLeft{
+    width: 100%;
+}
+
+#shortInput1 label::after{
+  width: 50%;
+}
+#shortInput2 label::after{
+  width: 40%;
+}
+#inputStor input{
+height: 150px;
+}
+#inputStor label::after{
+    width: 60%;
+}
+.bigInput{
+    background: none;
+    border: 2px solid white;
+    border-radius: 15px ;
+    width: 100%;
+    height: 60px;
+    border-top: 0.5px solid transparent; 
+}
+.bigInput::placeholder{
+    color: white;
+    padding-left: 30px;
+    font-size: 16px;
+    vertical-align: top;
+}
+.inputBtn{
+    height: 40px;
+    width: 250px;
+    border-radius: 25px;
+    background-color: #00000040;
+    backdrop-filter: blur(4px);
+    color: #ffffff;
+    border-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    margin-left: auto;
+}
+.inputBtn p{
+   font-size: 20px;
+    font-weight: 700; 
+    text-align: center;
+}
