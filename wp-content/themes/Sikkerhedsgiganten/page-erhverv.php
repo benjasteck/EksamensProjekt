@@ -1,4 +1,16 @@
 <?php get_header(); ?>
+
+<?php
+$erhvervinstagram = get_field("erhverv_instagram");
+$erhvervfacebook = get_field("erhverv_facebook");
+$erhvervlinkedin = get_field("erhverv_linkedin");
+$erhvervfindos = get_field("erhverv_find_os");
+$erhvervnyhedsbrev = get_field("erhverv_nyhedsbrev");
+$erhvervkontaktos = get_field("erhverv_kontakt_os");
+$erhvervomos = get_field("erhverv_om_os");
+
+?>
+
 <section class="logoGridSection">
     <div class="logoGrid" id="logoGrid"></div>
     <div class="logoGridFog" id="logoGridFog"></div>
@@ -142,17 +154,17 @@
 <section id="socialSektion">
     <h3 class="socialTitel">Følg Sikkerhedsgiganten</h3>
     <div class="someContainer">
-        <a href="" target="_blank"><img src="img/InstagramIkon.svg" alt=""></a>
-        <a href="" target="_blank"><img src="img/facebookIcon.svg" alt=""></a>
-        <a href="" target="_blank"><img src="img/LinkedinIkon.svg" alt=""></a>
+        <a href="" target="_blank"><img src="<?php echo esc_url($erhvervinstagram["url"]); ?>" alt="<?php echo $erhvervinstagram ["alt"]?>"></a>
+        <a href="" target="_blank"><img src="<?php echo esc_url($erhvervfacebook["url"]); ?>" alt="<?php echo $erhvervfacebook ["alt"]?>"></a>
+        <a href="" target="_blank"><img src="<?php echo esc_url($erhvervlinkedin["url"]); ?>" alt="<?php echo $erhvervlinkedin ["alt"]?>"></a>
     </div>
 </section>
 <section id="bottomLinks">
     <div class="bottomLinksContainer">
-        <a href=""><img src="img/bottomLinkFind.svg" alt="">Find os her</a>
-        <a href=""><img src="img/bottomLinkNyhed.svg" alt="">Tilmeld nyhedsbrev</a>
-        <a href=""><img src="img/bottomLinkKontakt.svg" alt="">Kontakt os</a>
-        <a href=""><img src="img/bottomLinkOmOs.svg" alt="">Om os</a>
+        <a href=""><img src="<?php echo esc_url($erhvervfindos["url"]); ?>" alt="<?php echo $erhvervfindos ["alt"]?>">Find os her</a>
+        <a href=""><img src="<?php echo esc_url($erhvervnyhedsbrev["url"]); ?>" alt="<?php echo $erhvervnyhedsbrev ["alt"]?>">Tilmeld nyhedsbrev</a>
+        <a href=""><img src="<?php echo esc_url($erhvervkontaktos["url"]); ?>" alt="<?php echo $erhvervkontaktos ["alt"]?>">Kontakt os</a>
+        <a href=""><img src="<?php echo esc_url($erhvervomos["url"]); ?>" alt="<?php echo $erhvervomos ["alt"]?>">Om os</a>
     </div>
 </section>
 <?php get_footer(); ?>
