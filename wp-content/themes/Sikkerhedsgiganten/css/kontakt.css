@@ -1,0 +1,151 @@
+#kontakt{
+    width: var(--screen-width);
+    min-width: var(--minWidth);
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    gap: 100px;
+}
+#kontaktSide{
+    width: var(--screen-width);
+    min-width: var(--minWidth);
+    max-width: var(--maxWidth);
+    margin: var(--margin-top-medium) auto;
+
+    display: flex;
+    gap: 100px;
+}
+.kontaktRight{
+    width: 100%;
+}
+.kontaktRight h2{
+    font-size: var(--fontsize-title-medium);
+    font-weight: 900;
+    font-family: "Inter", sans-serif;
+}
+.kontaktRightTop p{
+    font-size: var(--fontsize-text-big);
+    font-weight: 400;
+    
+}
+.kontaktRightBottom{
+    margin-top: 100px;
+}
+.abningstiderContainer{
+    display: flex;
+}
+.kontaktBottom{
+    
+    margin-top: 20px;
+}
+.kontaktBottomTitel{
+    
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.kontaktBottomTekst{
+   font-size: 24px;
+   color: #559469; 
+   
+}
+.kontaktBottomContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#booking{
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(45deg, #CC4D00 0%, #993A00 100%);
+    
+    justify-content: center;
+    display: flex;
+    color: #eeeeee;
+}
+.bookingContent{
+    width: var(--screen-width);
+    height: calc(100% - 100px);
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.bookingLeft{
+    height: 100%;
+    flex-basis: 55%;
+    overflow: hidden;
+}
+
+.bookingTitle{
+    font-size: 40px;
+    font-weight: 700;
+    
+}
+.bookingSubTitle{
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.bookingLine{
+    width: 40%;
+    height: 3px;
+   background: #ffffff;
+   margin-top: 30px;
+}
+.bookingText{
+    height: 80%;
+    width: 100%;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+}
+.bookingText1{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.bookingText2{
+    flex-grow: 2;
+   display: flex;
+   justify-content: space-between;
+}
+.bookingText3{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.bookingTextLeft{
+    height: 100%;
+    flex-basis: 10%;
+}
+.bookingTextLeft h1{
+    font-size: 96px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    line-height: 96px;
+}
+.bookingTextRight h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+}
+.bookingTextRight{
+    height: 100%;
+    flex-basis: 90%;
+}
+.bookingRight{
+    height: 100%;
+    flex-basis: 35%;
+    
+    display: flex;
+    align-items: center;
+
+}

@@ -324,3 +324,46 @@ footer{
     width: 100%;
     height: auto;
 }
+#bottomLinks{
+    width: 100%;
+    height: 150px;
+    background-color: var(--orange-background);
+    margin-top: var(--margin-top-big);
+}
+.bottomLinksContainer{
+    width: var(--screen-width);
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.bottomLinksContainer a{
+    color: #fff;
+    text-decoration: none;
+    font-size: var(--fontsize-text-medium);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+#socialSektion{
+    width: var(--screen-width);
+    margin: 0 auto;
+    margin-top: var(--margin-top-big);
+    
+} 
+#socialSektion h3{
+    font-size: var(--fontsize-title-small);
+    color: var(--main-color);
+    font-family: "Inter", sans-serif;
+}
+.socialTitel{
+    text-align: center;
+}
+.someContainer{
+    display: flex;
+    gap: 60px;
+    margin-top: 50px;
+    justify-content: center;
+}
