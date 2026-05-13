@@ -29,7 +29,16 @@ function mytheme_enqueue_styles() {
             get_template_directory_uri() . '/css/erhverv.css'
         );
     }
+    
+
 }
+wp_enqueue_script(
+        'gsap-js',
+        get_template_directory_uri() . '/js/gsapForside.js',
+        array(), // dependencies
+        false,   // version
+        true     // load in footer
+    );
 
 add_action('wp_enqueue_scripts', 'mytheme_enqueue_styles');
 add_action('wp_enqueue_scripts', 'mytheme_enqueue_styles');
