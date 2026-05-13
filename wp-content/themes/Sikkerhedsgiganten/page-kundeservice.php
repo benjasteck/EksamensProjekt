@@ -1,4 +1,13 @@
 <?php get_header(); ?>
+
+<?php
+$faqikonbestilling = get_field("faq_ikon_bestilling");
+$faqikonlevering = get_field("faq_ikon_levering");
+$faqikonbetaling = get_field("faq_ikon_betaling");
+$faqikonreturnering = get_field("faq_ikon_returnering");
+$vipasserpådig1 = get_field("vi_passer_pa_dig_1");
+$vipasserpådig2 = get_field("vi_passer_pa_dig_2");
+?>
 <main>
     <section id="kontakt">
         <div class="kontaktLeft">
@@ -47,7 +56,7 @@
                     <div class="accordion-item">
                         <div class="accordion-header" id="firstAccordion">
                             <div class="acc-headerLeft">
-                                <img src="img/faqSvg1.svg" alt="">
+                            <img src="<?php echo esc_url($faqikonbestilling["url"]); ?>" alt="<?php echo $faqikonbestilling ["alt"]?>">
                                 <p>Spørgsmål til Bestilling</p>
                             </div>
                             <div class="acc-headerRight">
@@ -61,7 +70,7 @@
                     <div class="accordion-item">
                         <div class="accordion-header">
                             <div class="acc-headerLeft">
-                                <img src="img/faqSvg2.svg" alt="">
+                            <img src="<?php echo esc_url($faqikonlevering["url"]); ?>" alt="<?php echo $faqikonlevering ["alt"]?>">
                                 <p>Spørgsmål til Levering</p>
                             </div>
                             <div class="acc-headerRight">
@@ -75,7 +84,7 @@
                     <div class="accordion-item">
                         <div class="accordion-header">
                             <div class="acc-headerLeft">
-                                <img src="img/faqSvg3.svg" alt="">
+                            <img src="<?php echo esc_url($faqikonbetaling["url"]); ?>" alt="<?php echo $faqikonbetaling ["alt"]?>">
                                 <p>Spørgsmål til betaling</p>
                             </div>
                             <div class="acc-headerRight">
@@ -89,7 +98,7 @@
                     <div class="accordion-item">
                         <div class="accordion-header">
                             <div class="acc-headerLeft">
-                                <img src="img/faqSvg4.svg" alt="">
+                            <img src="<?php echo esc_url($faqikonreturnering["url"]); ?>" alt="<?php echo $faqikonreturnering ["alt"]?>">
                                 <p>Spørgsmål til returnering</p>
                             </div>
                             <div class="acc-headerRight">
@@ -120,8 +129,8 @@
     </section>
     <section id="passerPaDig">
 
-        <img src="img/pas2.jpg" alt="" class="pasImg2">
-        <img src="img/pas1.jpg" alt="" class="pasImg1">
+    <img src="<?php echo esc_url($vipasserpådig2["url"]); ?>" alt="<?php echo $vipasserpådig2 ["alt"]?>" class="pasImg2">
+        <img src="<?php echo esc_url($vipasserpådig1["url"]); ?>" alt="<?php echo $vipasserpådig1 ["alt"]?>" class="pasImg1">
         <div class="pasContainer">
             <h2>Vi passer på dig!</h2>
             <p>Du er vigtig, og vores mål er at hjælpe dig med at udføre dine opgaver sikkert. Med det rette personlig
