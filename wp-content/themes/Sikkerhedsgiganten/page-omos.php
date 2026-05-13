@@ -1,10 +1,17 @@
 <?php get_header(); ?>
+
+<?php
+$medarbejder1 = get_field("medarbejder_1");
+$medarbejder2 = get_field("medarbejder_2");
+$medarbejder3 = get_field("medarbejder_3");
+
+?>
 <section id="medarbejdere">
     <h2>Medarbejdere</h2>
     <div class="line"></div>
     <div class="medarbejdereContainer">
         <div class="medArbejderItem">
-            <img src="img/medarbejder1.jpg" alt="">
+        <img src="<?php echo esc_url($medarbejder1["url"]); ?>" alt="<?php echo $medarbejder1 ["alt"]?>">
             <h5>Melanie Ankerstjerne</h5>
             <p>Chief Operating Officer / COO <br>
                 Tlf: 73 11 13 55</p>
@@ -13,7 +20,7 @@
             </a>
         </div>
         <div class="medArbejderItem">
-            <img src="img/medarbejder3.jpg" alt="">
+        <img src="<?php echo esc_url($medarbejder2["url"]); ?>" alt="<?php echo $medarbejder2 ["alt"]?>">
             <h5>Michel Bjørnskov</h5>
             <p>Konsulent <br>
                 Tlf: 91 30 20 50</p>
@@ -22,7 +29,7 @@
             </a>
         </div>
         <div class="medArbejderItem">
-            <img src="img/medarbejder2.jpg" alt="">
+        <img src="<?php echo esc_url($medarbejder3["url"]); ?>" alt="<?php echo $medarbejder3 ["alt"]?>">
             <h5>Annemette Hansen</h5>
             <p>Bogholder <br>
                 Tlf: 73 11 13 52</p>
