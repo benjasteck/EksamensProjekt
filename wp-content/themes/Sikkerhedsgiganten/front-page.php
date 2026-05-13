@@ -55,7 +55,7 @@ $omosikon = get_field("om_os_ikon");
                     </div>
                 </div>
                 <div class="tilbud">
-                <img src="<?php echo esc_url($faldsikring["url"]); ?>" alt="<?php echo $faldsikring ["alt"]?>">
+                    <img src="<?php echo esc_url($faldsikring["url"]); ?>" alt="<?php echo $faldsikring ["alt"]?>">
                     <div class="tilbudContent">
                         <h3>Sikkerhedssko</h3>
                         <p><strike>800,00 kr.</strike><span> 600,00 kr.</span></p>
@@ -66,7 +66,8 @@ $omosikon = get_field("om_os_ikon");
                     </div>
                 </div>
                 <div class="tilbud">
-                <img src="<?php echo esc_url($andedraetsvaern["url"]); ?>" alt="<?php echo $andedraetsvaern ["alt"]?>">
+                    <img src="<?php echo esc_url($andedraetsvaern["url"]); ?>"
+                        alt="<?php echo $andedraetsvaern ["alt"]?>">
                     <div class="tilbudContent">
                         <h3>Faldsikring</h3>
                         <p><strike>1000,00 kr.</strike><span> 750,00 kr.</span></p>
@@ -81,24 +82,24 @@ $omosikon = get_field("om_os_ikon");
         <section id="brandSection">
             <div class="logoLine">
                 <div class="brandscontainer">
-                <img src="<?php echo esc_url($snickerslogo["url"]); ?>" alt="<?php echo $snickerslogo ["alt"]?>">
-                <img src="<?php echo esc_url($torklogo["url"]); ?>" alt="<?php echo $torklogo ["alt"]?>">
-                <img src="<?php echo esc_url($kasklogo["url"]); ?>" alt="<?php echo $kasklogo ["alt"]?>">
-                <img src="<?php echo esc_url($hellberglogo["url"]); ?>" alt="<?php echo $hellberglogo ["alt"]?>">
-                <img src="<?php echo esc_url($petzllogo["url"]); ?>" alt="<?php echo $petzllogo ["alt"]?>">
-                <img src="<?php echo esc_url($elkalogo["url"]); ?>" alt="<?php echo $elkalogo ["alt"]?>">
-                <img src="<?php echo esc_url($petzllogo["url"]); ?>" alt="<?php echo $petzllogo ["alt"]?>">
-                <img src="<?php echo esc_url($blakladerlogo["url"]); ?>" alt="<?php echo $blakladerlogo ["alt"]?>">
+                    <img src="<?php echo esc_url($snickerslogo["url"]); ?>" alt="<?php echo $snickerslogo ["alt"]?>">
+                    <img src="<?php echo esc_url($torklogo["url"]); ?>" alt="<?php echo $torklogo ["alt"]?>">
+                    <img src="<?php echo esc_url($kasklogo["url"]); ?>" alt="<?php echo $kasklogo ["alt"]?>">
+                    <img src="<?php echo esc_url($hellberglogo["url"]); ?>" alt="<?php echo $hellberglogo ["alt"]?>">
+                    <img src="<?php echo esc_url($petzllogo["url"]); ?>" alt="<?php echo $petzllogo ["alt"]?>">
+                    <img src="<?php echo esc_url($elkalogo["url"]); ?>" alt="<?php echo $elkalogo ["alt"]?>">
+                    <img src="<?php echo esc_url($petzllogo["url"]); ?>" alt="<?php echo $petzllogo ["alt"]?>">
+                    <img src="<?php echo esc_url($blakladerlogo["url"]); ?>" alt="<?php echo $blakladerlogo ["alt"]?>">
                 </div>
                 <div class="brandscontainer">
-                <img src="<?php echo esc_url($snickerslogo["url"]); ?>" alt="<?php echo $snickerslogo ["alt"]?>">
-                <img src="<?php echo esc_url($torklogo["url"]); ?>" alt="<?php echo $torklogo ["alt"]?>">
-                <img src="<?php echo esc_url($kasklogo["url"]); ?>" alt="<?php echo $kasklogo ["alt"]?>">
-                <img src="<?php echo esc_url($hellberglogo["url"]); ?>" alt="<?php echo $hellberglogo ["alt"]?>">
-                <img src="<?php echo esc_url($petzllogo["url"]); ?>" alt="<?php echo $petzllogo ["alt"]?>">
-                <img src="<?php echo esc_url($elkalogo["url"]); ?>" alt="<?php echo $elkalogo ["alt"]?>">
-                <img src="<?php echo esc_url($petzllogo["url"]); ?>" alt="<?php echo $petzllogo ["alt"]?>">
-                <img src="<?php echo esc_url($blakladerlogo["url"]); ?>" alt="<?php echo $blakladerlogo ["alt"]?>">
+                    <img src="<?php echo esc_url($snickerslogo["url"]); ?>" alt="<?php echo $snickerslogo ["alt"]?>">
+                    <img src="<?php echo esc_url($torklogo["url"]); ?>" alt="<?php echo $torklogo ["alt"]?>">
+                    <img src="<?php echo esc_url($kasklogo["url"]); ?>" alt="<?php echo $kasklogo ["alt"]?>">
+                    <img src="<?php echo esc_url($hellberglogo["url"]); ?>" alt="<?php echo $hellberglogo ["alt"]?>">
+                    <img src="<?php echo esc_url($petzllogo["url"]); ?>" alt="<?php echo $petzllogo ["alt"]?>">
+                    <img src="<?php echo esc_url($elkalogo["url"]); ?>" alt="<?php echo $elkalogo ["alt"]?>">
+                    <img src="<?php echo esc_url($petzllogo["url"]); ?>" alt="<?php echo $petzllogo ["alt"]?>">
+                    <img src="<?php echo esc_url($blakladerlogo["url"]); ?>" alt="<?php echo $blakladerlogo ["alt"]?>">
                 </div>
             </div>
         </section>
@@ -112,7 +113,7 @@ $omosikon = get_field("om_os_ikon");
             </div>
             <div class="udvalgGrid">
                 <div class="itemUdvalg">
-                <img src="<?php echo esc_url($horevaern["url"]); ?>" alt="<?php echo $horevaern ["alt"]?>">
+                    <img src="<?php echo esc_url($horevaern["url"]); ?>" alt="<?php echo $horevaern ["alt"]?>">
                     <div class="itemUdvalgFlex">
                         <p>Høreværn</p>
                         <a href="">Se mere</a>
@@ -121,7 +122,8 @@ $omosikon = get_field("om_os_ikon");
                     </p>
                 </div>
                 <div class="itemUdvalg">
-                <img src="<?php echo esc_url($arbejdshandsker["url"]); ?>" alt="<?php echo $arbejdshandsker ["alt"]?>">
+                    <img src="<?php echo esc_url($arbejdshandsker["url"]); ?>"
+                        alt="<?php echo $arbejdshandsker ["alt"]?>">
                     <div class="itemUdvalgFlex">
                         <p>Arbejdshandsker</p>
                         <a href="">Se mere</a>
@@ -129,7 +131,7 @@ $omosikon = get_field("om_os_ikon");
                     <p>Slidstærke arbejdshandsker med komfort og godt greb.</p>
                 </div>
                 <div class="itemUdvalg">
-                <img src="<?php echo esc_url($sikkerhedssko["url"]); ?>" alt="<?php echo $sikkerhedssko ["alt"]?>">
+                    <img src="<?php echo esc_url($sikkerhedssko["url"]); ?>" alt="<?php echo $sikkerhedssko ["alt"]?>">
                     <div class="itemUdvalgFlex">
                         <p>Sikkerhedssko</p>
                         <a href="">Se mere</a>
@@ -137,14 +139,17 @@ $omosikon = get_field("om_os_ikon");
                     <p>Sikkerhedssko med komfortabel pasform og solid beskyttelse, der sikrer godt greb og stabilitet.
                     </p>
                 </div>
-                <img src="<?php echo esc_url($arbejdsjakke["url"]); ?>" alt="<?php echo $arbejdsjakke ["alt"]?>">
+                <div class="itemUdvalg">
+                    <img src="<?php echo esc_url($arbejdsjakke["url"]); ?>" alt="<?php echo $arbejdsjakke ["alt"]?>">
                     <div class="itemUdvalgFlex">
                         <p>Arbejdsjakker</p>
                         <a href="">Se mere</a>
                     </div>
                     <p>Arbejdsjakker med komfort og slidstærk beskyttelse, der sikrer bevægelse hele dagen.</p>
                 </div>
-                <img src="<?php echo esc_url($andedraetsvaernbillede["url"]); ?>" alt="<?php echo $andedraetsvaernbillede ["alt"]?>">
+                <div class="itemUdvalg">
+                    <img src="<?php echo esc_url($andedraetsvaernbillede["url"]); ?>"
+                        alt="<?php echo $andedraetsvaernbillede ["alt"]?>">
                     <div class="itemUdvalgFlex">
                         <p>Åndedrætsværn</p>
                         <a href="">Se mere</a>
@@ -152,21 +157,27 @@ $omosikon = get_field("om_os_ikon");
                     <p>Åndedrætsværn med komfortabel pasform og god filtrering, der beskytter mod skadelige partikler.
                     </p>
                 </div>
-                <img src="<?php echo esc_url($faldsikringbillede["url"]); ?>" alt="<?php echo $faldsikringbillede ["alt"]?>">
+                <div class="itemUdvalg">
+                    <img src="<?php echo esc_url($faldsikringbillede["url"]); ?>"
+                        alt="<?php echo $faldsikringbillede ["alt"]?>">
                     <div class="itemUdvalgFlex">
                         <p>Faldsikring</p>
                         <a href="">Se mere</a>
                     </div>
                     <p>Faldsikring med høj sikkerhed og komfort, der beskytter effektivt ved arbejde i højden.</p>
                 </div>
-                <img src="<?php echo esc_url($ojenskylbillede["url"]); ?>" alt="<?php echo $ojenskylbillede ["alt"]?>">
+                <div class="itemUdvalg">
+                    <img src="<?php echo esc_url($ojenskylbillede["url"]); ?>"
+                        alt="<?php echo $ojenskylbillede ["alt"]?>">
                     <div class="itemUdvalgFlex">
                         <p>Øjenskyl</p>
                         <a href="">Se mere</a>
                     </div>
                     <p>Øjenskyl til hurtig og effektiv rensning, der beskytter dine øjne ved uheld.</p>
                 </div>
-                <img src="<?php echo esc_url($ojenskylbillede["url"]); ?>" alt="<?php echo $ojenskylbillede ["alt"]?>">
+                <div class="itemUdvalg">
+                    <img src="<?php echo esc_url($ojenskylbillede["url"]); ?>"
+                        alt="<?php echo $ojenskylbillede ["alt"]?>">
                     <div class="itemUdvalgFlex">
                         <p>Sikkerhedshjelm</p>
                         <a href="">Se mere</a>
@@ -178,9 +189,12 @@ $omosikon = get_field("om_os_ikon");
         <section id="socialSektion">
             <h3 class="socialTitel">Følg Sikkerhedsgiganten</h3>
             <div class="someContainer">
-                <a href="" target="_blank"><img src="<?php echo esc_url($instagramikon["url"]); ?>" alt="<?php echo $instagramikon ["alt"]?>"></a>
-                <a href="" target="_blank"><img src="<?php echo esc_url($facebookikon["url"]); ?>" alt="<?php echo $facebookikon ["alt"]?>"></a>
-                <a href="" target="_blank"><img src="<?php echo esc_url($linkedinikon["url"]); ?>" alt="<?php echo $linkedinikon ["alt"]?>"></a>
+                <a href="" target="_blank"><img src="<?php echo esc_url($instagramikon["url"]); ?>"
+                        alt="<?php echo $instagramikon ["alt"]?>"></a>
+                <a href="" target="_blank"><img src="<?php echo esc_url($facebookikon["url"]); ?>"
+                        alt="<?php echo $facebookikon ["alt"]?>"></a>
+                <a href="" target="_blank"><img src="<?php echo esc_url($linkedinikon["url"]); ?>"
+                        alt="<?php echo $linkedinikon ["alt"]?>"></a>
             </div>
             <div class="newsletterContainer">
                 <div class="newsletterLeft">
@@ -195,7 +209,8 @@ $omosikon = get_field("om_os_ikon");
                     </form>
                 </div>
                 <div class="newsLetterRight">
-                <img src="<?php echo esc_url($arbejdskvindebillede["url"]); ?>" alt="<?php echo $arbejdskvindebillede ["alt"]?>">
+                    <img src="<?php echo esc_url($arbejdskvindebillede["url"]); ?>"
+                        alt="<?php echo $arbejdskvindebillede ["alt"]?>">
                 </div>
             </div>
         </section>
@@ -351,7 +366,8 @@ $omosikon = get_field("om_os_ikon");
                         </p>
                     </div>
                     <div class="blogItem">
-                    <img src="<?php echo esc_url($blogsikkerhedsskobillede["url"]); ?>" alt="<?php echo $blogsikkerhedsskobillede ["alt"]?>">
+                        <img src="<?php echo esc_url($blogsikkerhedsskobillede["url"]); ?>"
+                            alt="<?php echo $blogsikkerhedsskobillede ["alt"]?>">
                         <h3>Valg af sikkerhedssko</h3>
                         <p>Da ingen fødder er ens, kan det være en jungle at finde det mærke eller den model som passer
                             dig bedst. Via denne guide, kan vi guide dig igennem de forskellige standarder og typer, så
@@ -359,7 +375,8 @@ $omosikon = get_field("om_os_ikon");
                         <a href="">Læs blog</a>
                     </div>
                     <div class="blogItem">
-                    <img src="<?php echo esc_url($blogarbejdstoejbillede["url"]); ?>" alt="<?php echo $blogarbejdstoejbillede ["alt"]?>">
+                        <img src="<?php echo esc_url($blogarbejdstoejbillede["url"]); ?>"
+                            alt="<?php echo $blogarbejdstoejbillede ["alt"]?>">
                         <h3>Valg af arbejdstøj</h3>
                         <p>Der stilles større og større krav til sikkerheden på arbejdspladsen, dette gælder også vores
                             påklædning. Vores påklædning er en vigtig del for at opfylde disse sikkerhedsmæssige krav. I
@@ -369,7 +386,8 @@ $omosikon = get_field("om_os_ikon");
                 </div>
                 <div class="blogSectionInnerRight">
                     <div class="blogItem">
-                    <img src="<?php echo esc_url($blogandedraetsvaernbillede["url"]); ?>" alt="<?php echo $blogandedraetsvaernbillede ["alt"]?>">
+                        <img src="<?php echo esc_url($blogandedraetsvaernbillede["url"]); ?>"
+                            alt="<?php echo $blogandedraetsvaernbillede ["alt"]?>">
                         <h3>Valg af åndedrætsværn</h3>
                         <p>Et åndedrætsværn er et personligt værnemiddel, der anvendes til beskyttelse mod indånding af
                             forurenet luft. Det afhænger af åndedrætsværnet, hvilke partikler, gasser og dampe det
@@ -377,7 +395,8 @@ $omosikon = get_field("om_os_ikon");
                         <a href="">Læs blog</a>
                     </div>
                     <div class="blogItem">
-                    <img src="<?php echo esc_url($blogsikkerhedshjelmbillede["url"]); ?>" alt="<?php echo $blogsikkerhedshjelmbillede ["alt"]?>">
+                        <img src="<?php echo esc_url($blogsikkerhedshjelmbillede["url"]); ?>"
+                            alt="<?php echo $blogsikkerhedshjelmbillede ["alt"]?>">
                         <h3>Valg af sikkerhedshjelme</h3>
                         <p>Hvis arbejdsgiveren vurderer, at den ansatte udsættes for risiko for hovedskader som følge af
                             faldende genstande, stød eller andre farer på arbejdspladsen, skal der anvendes
@@ -418,17 +437,24 @@ $omosikon = get_field("om_os_ikon");
         <section id="socialSektion">
             <h3 class="socialTitel">Følg Sikkerhedsgiganten</h3>
             <div class="someContainer">
-            <a href="" target="_blank"><img src="<?php echo esc_url($instagramikon["url"]); ?>" alt="<?php echo $instagramikon ["alt"]?>"></a>
-            <a href="" target="_blank"><img src="<?php echo esc_url($facebookikon["url"]); ?>" alt="<?php echo $facebookikon ["alt"]?>"></a>
-            <a href="" target="_blank"><img src="<?php echo esc_url($linkedinikon["url"]); ?>" alt="<?php echo $linkedinikon ["alt"]?>"></a>
+                <a href="" target="_blank"><img src="<?php echo esc_url($instagramikon["url"]); ?>"
+                        alt="<?php echo $instagramikon ["alt"]?>"></a>
+                <a href="" target="_blank"><img src="<?php echo esc_url($facebookikon["url"]); ?>"
+                        alt="<?php echo $facebookikon ["alt"]?>"></a>
+                <a href="" target="_blank"><img src="<?php echo esc_url($linkedinikon["url"]); ?>"
+                        alt="<?php echo $linkedinikon ["alt"]?>"></a>
             </div>
         </section>
         <section id="bottomLinks">
             <div class="bottomLinksContainer">
-                <a href=""><a href="" target="_blank"><img src="<?php echo esc_url($findosikon["url"]); ?>" alt="<?php echo $findosikon ["alt"]?>">Find os her</a>
-                <a href=""><a href="" target="_blank"><img src="<?php echo esc_url($nyhedsbrevikon["url"]); ?>" alt="<?php echo $nyhedsbrevikon ["alt"]?>">Tilmeld nyhedsbrev</a>
-                <a href=""><a href="" target="_blank"><img src="<?php echo esc_url($mailikon["url"]); ?>" alt="<?php echo $mailikon ["alt"]?>">Kontakt os</a>
-                <a href=""><a href="" target="_blank"><img src="<?php echo esc_url($omosikon["url"]); ?>" alt="<?php echo $omosikon ["alt"]?>">Om os</a>
+                <a href=""><a href="" target="_blank"><img src="<?php echo esc_url($findosikon["url"]); ?>"
+                            alt="<?php echo $findosikon ["alt"]?>">Find os her</a>
+                    <a href=""><a href="" target="_blank"><img src="<?php echo esc_url($nyhedsbrevikon["url"]); ?>"
+                                alt="<?php echo $nyhedsbrevikon ["alt"]?>">Tilmeld nyhedsbrev</a>
+                        <a href=""><a href="" target="_blank"><img src="<?php echo esc_url($mailikon["url"]); ?>"
+                                    alt="<?php echo $mailikon ["alt"]?>">Kontakt os</a>
+                            <a href=""><a href="" target="_blank"><img src="<?php echo esc_url($omosikon["url"]); ?>"
+                                        alt="<?php echo $omosikon ["alt"]?>">Om os</a>
             </div>
         </section>
     </main>
