@@ -43,6 +43,22 @@ function mytheme_enqueue_scripts() {
     );
 
     wp_enqueue_script(
+    'gsap-scrolltrigger',
+    'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js',
+    array('gsap'),
+    null,
+    true
+);
+
+ wp_enqueue_script(
+    'lenis',
+    'https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js',
+    array(),
+    null,
+    true
+);
+
+    wp_enqueue_script(
         'animejs',
         'https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js',
         array(),
@@ -51,28 +67,37 @@ function mytheme_enqueue_scripts() {
     );
 
     wp_enqueue_script(
-        'main-js',
-        get_template_directory_uri() . '/js/main.js',
-        array('gsap', 'animejs'),
-        false,
+    'gsap-forside',
+    get_template_directory_uri() . '/js/gsapForside.js',
+    array('gsap', 'gsap-scrolltrigger',),
+    null,
+    true
+);
+
+wp_enqueue_script(
+        'buttonChange',
+        get_template_directory_uri() . '/js/buttonChange.js',
+        array(),
+        null,
         true
     );
 
-    wp_enqueue_script(
-        'gsap-js',
-        get_template_directory_uri() . '/js/gsapForside.js',
-        array(), // dependencies
-        false,   // version
-        true     // load in footer
-    );
-    wp_enqueue_script(
-        'buttonChange',
-        get_template_directory_uri() . '/js/buttonChange.js',
-        array(), // dependencies
-        false,   // version
-        true     // load in footer
-    );
+    // Example (ACF style - adjust if needed)
+    $erhvervHero1 = get_field('erhvervHero1');
+    $erhvervHero2 = get_field('erhvervHero2');
+    $erhvervHero3 = get_field('erhvervHero3');
+    $erhvervHero4 = get_field('erhvervHero4');
+    $erhvervHero5 = get_field('erhvervHero5');
+
+    wp_localize_script('gsap-forside', 'themeData', array(
+        'erhvervHero1' => esc_url($erhvervHero1['url'] ?? ''),
+        'erhvervHero2' => esc_url($erhvervHero2['url'] ?? ''),
+        'erhvervHero3' => esc_url($erhvervHero3['url'] ?? ''),
+        'erhvervHero4' => esc_url($erhvervHero4['url'] ?? ''),
+        'erhvervHero5' => esc_url($erhvervHero5['url'] ?? ''),
+    ));
 }
+add_action('wp_enqueue_scripts', 'mytheme_enqueue_scripts');
 
 
 add_action('wp_enqueue_scripts', 'mytheme_enqueue_styles');

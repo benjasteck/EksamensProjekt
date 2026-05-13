@@ -21,6 +21,12 @@ $faldsikringbillede = get_field("faldsikring_billede");
 $ojenskylbillede = get_field("ojenskyl_billede");
 $sikkerhedshjelmbillede = get_field("sikkerhedshjelm_billede");
 $arbejdskvindebillede = get_field("arbejds_kvinde_billede");
+$erhvervHero1 = get_field("erhverv_hero");
+$erhvervHero2 = get_field("erhverv_hero_2");
+$erhvervHero3 = get_field("erhverv_hero_3");
+$erhvervHero4 = get_field("erhverv_hero_4");
+$erhvervHero5 = get_field("erhverv_hero_5");
+$erhvervHero6 = get_field("erhverv_hero_6");
 $instagramikon = get_field("instagram_ikon");
 $facebookikon = get_field("facebook_ikon");
 $linkedinikon = get_field("linkedin_ikon");
@@ -458,4 +464,15 @@ $omosikon = get_field("om_os_ikon");
             </div>
         </section>
     </main>
+    <style>
+    .erhvervHeroBg {
+        position: absolute;
+        inset: 0;
+        background-image: url(<?php echo esc_url($erhvervHero1["url"]);
+        ?>);
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
+    }
+    </style>
     <?php get_footer(); ?>

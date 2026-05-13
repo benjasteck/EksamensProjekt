@@ -1,3 +1,4 @@
+window.addEventListener("load", () => {
 gsap.registerPlugin(ScrollTrigger);
 const lenis = new Lenis({
   duration: 1.2,
@@ -150,11 +151,11 @@ const defaultTop = document.querySelector("#top0");
 const heroBg = document.querySelector(".erhvervHeroBg");
 
 const images = [
-    "img/erhvervimg2.jpg",
-    "img/erhvervimg3.jpg",
-    "img/erhvervimg4.jpg",
-    "img/erhvervimg5.jpg",
-    "img/erhvervimg6.jpg",
+    themeData.erhvervHero1,
+    themeData.erhvervHero2,
+    themeData.erhvervHero3,
+    themeData.erhvervHero4,
+    themeData.erhvervHero5,
 ];
 
 const defaultImage = "img/erhvervimg.jpg";
@@ -204,4 +205,5 @@ items.forEach((item, i) => {
         setImage(defaultImage);
         resetTop();
     });
+});
 });
