@@ -1,4 +1,15 @@
 <?php get_header(); ?>
+
+<?php
+$kontaktinstagram = get_field("kontakt_instagram");
+$kontaktfacebook = get_field("kontakt_facebook");
+$kontaktlinkedin = get_field("kontakt_linkedin");
+$kontaktfindos = get_field("kontakt_find_os");
+$kontaktnyhedsbrev = get_field("kontakt_nyhedsbrev");
+$kontaktkontaktos = get_field("kontakt_kontakt_os");
+$kontaktomos = get_field("kontakt_om_os");
+
+?>
 </header>
 <section id="kontaktSide">
     <div class="kontaktLeft">
@@ -90,17 +101,17 @@
 <section id="socialSektion">
     <h3 class="socialTitel">Følg Sikkerhedsgiganten</h3>
     <div class="someContainer">
-        <a href="" target="_blank"><img src="img/InstagramIkon.svg" alt=""></a>
-        <a href="" target="_blank"><img src="img/facebookIcon.svg" alt=""></a>
-        <a href="" target="_blank"><img src="img/LinkedinIkon.svg" alt=""></a>
+    <a href="" target="_blank"><img src="<?php echo esc_url($kontaktinstagram["url"]); ?>" alt="<?php echo $kontaktinstagram ["alt"]?>"></a>
+            <a href="" target="_blank"><img src="<?php echo esc_url($kontaktfacebook["url"]); ?>" alt="<?php echo $kontaktfacebook ["alt"]?>"></a>
+            <a href="" target="_blank"><img src="<?php echo esc_url($kontaktlinkedin["url"]); ?>" alt="<?php echo $kontaktlinkedin ["alt"]?>"></a>
     </div>
 </section>
 <section id="bottomLinks">
     <div class="bottomLinksContainer">
-        <a href=""><img src="img/bottomLinkFind.svg" alt="">Find os her</a>
-        <a href=""><img src="img/bottomLinkNyhed.svg" alt="">Tilmeld nyhedsbrev</a>
-        <a href=""><img src="img/bottomLinkKontakt.svg" alt="">Kontakt os</a>
-        <a href=""><img src="img/bottomLinkOmOs.svg" alt="">Om os</a>
+    <a href=""><img src="<?php echo esc_url($kontaktfindos["url"]); ?>" alt="<?php echo $kontaktfindos ["alt"]?>">Find os her</a>
+            <a href=""><img src="<?php echo esc_url($kontaktnyhedsbrev["url"]); ?>" alt="<?php echo $kontaktnyhedsbrev ["alt"]?>">Tilmeld nyhedsbrev</a>
+            <a href=""><img src="<?php echo esc_url($kontaktkontaktos["url"]); ?>" alt="<?php echo $kontaktkontaktos ["alt"]?>">Kontakt os</a>
+            <a href=""><img src="<?php echo esc_url($kontaktomos["url"]); ?>" alt="<?php echo $kontaktomos ["alt"]?>">Om os</a>
     </div>
 </section>
 <?php get_footer(); ?>
