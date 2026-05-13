@@ -6,7 +6,16 @@ $medarbejder2 = get_field("medarbejder_2");
 $medarbejder3 = get_field("medarbejder_3");
 $vipasserpådig1 = get_field("vi_passer_pa_dig_1");
 $vipasserpådig2 = get_field("vi_passer_pa_dig_2");
-
+$butikbillede = get_field("butik_billede");
+$firmabeklaedning = get_field("firmabeklaedning");
+$arbejdstoj = get_field("arbejdstoj");
+$omosinstagram = get_field("om_os_instagram");
+$omosfacebook = get_field("om_os_facebook");
+$omoslinkedin = get_field("om_os_linkedin");
+$omosfindos = get_field("om_os_find_os");
+$omosnyhedsbrev = get_field("om_os_nyhedsbrev");
+$omoskontakt = get_field("om_os_kontakt");
+$omosom = get_field("om_os_om");
 ?>
 <section id="medarbejdere">
     <h2>Medarbejdere</h2>
@@ -83,7 +92,7 @@ $vipasserpådig2 = get_field("vi_passer_pa_dig_2");
 </section>
 <section id="os">
     <div class="osItem" id="osItem1">
-        <img src="img/os1.jpg" alt="">
+    <img src="<?php echo esc_url($butikbillede["url"]); ?>" alt="<?php echo $butikbillede ["alt"]?>">
         <div class="osItemContainer">
             <h3>Fysisk Butik</h3>
             <p>Velkommen til vores butik, hvor sikkerhedsudstyr ikke blot er noget, du ser på skærmen, men noget du kan
@@ -100,7 +109,7 @@ $vipasserpådig2 = get_field("vi_passer_pa_dig_2");
                 Uanset hvilken type arbejdstøj din virksomhed behøver, garanterer vi levering af produkter i højeste
                 kvalitet.</p>
         </div>
-        <img src="img/os2.jpg" alt="">
+        <img src="<?php echo esc_url($firmabeklaedning["url"]); ?>" alt="<?php echo $firmabeklaedning ["alt"]?>">
     </div>
     <div class="osErhverv">
         <h3>Få fordele som Erhvervskunde</h3>
@@ -110,7 +119,7 @@ $vipasserpådig2 = get_field("vi_passer_pa_dig_2");
         <a href="">Få en erhvervsaftale</a>
     </div>
     <div class="osItem" id="osItem3">
-        <img src="img/os3.jpg" alt="">
+    <img src="<?php echo esc_url($arbejdstoj["url"]); ?>" alt="<?php echo $arbejdstoj ["alt"]?>">
         <div class="osItemContainer">
             <h3>Arbejdstøj til alle</h3>
             <p>Profilbeklædning sikre genkendelse. Der er høj signalværdi i at være rigtig klædt på, ikke bare når det
@@ -156,17 +165,17 @@ $vipasserpådig2 = get_field("vi_passer_pa_dig_2");
 <section id="socialSektion">
     <h3 class="socialTitel">Følg Sikkerhedsgiganten</h3>
     <div class="someContainer">
-        <a href="" target="_blank"><img src="img/InstagramIkon.svg" alt=""></a>
-        <a href="" target="_blank"><img src="img/facebookIcon.svg" alt=""></a>
-        <a href="" target="_blank"><img src="img/LinkedinIkon.svg" alt=""></a>
+    <a href="" target="_blank"><img src="<?php echo esc_url($omosinstagram["url"]); ?>" alt="<?php echo $omosinstagram ["alt"]?>"></a>
+            <a href="" target="_blank"><img src="<?php echo esc_url($omosfacebook["url"]); ?>" alt="<?php echo $omosfacebook ["alt"]?>"></a>
+            <a href="" target="_blank"><img src="<?php echo esc_url($omoslinkedin["url"]); ?>" alt="<?php echo $omoslinkedin ["alt"]?>"></a>
     </div>
 </section>
 <section id="bottomLinks">
     <div class="bottomLinksContainer">
-        <a href=""><img src="img/bottomLinkFind.svg" alt="">Find os her</a>
-        <a href=""><img src="img/bottomLinkNyhed.svg" alt="">Tilmeld nyhedsbrev</a>
-        <a href=""><img src="img/bottomLinkKontakt.svg" alt="">Kontakt os</a>
-        <a href=""><img src="img/bottomLinkOmOs.svg" alt="">Om os</a>
+    <a href=""><img src="<?php echo esc_url($omosfindos["url"]); ?>" alt="<?php echo $omosfindos ["alt"]?>">Find os her</a>
+            <a href=""><img src="<?php echo esc_url($omosnyhedsbrev["url"]); ?>" alt="<?php echo $omosnyhedsbrev ["alt"]?>">Tilmeld nyhedsbrev</a>
+            <a href=""><img src="<?php echo esc_url($omoskontakt["url"]); ?>" alt="<?php echo $omoskontakt ["alt"]?>">Kontakt os</a>
+            <a href=""><img src="<?php echo esc_url($omosom["url"]); ?>" alt="<?php echo $omosom ["alt"]?>">Om os</a>
     </div>
 </section>
 <?php get_footer(); ?>
