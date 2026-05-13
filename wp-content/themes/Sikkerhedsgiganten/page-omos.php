@@ -4,6 +4,8 @@
 $medarbejder1 = get_field("medarbejder_1");
 $medarbejder2 = get_field("medarbejder_2");
 $medarbejder3 = get_field("medarbejder_3");
+$vipasserpådig1 = get_field("vi_passer_pa_dig_1");
+$vipasserpådig2 = get_field("vi_passer_pa_dig_2");
 
 ?>
 <section id="medarbejdere">
@@ -41,8 +43,8 @@ $medarbejder3 = get_field("medarbejder_3");
 </section>
 <section id="passerPaDig">
 
-    <img src="img/pas2.jpg" alt="" class="pasImg2">
-    <img src="img/pas1.jpg" alt="" class="pasImg1">
+<img src="<?php echo esc_url($vipasserpådig2["url"]); ?>" alt="<?php echo $vipasserpådig2 ["alt"]?>" class="pasImg2">
+<img src="<?php echo esc_url($vipasserpådig1["url"]); ?>" alt="<?php echo $vipasserpådig1 ["alt"]?>" class="pasImg1">
     <div class="pasContainer">
         <h2>Vi passer på dig!</h2>
         <p>Du er vigtig, og vores mål er at hjælpe dig med at udføre dine opgaver sikkert. Med det rette personlig
