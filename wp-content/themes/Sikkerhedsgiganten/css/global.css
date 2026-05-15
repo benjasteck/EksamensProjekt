@@ -149,13 +149,47 @@ input:focus{
     position: absolute;
     top: 130px;
     background-color: #fafafabd;
-    right: 0;
+    right: -30%;
     width: 30%;
-    height: 500px;
+    height: fit-content;
     z-index: 999;
     backdrop-filter: blur(8px);
     border-radius: 5px;
-    display: none;
+    transition: 0.3s ease;
+    
+}
+.headerSideMenuCategories.active {
+    right: 0;
+}
+.headerSideMenuCategories h3{
+    text-align: center;
+    color: var(--main-color);
+    font-size: var(--fontsize-title-small);
+    font-weight: 900;
+}
+.headerSideMenuCategories li{
+    text-align: right;
+    text-decoration: none;
+    list-style: none;
+    padding: 8px 0;
+    margin: 0 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #020202;
+    cursor: pointer;
+}
+.headerSideMenuCategories li a{
+    text-decoration: none;
+    color: #020202;
+    margin-left: auto;
+    margin-right: 20px;
+    
+}
+.closeBtn{
+    background: #fafafa77;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 .headerContent{
     position: absolute;

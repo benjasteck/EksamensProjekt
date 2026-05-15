@@ -207,3 +207,27 @@ items.forEach((item, i) => {
     });
 });
 });
+    const sideMenu = document.querySelector(".headerSideMenuCategories");
+const openBtn = document.querySelector(".openMenu");
+const closeBtn = document.querySelector(".closeBtn");
+
+// OPEN
+openBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    sideMenu.classList.add("active");
+});
+
+// CLOSE BUTTON
+closeBtn.addEventListener("click", () => {
+    sideMenu.classList.remove("active");
+});
+
+// CLICK OUTSIDE TO CLOSE
+document.addEventListener("click", (e) => {
+    const clickedInsideMenu = sideMenu.contains(e.target);
+    const clickedOpenBtn = openBtn.contains(e.target);
+
+    if (!clickedInsideMenu && !clickedOpenBtn) {
+        sideMenu.classList.remove("active");
+    }
+});

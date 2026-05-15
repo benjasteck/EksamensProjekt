@@ -81,7 +81,7 @@ $Navburgerikon = get_field("nav_burger_ikon");
                         <li><a href="#kurv"><img src="<?php echo esc_url($Navkurvikon["url"]); ?>"
                                     alt="<?php echo $Navkurvikon ["alt"]?>"></a></li>
                         <li><a href="#sidemenu"><img src="<?php echo esc_url($Navburgerikon["url"]); ?>"
-                                    alt="<?php echo $Navburgerikon ["alt"]?>"></a></li>
+                                    alt="<?php echo $Navburgerikon ["alt"]?>" class="openMenu"></a></li>
                     </ul>
                 </div>
             </div>
@@ -105,22 +105,32 @@ $Navburgerikon = get_field("nav_burger_ikon");
             <button class="closeBtn">X</button>
             <h3>Kategorier</h3>
             <ul>
-                <li><a href="#arbejdsudstyr">Arbejdsudstyr</a></li>
-                <li><a href="#arbejdstoj">Arbejdstøj</a></li>
-                <li><a href="#andedretsvern">Åndedrætsværn</a></li>
-                <li><a href="#faldsikring">Faldsikring</a></li>
-                <li><a href="#forstehjelp">Førstehjælp</a></li>
-                <li><a href="#skilte">Skilte</a></li>
-                <li><a href="#hygiejne">Hygiejne</a></li>
-                <li><a href="#rengoring">Rengøring</a></li>
-                <li><a href="#skadedyr">Skadedyr</a></li>
-                <li><a href="#outlet">Outlet</a></li>
+                <li><img src="img/pil.svg" alt=""><a href="#arbejdsudstyr">Arbejdsudstyr</a><img src="img/hjelmIkon.svg"
+                        alt=""></li>
+                <li><img src="img/pil.svg" alt=""><a href="#arbejdstoj">Arbejdstøj</a><img src="img/hjelmIkon.svg"
+                        alt=""></li>
+                <li><img src="img/pil.svg" alt=""><a href="#andedretsvern">Åndedrætsværn</a><img src="img/hjelmIkon.svg"
+                        alt=""></li>
+                <li><img src="img/pil.svg" alt=""><a href="#faldsikring">Faldsikring</a><img src="img/hjelmIkon.svg"
+                        alt=""></li>
+                <li><img src="img/pil.svg" alt=""><a href="#forstehjelp">Førstehjælp</a><img src="img/hjelmIkon.svg"
+                        alt=""></li>
+                <li><img src="img/pil.svg" alt=""><a href="#skilte">Skilte</a><img src="img/hjelmIkon.svg" alt=""></li>
+                <li><img src="img/pil.svg" alt=""><a href="#hygiejne">Hygiejne</a><img src="img/hjelmIkon.svg" alt="">
+                </li>
+                <li><img src="img/pil.svg" alt=""><a href="#rengoring">Rengøring</a><img src="img/hjelmIkon.svg" alt="">
+                </li>
+                <li><img src="img/pil.svg" alt=""><a href="#skadedyr">Skadedyr</a><img src="img/hjelmIkon.svg" alt="">
+                </li>
+                <li><img src="img/pil.svg" alt=""><a href="#outlet">Outlet</a><img src="img/hjelmIkon.svg" alt=""></li>
             </ul>
             <h3>Profil</h3>
             <ul>
-                <li><a href="#minprofil">Profil</a></li>
-                <li><a href="#favoritter">Favoritter</a></li>
-                <li><a href="#kurv">Kurv</a></li>
+                <li><img src="img/pil.svg" alt=""><a href="#minprofil">Profil</a><img src="img/hjelmIkon.svg" alt="">
+                </li>
+                <li><img src="img/pil.svg" alt=""><a href="#favoritter">Favoritter</a><img src="img/hjelmIkon.svg"
+                        alt=""></li>
+                <li><img src="img/pil.svg" alt=""><a href="#kurv">Kurv</a><img src="img/hjelmIkon.svg" alt=""></li>
             </ul>
         </div>
         <div class="headerAds">
