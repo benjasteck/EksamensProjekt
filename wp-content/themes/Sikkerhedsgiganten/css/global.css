@@ -54,14 +54,19 @@ input{
 input:focus{
     outline: none;
 }
-#nav{
-    position: relative;
+#nav {
+    position: fixed;
+    top: 0;
     z-index: 2;
     margin: 0 auto;
     width: 100%;
     height: 130px;
     background-color: #fafafabd;
     backdrop-filter: blur(8px);
+    transition: height 0.25s ease;
+}
+#nav.shrink {
+    height: 80px;
 }
 #headerOverlay{
     position: absolute;
@@ -122,9 +127,13 @@ input:focus{
     left: 50%;
     transform: translateX(-50%);
 }
-.navMiddle video {
-    height: 60px;  /* adjust to fit your nav height */
+.logo{
+    height: 80px;
     width: auto;
+}
+video{
+    width: 100%;
+    height: 100%;
 }
 .navBottom{
     margin: 0 auto;
@@ -136,6 +145,13 @@ input:focus{
     background-color: #fafafabd;
     border-radius: 0  0 var(--medium-border-radious) var(--medium-border-radious);
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.25s ease, transform 0.25s ease, max-height 0.25s ease;
+    overflow: hidden;
+}
+.navBottom.hide {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
 }
 .navBottom input{
     width: 100%;
@@ -146,16 +162,50 @@ input:focus{
     
 }
 .headerSideMenuCategories{
-    position: absolute;
+    position: fixed;
     top: 130px;
     background-color: #fafafabd;
-    right: 0;
+    right: -30%;
     width: 30%;
-    height: 500px;
+    height: fit-content;
     z-index: 999;
     backdrop-filter: blur(8px);
     border-radius: 5px;
-    display: none;
+    transition: 0.3s ease;
+    
+}
+.headerSideMenuCategories.active {
+    right: 0;
+}
+.headerSideMenuCategories h3{
+    text-align: center;
+    color: var(--main-color);
+    font-size: var(--fontsize-title-small);
+    font-weight: 900;
+}
+.headerSideMenuCategories li{
+    text-align: right;
+    text-decoration: none;
+    list-style: none;
+    padding: 8px 0;
+    margin: 0 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #020202;
+    cursor: pointer;
+}
+.headerSideMenuCategories li a{
+    text-decoration: none;
+    color: #020202;
+    margin-left: auto;
+    margin-right: 20px;
+    
+}
+.closeBtn{
+    background: #fafafa77;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 .headerContent{
     position: absolute;

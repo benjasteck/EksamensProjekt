@@ -50,43 +50,43 @@ $Navburgerikon = get_field("nav_burger_ikon");
 ?>
 
 <body <?php body_class() ?>>
+    <nav id="nav">
+        <div class="navTop">
+            <div class="navLeftSide">
+                <ul>
+                    <li><a href="#forside">Forside</a></li>
+                    <li><a href="#omos">Om os</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                    <li><a href="#kundeservice">Kundeservice</a></li>
+                </ul>
+            </div>
+            <div class="navMiddle">
+                <div class="logo">
+                    <video autoplay muted loop playsinline>
+                        <source src="<?php echo esc_url($headerlogotop['url']); ?>" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="navRightSide">
+                <ul>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#erhvervskunde">Erhvervskunde</a></li>
+                    <li><a href="#favoritter"><img src="<?php echo esc_url($Navhjerteikon["url"]); ?>"
+                                alt="<?php echo $Navhjerteikon ["alt"]?>"></a></li>
+                    <li><a href="#kurv"><img src="<?php echo esc_url($Navkurvikon["url"]); ?>"
+                                alt="<?php echo $Navkurvikon ["alt"]?>"></a></li>
+                    <li><a href="#sidemenu"><img src="<?php echo esc_url($Navburgerikon["url"]); ?>"
+                                alt="<?php echo $Navburgerikon ["alt"]?>" class="openMenu"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navBottom"><input type="text" placeholder="Søg her..."></div>
+    </nav>
     <header id="header">
         <video class="headerBillede" autoplay muted loop playsinline>
             <source src="<?php echo esc_url($headervideo['url']); ?>" type="video/mp4">
         </video>
         <div id="headerOverlay"></div>
-        <nav id="nav">
-            <div class="navTop">
-                <div class="navLeftSide">
-                    <ul>
-                        <li><a href="#forside">Forside</a></li>
-                        <li><a href="#omos">Om os</a></li>
-                        <li><a href="#kontakt">Kontakt</a></li>
-                        <li><a href="#kundeservice">Kundeservice</a></li>
-                    </ul>
-                </div>
-                <div class="navMiddle">
-                    <div class="logo">
-                        <video autoplay muted loop playsinline>
-                            <source src="<?php echo esc_url($headerlogotop['url']); ?>" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="navRightSide">
-                    <ul>
-                        <li><a href="#shop">Shop</a></li>
-                        <li><a href="#erhvervskunde">Erhvervskunde</a></li>
-                        <li><a href="#favoritter"><img src="<?php echo esc_url($Navhjerteikon["url"]); ?>"
-                                    alt="<?php echo $Navhjerteikon ["alt"]?>"></a></li>
-                        <li><a href="#kurv"><img src="<?php echo esc_url($Navkurvikon["url"]); ?>"
-                                    alt="<?php echo $Navkurvikon ["alt"]?>"></a></li>
-                        <li><a href="#sidemenu"><img src="<?php echo esc_url($Navburgerikon["url"]); ?>"
-                                    alt="<?php echo $Navburgerikon ["alt"]?>"></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="navBottom"><input type="text" placeholder="Søg her..."></div>
-        </nav>
 
         <div class="headerContent">
             <h1 id="headerTitle">Vi værner om dig</h1>
@@ -101,29 +101,40 @@ $Navburgerikon = get_field("nav_burger_ikon");
                 </ul>
             </div>
         </div>
-        <div class="headerSideMenuCategories">
-            <button class="closeBtn">X</button>
-            <h3>Kategorier</h3>
-            <ul>
-                <li><a href="#arbejdsudstyr">Arbejdsudstyr</a></li>
-                <li><a href="#arbejdstoj">Arbejdstøj</a></li>
-                <li><a href="#andedretsvern">Åndedrætsværn</a></li>
-                <li><a href="#faldsikring">Faldsikring</a></li>
-                <li><a href="#forstehjelp">Førstehjælp</a></li>
-                <li><a href="#skilte">Skilte</a></li>
-                <li><a href="#hygiejne">Hygiejne</a></li>
-                <li><a href="#rengoring">Rengøring</a></li>
-                <li><a href="#skadedyr">Skadedyr</a></li>
-                <li><a href="#outlet">Outlet</a></li>
-            </ul>
-            <h3>Profil</h3>
-            <ul>
-                <li><a href="#minprofil">Profil</a></li>
-                <li><a href="#favoritter">Favoritter</a></li>
-                <li><a href="#kurv">Kurv</a></li>
-            </ul>
-        </div>
+
         <div class="headerAds">
 
         </div>
     </header>
+    <div class="headerSideMenuCategories">
+        <button class="closeBtn">X</button>
+        <h3>Kategorier</h3>
+        <ul>
+            <li><img src="img/pil.svg" alt=""><a href="#arbejdsudstyr">Arbejdsudstyr</a><img src="img/hjelmIkon.svg"
+                    alt=""></li>
+            <li><img src="img/pil.svg" alt=""><a href="#arbejdstoj">Arbejdstøj</a><img src="img/hjelmIkon.svg" alt="">
+            </li>
+            <li><img src="img/pil.svg" alt=""><a href="#andedretsvern">Åndedrætsværn</a><img src="img/hjelmIkon.svg"
+                    alt=""></li>
+            <li><img src="img/pil.svg" alt=""><a href="#faldsikring">Faldsikring</a><img src="img/hjelmIkon.svg" alt="">
+            </li>
+            <li><img src="img/pil.svg" alt=""><a href="#forstehjelp">Førstehjælp</a><img src="img/hjelmIkon.svg" alt="">
+            </li>
+            <li><img src="img/pil.svg" alt=""><a href="#skilte">Skilte</a><img src="img/hjelmIkon.svg" alt=""></li>
+            <li><img src="img/pil.svg" alt=""><a href="#hygiejne">Hygiejne</a><img src="img/hjelmIkon.svg" alt="">
+            </li>
+            <li><img src="img/pil.svg" alt=""><a href="#rengoring">Rengøring</a><img src="img/hjelmIkon.svg" alt="">
+            </li>
+            <li><img src="img/pil.svg" alt=""><a href="#skadedyr">Skadedyr</a><img src="img/hjelmIkon.svg" alt="">
+            </li>
+            <li><img src="img/pil.svg" alt=""><a href="#outlet">Outlet</a><img src="img/hjelmIkon.svg" alt=""></li>
+        </ul>
+        <h3>Profil</h3>
+        <ul>
+            <li><img src="img/pil.svg" alt=""><a href="#minprofil">Profil</a><img src="img/hjelmIkon.svg" alt="">
+            </li>
+            <li><img src="img/pil.svg" alt=""><a href="#favoritter">Favoritter</a><img src="img/hjelmIkon.svg" alt="">
+            </li>
+            <li><img src="img/pil.svg" alt=""><a href="#kurv">Kurv</a><img src="img/hjelmIkon.svg" alt=""></li>
+        </ul>
+    </div>

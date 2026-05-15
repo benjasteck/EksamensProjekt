@@ -207,3 +207,65 @@ items.forEach((item, i) => {
     });
 });
 });
+    const sideMenu = document.querySelector(".headerSideMenuCategories");
+const openBtn = document.querySelector(".openMenu");
+const closeBtn = document.querySelector(".closeBtn");
+
+// OPEN
+openBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    sideMenu.classList.add("active");
+});
+
+// CLOSE BUTTON
+closeBtn.addEventListener("click", () => {
+    sideMenu.classList.remove("active");
+});
+
+// CLICK OUTSIDE TO CLOSE
+document.addEventListener("click", (e) => {
+    const clickedInsideMenu = sideMenu.contains(e.target);
+    const clickedOpenBtn = openBtn.contains(e.target);
+
+    if (!clickedInsideMenu && !clickedOpenBtn) {
+        sideMenu.classList.remove("active");
+    }
+});
+
+let lastScrollY = window.scrollY;
+let ticking = false;
+
+const nav = document.getElementById("nav");
+const navBottom = document.querySelector(".navBottom");
+
+const SHRINK_START = 80;   // when nav is allowed to shrink
+const THRESHOLD = 8;       // ignore tiny scroll jitter
+
+function updateNav() {
+    const currentScrollY = window.scrollY;
+    const delta = currentScrollY - lastScrollY;
+
+    const isScrollingDown = delta > THRESHOLD;
+    const isScrollingUp = delta < -THRESHOLD;
+
+    // Only shrink after user has actually scrolled down a bit
+    if (currentScrollY > SHRINK_START && isScrollingDown) {
+        nav.classList.add("shrink");
+        navBottom.classList.add("hide");
+    }
+
+    if (isScrollingUp) {
+        nav.classList.remove("shrink");
+        navBottom.classList.remove("hide");
+    }
+
+    lastScrollY = currentScrollY;
+    ticking = false;
+}
+
+window.addEventListener("scroll", () => {
+    if (!ticking) {
+        requestAnimationFrame(updateNav);
+        ticking = true;
+    }
+});
