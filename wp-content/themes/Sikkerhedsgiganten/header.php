@@ -62,8 +62,21 @@ $oftesogt = get_field("ofte_sogt");
 $tobdmaskertitel = get_field("tobd_masker_titel");
 $sikkerhedsskotitel = get_field("sikkerhedssko_titel");
 $faldsikringtitel = get_field("faldsikring_titel");
+$kategoriertitel = get_field("kategorier_titel");
+$arbejdstojtitel = get_field("arbejdstoj_titel");
+$sikkerhedsudstyrtitel = get_field("sikkerhedsudstyr_titel");
+$andedraetsvaerntitel = get_field("andedraetsvaern_titel");
+$forstehjaelptitel = get_field("forstehjaelp_titel");
+$skiltetitel= get_field("skilte_titel");
+$hygiejnetitel = get_field("hygiejne_titel");
+$andedraetsvaerntitel = get_field("andedraetsvaern_titel");
+$rengoringsartiklertitel = get_field("rengoringsartikler_titel");
+$skadedyrtitel = get_field("skadedyr_titel");
+$outlettitel = get_field("outlet_titel");
 
 
+
+rengoringsartikler_titel
 
 ?>
 
@@ -126,45 +139,45 @@ $faldsikringtitel = get_field("faldsikring_titel");
     </header>
     <div class="headerSideMenuCategories">
         <button class="closeBtn">X</button>
-        <h3>Kategorier</h3>
-        <ul>
+        <h3><?php echo($kategoriertitel); ?></h3>
+        <ul>   hygiejnetitel
 
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#arbejdsudstyr">Arbejdsudstyr</a><img src="<?php echo esc_url($sikkerhedsudstyrikon["url"]); ?>" alt=""></li>
+                </svg><a href="#arbejdsudstyr"><?php echo($sikkerhedsudstyrtitel); ?></a><img src="<?php echo esc_url($sikkerhedsudstyrikon["url"]); ?>" alt=""></li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#arbejdstoj">Arbejdstøj</a><img src="<?php echo esc_url($arbejdstojikon["url"]); ?>" alt="">
+                </svg><a href="#arbejdstoj"><?php echo($arbejdstojtitel); ?></a><img src="<?php echo esc_url($arbejdstojikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#andedretsvern">Åndedrætsværn</a><img src="<?php echo esc_url($andedraetsvaernikon["url"]); ?>" alt=""></li>
+                </svg><a href="#andedretsvern"><?php echo($andedraetsvaerntitel); ?></a><img src="<?php echo esc_url($andedraetsvaernikon["url"]); ?>" alt=""></li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#faldsikring">Faldsikring</a><img src="<?php echo esc_url($faldsikringikon["url"]); ?>" alt="">
+                </svg><a href="#faldsikring"><?php echo($faldsikringtitel); ?></a><img src="<?php echo esc_url($faldsikringikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#forstehjelp">Førstehjælp</a><img src="<?php echo esc_url($forstehjaelpikon["url"]); ?>" alt="">
+                </svg><a href="#forstehjelp"><?php echo($forstehjaelptitel); ?></a><img src="<?php echo esc_url($forstehjaelpikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#skilte">Skilte</a><img src="<?php echo esc_url($skilteikon["url"]); ?>" alt=""></li>
+                </svg><a href="#skilte"><?php echo($skiltetitel); ?></a><img src="<?php echo esc_url($skilteikon["url"]); ?>" alt=""></li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#hygiejne">Hygiejne</a><img src="<?php echo esc_url($hygiejneikon["url"]); ?>" alt="">
+                </svg><a href="#hygiejne"><?php echo($hygiejnetitel); ?></a><img src="<?php echo esc_url($hygiejneikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#rengoring">Rengøring</a><img src="<?php echo esc_url($rengoringsartiklerikon["url"]); ?>" alt="">
+                </svg><a href="#rengoring"><?php echo($rengoringsartiklertitel); ?></a><img src="<?php echo esc_url($rengoringsartiklerikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#skadedyr">Skadedyr</a><img src="<?php echo esc_url($skadedyrikon["url"]); ?>" alt="">
+                </svg><a href="#skadedyr"><?php echo($skadedyrtitel); ?></a><img src="<?php echo esc_url($skadedyrikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#outlet">Outlet</a><img src="<?php echo esc_url($outletikon["url"]); ?>" alt=""></li>
+                </svg><a href="#outlet"><?php echo($outlettitel); ?></a><img src="<?php echo esc_url($outletikon["url"]); ?>" alt=""></li>
 
         </ul>
         <h3>Profil</h3>
