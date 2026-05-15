@@ -62,7 +62,7 @@ $Navburgerikon = get_field("nav_burger_ikon");
             </div>
             <div class="navMiddle">
                 <div class="logo">
-                    <video autoplay muted loop playsinline>
+                    <video autoplay muted playsinline>
                         <source src="<?php echo esc_url($headerlogotop['url']); ?>" type="video/mp4">
                     </video>
                 </div>
@@ -110,31 +110,55 @@ $Navburgerikon = get_field("nav_burger_ikon");
         <button class="closeBtn">X</button>
         <h3>Kategorier</h3>
         <ul>
-            <li><img src="img/pil.svg" alt=""><a href="#arbejdsudstyr">Arbejdsudstyr</a><img src="img/hjelmIkon.svg"
-                    alt=""></li>
-            <li><img src="img/pil.svg" alt=""><a href="#arbejdstoj">Arbejdstøj</a><img src="img/hjelmIkon.svg" alt="">
+            <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
+                </svg><a href="#arbejdsudstyr">Arbejdsudstyr</a><img src="img/hjelmIkon.svg" alt=""></li>
+            <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
+                </svg><a href="#arbejdstoj">Arbejdstøj</a><img src="img/hjelmIkon.svg" alt="">
             </li>
-            <li><img src="img/pil.svg" alt=""><a href="#andedretsvern">Åndedrætsværn</a><img src="img/hjelmIkon.svg"
-                    alt=""></li>
-            <li><img src="img/pil.svg" alt=""><a href="#faldsikring">Faldsikring</a><img src="img/hjelmIkon.svg" alt="">
+            <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
+                </svg><a href="#andedretsvern">Åndedrætsværn</a><img src="img/hjelmIkon.svg" alt=""></li>
+            <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
+                </svg><a href="#faldsikring">Faldsikring</a><img src="img/hjelmIkon.svg" alt="">
             </li>
-            <li><img src="img/pil.svg" alt=""><a href="#forstehjelp">Førstehjælp</a><img src="img/hjelmIkon.svg" alt="">
+            <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
+                </svg><a href="#forstehjelp">Førstehjælp</a><img src="img/hjelmIkon.svg" alt="">
             </li>
-            <li><img src="img/pil.svg" alt=""><a href="#skilte">Skilte</a><img src="img/hjelmIkon.svg" alt=""></li>
-            <li><img src="img/pil.svg" alt=""><a href="#hygiejne">Hygiejne</a><img src="img/hjelmIkon.svg" alt="">
+            <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
+                </svg><a href="#skilte">Skilte</a><img src="img/hjelmIkon.svg" alt=""></li>
+            <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
+                </svg><a href="#hygiejne">Hygiejne</a><img src="img/hjelmIkon.svg" alt="">
             </li>
-            <li><img src="img/pil.svg" alt=""><a href="#rengoring">Rengøring</a><img src="img/hjelmIkon.svg" alt="">
+            <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
+                </svg><a href="#rengoring">Rengøring</a><img src="img/hjelmIkon.svg" alt="">
             </li>
-            <li><img src="img/pil.svg" alt=""><a href="#skadedyr">Skadedyr</a><img src="img/hjelmIkon.svg" alt="">
+            <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
+                </svg><a href="#skadedyr">Skadedyr</a><img src="img/hjelmIkon.svg" alt="">
             </li>
-            <li><img src="img/pil.svg" alt=""><a href="#outlet">Outlet</a><img src="img/hjelmIkon.svg" alt=""></li>
+            <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
+                </svg><a href="#outlet">Outlet</a><img src="img/hjelmIkon.svg" alt=""></li>
         </ul>
         <h3>Profil</h3>
         <ul>
-            <li><img src="img/pil.svg" alt=""><a href="#minprofil">Profil</a><img src="img/hjelmIkon.svg" alt="">
+            <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
+                </svg><a href="#minprofil">Profil</a><img src="img/hjelmIkon.svg" alt="">
             </li>
-            <li><img src="img/pil.svg" alt=""><a href="#favoritter">Favoritter</a><img src="img/hjelmIkon.svg" alt="">
+            <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
+                </svg><a href="#favoritter">Favoritter</a><img src="img/hjelmIkon.svg" alt="">
             </li>
-            <li><img src="img/pil.svg" alt=""><a href="#kurv">Kurv</a><img src="img/hjelmIkon.svg" alt=""></li>
+            <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
+                </svg><a href="#kurv">Kurv</a><img src="img/hjelmIkon.svg" alt=""></li>
         </ul>
     </div>
