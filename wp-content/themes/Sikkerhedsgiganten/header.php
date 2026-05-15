@@ -101,39 +101,40 @@ $Navburgerikon = get_field("nav_burger_ikon");
                 </ul>
             </div>
         </div>
-        <div class="headerSideMenuCategories">
-            <button class="closeBtn">X</button>
-            <h3>Kategorier</h3>
-            <ul>
-                <li><img src="img/pil.svg" alt=""><a href="#arbejdsudstyr">Arbejdsudstyr</a><img src="img/hjelmIkon.svg"
-                        alt=""></li>
-                <li><img src="img/pil.svg" alt=""><a href="#arbejdstoj">Arbejdstøj</a><img src="img/hjelmIkon.svg"
-                        alt=""></li>
-                <li><img src="img/pil.svg" alt=""><a href="#andedretsvern">Åndedrætsværn</a><img src="img/hjelmIkon.svg"
-                        alt=""></li>
-                <li><img src="img/pil.svg" alt=""><a href="#faldsikring">Faldsikring</a><img src="img/hjelmIkon.svg"
-                        alt=""></li>
-                <li><img src="img/pil.svg" alt=""><a href="#forstehjelp">Førstehjælp</a><img src="img/hjelmIkon.svg"
-                        alt=""></li>
-                <li><img src="img/pil.svg" alt=""><a href="#skilte">Skilte</a><img src="img/hjelmIkon.svg" alt=""></li>
-                <li><img src="img/pil.svg" alt=""><a href="#hygiejne">Hygiejne</a><img src="img/hjelmIkon.svg" alt="">
-                </li>
-                <li><img src="img/pil.svg" alt=""><a href="#rengoring">Rengøring</a><img src="img/hjelmIkon.svg" alt="">
-                </li>
-                <li><img src="img/pil.svg" alt=""><a href="#skadedyr">Skadedyr</a><img src="img/hjelmIkon.svg" alt="">
-                </li>
-                <li><img src="img/pil.svg" alt=""><a href="#outlet">Outlet</a><img src="img/hjelmIkon.svg" alt=""></li>
-            </ul>
-            <h3>Profil</h3>
-            <ul>
-                <li><img src="img/pil.svg" alt=""><a href="#minprofil">Profil</a><img src="img/hjelmIkon.svg" alt="">
-                </li>
-                <li><img src="img/pil.svg" alt=""><a href="#favoritter">Favoritter</a><img src="img/hjelmIkon.svg"
-                        alt=""></li>
-                <li><img src="img/pil.svg" alt=""><a href="#kurv">Kurv</a><img src="img/hjelmIkon.svg" alt=""></li>
-            </ul>
-        </div>
+
         <div class="headerAds">
 
         </div>
     </header>
+    <div class="headerSideMenuCategories">
+        <button class="closeBtn">X</button>
+        <h3>Kategorier</h3>
+        <ul>
+            <li><img src="img/pil.svg" alt=""><a href="#arbejdsudstyr">Arbejdsudstyr</a><img src="img/hjelmIkon.svg"
+                    alt=""></li>
+            <li><img src="img/pil.svg" alt=""><a href="#arbejdstoj">Arbejdstøj</a><img src="img/hjelmIkon.svg" alt="">
+            </li>
+            <li><img src="img/pil.svg" alt=""><a href="#andedretsvern">Åndedrætsværn</a><img src="img/hjelmIkon.svg"
+                    alt=""></li>
+            <li><img src="img/pil.svg" alt=""><a href="#faldsikring">Faldsikring</a><img src="img/hjelmIkon.svg" alt="">
+            </li>
+            <li><img src="img/pil.svg" alt=""><a href="#forstehjelp">Førstehjælp</a><img src="img/hjelmIkon.svg" alt="">
+            </li>
+            <li><img src="img/pil.svg" alt=""><a href="#skilte">Skilte</a><img src="img/hjelmIkon.svg" alt=""></li>
+            <li><img src="img/pil.svg" alt=""><a href="#hygiejne">Hygiejne</a><img src="img/hjelmIkon.svg" alt="">
+            </li>
+            <li><img src="img/pil.svg" alt=""><a href="#rengoring">Rengøring</a><img src="img/hjelmIkon.svg" alt="">
+            </li>
+            <li><img src="img/pil.svg" alt=""><a href="#skadedyr">Skadedyr</a><img src="img/hjelmIkon.svg" alt="">
+            </li>
+            <li><img src="img/pil.svg" alt=""><a href="#outlet">Outlet</a><img src="img/hjelmIkon.svg" alt=""></li>
+        </ul>
+        <h3>Profil</h3>
+        <ul>
+            <li><img src="img/pil.svg" alt=""><a href="#minprofil">Profil</a><img src="img/hjelmIkon.svg" alt="">
+            </li>
+            <li><img src="img/pil.svg" alt=""><a href="#favoritter">Favoritter</a><img src="img/hjelmIkon.svg" alt="">
+            </li>
+            <li><img src="img/pil.svg" alt=""><a href="#kurv">Kurv</a><img src="img/hjelmIkon.svg" alt=""></li>
+        </ul>
+    </div>

@@ -146,7 +146,7 @@ input:focus{
     
 }
 .headerSideMenuCategories{
-    position: absolute;
+    position: fixed;
     top: 130px;
     background-color: #fafafabd;
     right: -30%;
