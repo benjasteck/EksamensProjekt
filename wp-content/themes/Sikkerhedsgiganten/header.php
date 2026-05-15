@@ -55,7 +55,7 @@ $hygiejneikon = get_field("hygiejne_ikon");
 $rengoringsartiklerikon = get_field("rengoringsartikler_ikon");
 $skadedyrikon = get_field("skadedyr_ikon");
 $outletikon = get_field("outletikon");
-$faldsikringikon = get_field("faldsikringikon");
+$faldsikringikon = get_field("faldsikring_ikon");
 
 
 
