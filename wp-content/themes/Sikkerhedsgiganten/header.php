@@ -54,7 +54,9 @@ $skilteikon = get_field("skilte_ikon");
 $hygiejneikon = get_field("hygiejne_ikon");
 $rengoringsartiklerikon = get_field("rengoringsartikler_ikon");
 $skadedyrikon = get_field("skadedyr_ikon");
-$outletikon = get_field("skadedyr_ikon");
+$outletikon = get_field("outletikon");
+$faldsikringikon = get_field("outletikon");
+
 
 
 
@@ -134,7 +136,7 @@ $outletikon = get_field("skadedyr_ikon");
                 </svg><a href="#andedretsvern">Åndedrætsværn</a><img src="<?php echo esc_url($andedraetsvaernikon["url"]); ?>" alt=""></li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#faldsikring">Faldsikring</a><img src="<?php echo esc_url($faldsikring_ikon["url"]); ?>" alt="">
+                </svg><a href="#faldsikring">Faldsikring</a><img src="<?php echo esc_url($faldsikringikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
