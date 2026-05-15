@@ -56,7 +56,12 @@ $rengoringsartiklerikon = get_field("rengoringsartikler_ikon");
 $skadedyrikon = get_field("skadedyr_ikon");
 $outletikon = get_field("outletikon");
 $faldsikringikon = get_field("faldsikring_ikon");
-
+$vivaerneromdigtitel = get_field("vi_vaerner_om_dig_titel");
+$forsideundertitel = get_field("forside_undertitel");
+$oftesogt = get_field("ofte_sogt");
+$tobdmaskertitel = get_field("tobd_masker_titel");
+$sikkerhedsskotitel = get_field("sikkerhedssko_titel");
+$faldsikringtitel = get_field("faldsikring_titel");
 
 
 
@@ -100,19 +105,19 @@ $faldsikringikon = get_field("faldsikring_ikon");
             <source src="<?php echo esc_url($headervideo['url']); ?>" type="video/mp4">
         </video>
         <div id="headerOverlay"></div>
-
+        
         <div class="headerContent">
-            <h1 id="headerTitle">Vi værner om dig</h1>
-            <h4 id="headerUndertitel">Sikkerhedsudstyr, Arbejdstøj & Rengøring til erhverv og privat</h4>
+            <h1 id="headerTitle"><?php echo($vivaerneromdigtitel); ?></h1>
+            <h4 id="headerUndertitel"><?php echo($forsideundertitel); ?></h4>
             <input type="text" placeholder="Søg her..." id="headerInput">
             <div class="headerContentLower">
-                <p>Ofte søgt</p>
+                <p><?php echo($oftesogt); ?></p>     
                 <ul class="headerContentList">
-                    <li><a href="#handsker">F2CB Masker</a></li>
-                    <li><a href="#fodtøj">Sikkerhedssko</a></li>
-                    <li><a href="#værnemidler">Faldsikring</a></li>
+                    <li><a href="#handsker"><?php echo($tobdmaskertitel); ?></a></li>
+                    <li><a href="#fodtøj"><?php echo($tobdmaskertitel); ?></a></li>
+                    <li><a href="#værnemidler"><?php echo($faldsikringtitel); ?></a></li>     
                 </ul>
-            </div>
+            </div>       
         </div>
 
         <div class="headerAds">              
