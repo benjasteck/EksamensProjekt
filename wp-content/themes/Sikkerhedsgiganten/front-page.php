@@ -97,6 +97,40 @@ $firmabeklaedningmedlogotitel= get_field("firmabeklaedning_med_logo_titel");
 $firmabeklaedningmedlogobrodtekst= get_field("firmabeklaedning_med_logo_brodtekst");
 $professionelradgivningtitel= get_field("professionel_radgivning_titel");
 $professionelradgivningbrodtekst= get_field("professionel_radgivning_brodtekst");
+$maengderabatlilletekst= get_field("maengde_rabat_lille_tekst");
+$skraeddersyetlosningerlilletekst= get_field("skraeddersyet_losninger_lille_tekst");
+$firmabeklaedningmedlogolilletekst= get_field("firmabeklaedning_med_logo_lille_tekst");
+$personaliseredeshopsiderlilletekst= get_field("personaliserede_shop_sider_lille_tekst");
+$professionelradgivninglilletekst= get_field("professionel_radgivning_lille_tekst");
+$professionelradgivningbrodtekst= get_field("professionel_radgivning_brodtekst");
+$sendosenforesporgseltitel= get_field("send_os_en_foresporgsel_titel");
+$sendforesporgseltekst= get_field("send_foresporgsel_tekst");
+$forstetekstbenytformularen= get_field("forste_tekst_benyt_formularen");
+$nrtohenvendelsevia= get_field("nr_to_henvendelse_via");
+$navnekasse= get_field("navne_kasse");
+$mailkasse= get_field("mail_kasse");
+$tlfkasse= get_field("tlf_kasse");
+$skrivbesked= get_field("skriv_besked");
+$sendforesporgseltekst= get_field("send_foresporgsel_tekst");
+$blogstitel= get_field("blogs_titel");
+$blogsundertitel= get_field("blogs_undertitel");
+$blogtosikkerhedssko= get_field("blog_to_sikkerhedssko");
+$blogfirearbejdstoj= get_field("blog_fire_arbejdstoj");
+$blogsetandedraetsvaern= get_field("blogs_et_andedraetsvaern");
+$blogetandedraetsvaernbrodtekst= get_field("blog_et_andedraetsvaern_brodtekst");
+$blogtresikkerhedshjelm= get_field("blog_tre_sikkerhedshjelm");
+$blogtresikkerhjelmbrodtekst= get_field("blog_tre_sikkerhjelm_brodtekst");
+$alleblogs= get_field("alle_blogs");
+$dksstoerstesortiment= get_field("dks_stoerste_sortiment");
+$storstesortimentbrodtekst= get_field("storste_sortiment_brodtekst");
+$foelgsg= get_field("foelg_sg");
+$findoshertekst= get_field("find_os_her_tekst");
+$tilmeldnyhedsbrevtekst= get_field("tilmeld_nyhedsbrev_tekst");
+$kontaktos= get_field("kontakt_os");
+$omostekst= get_field("om_os_tekst");
+$foelgsg= get_field("foelg_sg");
+$foelgsg= get_field("foelg_sg");
+
 ?>
 
 
@@ -317,23 +351,23 @@ $professionelradgivningbrodtekst= get_field("professionel_radgivning_brodtekst")
                 </div>
                 <div class="ervhervsHeroBottom">
                     <div class="erhvervHeroItem">
-                        <p>Mængde rabat</p>
+                        <p><?php echo($maengderabatlilletekst); ?></p>
                         <img src="img/skaArrow.svg" alt="">
                     </div>
                     <div class="erhvervHeroItem">
-                        <p>Skræddersyet løsninger</p>
+                        <p><?php echo($skraeddersyetlosningerlilletekst); ?></p>
                         <img src="img/skaArrow.svg" alt="">
                     </div>
                     <div class="erhvervHeroItem">
-                        <p>Firmabeklædning med logo</p>
+                        <p><?php echo($firmabeklaedningmedlogolilletekst); ?></p>
                         <img src="img/skaArrow.svg" alt="">
                     </div>
                     <div class="erhvervHeroItem">
-                        <p>Personliserede shop sider</p>
+                        <p><?php echo($personaliseredeshopsiderlilletekst); ?></p>
                         <img src="img/skaArrow.svg" alt="">
                     </div>
                     <div class="erhvervHeroItem">
-                        <p>Professionel rådgivning</p>
+                        <p><?php echo($professionelradgivninglilletekst); ?></p>
                         <img src="img/skaArrow.svg" alt="">
                     </div>
                 </div>
@@ -342,8 +376,8 @@ $professionelradgivningbrodtekst= get_field("professionel_radgivning_brodtekst")
         <section id="booking">
             <div class="bookingContent">
                 <div class="bookingLeft">
-                    <h2 class="bookingTitle">Send os en mail! Få et svar hurtigst muligt!</h2>
-                    <h3 class="bookingSubTitle">Udfyld formularen eller ring til os på 75 13 45 10</h3>
+                    <h2 class="bookingTitle"><?php echo($sendosenforesporgseltitel); ?></h2>
+                    <h3 class="bookingSubTitle"><?php echo($sendforesporgseltekst); ?></h3>
                     <div class="bookingLine"></div>
                     <div class="bookingText">
                         <div class="bookingText1">
@@ -351,9 +385,7 @@ $professionelradgivningbrodtekst= get_field("professionel_radgivning_brodtekst")
                                 <h1>1</h1>
                             </div>
                             <div class="bookingTextRight">
-                                <h4>Benyt kontaktformularen og beskriv jeres arrangement. Skriv dine tanker til os, samt
-                                    information om antal af gæster til selskabet, menuen, ønsker og de andre vigtige
-                                    detaljer</h4>
+                                <h4><?php echo($forstetekstbenytformularen); ?></h4>
                             </div>
                         </div>
                         <div class="bookingText2">
@@ -361,10 +393,7 @@ $professionelradgivningbrodtekst= get_field("professionel_radgivning_brodtekst")
                                 <h1>2</h1>
                             </div>
                             <div class="bookingTextRight">
-                                <h4>Efter vi har modtaget din henvendelse over mail eller telefon får du tilsendt et
-                                    skriftligt tilbud til gennemlæsning. Heri er beskrevet alt du skal vide når du
-                                    booker, som ledige dage m.m Bekræft den eventuelle dato, forbered særlige ønsker og
-                                    planer og lad os klare resten af forberedelserne.</h4>
+                                <h4><?php echo($professionelradgivningbrodtekst); ?></h4>
                             </div>
                         </div>
 
@@ -373,58 +402,51 @@ $professionelradgivningbrodtekst= get_field("professionel_radgivning_brodtekst")
                 <div class="bookingRight">
                     <div class="formularContainer">
                         <div class="inputContainer">
-                            <label for="name">Navn</label>
+                            <label for="name"><?php echo($navnekasse); ?></label>
                             <input type="text" class="nameInput" placeholder="Skriv Dit Navn">
                         </div>
 
                         <div class="inputContainer">
-                            <label for="name">Email</label>
+                            <label for="name"><?php echo($mailkasse); ?></label>
                             <input type="text" class="nameInput" placeholder="Skriv Din Email">
                         </div>
 
                         <div class="inputContainer">
-                            <label for="name">TLF</label>
+                            <label for="name"><?php echo($tlfkasse); ?></label>
                             <input type="text" class="nameInput" placeholder="Skriv Dit Telefon Nummer">
                         </div>
 
                         <div class="inputContainer" id="inputStor">
-                            <label for="name">Beskrivelse</label>
+                            <label for="name"><?php echo($skrivbesked); ?></label>
                             <input type="text" class="bigInput"
                                 placeholder="Beskriv selskab, cirka dato for selskabet samt ekstra tanker og ønsker">
                         </div>
                         <div class="inputBtn">
-                            <p>Send forespørgsel</p>
+                            <p><?php echo($sendforesporgseltekst); ?></p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="blogSection">
+        <section id="blogSection">        
             <div class="blogSectionInner">
                 <div class="blogSectionInnerLeft">
                     <div class="blogItem">
-                        <h2>Blogs</h2>
-                        <p>Hold dig opdateret via vores blogs, hvor vi deler ekspertråd om alt fra korrekt brug af ffp3
-                            masker til vedligeholdelse af sikkerhedssko. Du får værdifuld viden om optimering af dit
-                            arbejdsmiljø, valg af personlig sikkerhedsudstyr og de nyeste regler inden for faldsikring.
-                        </p>
+                        <h2><?php echo($blogstitel); ?></h2>
+                        <p><?php echo($blogsundertitel); ?></p>
                     </div>
                     <div class="blogItem">
                         <img src="<?php echo esc_url($blogsikkerhedsskobillede["url"]); ?>"
                             alt="<?php echo $blogsikkerhedsskobillede ["alt"]?>">
-                        <h3>Valg af sikkerhedssko</h3>
-                        <p>Da ingen fødder er ens, kan det være en jungle at finde det mærke eller den model som passer
-                            dig bedst. Via denne guide, kan vi guide dig igennem de forskellige standarder og typer, så
-                            du kan blive klogere på hvilke egenskaber dit nye sikkerhedsfodtøj skal have.</p>
+                        <h3><?php echo($blogtosikkerhedssko); ?></h3>
+                        <p><?php echo($blogtosikkerhedsskobrodtekst); ?></p>
                         <a href="">Læs blog</a>
                     </div>
                     <div class="blogItem">
                         <img src="<?php echo esc_url($blogarbejdstoejbillede["url"]); ?>"
                             alt="<?php echo $blogarbejdstoejbillede ["alt"]?>">
-                        <h3>Valg af arbejdstøj</h3>
-                        <p>Der stilles større og større krav til sikkerheden på arbejdspladsen, dette gælder også vores
-                            påklædning. Vores påklædning er en vigtig del for at opfylde disse sikkerhedsmæssige krav. I
-                            denne guide vil du blive klogere på hvad de forskellige beklædningsgodkendelser betyde</p>
+                        <h3><?php echo($blogfirearbejdstoj); ?></h3>
+                        <p><?php echo($blogfirearbejdstojbrodtekst); ?></p>
                         <a href="">Læs blog</a>
                     </div>
                 </div>
@@ -432,54 +454,35 @@ $professionelradgivningbrodtekst= get_field("professionel_radgivning_brodtekst")
                     <div class="blogItem">
                         <img src="<?php echo esc_url($blogandedraetsvaernbillede["url"]); ?>"
                             alt="<?php echo $blogandedraetsvaernbillede ["alt"]?>">
-                        <h3>Valg af åndedrætsværn</h3>
-                        <p>Et åndedrætsværn er et personligt værnemiddel, der anvendes til beskyttelse mod indånding af
-                            forurenet luft. Det afhænger af åndedrætsværnet, hvilke partikler, gasser og dampe det
-                            beskytter imod.</p>
+                        <h3><?php echo($blogsetandedraetsvaern); ?></h3>
+                        <p><?php echo($blogetandedraetsvaernbrodtekst); ?></p>
                         <a href="">Læs blog</a>
-                    </div>
+                    </div>      
                     <div class="blogItem">
                         <img src="<?php echo esc_url($blogsikkerhedshjelmbillede["url"]); ?>"
                             alt="<?php echo $blogsikkerhedshjelmbillede ["alt"]?>">
-                        <h3>Valg af sikkerhedshjelme</h3>
-                        <p>Hvis arbejdsgiveren vurderer, at den ansatte udsættes for risiko for hovedskader som følge af
-                            faldende genstande, stød eller andre farer på arbejdspladsen, skal der anvendes
-                            sikkerhedshjelm. Det er vigtigt at vælge den rette type hjelm til arbejdsopgaven..</p>
+                        <h3><?php echo($blogtresikkerhedshjelm); ?></h3>
+                        <p><?php echo($blogtresikkerhjelmbrodtekst); ?></p>
                         <a href="">Læs blog</a>
                     </div>
                     <div class="blogItem">
-                        <h2>Læs alle blogs</h2>
-                        <a href="">Se mere</a>
+                        <h2><?php echo($alleblogs); ?></h2>
+                        <a href="">Se mere</a>       
                     </div>
                 </div>
             </div>
-        </section>
+        </section>        
         <section id="sidsteTekst">
             <div class="sidsteTekstLeft">
-                <h3>SikkerhedsGiganten: Danmarks største sortiment af sikkerhedsudstyr</h3>
-                <p>Der findes mange former for sikkerhedsudstyr, og ligeledes mange situationer, hvor udstyret bør tages
-                    i brug for at passe på dig selv. <span>Hos SikkerhedsGiganten</span> er det vores mål at være din
-                    foretrukne forhandler af personlig sikkerhedsudstyr til ethvert behov, uanset om du søger robuste
-                    høreværn eller certificeret øjenværn. <br><br>Vi er stolte af at være Danmarks største forhandler,
-                    og vores webshop er pakket med kategorier, der dækker alt fra førstehjælp og skilte til avancerede
-                    beskyttelsesdragter.
-                    Vi udvider konstant vores sortiment med de nyeste produkter, herunder slidstærkt sikkerhedsfodtøj og
-                    specialiseret sikkerhedsudstyr motorsav, så du altid er beskyttet korrekt. <span>Vores fokus er ikke
-                        kun på det brede udvalg, men også på at tilbyde de bedste priser i Danmark.</span> Det betyder,
-                    at du kan finde alt fra sikkerhedssko til ffp3 masker i højeste kvalitet, som lever op til alle
-                    gældende lovkrav og standarder.<br><br>
-                    Vi ved, at hurtig levering er afgørende for dit projekt. Derfor tilbyder vi lynhurtig og gratis
-                    fragt ved køb over 800 kr. ekskl. moms. Uanset om du mangler et specifikt faldsikring ankerpunkt
-                    eller generelt sikkerhedsudstyr, står vi klar til at hjælpe. Når du vil skabe sikre omgivelser med
-                    professionelt personlig sikkerhedsudstyr, <span>er SikkerhedsGiganten din totalleverandør</span> –
-                    altid til markedets bedste priser.</p>
+                <h3><?php echo($dksstoerstesortiment); ?></h3>
+                <p><?php echo($storstesortimentbrodtekst); ?></p>
             </div>
             <div class="sidsteTekstRight">
                 <img src="img/arbejdstoj.png" alt="">
             </div>
         </section>
-        <section id="socialSektion">
-            <h3 class="socialTitel">Følg Sikkerhedsgiganten</h3>
+        <section id="socialSektion">       
+            <h3 class="socialTitel"><?php echo($foelgsg); ?></h3>
             <div class="someContainer">
                 <a href="" target="_blank"><img src="<?php echo esc_url($instagramikon["url"]); ?>"
                         alt="<?php echo $instagramikon ["alt"]?>"></a>
@@ -489,16 +492,16 @@ $professionelradgivningbrodtekst= get_field("professionel_radgivning_brodtekst")
                         alt="<?php echo $linkedinikon ["alt"]?>"></a>
             </div>
         </section>
-        <section id="bottomLinks">
+        <section id="bottomLinks">              
             <div class="bottomLinksContainer">
                 <a href=""><a href="" target="_blank"><img src="<?php echo esc_url($findosikon["url"]); ?>"
-                            alt="<?php echo $findosikon ["alt"]?>">Find os her</a>
+                            alt="<?php echo $findosikon ["alt"]?>"><?php echo($findoshertekst); ?></a>
                     <a href=""><a href="" target="_blank"><img src="<?php echo esc_url($nyhedsbrevikon["url"]); ?>"
-                                alt="<?php echo $nyhedsbrevikon ["alt"]?>">Tilmeld nyhedsbrev</a>
+                                alt="<?php echo $nyhedsbrevikon ["alt"]?>"><?php echo($tilmeldnyhedsbrevtekst); ?></a>
                         <a href=""><a href="" target="_blank"><img src="<?php echo esc_url($mailikon["url"]); ?>"
-                                    alt="<?php echo $mailikon ["alt"]?>">Kontakt os</a>
+                                    alt="<?php echo $mailikon ["alt"]?>"><?php echo($kontaktos); ?></a>
                             <a href=""><a href="" target="_blank"><img src="<?php echo esc_url($omosikon["url"]); ?>"
-                                        alt="<?php echo $omosikon ["alt"]?>">Om os</a>
+                                        alt="<?php echo $omosikon ["alt"]?>"><?php echo($omostekst); ?></a>
             </div>
         </section>
     </main>
