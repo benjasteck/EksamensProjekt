@@ -73,10 +73,15 @@ $andedraetsvaerntitel = get_field("andedraetsvaern_titel");
 $rengoringsartiklertitel = get_field("rengoringsartikler_titel");
 $skadedyrtitel = get_field("skadedyr_titel");
 $outlettitel = get_field("outlet_titel");
+$profiltitel = get_field("profil_titel");
+$profilundersidetitel = get_field("profil_underside_titel");
+$favorittertitel = get_field("favoritter_titel");
+$kurvtitel = get_field("kurv_titel");
 
 
 
-rengoringsartikler_titel
+
+
 
 ?>
 
@@ -140,7 +145,7 @@ rengoringsartikler_titel
     <div class="headerSideMenuCategories">
         <button class="closeBtn">X</button>
         <h3><?php echo($kategoriertitel); ?></h3>
-        <ul>   hygiejnetitel
+        <ul>   
 
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
@@ -180,18 +185,18 @@ rengoringsartikler_titel
                 </svg><a href="#outlet"><?php echo($outlettitel); ?></a><img src="<?php echo esc_url($outletikon["url"]); ?>" alt=""></li>
 
         </ul>
-        <h3>Profil</h3>
+        <h3><?php echo($profiltitel); ?></h3>         kurvtitel
         <ul>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#minprofil">Profil</a><img src="img/hjelmIkon.svg" alt="">
+                </svg><a href="#minprofil"><?php echo($profilundersidetitel); ?></a><img src="img/hjelmIkon.svg" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#favoritter">Favoritter</a><img src="img/hjelmIkon.svg" alt="">
+                </svg><a href="#favoritter"><?php echo($favorittertitel); ?></a><img src="img/hjelmIkon.svg" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#kurv">Kurv</a><img src="img/hjelmIkon.svg" alt=""></li>
+                </svg><a href="#kurv"><?php echo($kurvtitel); ?></a><img src="img/hjelmIkon.svg" alt=""></li>
         </ul>
-    </div>
+    </div> 
