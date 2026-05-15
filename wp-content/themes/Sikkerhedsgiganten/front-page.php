@@ -49,6 +49,37 @@ $faldsikringnypris= get_field("faldsikring_ny_pris");
 $faldsikringgammelpris= get_field("faldsikring_gammel_pris");
 $faldsikringsemeretekst= get_field("faldsikring_se_mere_tekst");
 $faldsikringrabat= get_field("faldsikring_rabat");
+$andedraetsvaerntitel= get_field("andedraetsvaern_titel");
+$andedraetsvaernnypris= get_field("andedraetsvaern_ny_pris");
+$andedraetsvaerngammelpris= get_field("andedraetsvaern_gammel_pris");
+$andedraetsvaernsemeretekst= get_field("andedraetsvaern_se_mere_tekst");
+$andedraetsvaernrabat= get_field("andedraetsvaern_rabat");
+$sikkerhedsudstyrtilalleopgavertitel= get_field("sikkerhedsudstyr_til_alle_opgaver_titel");
+$sikkerhedsudstyrtilalleopgaverbrodtekst= get_field("sikkerhedsudstyr_til_alle_opgaver_brodtekst");
+$horevaernogearplugstitel= get_field("horevaern_og_earplugs_titel");
+$horevaernogearplugsbrodtekst= get_field("horevaern_og_earplugs_brodtekst");
+$horevaernogearplugssemeretekst= get_field("horevaern_og_earplugs_se_mere_tekst");
+$arbejdshandskertitel= get_field("arbejdshandsker_titel");
+$arbejdshandskerbrodtekst= get_field("arbejdshandsker_brodtekst");
+$arbejdshandskersemeretekst= get_field("arbejdshandsker_se_mere_tekst");
+$sikkerhedsskotitel= get_field("sikkerhedssko_titel");
+$sikkerhedsskosemeretekst= get_field("sikkerhedssko_se_mere_tekst");
+$sikkerhedsskobrodtekst= get_field("sikkerhedssko_brodtekst");
+$arbejdsjakkertitel= get_field("arbejdsjakker_titel");
+$arbejdsjakkersemeretekst= get_field("arbejdsjakker_se_mere_tekst");
+$arbejdshandskerbrodtekst= get_field("arbejdshandsker_brodtekst");
+$andedraetsvaerntitel= get_field("andedraetsvaern_titel");
+$andedraetsvaernbrodtekst= get_field("andedraetsvaern_brodtekst");
+$andedraetsvaernsemeretekst= get_field("andedraetsvaern_se_mere_tekst");
+$faldsikringtitel= get_field("faldsikring_titel");
+$faldsikringbrodtekst= get_field("faldsikring_brodtekst");
+$faldsikringsemeretekst= get_field("faldsikring_se_mere_tekst");
+$ojenskyltitel= get_field("ojenskyl_titel");
+$ojenskylbrodtekst= get_field("ojenskyl_brodtekst");
+$ojenskylsemeretekst= get_field("ojenskyl_se_mere_tekst");
+$sikkerhedshjelmtitel= get_field("sikkerhedshjelm_titel");
+$sikkerhedshjelmbrodtekst= get_field("sikkerhedshjelm_brodtekst");
+$sikkerhedshjelmsemeretekst= get_field("sikkerhedshjelm_se_mere_tekst");
 ?>
 
 
@@ -85,11 +116,11 @@ $faldsikringrabat= get_field("faldsikring_rabat");
                     <img src="<?php echo esc_url($andedraetsvaern["url"]); ?>"
                         alt="<?php echo $andedraetsvaern ["alt"]?>">
                     <div class="tilbudContent">
-                        <h3>Faldsikring</h3>
-                        <p><strike>1000,00 kr.</strike><span> 750,00 kr.</span></p>
-                        <a class="blueCta" href="">Se mere</a>
+                        <h3><?php echo($andedraetsvaerntitel); ?></h3>
+                        <p><strike><?php echo($andedraetsvaerngammelpris); ?></strike><span><?php echo($andedraetsvaernnypris); ?></span></p>
+                        <a class="blueCta" href=""><?php echo($andedraetsvaernsemeretekst); ?></a>
                         <div class="tilbudsMerke">
-                            <p>25%</p>
+                            <p><?php echo($andedraetsvaernrabat); ?></p>
                         </div>
                     </div>
                 </div>
@@ -121,84 +152,78 @@ $faldsikringrabat= get_field("faldsikring_rabat");
         </section>
         <section id="udvalgssektion">
             <div class="udvalgTop">
-                <h2>Stort udvalg og stærke priser til alle situationer</h2>
-                <p>Som Danmarks største forhandler af sikkerhedsudstyr tilbyder vi et omfattende udvalg af produkter i
-                    vores webshop. Fra førstehjælpsudstyr og faldsikring til rengøringsprodukter og skadedyrsbekæmpelse,
-                    vi har alt det nødvendige udstyr til at sikre dit arbejdsmiljø. Se de 8 mest besøgte kategorier
-                    herunder </p>
+                <h2><?php echo($sikkerhedsudstyrtilalleopgavertitel); ?></h2>
+                <p><?php echo($sikkerhedsudstyrtilalleopgaverbrodtekst); ?> </p>
             </div>
             <div class="udvalgGrid">
                 <div class="itemUdvalg">
                     <img src="<?php echo esc_url($horevaern["url"]); ?>" alt="<?php echo $horevaern ["alt"]?>">
                     <div class="itemUdvalgFlex">
-                        <p>Høreværn</p>
-                        <a href="">Se mere</a>
+                        <p><?php echo($horevaernogearplugstitel); ?></p>
+                        <a href=""><?php echo($horevaernogearplugssemeretekst); ?></a>
                     </div>
-                    <p>Beskyt din hørelse med komfortable høreværn i høj kvalitet, der effektivt dæmper skadelig støj.
-                    </p>
+                    <p><?php echo($horevaernogearplugsbrodtekst); ?></p>
                 </div>
                 <div class="itemUdvalg">
                     <img src="<?php echo esc_url($arbejdshandsker["url"]); ?>"
                         alt="<?php echo $arbejdshandsker ["alt"]?>">
                     <div class="itemUdvalgFlex">
-                        <p>Arbejdshandsker</p>
-                        <a href="">Se mere</a>
+                        <p><?php echo($arbejdshandskertitel); ?></p>
+                        <a href=""><?php echo($arbejdshandskersemeretekst); ?></a>
                     </div>
-                    <p>Slidstærke arbejdshandsker med komfort og godt greb.</p>
+                    <p><?php echo($arbejdshandskerbrodtekst); ?></p>
                 </div>
                 <div class="itemUdvalg">
                     <img src="<?php echo esc_url($sikkerhedssko["url"]); ?>" alt="<?php echo $sikkerhedssko ["alt"]?>">
                     <div class="itemUdvalgFlex">
-                        <p>Sikkerhedssko</p>
-                        <a href="">Se mere</a>
+                        <p><?php echo($sikkerhedsskotitel); ?></p>
+                        <a href=""><?php echo($sikkerhedsskosemeretekst); ?></a>
                     </div>
-                    <p>Sikkerhedssko med komfortabel pasform og solid beskyttelse, der sikrer godt greb og stabilitet.
-                    </p>
+                    <p><?php echo($sikkerhedsskobrodtekst); ?></p>
                 </div>
                 <div class="itemUdvalg">
                     <img src="<?php echo esc_url($arbejdsjakke["url"]); ?>" alt="<?php echo $arbejdsjakke ["alt"]?>">
                     <div class="itemUdvalgFlex">
-                        <p>Arbejdsjakker</p>
-                        <a href="">Se mere</a>
+                        <p><?php echo($arbejdsjakkertitel); ?></p>
+                        <a href=""><?php echo($arbejdsjakkersemeretekst); ?></a>
                     </div>
-                    <p>Arbejdsjakker med komfort og slidstærk beskyttelse, der sikrer bevægelse hele dagen.</p>
+                    <p><?php echo($arbejdshandskerbrodtekst); ?></p>
                 </div>
                 <div class="itemUdvalg">
                     <img src="<?php echo esc_url($andedraetsvaernbillede["url"]); ?>"
                         alt="<?php echo $andedraetsvaernbillede ["alt"]?>">
                     <div class="itemUdvalgFlex">
-                        <p>Åndedrætsværn</p>
-                        <a href="">Se mere</a>
+                        <p><?php echo($andedraetsvaerntitel); ?></p>
+                        <a href=""><?php echo($andedraetsvaernsemeretekst); ?></a>
                     </div>
-                    <p>Åndedrætsværn med komfortabel pasform og god filtrering, der beskytter mod skadelige partikler.
-                    </p>
+                    <p><?php echo($andedraetsvaernbrodtekst); ?></p>
                 </div>
                 <div class="itemUdvalg">
                     <img src="<?php echo esc_url($faldsikringbillede["url"]); ?>"
                         alt="<?php echo $faldsikringbillede ["alt"]?>">
                     <div class="itemUdvalgFlex">
-                        <p>Faldsikring</p>
-                        <a href="">Se mere</a>
+                        <p><?php echo($faldsikringtitel); ?></p>
+                        <a href=""><?php echo($faldsikringsemeretekst); ?></a>
                     </div>
-                    <p>Faldsikring med høj sikkerhed og komfort, der beskytter effektivt ved arbejde i højden.</p>
+                    <p><?php echo($faldsikringbrodtekst); ?></p>
                 </div>
                 <div class="itemUdvalg">
                     <img src="<?php echo esc_url($ojenskylbillede["url"]); ?>"
                         alt="<?php echo $ojenskylbillede ["alt"]?>">
                     <div class="itemUdvalgFlex">
-                        <p>Øjenskyl</p>
-                        <a href="">Se mere</a>
+                        <p><?php echo($ojenskyltitel); ?></p>
+                        <a href=""><?php echo($ojenskylsemeretekst); ?></a>
                     </div>
-                    <p>Øjenskyl til hurtig og effektiv rensning, der beskytter dine øjne ved uheld.</p>
+                    <p><?php echo($ojenskylbrodtekst); ?></p>
                 </div>
                 <div class="itemUdvalg">
-                    <img src="<?php echo esc_url($ojenskylbillede["url"]); ?>"
-                        alt="<?php echo $ojenskylbillede ["alt"]?>">
+                    <img src="<?php echo esc_url($sikkerhedshjelmbillede["url"]); ?>"
+                        alt="<?php echo $sikkerhedshjelmbillede ["alt"]?>">
                     <div class="itemUdvalgFlex">
-                        <p>Sikkerhedshjelm</p>
-                        <a href="">Se mere</a>
+                        <p><?php echo($sikkerhedshjelmtitel); ?></p>
+                        <a href=""><?php echo($sikkerhedshjelmsemeretekst); ?></a>
                     </div>
-                    <p>Arbejdshjelm med høj komfort og robust beskyttelse, der sikrer dit hoved hele dagen.</p>
+                    <p><?php echo($sikkerhedshjelmbrodtekst); ?></p>
                 </div>
             </div>
         </section>
