@@ -23,9 +23,14 @@ $mantors = get_field("man_tors");
 $mantorsabningstider= get_field("man-tors_abningstider");
 $fredag= get_field("fredag");
 $fredagabningstider= get_field("fredag_abningstider");
+$faq= get_field("faq");
+$fredagabningstider= get_field("fredag_abningstider");
+$fredagabningstider= get_field("fredag_abningstider");
+$fredagabningstider= get_field("fredag_abningstider");
+$fredagabningstider= get_field("fredag_abningstider");
 
 
-fredag
+faq
 
 
 
@@ -55,7 +60,7 @@ fredag
                         <p class="kontaktBottomTitel"><?php echo($mantors); ?></p>
                         <p class="kontaktBottomTekst"> <?php echo($mantorsabningstider); ?></p>
                     </div>     
-                    <div class="kontaktBottomContainer">    fredag
+                    <div class="kontaktBottomContainer">    
                         <p class="kontaktBottomTitel"><?php echo($fredag); ?>:</p>
                         <p class="kontaktBottomTekst"><?php echo($fredagabningstider); ?></p>    
                     </div>
@@ -65,8 +70,8 @@ fredag
         </div>
     </section>
     <section id="faq">
-        <div class="faqTop">
-            <p class="faqTopOvertitel">FAQ</p>
+        <div class="faqTop">      
+            <p class="faqTopOvertitel"><?php echo($faq); ?></p>
             <h2>Ofte stillede spørgsmål</h2>
             <p>På denne side finder du vores samling af hyppigt stillede spørgsmål, hvor du kan få svar på en bred vifte
                 af emner, uanset om de er store eller små. Du skal blot klikke på et af punkterne for at få mere
