@@ -80,6 +80,23 @@ $ojenskylsemeretekst= get_field("ojenskyl_se_mere_tekst");
 $sikkerhedshjelmtitel= get_field("sikkerhedshjelm_titel");
 $sikkerhedshjelmbrodtekst= get_field("sikkerhedshjelm_brodtekst");
 $sikkerhedshjelmsemeretekst= get_field("sikkerhedshjelm_se_mere_tekst");
+$folgsgpasometitel= get_field("folg_sg_pa_some_titel");
+$holddigopdateretnyhedsmailtitel= get_field("hold_dig_opdateret_nyhedsmail_titel");
+$holddigopdateretnyhedsmailunderteksttilmelddig= get_field("hold_dig_opdateret_nyhedsmail_undertekst_tilmeld_dig");
+$dinefordelesomerhvervskunde= get_field("dine_fordele_som_erhvervskunde");
+$dinefordelesomerhvervskunde= get_field("dine_fordele_som_erhvervskunde");
+$tilmelddiglilletekst= get_field("tilmeld_dig_lille_tekst");
+$logindlilletekst= get_field("log_ind_lille_tekst");
+$maengderabattitel= get_field("maengderabat_titel");
+$maengderabatbrodtekst= get_field("maengderabat_brodtekst");
+$skraeddersyetlosningertitel= get_field("skraeddersyet_losninger_titel");
+$skraeddersyetlosningerbrodtekst= get_field("skraeddersyet_losninger_brodtekst");
+$personaliseredeshopsidertitel= get_field("personaliserede_shop_sider_titel");
+$personaliseredeshopsiderbrodtekst= get_field("personaliserede_shop_sider_brodtekst");
+$firmabeklaedningmedlogotitel= get_field("firmabeklaedning_med_logo_titel");
+$firmabeklaedningmedlogobrodtekst= get_field("firmabeklaedning_med_logo_brodtekst");
+$professionelradgivningtitel= get_field("professionel_radgivning_titel");
+$professionelradgivningbrodtekst= get_field("professionel_radgivning_brodtekst");
 ?>
 
 
@@ -228,7 +245,7 @@ $sikkerhedshjelmsemeretekst= get_field("sikkerhedshjelm_se_mere_tekst");
             </div>
         </section>
         <section id="socialSektion">
-            <h3 class="socialTitel">Følg Sikkerhedsgiganten</h3>
+            <h3 class="socialTitel"><?php echo($folgsgpasometitel); ?></h3>
             <div class="someContainer">
                 <a href="" target="_blank"><img src="<?php echo esc_url($instagramikon["url"]); ?>"
                         alt="<?php echo $instagramikon ["alt"]?>"></a>
@@ -239,8 +256,8 @@ $sikkerhedshjelmsemeretekst= get_field("sikkerhedshjelm_se_mere_tekst");
             </div>
             <div class="newsletterContainer">
                 <div class="newsletterLeft">
-                    <h3>Hold dig opdateret om tilbud, nyheder og artikler</h3>
-                    <p>tilmeld dig vores nyhedsbrev.</p>
+                    <h3><?php echo($holddigopdateretnyhedsmailtitel); ?></h3>
+                    <p><?php echo($holddigopdateretnyhedsmailunderteksttilmelddig); ?></p>
                     <form method="post">
                         <input type="email" name="Email" placeholder="Din Email">
                         <button type="submit" value=" ">
@@ -260,7 +277,7 @@ $sikkerhedshjelmsemeretekst= get_field("sikkerhedshjelm_se_mere_tekst");
             <div class="logoGrid" id="logoGrid"></div>
             <div class="logoGridFog" id="logoGridFog"></div>
             <div class="logoGridContent">
-                <h2>Dine fordele som <br>erhvervskunde</h2>
+            <?php echo($dinefordelesomerhvervskunde); ?>
             </div>
 
         </section>
@@ -269,47 +286,33 @@ $sikkerhedshjelmsemeretekst= get_field("sikkerhedshjelm_se_mere_tekst");
                 <div class="erhvervHeroBg"></div>
                 <div class="top1Wrapper">
                     <div class="erhvervsHeroTop" id="top0">
-                        <h2>Dine fordele som <br>erhvervskunde</h2>
+                    <?php echo($dinefordelesomerhvervskunde); ?>
                         <div class="erhvervsHeroTopLinks">
-                            <a href="">Tilmeld dig</a>
+                            <a href=""> <?php echo($tilmelddiglilletekst); ?></a>
                             <span>|</span>
-                            <a href="">Log ind</a>
+                            <a href=""><?php echo($logindlilletekst); ?></a>
                         </div>
                     </div>
 
                     <div class="erhvervsHeroTop1" id="top1">
-                        <h2>Mængde rabat</h2>
-                        <p>Som erhvervskunde hos SikkerhedsGiganten får du adgang til attraktive mængderabatter på
-                            personlig sikkerhedsudstyr, der er skræddersyet til din virksomheds specifikke behov. Vi
-                            guider dig sikkert gennem hele processen</p>
+                        <h2><?php echo($maengderabattitel); ?></h2>
+                        <p><?php echo($maengderabatbrodtekst); ?></p>
                     </div>
                     <div class="erhvervsHeroTop1" id="top2">
-                        <h2>Skræddersyet løsninger</h2>
-                        <p>Som erhvervskunde hos SikkerhedsGiganten får du en skræddersyet firmaaftale på arbejdstøj og
-                            personlig sikkerhedsudstyr, der matcher din virksomheds profil. Vi kombinerer professionel
-                            rådgivning med attraktive mængderabatter på alt fra slidstærkt beklædning til godkendt
-                            sikkerhedsfodtøj.</p>
+                        <h2><?php echo($skraeddersyetlosningertitel); ?></h2>
+                        <p><?php echo($skraeddersyetlosningerbrodtekst); ?></p>
                     </div>
                     <div class="erhvervsHeroTop1" id="top3">
-                        <h2>Firmabeklædning med logo</h2>
-                        <p>Gør jeres arbejdstøj unikt og professionelt med virksomhedens eget logo. Vores løsninger
-                            inden for firmabeklædning med logo sikrer et skarpt visuelt udtryk, uden at gå på kompromis
-                            med komforten i jeres personlige sikkerhedsudstyr.</p>
+                        <h2><?php echo($firmabeklaedningmedlogotitel); ?></h2>
+                        <p><?php echo($firmabeklaedningmedlogobrodtekst); ?></p>
                     </div>
                     <div class="erhvervsHeroTop1" id="top4">
-                        <h2>Personaliserede shop sider</h2>
-                        <p>Med en B2B-aftale hos SikkerhedsGiganten får din virksomhed en skræddersyet løsning med faste
-                            specialpriser på jeres mest brugte personlig sikkerhedsudstyr, såsom sikkerhedsfodtøj og
-                            ffp3 masker. I får jeres egen online shop, der gør det nemt at bestille på tværs af
-                            afdelinger døgnet rundt, med fuldt overblik over priser, ordrer og status.</p>
+                        <h2><?php echo($personaliseredeshopsidertitel); ?></h2>
+                        <p><?php echo($personaliseredeshopsiderbrodtekst); ?></p>
                     </div>
                     <div class="erhvervsHeroTop1" id="top5">
-                        <h2>Professionel rådgivning</h2>
-                        <p>Vores erhvervskonsulenter er eksperter i at guide din virksomhed til det rette valg af
-                            arbejdstøj og personlig sikkerhedsudstyr, så I får en løsning, der forener design med høj
-                            funktionalitet. Vi sammensætter et personligt sortiment af alt fra slidstærkt beklædning til
-                            certificeret sikkerhedsfodtøj, hvilket gør det enkelt og hurtigt for jer at genbestille det
-                            nødvendige udstyr online.</p>
+                        <h2><?php echo($professionelradgivningtitel); ?></h2>
+                        <p><?php echo($professionelradgivningbrodtekst); ?></p>
                     </div>
                 </div>
                 <div class="ervhervsHeroBottom">
