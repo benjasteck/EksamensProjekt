@@ -185,7 +185,7 @@ $kurvtitel = get_field("kurv_titel");
                 </svg><a href="#outlet"><?php echo($outlettitel); ?></a><img src="<?php echo esc_url($outletikon["url"]); ?>" alt=""></li>
 
         </ul>
-        <h3><?php echo($profiltitel); ?></h3>         kurvtitel
+        <h3><?php echo($profiltitel); ?></h3>         
         <ul>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />

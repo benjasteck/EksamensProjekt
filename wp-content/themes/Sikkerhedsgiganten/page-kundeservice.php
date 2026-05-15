@@ -14,29 +14,50 @@ $kundeservicefindos = get_field("kundeservice_find_os");
 $kundeservicenyhedsbrev = get_field("kundeservice_nyhedsbrev");
 $kundeservicekontaktos = get_field("kundeservice_kontakt_os");
 $kundeserviceomos = get_field("kundeservice_om_os");
+$sikkerhedsgigantentitel = get_field("sikkerhedsgiganten_titel");
+$lillebaeltsvejtresabtekst = get_field("lillebaeltsvej_tres_ab_tekst");
+$tlfnummertekst = get_field("tlf_nummer_tekst");
+$email = get_field("email");
+$abningstidertitel= get_field("abningstider_titel");
+$mantors = get_field("man_tors");
+$mantorsabningstider= get_field("man-tors_abningstider");
+$fredag= get_field("fredag");
+$fredagabningstider= get_field("fredag_abningstider");
+
+
+fredag
+
+
+
+
+
+
+
+
+
 ?>
 <main>
     <section id="kontakt">
         <div class="kontaktLeft">
             <img src="img/kort.jpg" alt="">
         </div>
-        <div class="kontaktRight">
+        <div class="kontaktRight">           
             <div class="kontaktRightTop">
-                <h2>Sikkerhedsgiganten</h2>
-                <p>Lillebæltsvej 60 - A/B 6715 Esbjerg N</p>
-                <p>Tlf: 71 99 32 60</p>
-                <p>Email: info@sikkerhedsgiganten.dk</p>
+                <h2><?php echo($sikkerhedsgigantentitel); ?></h2>
+                <p><?php echo($lillebaeltsvejtresabtekst); ?></p>    
+                <p><?php echo($tlfnummertekst); ?></p>
+                <p><?php echo($email); ?></p>
             </div>
             <div class="kontaktRightBottom">
-                <h2>Åbningstider</h2>
-                <div class="kontaktBottom">
+                <h2><?php echo($abningstidertitel); ?></h2>
+                <div class="kontaktBottom">         
                     <div class="kontaktBottomContainer">
-                        <p class="kontaktBottomTitel">Mandag til torsdag</p>
-                        <p class="kontaktBottomTekst"> 8:00 - 16:00</p>
-                    </div>
-                    <div class="kontaktBottomContainer">
-                        <p class="kontaktBottomTitel">Fredag:</p>
-                        <p class="kontaktBottomTekst">8:00 - 15.30</p>
+                        <p class="kontaktBottomTitel"><?php echo($mantors); ?></p>
+                        <p class="kontaktBottomTekst"> <?php echo($mantorsabningstider); ?></p>
+                    </div>     
+                    <div class="kontaktBottomContainer">    fredag
+                        <p class="kontaktBottomTitel"><?php echo($fredag); ?>:</p>
+                        <p class="kontaktBottomTekst"><?php echo($fredagabningstider); ?></p>    
                     </div>
                 </div>
             </div>
