@@ -38,7 +38,17 @@ $findosikon = get_field("find_os_ikon");
 $nyhedsbrevikon = get_field("nyhedsbrev_ikon");
 $mailikon = get_field("mail_ikon");
 $omosikon = get_field("om_os_ikon");
-
+$tilbudtitelhero= get_field("tilbud_titel_hero");
+$toiletpapirtitel= get_field("toiletpapir_titel");
+$toiletpapirnypris= get_field("toiletpapir_ny_pris");
+$toiletpapirgammelpris= get_field("toiletpapir_gammel_pris");
+$toiletpapirsemeretekst= get_field("toiletpapir_se_mere_tekst");
+$toiletpapirrabat= get_field("toiletpapir_rabat");
+$faldsikringtitel= get_field("faldsikring_titel");
+$faldsikringnypris= get_field("faldsikring_ny_pris");
+$faldsikringgammelpris= get_field("faldsikring_gammel_pris");
+$faldsikringsemeretekst= get_field("faldsikring_se_mere_tekst");
+$faldsikringrabat= get_field("faldsikring_rabat");
 ?>
 
 
@@ -47,27 +57,27 @@ $omosikon = get_field("om_os_ikon");
 <main>
     <main>
         <section id="bedsteTilbud">
-            <h2>De nyeste tilbud</h2>
+            <h2><?php echo($tilbudtitelhero); ?></h2>
             <div class="tilbudsContainer">
                 <div class="tilbud">
                     <img src="<?php echo esc_url($toiletpapir["url"]); ?>" alt="<?php echo $toiletpapir ["alt"]?>">
                     <div class="tilbudContent">
-                        <h3>Toiletpapir</h3>
-                        <p><strike>500,00 kr.</strike><span> 300,00 kr.</span></p>
-                        <a class="blueCta" href="">Se mere</a>
+                        <h3><?php echo($toiletpapirtitel); ?></h3>
+                        <p><strike><?php echo($toiletpapirgammelpris); ?></strike><span> <?php echo($toiletpapirnypris); ?></span></p>
+                        <a class="blueCta" href=""><?php echo($toiletpapirsemeretekst); ?></a>
                         <div class="tilbudsMerke">
-                            <p>10%</p>
+                            <p><?php echo($toiletpapirrabat); ?></p>
                         </div>
                     </div>
                 </div>
                 <div class="tilbud">
                     <img src="<?php echo esc_url($faldsikring["url"]); ?>" alt="<?php echo $faldsikring ["alt"]?>">
                     <div class="tilbudContent">
-                        <h3>Sikkerhedssko</h3>
-                        <p><strike>800,00 kr.</strike><span> 600,00 kr.</span></p>
-                        <a class="blueCta" href="">Se mere</a>
+                        <h3><?php echo($faldsikringtitel); ?></h3>
+                        <p><strike><?php echo($faldsikringgammelpris); ?></strike><span><?php echo($faldsikringnypris); ?></span></p>
+                        <a class="blueCta" href=""><?php echo($faldsikringsemeretekst); ?></a>
                         <div class="tilbudsMerke">
-                            <p>25%</p>
+                            <p><?php echo($faldsikringrabat); ?></p>
                         </div>
                     </div>
                 </div>
