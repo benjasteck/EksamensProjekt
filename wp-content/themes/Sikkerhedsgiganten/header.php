@@ -46,6 +46,17 @@ $headerlogotop = get_field("logo_top");
 $Navhjerteikon = get_field("nav_hjerte_ikon");
 $Navkurvikon = get_field("nav_kurv_ikon");
 $Navburgerikon = get_field("nav_burger_ikon");
+$sikkerhedsudstyrikon = get_field("sikkerhedsudstyr_ikon");
+$arbejdstojikon = get_field("arbejdstoj_ikon");
+$andedraetsvaernikon = get_field("andedraetsvaern_ikon");
+$forstehjaelpikon = get_field("forstehjaelp_ikon");
+$skilteikon = get_field("skilte_ikon");
+$hygiejneikon = get_field("hygiejne_ikon");
+$rengoringsartiklerikon = get_field("rengoringsartikler_ikon");
+$skadedyrikon = get_field("skadedyr_ikon");
+$outletikon = get_field("skadedyr_ikon");
+
+
 
 ?>
 
@@ -102,7 +113,7 @@ $Navburgerikon = get_field("nav_burger_ikon");
             </div>
         </div>
 
-        <div class="headerAds">
+        <div class="headerAds">              
 
         </div>
     </header>
@@ -110,24 +121,16 @@ $Navburgerikon = get_field("nav_burger_ikon");
         <button class="closeBtn">X</button>
         <h3>Kategorier</h3>
         <ul>
-            <li><img src="img/pil.svg" alt=""><a href="#arbejdsudstyr">Arbejdsudstyr</a><img src="img/hjelmIkon.svg"
-                    alt=""></li>
-            <li><img src="img/pil.svg" alt=""><a href="#arbejdstoj">Arbejdstøj</a><img src="img/hjelmIkon.svg" alt="">
-            </li>
-            <li><img src="img/pil.svg" alt=""><a href="#andedretsvern">Åndedrætsværn</a><img src="img/hjelmIkon.svg"
-                    alt=""></li>
-            <li><img src="img/pil.svg" alt=""><a href="#faldsikring">Faldsikring</a><img src="img/hjelmIkon.svg" alt="">
-            </li>
-            <li><img src="img/pil.svg" alt=""><a href="#forstehjelp">Førstehjælp</a><img src="img/hjelmIkon.svg" alt="">
-            </li>
-            <li><img src="img/pil.svg" alt=""><a href="#skilte">Skilte</a><img src="img/hjelmIkon.svg" alt=""></li>
-            <li><img src="img/pil.svg" alt=""><a href="#hygiejne">Hygiejne</a><img src="img/hjelmIkon.svg" alt="">
-            </li>
-            <li><img src="img/pil.svg" alt=""><a href="#rengoring">Rengøring</a><img src="img/hjelmIkon.svg" alt="">
-            </li>
-            <li><img src="img/pil.svg" alt=""><a href="#skadedyr">Skadedyr</a><img src="img/hjelmIkon.svg" alt="">
-            </li>
-            <li><img src="img/pil.svg" alt=""><a href="#outlet">Outlet</a><img src="img/hjelmIkon.svg" alt=""></li>
+            <li><img src="img/pil.svg" alt=""><a href="#arbejdsudstyr">Arbejdsudstyr</a><?php echo esc_url($sikkerhedsudstyrikon["url"]); ?></li>
+            <li><img src="img/pil.svg" alt=""><a href="#arbejdstoj">Arbejdstøj</a><?php echo esc_url($arbejdstojikon["url"]); ?></li>
+            <li><img src="img/pil.svg" alt=""><a href="#andedretsvern">Åndedrætsværn</a><?php echo esc_url($andedraetsvaernikon["url"]); ?></li>
+            <li><img src="img/pil.svg" alt=""><a href="#faldsikring">Faldsikring</a><?php echo esc_url($faldsikring_ikon["url"]); ?></li>
+            <li><img src="img/pil.svg" alt=""><a href="#forstehjelp">Førstehjælp</a><?php echo esc_url($forstehjaelpikon["url"]); ?></li>
+            <li><img src="img/pil.svg" alt=""><a href="#skilte">Skilte</a><?php echo esc_url($skilteikon["url"]); ?></li>
+            <li><img src="img/pil.svg" alt=""><a href="#hygiejne">Hygiejne</a><?php echo esc_url($hygiejneikon["url"]); ?></li>
+            <li><img src="img/pil.svg" alt=""><a href="#rengoring">Rengøring</a><?php echo esc_url($rengoringsartiklerikon["url"]); ?></li>
+            <li><img src="img/pil.svg" alt=""><a href="#skadedyr">Skadedyr</a><?php echo esc_url($skadedyrikon["url"]); ?></li>
+            <li><img src="img/pil.svg" alt=""><a href="#outlet">Outlet</a><?php echo esc_url($outletikon["url"]); ?></li>
         </ul>
         <h3>Profil</h3>
         <ul>
