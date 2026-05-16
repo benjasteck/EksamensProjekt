@@ -8,9 +8,9 @@ $kontaktfindos = get_field("kontakt_find_os");
 $kontaktnyhedsbrev = get_field("kontakt_nyhedsbrev");
 $kontaktkontaktos = get_field("kontakt_kontakt_os");
 $kontaktsikkerhedsgigantentitel = get_field("kontakt_sikkerhedsgiganten_titel");
-$kontaktomos = get_field("kontakt_om_os");
-$kontaktomos = get_field("kontakt_om_os");
-$kontaktomos = get_field("kontakt_om_os");
+$kontaktadresse = get_field("kontakt_adresse");
+$kontakttlfnr = get_field("kontakt_tlf_nr");
+$kontaktemail = get_field("kontakt_email");
 
 
 
@@ -22,10 +22,10 @@ $kontaktomos = get_field("kontakt_om_os");
     </div>
     <div class="kontaktRight">
         <div class="kontaktRightTop">
-            <h2><?php echo($sikkerhedsgiganten_titel); ?></h2> 
-            <p><?php echo($adresse); ?></p>
-            <p><?php echo($tlf_nr); ?></p>
-            <p><?php echo($email); ?></p>
+            <h2><?php echo($kontaktsikkerhedsgigantentitel); ?></h2> 
+            <p><?php echo($kontaktadresse); ?></p>
+            <p><?php echo($kontakttlfnr); ?></p>
+            <p><?php echo($kontaktemail); ?></p>
         </div>
         <div class="kontaktRightBottom">
             <h2>Åbningstider</h2>
@@ -113,7 +113,7 @@ $kontaktomos = get_field("kontakt_om_os");
 </section>
 <section id="bottomLinks">
     <div class="bottomLinksContainer">
-    <a href=""><img src="<?php echo esc_url($kontaktfindos["url"]); ?>" alt="<?php echo $kontaktfindos ["alt"]?>">Find os her</a>
+    <a href=""><img src="<?php echo esc_url($kontaktfindos["url"]); ?>" alt="<?php echo $kontaktfindos ["alt"]?>"><?php echo($kontaktfindos); ?></a>
             <a href=""><img src="<?php echo esc_url($kontaktnyhedsbrev["url"]); ?>" alt="<?php echo $kontaktnyhedsbrev ["alt"]?>"><?php echo($kontaktnyhedsbrev); ?></a>
             <a href=""><img src="<?php echo esc_url($kontaktkontaktos["url"]); ?>" alt="<?php echo $kontaktkontaktos ["alt"]?>"><?php echo($kontaktkontaktos); ?></a>
             <a href=""><img src="<?php echo esc_url($kontaktomos["url"]); ?>" alt="<?php echo $kontaktomos ["alt"]?>"><?php echo($kontaktomos); ?></a>
