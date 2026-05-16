@@ -7,10 +7,12 @@ $kontaktlinkedin = get_field("kontakt_linkedin");
 $kontaktfindos = get_field("kontakt_find_os");
 $kontaktnyhedsbrev = get_field("kontakt_nyhedsbrev");
 $kontaktkontaktos = get_field("kontakt_kontakt_os");
+$kontaktkontaktostitel = get_field("kontakt_os_titel");
 $kontaktsikkerhedsgigantentitel = get_field("kontakt_sikkerhedsgiganten_titel");
-$kontaktadresse = get_field("kontakt_adresse");
-$kontakttlfnr = get_field("kontakt_tlf_nr");
-$kontaktemail = get_field("kontakt_email");
+$kontaktfindoshertitel = get_field("find_os_her_titel");
+$kontakttilmeldnyhedsbrevtitel = get_field("tilmeld_nyhedsbrev_titel");
+$kontakttlfnrtitel = get_field("tlf_nr_titel");
+$kontaktemailtitel = get_field("email_titel");
 
 
 
@@ -23,9 +25,9 @@ $kontaktemail = get_field("kontakt_email");
     <div class="kontaktRight">
         <div class="kontaktRightTop">
             <h2><?php echo($kontaktsikkerhedsgigantentitel); ?></h2> 
-            <p><?php echo($kontaktadresse); ?></p>
-            <p><?php echo($kontakttlfnr); ?></p>
-            <p><?php echo($kontaktemail); ?></p>
+            <p><?php echo($kontaktadressetitel); ?></p>
+            <p><?php echo($kontakttlfnrtitel); ?></p>
+            <p><?php echo($kontaktemailtitel); ?></p>
         </div>
         <div class="kontaktRightBottom">
             <h2>Åbningstider</h2>
@@ -113,10 +115,10 @@ $kontaktemail = get_field("kontakt_email");
 </section>
 <section id="bottomLinks">
     <div class="bottomLinksContainer">
-    <a href=""><img src="<?php echo esc_url($kontaktfindos["url"]); ?>" alt="<?php echo $kontaktfindos ["alt"]?>"><?php echo($kontaktfindos); ?></a>
-            <a href=""><img src="<?php echo esc_url($kontaktnyhedsbrev["url"]); ?>" alt="<?php echo $kontaktnyhedsbrev ["alt"]?>"><?php echo($kontaktnyhedsbrev); ?></a>
-            <a href=""><img src="<?php echo esc_url($kontaktkontaktos["url"]); ?>" alt="<?php echo $kontaktkontaktos ["alt"]?>"><?php echo($kontaktkontaktos); ?></a>
-            <a href=""><img src="<?php echo esc_url($kontaktomos["url"]); ?>" alt="<?php echo $kontaktomos ["alt"]?>"><?php echo($kontaktomos); ?></a>
+    <a href=""><img src="<?php echo esc_url($kontaktfindos["url"]); ?>" alt="<?php echo $kontaktfindos ["alt"]?>"><?php echo($kontaktfindoshertitel); ?></a>
+            <a href=""><img src="<?php echo esc_url($kontaktnyhedsbrev["url"]); ?>" alt="<?php echo $kontaktnyhedsbrev ["alt"]?>"><?php echo($kontakttilmeldnyhedsbrevtitel); ?></a>
+            <a href=""><img src="<?php echo esc_url($kontaktkontaktos["url"]); ?>" alt="<?php echo $kontaktkontaktos ["alt"]?>"><?php echo($kontaktkontaktostitel); ?></a>
+            <a href=""><img src="<?php echo esc_url($kontaktomos["url"]); ?>" alt="<?php echo $kontaktomos ["alt"]?>"><?php echo($kontaktomostitel); ?></a>
     </div>
 </section>
 <?php get_footer(); ?>
