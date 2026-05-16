@@ -42,18 +42,12 @@ $handelsbetingelsertitel= get_field("handelsbetingelser_titel");
 $generelleoplysningertitel= get_field("generelle_oplysninger_titel");
 $handelsbetingelserbrodtekst= get_field("handelsbetingelser_brodtekst");
 $sikkerhedsgigantenpaasome= get_field("sikkerhedsgiganten_paa_some");
-$handelsbetingelsertitel= get_field("handelsbetingelser_titel");
-$handelsbetingelsertitel= get_field("handelsbetingelser_titel");
-$handelsbetingelsertitel= get_field("handelsbetingelser_titel");
-$handelsbetingelsertitel= get_field("handelsbetingelser_titel");
-$handelsbetingelsertitel= get_field("handelsbetingelser_titel");
-$handelsbetingelsertitel= get_field("handelsbetingelser_titel");
-$handelsbetingelsertitel= get_field("handelsbetingelser_titel");
-$handelsbetingelsertitel= get_field("handelsbetingelser_titel");
-$handelsbetingelsertitel= get_field("handelsbetingelser_titel");
-
-
+$findoshertitel= get_field("find_os_her_titel");
+$tilmeldnyhedsbrevtitel= get_field("tilmeld_nyhedsbrev_titel");
+$kontaktostitel= get_field("kontakt_os_titel");
+$omostitel= get_field("om_os_titel");
 ?>
+
 <main>
     <section id="kontakt">
         <div class="kontaktLeft">
@@ -662,12 +656,12 @@ $handelsbetingelsertitel= get_field("handelsbetingelser_titel");
             <a href="" target="_blank"><img src="<?php echo esc_url($kundeservicesomelinkedin["url"]); ?>" alt="<?php echo $kundeservicesomelinkedin ["alt"]?>"></a>
         </div>
     </section>
-    <section id="bottomLinks">
+    <section id="bottomLinks">    
         <div class="bottomLinksContainer">
-            <a href=""><img src="<?php echo esc_url($kundeservicefindos["url"]); ?>" alt="<?php echo $kundeservicefindos ["alt"]?>">Find os her</a>
-            <a href=""><img src="<?php echo esc_url($kundeservicenyhedsbrev["url"]); ?>" alt="<?php echo $kundeservicenyhedsbrev ["alt"]?>">Tilmeld nyhedsbrev</a>
-            <a href=""><img src="<?php echo esc_url($kundeservicekontaktos["url"]); ?>" alt="<?php echo $kundeservicekontaktos ["alt"]?>">Kontakt os</a>
-            <a href=""><img src="<?php echo esc_url($kundeserviceomos["url"]); ?>" alt="<?php echo $kundeserviceomos ["alt"]?>">Om os</a>
+            <a href=""><img src="<?php echo esc_url($kundeservicefindos["url"]); ?>" alt="<?php echo $kundeservicefindos ["alt"]?>"><?php echo($findoshertitel); ?></a>
+            <a href=""><img src="<?php echo esc_url($kundeservicenyhedsbrev["url"]); ?>" alt="<?php echo $kundeservicenyhedsbrev ["alt"]?>"><?php echo($tilmeldnyhedsbrevtitel); ?></a>  
+            <a href=""><img src="<?php echo esc_url($kundeservicekontaktos["url"]); ?>" alt="<?php echo $kundeservicekontaktos ["alt"]?>"><?php echo($kontaktostitel); ?></a>  
+            <a href=""><img src="<?php echo esc_url($kundeserviceomos["url"]); ?>" alt="<?php echo $kundeserviceomos ["alt"]?>"><?php echo($omostitel); ?></a>   
         </div>
     </section>
 </main>
