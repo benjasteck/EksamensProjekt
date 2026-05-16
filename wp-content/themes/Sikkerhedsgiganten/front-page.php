@@ -115,6 +115,7 @@ $sendforesporgseltekst= get_field("send_foresporgsel_tekst");
 $blogstitel= get_field("blogs_titel");
 $blogsundertitel= get_field("blogs_undertitel");
 $blogtosikkerhedssko= get_field("blog_to_sikkerhedssko");
+$blogtosikkerhedsskobrodtekst= get_field("blogtosikkerhedsskobrodtekst");
 $blogfirearbejdstoj= get_field("blog_fire_arbejdstoj");
 $blogsetandedraetsvaern= get_field("blogs_et_andedraetsvaern");
 $blogetandedraetsvaernbrodtekst= get_field("blog_et_andedraetsvaern_brodtekst");
