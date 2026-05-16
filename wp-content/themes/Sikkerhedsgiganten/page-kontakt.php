@@ -8,11 +8,13 @@ $kontaktfindos = get_field("kontakt_find_os");
 $kontaktnyhedsbrev = get_field("kontakt_nyhedsbrev");
 $kontaktkontaktos = get_field("kontakt_kontakt_os");
 $kontaktkontaktostitel = get_field("kontakt_os_titel");
-$kontaktsikkerhedsgigantentitel = get_field("kontakt_sikkerhedsgiganten_titel");
+$kontaktsikkerhedsgigantentitel = get_field("sikkerhedsgiganten_titel");
 $kontaktfindoshertitel = get_field("find_os_her_titel");
 $kontakttilmeldnyhedsbrevtitel = get_field("tilmeld_nyhedsbrev_titel");
 $kontakttlfnrtitel = get_field("tlf_nr_titel");
 $kontaktemailtitel = get_field("email_titel");
+$kontaktomos = get_field("kontakt_om_os");
+$kontaktomostitel = get_field("om_os_titel");
 
 
 
