@@ -25,10 +25,26 @@ $medarbejdertonavn = get_field("medarbejder_to_navn");
 $medarbejdertojobtitel = get_field("medarbejder_to_job_titel");
 $medarbejdertotlfnr = get_field("medarbejder_to_tlf_nr");
 $medarbejdertoemail = get_field("medarbejder_to_email");
-$medarbejderettlfnr = get_field("medarbejder_et_tlf_nr");
-$medarbejderettlfnr = get_field("medarbejder_et_tlf_nr");
-$medarbejderettlfnr = get_field("medarbejder_et_tlf_nr");
-$medarbejderettlfnr = get_field("medarbejder_et_tlf_nr");
+$medarbejdertrenavn = get_field("medarbejder_tre_navn");
+$medarbejdertrejobtitel = get_field("medarbejder_tre_job_titel");
+$medarbejdertretlfnr = get_field("medarbejder_tre_tlf_nr");
+$medarbejdertreemail = get_field("medarbejder_tre_email");
+$vipasserpadigtitel = get_field("vi_passer_pa_dig_titel");
+$vipasserpadigbrodtekst = get_field("vi_passer_pa_dig_brodtekst");
+$faenerhvervsaftaletitel = get_field("fa_en_erhvervsaftale_titel");
+$sikkerhedsgigantenbannerreklametitel= get_field("sikkerhedsgiganten_banner_reklame_titel");
+$medarbejdertreemail = get_field("medarbejder_tre_email");
+$medarbejdertreemail = get_field("medarbejder_tre_email");
+$medarbejdertreemail = get_field("medarbejder_tre_email");
+$medarbejdertreemail = get_field("medarbejder_tre_email");
+$medarbejdertreemail = get_field("medarbejder_tre_email");
+$medarbejdertreemail = get_field("medarbejder_tre_email");
+
+
+
+
+
+
 
 
 
@@ -60,11 +76,11 @@ $medarbejderettlfnr = get_field("medarbejder_et_tlf_nr");
         </div>
         <div class="medArbejderItem">
         <img src="<?php echo esc_url($medarbejder3["url"]); ?>" alt="<?php echo $medarbejder3 ["alt"]?>">
-            <h5>Annemette Hansen</h5>
-            <p>Bogholder <br>
-                Tlf: 73 11 13 52</p>
+            <h5><?php echo esc_url($medarbejdertrenavn["url"]); ?></h5>  
+            <p><?php echo esc_url($medarbejdertrejobtitel["url"]); ?> <br>   
+            <?php echo esc_url($medarbejdertretlfnr["url"]); ?></p> 
             <a href="mailto:am@sikkerhedsgiganten.dk?subject=rick roll&body=never gonna give u upp">
-                am@sikkerhedsgiganten.dk
+            <?php echo esc_url($medarbejdertreemail["url"]); ?>
             </a>
         </div>
     </div>
@@ -73,38 +89,31 @@ $medarbejderettlfnr = get_field("medarbejder_et_tlf_nr");
 
 <img src="<?php echo esc_url($vipasserpådig2["url"]); ?>" alt="<?php echo $vipasserpådig2 ["alt"]?>" class="pasImg2">
 <img src="<?php echo esc_url($vipasserpådig1["url"]); ?>" alt="<?php echo $vipasserpådig1 ["alt"]?>" class="pasImg1">
-    <div class="pasContainer">
-        <h2>Vi passer på dig!</h2>
-        <p>Du er vigtig, og vores mål er at hjælpe dig med at udføre dine opgaver sikkert. Med det rette personlig
-            sikkerhedsudstyr behøver du aldrig være nervøs for sikkerheden, hverken på arbejdet eller i hjemmet – helt
-            enkelt: ”Vi passer på dig!”
-            <br><br>
-            Vores vision er at være Danmarks bedste leverandør af sikkerhedsudstyr til alle. Det er et ambitiøst mål,
-            der forpligter, og derfor gør vi vores yderste for at servicere dig med markedets største udvalg. Uanset om
-            du søger professionelle høreværn, øjenværn, slidstærke beskyttelsesdragter eller certificeret
-            sikkerhedsfodtøj, garanterer vi effektiv og lynhurtig levering, så du altid er optimalt beskyttet.
+    <div class="pasContainer">   
+        <h2><?php echo esc_url($vipasserpadigtitel["url"]); ?></h2>   
+        <p><?php echo esc_url($vipasserpadigbrodtekst["url"]); ?><
         </p>
-        <a href="">Få en erhvervsaftale</a>
-
+        <a href=""><?php echo esc_url($faenerhvervsaftaletitel["url"]); ?></a>
+        
     </div>
 
 </section>
 <section id="testimonials">
     <div class="testimonialsContaner"></div>
     <div class="sGSlider">
-        <div class="sGSlider1">
-            <h2>Sikkerhedsgiganten.dk</h2>
-            <h2>Sikkerhedsgiganten.dk</h2>
-            <h2>Sikkerhedsgiganten.dk</h2>
+        <div class="sGSlider1">   
+            <h2><?php echo esc_url($sikkerhedsgigantenbannerreklametitel["url"]); ?></h2>
+            <h2><?php echo esc_url($sikkerhedsgigantenbannerreklametitel["url"]); ?></h2>
+            <h2><?php echo esc_url($sikkerhedsgigantenbannerreklametitel["url"]); ?></h2>
 
-            <h2>Sikkerhedsgiganten.dk</h2>
-            <h2>Sikkerhedsgiganten.dk</h2>
+            <h2><?php echo esc_url($sikkerhedsgigantenbannerreklametitel["url"]); ?></h2>
+            <h2><?php echo esc_url($sikkerhedsgigantenbannerreklametitel["url"]); ?></h2>
 
         </div>
         <div class="sGSlider2">
-            <h2>Sikkerhedsgiganten.dk</h2>
-            <h2>Sikkerhedsgiganten.dk</h2>
-            <h2>Sikkerhedsgiganten.dk</h2>
+            <h2><?php echo esc_url($sikkerhedsgigantenbannerreklametitel["url"]); ?></h2>
+            <h2><?php echo esc_url($sikkerhedsgigantenbannerreklametitel["url"]); ?></h2>
+            <h2><?php echo esc_url($sikkerhedsgigantenbannerreklametitel["url"]); ?></h2>
         </div>
     </div>
     <div class="testimonialsContaner"></div>
@@ -135,7 +144,7 @@ $medarbejderettlfnr = get_field("medarbejder_et_tlf_nr");
         <p>Ved at indgå en firmaaftale med os, kan du spare værdifuld tid, energi og ressourcer. Vores komplette
             pakkeløsninger, der inkluderer firmatøj med logo, tilbyder en kombination af kvalitet og stil, der er
             skræddersyet præcis til din virksomheds unikke behov.</p>
-        <a href="">Få en erhvervsaftale</a>
+        <a href=""><?php echo esc_url($faenerhvervsaftaletitel["url"]); ?></a>
     </div>
     <div class="osItem" id="osItem3">
     <img src="<?php echo esc_url($arbejdstoj["url"]); ?>" alt="<?php echo $arbejdstoj ["alt"]?>">
