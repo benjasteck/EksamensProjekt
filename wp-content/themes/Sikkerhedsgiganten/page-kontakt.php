@@ -109,9 +109,9 @@ $kontaktomos = get_field("kontakt_om_os");
 <section id="bottomLinks">
     <div class="bottomLinksContainer">
     <a href=""><img src="<?php echo esc_url($kontaktfindos["url"]); ?>" alt="<?php echo $kontaktfindos ["alt"]?>">Find os her</a>
-            <a href=""><img src="<?php echo esc_url($kontaktnyhedsbrev["url"]); ?>" alt="<?php echo $kontaktnyhedsbrev ["alt"]?>">Tilmeld nyhedsbrev</a>
-            <a href=""><img src="<?php echo esc_url($kontaktkontaktos["url"]); ?>" alt="<?php echo $kontaktkontaktos ["alt"]?>">Kontakt os</a>
-            <a href=""><img src="<?php echo esc_url($kontaktomos["url"]); ?>" alt="<?php echo $kontaktomos ["alt"]?>">Om os</a>
+            <a href=""><img src="<?php echo esc_url($kontaktnyhedsbrev["url"]); ?>" alt="<?php echo $kontaktnyhedsbrev ["alt"]?>"><?php echo($tilmeld_nyhedsbrev); ?></a>
+            <a href=""><img src="<?php echo esc_url($kontaktkontaktos["url"]); ?>" alt="<?php echo $kontaktkontaktos ["alt"]?>"><?php echo($kontakt_os); ?></a>
+            <a href=""><img src="<?php echo esc_url($kontaktomos["url"]); ?>" alt="<?php echo $kontaktomos ["alt"]?>"><?php echo($om_os); ?></a>
     </div>
 </section>
 <?php get_footer(); ?>
