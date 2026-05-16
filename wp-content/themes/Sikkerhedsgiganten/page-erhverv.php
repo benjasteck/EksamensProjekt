@@ -42,8 +42,6 @@ $findoshertitel = get_field("find_os_her_titel");
 $tilmeldnyhedsbrevtitel = get_field("tilmeld_nyhedsbrev_titel");
 $kontaktostitel = get_field("kontakt_os_titel");
 $omostitel = get_field("om_os_titel");
-
-
 ?>
 
 <section class="logoGridSection">
