@@ -8,6 +8,20 @@ $erhvervfindos = get_field("erhverv_find_os");
 $erhvervnyhedsbrev = get_field("erhverv_nyhedsbrev");
 $erhvervkontaktos = get_field("erhverv_kontakt_os");
 $erhvervomos = get_field("erhverv_om_os");
+$dinefordelesomerhvervskundetitel= get_field("dine_fordele_som_erhvervskunde_titel");
+$tilmelddigtekst = get_field("tilmeld_dig_tekst");
+$logindtekst = get_field("log_ind_tekst");
+$maengderabattitel = get_field("maengde_rabat_titel");
+$maengerabatbrodtekst = get_field("maenge_rabat_brodtekst");
+$skraeddersyetlosningertitel = get_field("skraeddersyet_losninger_titel");
+$skraeddersyetlosningerbrodtekst = get_field("skraeddersyet_losninger_brodtekst");
+$erhvervomos = get_field("erhverv_om_os");
+$erhvervomos = get_field("erhverv_om_os");
+$erhvervomos = get_field("erhverv_om_os");
+$erhvervomos = get_field("erhverv_om_os");
+
+
+tilmeld_dig_tekst
 
 ?>
 
@@ -15,8 +29,8 @@ $erhvervomos = get_field("erhverv_om_os");
     <div class="logoGrid" id="logoGrid"></div>
     <div class="logoGridFog" id="logoGridFog"></div>
     <div class="logoGridContent">
-        <h2>Dine fordele som <br>erhvervskunde</h2>
-    </div>
+        <h2><?php echo($dinefordelesomerhvervskundetitel); ?></h2>
+    </div>     
 
 </section>
 <section class="erhvervHerosection">
@@ -24,29 +38,24 @@ $erhvervomos = get_field("erhverv_om_os");
         <div class="erhvervHeroBg"></div>
         <div class="top1Wrapper">
             <div class="erhvervsHeroTop" id="top0">
-                <h2>Dine fordele som <br>erhvervskunde</h2>
+                <h2><?php echo($dinefordelesomerhvervskundetitel); ?></h2>
                 <div class="erhvervsHeroTopLinks">
-                    <a href="">Tilmeld dig</a>
+                    <a href=""><?php echo($tilmelddigtekst); ?></a>
                     <span>|</span>
-                    <a href="">Log ind</a>
+                    <a href=""><?php echo($logindtekst); ?></a>
                 </div>
-            </div>
+            </div>     
 
             <div class="erhvervsHeroTop1" id="top1">
-                <h2>Mængde rabat</h2>
-                <p>Som erhvervskunde hos SikkerhedsGiganten får du adgang til attraktive mængderabatter på personlig
-                    sikkerhedsudstyr, der er skræddersyet til din virksomheds specifikke behov. Vi guider dig sikkert
-                    gennem hele processen</p>
+                <h2><?php echo($maengderabattitel); ?></h2>
+                <p><?php echo($maengerabatbrodtekst);?></p>
             </div>
             <div class="erhvervsHeroTop1" id="top2">
-                <h2>Skræddersyet løsninger</h2>
-                <p>Som erhvervskunde hos SikkerhedsGiganten får du en skræddersyet firmaaftale på arbejdstøj og
-                    personlig sikkerhedsudstyr, der matcher din virksomheds profil. Vi kombinerer professionel
-                    rådgivning med attraktive mængderabatter på alt fra slidstærkt beklædning til godkendt
-                    sikkerhedsfodtøj.</p>
+                <h2><?php echo($skraeddersyetlosningertitel);?></h2>   
+                <p><?php echo($skraeddersyetlosningerbrodtekst);?></p>
             </div>
             <div class="erhvervsHeroTop1" id="top3">
-                <h2>Firmabeklædning med logo</h2>
+                <h2>Firmabeklædning med logo</h2>  
                 <p>Gør jeres arbejdstøj unikt og professionelt med virksomhedens eget logo. Vores løsninger inden for
                     firmabeklædning med logo sikrer et skarpt visuelt udtryk, uden at gå på kompromis med komforten i
                     jeres personlige sikkerhedsudstyr.</p>
