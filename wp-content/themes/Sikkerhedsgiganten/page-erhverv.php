@@ -21,13 +21,27 @@ $personaliseredeshopsidertitel = get_field("personaliserede_shop_sider_titel");
 $personaliseredeshopsiderbrodtekst = get_field("personaliserede_shop_sider_brodtekst");
 $professionelradgivningtitel = get_field("professionel_radgivning_titel");
 $professionelradgivningbrodtekst= get_field("professionel_radgivning_brodtekst");
-$maengderabattitel = get_field("maengde_rabat_titel");
+$maengderabatlilletekst = get_field("maengde_rabat_lille_tekst");
+$skraeddersyetlosningerlilletekst = get_field("skraeddersyet_losninger_lille_tekst");
+$firmabeklaedningmedlogolilletekst = get_field("firmabeklaedning_med_logo_lille_tekst");
+$personaliseredeshopsiderlilletekst = get_field("personaliserede_shop_sider_lille_tekst");
+$professionelradgivninglilletekst = get_field("professionel_radgivning_lille_tekst");
+$sendosenmailogvikontakterdigtitel = get_field("send_os_en_mail_og_vi_kontakter_dig_titel");
+$sendosenmailfaetsvarhurtigstmuligt = get_field("send_os_en_mail_fa_et_svar_hurtigst_muligt");
+$udfyldformularenellerringtitel = get_field("udfyld_formularen_eller_ring_titel");
+$etbenytkontaktformularentekst = get_field("et_benyt_kontaktformularen_tekst");
+$tonarviharmodtagetdinhenvendelsetekst = get_field("to_nar_vi_har_modtaget_din_henvendelse_tekst");
+$navntitel = get_field("navn_titel");
+$emailtitel= get_field("e-mail_titel");
+$tlftitel = get_field("tlf_titel");
+$skrivdinemail = get_field("skriv_din_email");
+$sendforesporgseltitel = get_field("send_foresporgsel_titel");
+$folgsikkerhedsgigantentitel = get_field("folg_sikkerhedsgiganten_titel");
 $logindtekst = get_field("log_ind_tekst");
-$logindtekst = get_field("log_ind_tekst");
-$logindtekst = get_field("log_ind_tekst");
-$logindtekst = get_field("log_ind_tekst");
-$logindtekst = get_field("log_ind_tekst");
-$logindtekst = get_field("log_ind_tekst");
+$findoshertitel = get_field("find_os_her_titel");
+$tilmeldnyhedsbrevtitel = get_field("tilmeld_nyhedsbrev_titel");
+$kontaktostitel = get_field("kontakt_os_titel");
+$omostitel = get_field("om_os_titel");
 
 
 ?>
@@ -75,24 +89,24 @@ $logindtekst = get_field("log_ind_tekst");
             </div>
         </div>
         <div class="ervhervsHeroBottom">
-            <div class="erhvervHeroItem">  maengderabattitel
-                <p>Mængde rabat</p>
+            <div class="erhvervHeroItem">  
+                <p><?php echo($maengderabatlilletekst);?></p>
                 <img src="img/skaArrow.svg" alt="">
             </div>
             <div class="erhvervHeroItem">
-                <p>Skræddersyet løsninger</p>
+                <p><?php echo($skraeddersyetlosningerlilletekst);?></p>
                 <img src="img/skaArrow.svg" alt="">
             </div>
             <div class="erhvervHeroItem">
-                <p>Firmabeklædning med logo</p>
+                <p><?php echo($firmabeklaedningmedlogolilletekst);?></p>
                 <img src="img/skaArrow.svg" alt="">
             </div>
             <div class="erhvervHeroItem">
-                <p>Personliserede shop sider</p>
+                <p><?php echo($personaliseredeshopsiderlilletekst);?></p>
                 <img src="img/skaArrow.svg" alt="">
             </div>
             <div class="erhvervHeroItem">
-                <p>x</p>
+                <p><?php echo($professionelradgivninglilletekst);?></p>
                 <img src="img/skaArrow.svg" alt="">
             </div>
         </div>
@@ -100,19 +114,17 @@ $logindtekst = get_field("log_ind_tekst");
 </section>
 <section id="booking">
     <div class="bookingContent">
-        <div class="bookingLeft">
-            <h2 class="bookingTitle">Send os en mail! Få et svar hurtigst muligt!</h2>
-            <h3 class="bookingSubTitle">Udfyld formularen eller ring til os på 75 13 45 10</h3>
+        <div class="bookingLeft">   <?php echo($sendosenmailogvikontakterdigtitel);?>
+            <h2 class="bookingTitle"><?php echo($sendosenmailfaetsvarhurtigstmuligt);?></h2>
+            <h3 class="bookingSubTitle"><?php echo($udfyldformularenellerringtitel);?></h3>
             <div class="bookingLine"></div>
             <div class="bookingText">
                 <div class="bookingText1">
                     <div class="bookingTextLeft">
                         <h1>1</h1>
                     </div>
-                    <div class="bookingTextRight">
-                        <h4>Benyt kontaktformularen og beskriv jeres arrangement. Skriv dine tanker til os, samt
-                            information om antal af gæster til selskabet, menuen, ønsker og de andre vigtige detaljer
-                        </h4>
+                    <div class="bookingTextRight">  
+                        <h4><?php echo($etbenytkontaktformularentekst);?></h4>
                     </div>
                 </div>
                 <div class="bookingText2">
@@ -120,10 +132,7 @@ $logindtekst = get_field("log_ind_tekst");
                         <h1>2</h1>
                     </div>
                     <div class="bookingTextRight">
-                        <h4>Efter vi har modtaget din henvendelse over mail eller telefon får du tilsendt et skriftligt
-                            tilbud til gennemlæsning. Heri er beskrevet alt du skal vide når du booker, som ledige dage
-                            m.m Bekræft den eventuelle dato, forbered særlige ønsker og planer og lad os klare resten af
-                            forberedelserne.</h4>
+                        <h4><?php echo($tonarviharmodtagetdinhenvendelsetekst);?></h4>
                     </div>
                 </div>
 
@@ -131,35 +140,35 @@ $logindtekst = get_field("log_ind_tekst");
         </div>
         <div class="bookingRight">
             <div class="formularContainer">
-                <div class="inputContainer">
-                    <label for="name">Navn</label>
+                <div class="inputContainer">  
+                    <label for="name"><?php echo($navntitel);?></label>
                     <input type="text" class="nameInput" placeholder="Skriv Dit Navn">
                 </div>
 
-                <div class="inputContainer">
-                    <label for="name">Email</label>
+                <div class="inputContainer">  
+                    <label for="name"><?php echo($emailtitel);?></label>
                     <input type="text" class="nameInput" placeholder="Skriv Din Email">
                 </div>
 
                 <div class="inputContainer">
-                    <label for="name">TLF</label>
+                    <label for="name"><?php echo($tlftitel);?></label>
                     <input type="text" class="nameInput" placeholder="Skriv Dit Telefon Nummer">
                 </div>
 
                 <div class="inputContainer" id="inputStor">
-                    <label for="name">Beskrivelse</label>
+                    <label for="name"><?php echo($skrivdinemail);?></label>
                     <input type="text" class="bigInput"
                         placeholder="Beskriv selskab, cirka dato for selskabet samt ekstra tanker og ønsker">
                 </div>
                 <div class="inputBtn">
-                    <p>Send forespørgsel</p>
+                    <p><?php echo($sendforesporgseltitel);?></p>
                 </div>
-            </div>
+            </div>   
         </div>
     </div>
 </section>
 <section id="socialSektion">
-    <h3 class="socialTitel">Følg Sikkerhedsgiganten</h3>
+    <h3 class="socialTitel"><?php echo($folgsikkerhedsgigantentitel);?></h3>
     <div class="someContainer">
         <a href="" target="_blank"><img src="<?php echo esc_url($erhvervinstagram["url"]); ?>" alt="<?php echo $erhvervinstagram ["alt"]?>"></a>
         <a href="" target="_blank"><img src="<?php echo esc_url($erhvervfacebook["url"]); ?>" alt="<?php echo $erhvervfacebook ["alt"]?>"></a>
@@ -168,10 +177,10 @@ $logindtekst = get_field("log_ind_tekst");
 </section>
 <section id="bottomLinks">
     <div class="bottomLinksContainer">
-        <a href=""><img src="<?php echo esc_url($erhvervfindos["url"]); ?>" alt="<?php echo $erhvervfindos ["alt"]?>">Find os her</a>
-        <a href=""><img src="<?php echo esc_url($erhvervnyhedsbrev["url"]); ?>" alt="<?php echo $erhvervnyhedsbrev ["alt"]?>">Tilmeld nyhedsbrev</a>
-        <a href=""><img src="<?php echo esc_url($erhvervkontaktos["url"]); ?>" alt="<?php echo $erhvervkontaktos ["alt"]?>">Kontakt os</a>
-        <a href=""><img src="<?php echo esc_url($erhvervomos["url"]); ?>" alt="<?php echo $erhvervomos ["alt"]?>">Om os</a>
+        <a href=""><img src="<?php echo esc_url($erhvervfindos["url"]); ?>" alt="<?php echo $erhvervfindos ["alt"]?>"><?php echo($findoshertitel);?></a>  
+        <a href=""><img src="<?php echo esc_url($erhvervnyhedsbrev["url"]); ?>" alt="<?php echo $erhvervnyhedsbrev ["alt"]?>"><?php echo($tilmeldnyhedsbrevtitel);?></a>
+        <a href=""><img src="<?php echo esc_url($erhvervkontaktos["url"]); ?>" alt="<?php echo $erhvervkontaktos ["alt"]?>"><?php echo($kontaktostitel);?></a>
+        <a href=""><img src="<?php echo esc_url($erhvervomos["url"]); ?>" alt="<?php echo $erhvervomos ["alt"]?>"><?php echo($omostitel);?></a>
     </div>
 </section>
 <?php get_footer(); ?>
