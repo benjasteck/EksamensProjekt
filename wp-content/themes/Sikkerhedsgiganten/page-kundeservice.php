@@ -35,20 +35,22 @@ $sporgsmaltilleveringtitel= get_field("sporgsmal_til_levering_titel");
 $sporgsmaltilbetalingtitel= get_field("sporgsmal_til_betaling_titel");
 $sporgsmaltilreturneringtitel= get_field("sporgsmal_til_returnering_titel");
 $sporgsmalvdrerhvervsaftaletitel= get_field("sporgsmal_vdr_erhvervsaftale_titel");
-$harduetsporgsmaltitel= get_field("har_du_et_sporgsmal_titel");
-$harduetsporgsmaltitel= get_field("har_du_et_sporgsmal_titel");
-$harduetsporgsmaltitel= get_field("har_du_et_sporgsmal_titel");
-$harduetsporgsmaltitel= get_field("har_du_et_sporgsmal_titel");
-
-
-
-
-
-
-
-
-
-
+$vipasserpadigtitel= get_field("vi_passer_pa_dig_titel");
+$vipasserpadigtekstbrodtekst= get_field("vi_passer_pa_dig_tekst_brodtekst");
+$faenerhvervsaftaletitel= get_field("fa_en_erhvervsaftale_titel");
+$handelsbetingelsertitel= get_field("handelsbetingelser_titel");
+$generelleoplysningertitel= get_field("generelle_oplysninger_titel");
+$handelsbetingelserbrodtekst= get_field("handelsbetingelser_brodtekst");
+$sikkerhedsgigantenpaasome= get_field("sikkerhedsgiganten_paa_some");
+$handelsbetingelsertitel= get_field("handelsbetingelser_titel");
+$handelsbetingelsertitel= get_field("handelsbetingelser_titel");
+$handelsbetingelsertitel= get_field("handelsbetingelser_titel");
+$handelsbetingelsertitel= get_field("handelsbetingelser_titel");
+$handelsbetingelsertitel= get_field("handelsbetingelser_titel");
+$handelsbetingelsertitel= get_field("handelsbetingelser_titel");
+$handelsbetingelsertitel= get_field("handelsbetingelser_titel");
+$handelsbetingelsertitel= get_field("handelsbetingelser_titel");
+$handelsbetingelsertitel= get_field("handelsbetingelser_titel");
 
 
 ?>
@@ -175,17 +177,9 @@ $harduetsporgsmaltitel= get_field("har_du_et_sporgsmal_titel");
     <img src="<?php echo esc_url($vipasserpådig2["url"]); ?>" alt="<?php echo $vipasserpådig2 ["alt"]?>" class="pasImg2">
         <img src="<?php echo esc_url($vipasserpådig1["url"]); ?>" alt="<?php echo $vipasserpådig1 ["alt"]?>" class="pasImg1">
         <div class="pasContainer">
-            <h2>Vi passer på dig!</h2>
-            <p>Du er vigtig, og vores mål er at hjælpe dig med at udføre dine opgaver sikkert. Med det rette personlig
-                sikkerhedsudstyr behøver du aldrig være nervøs for sikkerheden, hverken på arbejdet eller i hjemmet –
-                helt enkelt: ”Vi passer på dig!”
-                <br><br>
-                Vores vision er at være Danmarks bedste leverandør af sikkerhedsudstyr til alle. Det er et ambitiøst
-                mål, der forpligter, og derfor gør vi vores yderste for at servicere dig med markedets største udvalg.
-                Uanset om du søger professionelle høreværn, øjenværn, slidstærke beskyttelsesdragter eller certificeret
-                sikkerhedsfodtøj, garanterer vi effektiv og lynhurtig levering, så du altid er optimalt beskyttet.
-            </p>
-            <a href="">Få en erhvervsaftale</a>
+            <h2><?php echo($vipasserpadigtitel); ?></h2>
+            <p><?php echo($vipasserpadigtekstbrodtekst); ?></p>
+            <a href=""><?php echo($faenerhvervsaftaletitel); ?></a>
 
         </div>
 
@@ -205,12 +199,11 @@ $harduetsporgsmaltitel= get_field("har_du_et_sporgsmal_titel");
             <div class="pill-overlay"></div>
         </div>
         <div class="menuIntro">
-            <div class="menuIntroContainer">
+            <div class="menuIntroContainer">     
                 <div class="menuIntroItem activeIntro" id="intro-handelsbetingelser">
-                    <p>Generelle oplysninger</p>
-                    <h2>Handelsbetingelser</h2>
-                    <p>Her finder du alt, hvad du behøver at vide om levering, priser, betaling, retur og dine
-                        rettigheder, når du handler hos os – både som privat- og erhvervskunde.</p>
+                    <p><?php echo($generelleoplysningertitel); ?></p>
+                    <h2><?php echo($handelsbetingelsertitel); ?></h2>
+                    <p><?php echo($handelsbetingelserbrodtekst); ?></p>        
                 </div>
                 <div class="menuIntroItem" id="intro-cookiepolitik">
                     <p>Generelle oplysninger</p>
@@ -662,7 +655,7 @@ $harduetsporgsmaltitel= get_field("har_du_et_sporgsmal_titel");
         </section>
     </section>
     <section id="socialSektion">
-        <h3 class="socialTitel">Følg Sikkerhedsgiganten</h3>
+        <h3 class="socialTitel"><?php echo($sikkerhedsgigantenpaasome); ?></h3>
         <div class="someContainer">
             <a href="" target="_blank"><img src="<?php echo esc_url($kundeservicesomeinstagram["url"]); ?>" alt="<?php echo $kundeservicesomeinstagram ["alt"]?>"></a>
             <a href="" target="_blank"><img src="<?php echo esc_url($kundeservicesomefacebook["url"]); ?>" alt="<?php echo $kundeservicesomefacebook ["alt"]?>"></a>
