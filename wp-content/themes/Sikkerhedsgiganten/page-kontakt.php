@@ -7,7 +7,12 @@ $kontaktlinkedin = get_field("kontakt_linkedin");
 $kontaktfindos = get_field("kontakt_find_os");
 $kontaktnyhedsbrev = get_field("kontakt_nyhedsbrev");
 $kontaktkontaktos = get_field("kontakt_kontakt_os");
+$kontaktsikkerhedsgigantentitel = get_field("kontakt_sikkerhedsgiganten_titel");
 $kontaktomos = get_field("kontakt_om_os");
+$kontaktomos = get_field("kontakt_om_os");
+$kontaktomos = get_field("kontakt_om_os");
+
+
 
 ?>
 </header>
