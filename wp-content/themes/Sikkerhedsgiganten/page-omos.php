@@ -42,12 +42,12 @@ $fordelesomerhvervskundebrodtekst = get_field("fordele_som_erhvervskunde_brodtek
 $arbejdstojtilalletitel = get_field("arbejdstoj_til_alle_titel");
 $arbejdstojtilallebrodtekst = get_field("arbejdstoj_til_alle_brodtekst");
 $danmarksstorstesortimentafsikkerhedsudstyrtitel= get_field("danmarks_storste_sortiment_af_sikkerhedsudstyr_titel");
-$fysiskbutiktitel = get_field("fysisk_butik_titel");
-$fysiskbutiktitel = get_field("fysisk_butik_titel");
-$fysiskbutiktitel = get_field("fysisk_butik_titel");
-$fysiskbutiktitel = get_field("fysisk_butik_titel");
-$fysiskbutiktitel = get_field("fysisk_butik_titel");
-$fysiskbutiktitel = get_field("fysisk_butik_titel");
+$danmarksstorstesortimentafsikerhedsudstyrbrodtekst = get_field("danmarks_storste_sortiment_af_sikerhedsudstyr_brodtekst");
+$folgsikkerhedsgigantenpasometitel = get_field("folg_sikkerhedsgiganten_pa_some_titel");
+$findoshertitel = get_field("find_os_her_titel");
+$tilmeldnyhedsbrevtitel = get_field("tilmeld_nyhedsbrev_titel");
+$kontaktostitel = get_field("kontakt_os_titel");
+$omostitel = get_field("om_os_titel");
 
 
 
@@ -161,39 +161,11 @@ arbejdstoj_til_alle_titel
 </section>
 <section id="sikkerhed"> 
     <h3><?php echo esc_url($danmarksstorstesortimentafsikkerhedsudstyrtitel["url"]); ?></h3>
-    <p>Velkommen til SikkerhedsGiganten, din førende leverandør af sikkerhedsudstyr i Danmark. Vi er stolte af at være
-        det foretrukne valg for virksomheder og enkeltpersoner, der søger pålideligt og effektivt sikkerhedsudstyr til
-        ethvert behov. Med vores omfattende sortiment og høje kvalitetsstandarder stræber vi altid efter at opfylde
-        vores kunders forventninger og skabe sikre arbejdsmiljøer.
-        <br><br>
-        Vi forstår vigtigheden af at beskytte både ansatte og arbejdspladser mod potentielle farer og risici. Derfor
-        tilbyder vi et bredt udvalg af sikkerhedsudstyr, herunder høreværn, øjenværn, beskyttelsesdragter og
-        sikkerhedsfodtøj. Uanset om du arbejder inden for byggeri, industri, sundhedsvæsen eller andre brancher, har vi
-        det rette udstyr til at opfylde dine specifikke behov.
-        <br><br>
-        Som Danmarks største forhandler af sikkerhedsudstyr tilbyder vi et omfattende udvalg af produkter i vores
-        webshop. Fra førstehjælpsudstyr og sikkerhedsskilte til rengøringsprodukter og skadedyrsbekæmpelse - vi har alt
-        det nødvendige udstyr til at skabe sikre og sunde arbejdsmiljøer. Vi er dedikerede til konstant at udvide vores
-        sortiment med de nyeste og bedste produkter på markedet for at sikre, at vores kunder altid har adgang til det
-        mest effektive og moderne sikkerhedsudstyr.
-        <br><br>
-        Hos SikkerhedsGiganten går vi ikke på kompromis med kvaliteten. Vi samarbejder kun med pålidelige leverandører
-        og producenter for at sikre, at vores produkter lever op til de højeste standarder for sikkerhed og holdbarhed.
-        Vores mål er at tilbyde vores kunder den bedste kvalitet til de mest konkurrencedygtige priser på markedet.
-        <br><br>
-        Vi forstår også vigtigheden af hurtig og pålidelig levering. Derfor tilbyder vi gratis fragt på alle ordrer over
-        800 DKK eksklusive moms. Dette giver vores kunder mulighed for at modtage deres sikkerhedsudstyr hurtigt og uden
-        ekstra omkostninger. Vi stræber altid efter at sikre, at vores kunder får den bedste shoppingoplevelse og den
-        bedste værdi for deres penge.
-        <br><br>
-        Når det handler om at skabe sikre og sunde arbejdsmiljøer, er SikkerhedsGiganten din pålidelige partner og
-        leverandør af sikkerhedsudstyr. Med vores omfattende sortiment, konkurrencedygtige priser og høje
-        kvalitetsstandarder er vi her for at hjælpe dig med at opfylde dine sikkerhedsbehov. Velkommen til
-        SikkerhedsGiganten - hvor din sikkerhed er vores prioritet.
+    <p><?php echo esc_url($danmarksstorstesortimentafsikerhedsudstyrbrodtekst["url"]); ?>
     </p>
 </section>
-<section id="socialSektion">
-    <h3 class="socialTitel">Følg Sikkerhedsgiganten</h3>
+<section id="socialSektion"> 
+    <h3 class="socialTitel"><?php echo esc_url($folgsikkerhedsgigantenpasometitel["url"]); ?></h3>
     <div class="someContainer">
     <a href="" target="_blank"><img src="<?php echo esc_url($omosinstagram["url"]); ?>" alt="<?php echo $omosinstagram ["alt"]?>"></a>
             <a href="" target="_blank"><img src="<?php echo esc_url($omosfacebook["url"]); ?>" alt="<?php echo $omosfacebook ["alt"]?>"></a>
@@ -201,11 +173,11 @@ arbejdstoj_til_alle_titel
     </div>
 </section>
 <section id="bottomLinks">
-    <div class="bottomLinksContainer">
-    <a href=""><img src="<?php echo esc_url($omosfindos["url"]); ?>" alt="<?php echo $omosfindos ["alt"]?>">Find os her</a>
-            <a href=""><img src="<?php echo esc_url($omosnyhedsbrev["url"]); ?>" alt="<?php echo $omosnyhedsbrev ["alt"]?>">Tilmeld nyhedsbrev</a>
-            <a href=""><img src="<?php echo esc_url($omoskontakt["url"]); ?>" alt="<?php echo $omoskontakt ["alt"]?>">Kontakt os</a>
-            <a href=""><img src="<?php echo esc_url($omosom["url"]); ?>" alt="<?php echo $omosom ["alt"]?>">Om os</a>
+    <div class="bottomLinksContainer">  
+    <a href=""><img src="<?php echo esc_url($omosfindos["url"]); ?>" alt="<?php echo $omosfindos ["alt"]?>"><?php echo esc_url($findoshertitel["url"]); ?></a>
+            <a href=""><img src="<?php echo esc_url($omosnyhedsbrev["url"]); ?>" alt="<?php echo $omosnyhedsbrev ["alt"]?>"><?php echo esc_url($tilmeldnyhedsbrevtitel["url"]); ?></a> 
+            <a href=""><img src="<?php echo esc_url($omoskontakt["url"]); ?>" alt="<?php echo $omoskontakt ["alt"]?>"><?php echo esc_url($kontaktostitel["url"]); ?></a>
+            <a href=""><img src="<?php echo esc_url($omosom["url"]); ?>" alt="<?php echo $omosom ["alt"]?>"><?php echo esc_url($omostitel["url"]); ?></a>
     </div>
 </section>
 <?php get_footer(); ?>
