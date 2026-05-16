@@ -57,11 +57,11 @@ $omostitel = get_field("om_os_titel");
     <div class="medarbejdereContainer">
         <div class="medArbejderItem">
         <img src="<?php echo esc_url($medarbejderet["url"]); ?>" alt="<?php echo $medarbejderet ["alt"]?>">
-            <h5><?php echo esc_url($medarbejderetnavn["url"]); ?></h5>   
-            <p><?php echo esc_url($medarbejderetjobtitel["url"]); ?> <br>
-            <?php echo esc_url($medarbejderettlfnr["url"]); ?></p>
+            <h5><?php echo esc_html($medarbejderetnavn); ?></h5>   
+            <p><?php echo($medarbejderetjobtitel);?> <br> 
+            <?php echo($medarbejderettlfnr);?></p>   
             <a href="mailto:ma@sikkerhedsgiganten.dk?subject=rick roll&body=never gonna give u upp">
-            <?php echo esc_url($medarbejderetemail["url"]); ?>
+            <?php echo($medarbejderetemail);?>  
             </a>     
         </div>
         <div class="medArbejderItem"> 
