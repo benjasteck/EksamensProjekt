@@ -15,13 +15,20 @@ $maengderabattitel = get_field("maengde_rabat_titel");
 $maengerabatbrodtekst = get_field("maenge_rabat_brodtekst");
 $skraeddersyetlosningertitel = get_field("skraeddersyet_losninger_titel");
 $skraeddersyetlosningerbrodtekst = get_field("skraeddersyet_losninger_brodtekst");
-$erhvervomos = get_field("erhverv_om_os");
-$erhvervomos = get_field("erhverv_om_os");
-$erhvervomos = get_field("erhverv_om_os");
-$erhvervomos = get_field("erhverv_om_os");
+$firmabeklaedningmedlogotitel = get_field("firmabeklaedning_med_logo_titel");
+$firmabeklaedningmedlogobrodtekst= get_field("firmabeklaedning_med_logo_brodtekst");
+$personaliseredeshopsidertitel = get_field("personaliserede_shop_sider_titel");
+$personaliseredeshopsiderbrodtekst = get_field("personaliserede_shop_sider_brodtekst");
+$professionelradgivningtitel = get_field("professionel_radgivning_titel");
+$professionelradgivningbrodtekst= get_field("professionel_radgivning_brodtekst");
+$maengderabattitel = get_field("maengde_rabat_titel");
+$logindtekst = get_field("log_ind_tekst");
+$logindtekst = get_field("log_ind_tekst");
+$logindtekst = get_field("log_ind_tekst");
+$logindtekst = get_field("log_ind_tekst");
+$logindtekst = get_field("log_ind_tekst");
+$logindtekst = get_field("log_ind_tekst");
 
-
-tilmeld_dig_tekst
 
 ?>
 
@@ -55,29 +62,20 @@ tilmeld_dig_tekst
                 <p><?php echo($skraeddersyetlosningerbrodtekst);?></p>
             </div>
             <div class="erhvervsHeroTop1" id="top3">
-                <h2>Firmabeklædning med logo</h2>  
-                <p>Gør jeres arbejdstøj unikt og professionelt med virksomhedens eget logo. Vores løsninger inden for
-                    firmabeklædning med logo sikrer et skarpt visuelt udtryk, uden at gå på kompromis med komforten i
-                    jeres personlige sikkerhedsudstyr.</p>
+                <h2><?php echo($firmabeklaedningmedlogotitel);?></h2>  
+                <p><?php echo($firmabeklaedningmedlogobrodtekst);?></p>
             </div>
             <div class="erhvervsHeroTop1" id="top4">
-                <h2>Personaliserede shop sider</h2>
-                <p>Med en B2B-aftale hos SikkerhedsGiganten får din virksomhed en skræddersyet løsning med faste
-                    specialpriser på jeres mest brugte personlig sikkerhedsudstyr, såsom sikkerhedsfodtøj og ffp3
-                    masker. I får jeres egen online shop, der gør det nemt at bestille på tværs af afdelinger døgnet
-                    rundt, med fuldt overblik over priser, ordrer og status.</p>
+                <h2><?php echo($personaliseredeshopsidertitel);?></h2>
+                <p><?php echo($personaliseredeshopsiderbrodtekst);?></p>
             </div>
             <div class="erhvervsHeroTop1" id="top5">
-                <h2>Professionel rådgivning</h2>
-                <p>Vores erhvervskonsulenter er eksperter i at guide din virksomhed til det rette valg af arbejdstøj og
-                    personlig sikkerhedsudstyr, så I får en løsning, der forener design med høj funktionalitet. Vi
-                    sammensætter et personligt sortiment af alt fra slidstærkt beklædning til certificeret
-                    sikkerhedsfodtøj, hvilket gør det enkelt og hurtigt for jer at genbestille det nødvendige udstyr
-                    online.</p>
+                <h2><?php echo($professionelradgivningtitel);?></h2>  
+                <p><?php echo($professionelradgivningbrodtekst);?></p>
             </div>
         </div>
         <div class="ervhervsHeroBottom">
-            <div class="erhvervHeroItem">
+            <div class="erhvervHeroItem">  maengderabattitel
                 <p>Mængde rabat</p>
                 <img src="img/skaArrow.svg" alt="">
             </div>
@@ -94,7 +92,7 @@ tilmeld_dig_tekst
                 <img src="img/skaArrow.svg" alt="">
             </div>
             <div class="erhvervHeroItem">
-                <p>Professionel rådgivning</p>
+                <p>x</p>
                 <img src="img/skaArrow.svg" alt="">
             </div>
         </div>
