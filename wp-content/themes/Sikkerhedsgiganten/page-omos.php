@@ -33,14 +33,26 @@ $vipasserpadigtitel = get_field("vi_passer_pa_dig_titel");
 $vipasserpadigbrodtekst = get_field("vi_passer_pa_dig_brodtekst");
 $faenerhvervsaftaletitel = get_field("fa_en_erhvervsaftale_titel");
 $sikkerhedsgigantenbannerreklametitel= get_field("sikkerhedsgiganten_banner_reklame_titel");
-$medarbejdertreemail = get_field("medarbejder_tre_email");
-$medarbejdertreemail = get_field("medarbejder_tre_email");
-$medarbejdertreemail = get_field("medarbejder_tre_email");
-$medarbejdertreemail = get_field("medarbejder_tre_email");
-$medarbejdertreemail = get_field("medarbejder_tre_email");
-$medarbejdertreemail = get_field("medarbejder_tre_email");
+$fysiskbutiktitel = get_field("fysisk_butik_titel");
+$fysiskbutiktekstbrodtekst = get_field("fysisk_butik_tekst_brodtekst");
+$specialisterifirmabeklaedningtitel = get_field("specialister_i_firmabeklaedning_titel");
+$specialisterifirmabeklaedningbrodtekst= get_field("specialister_i_firmabeklaedning_brodtekst");
+$fordelesomerhvervskundetitel= get_field("fordele_som_erhvervskunde_titel");
+$fordelesomerhvervskundebrodtekst = get_field("fordele_som_erhvervskunde_brodtekst");
+$arbejdstojtilalletitel = get_field("arbejdstoj_til_alle_titel");
+$arbejdstojtilallebrodtekst = get_field("arbejdstoj_til_alle_brodtekst");
+$danmarksstorstesortimentafsikkerhedsudstyrtitel= get_field("danmarks_storste_sortiment_af_sikkerhedsudstyr_titel");
+$fysiskbutiktitel = get_field("fysisk_butik_titel");
+$fysiskbutiktitel = get_field("fysisk_butik_titel");
+$fysiskbutiktitel = get_field("fysisk_butik_titel");
+$fysiskbutiktitel = get_field("fysisk_butik_titel");
+$fysiskbutiktitel = get_field("fysisk_butik_titel");
+$fysiskbutiktitel = get_field("fysisk_butik_titel");
 
 
+
+
+arbejdstoj_til_alle_titel
 
 
 
@@ -122,43 +134,33 @@ $medarbejdertreemail = get_field("medarbejder_tre_email");
     <div class="osItem" id="osItem1">
     <img src="<?php echo esc_url($butikbillede["url"]); ?>" alt="<?php echo $butikbillede ["alt"]?>">
         <div class="osItemContainer">
-            <h3>Fysisk Butik</h3>
-            <p>Velkommen til vores butik, hvor sikkerhedsudstyr ikke blot er noget, du ser på skærmen, men noget du kan
-                føle og prøve på egen krop. Hos os går vi langt for at sikre, at vores kunder får den bedst mulige
-                oplevelse og de rette produkter til deres behov.</p>
+            <h3><?php echo esc_url($fysiskbutiktitel["url"]); ?></h3>   
+            <p><?php echo esc_url($fysiskbutiktekstbrodtekst["url"]); ?></p>
         </div>
 
     </div>
     <div class="osItem" id="osItem2">
-        <div class="osItemContainer">
-            <h3>Specialister i firmabeklædning</h3>
-            <p>Hos Sikkerhedsgiganten tilbyder vi mere end blot standard arbejdstøj. Vi specialiserer os i at levere
-                firmabeklædning med dit firmas logo, som kombinerer professionalisme med funktionalitet og komfort.
-                Uanset hvilken type arbejdstøj din virksomhed behøver, garanterer vi levering af produkter i højeste
-                kvalitet.</p>
+        <div class="osItemContainer"> 
+            <h3><?php echo esc_url($specialisterifirmabeklaedningtitel["url"]); ?></h3>
+            <p><?php echo esc_url($specialisterifirmabeklaedningbrodtekst["url"]); ?></p>
         </div>
         <img src="<?php echo esc_url($firmabeklaedning["url"]); ?>" alt="<?php echo $firmabeklaedning ["alt"]?>">
     </div>
-    <div class="osErhverv">
-        <h3>Få fordele som Erhvervskunde</h3>
-        <p>Ved at indgå en firmaaftale med os, kan du spare værdifuld tid, energi og ressourcer. Vores komplette
-            pakkeløsninger, der inkluderer firmatøj med logo, tilbyder en kombination af kvalitet og stil, der er
-            skræddersyet præcis til din virksomheds unikke behov.</p>
+    <div class="osErhverv">  
+        <h3><?php echo esc_url($fordelesomerhvervskundetitel["url"]); ?></h3>
+        <p><?php echo esc_url($fordelesomerhvervskundebrodtekst["url"]); ?></p>
         <a href=""><?php echo esc_url($faenerhvervsaftaletitel["url"]); ?></a>
     </div>
     <div class="osItem" id="osItem3">
     <img src="<?php echo esc_url($arbejdstoj["url"]); ?>" alt="<?php echo $arbejdstoj ["alt"]?>">
         <div class="osItemContainer">
-            <h3>Arbejdstøj til alle</h3>
-            <p>Profilbeklædning sikre genkendelse. Der er høj signalværdi i at være rigtig klædt på, ikke bare når det
-                gælder sikkerhed, synlighed og komfort, men også når det gælder genkendelse af firmanavn og logo. I
-                vores sortiment finder du et stort udvalg af profilbeklædning, som hele tiden opdateres med nye mode
-                tendenser og farver.</p>
+            <h3><?php echo esc_url($arbejdstojtilalletitel["url"]); ?></h3> arbejdstojtilalletitel
+            <p><?php echo esc_url($arbejdstojtilallebrodtekst["url"]); ?></p>
         </div>
     </div>
 </section>
-<section id="sikkerhed">
-    <h3>Danmarks største sortiment af sikkerhedsudstyr</h3>
+<section id="sikkerhed"> 
+    <h3><?php echo esc_url($danmarksstorstesortimentafsikkerhedsudstyrtitel["url"]); ?></h3>
     <p>Velkommen til SikkerhedsGiganten, din førende leverandør af sikkerhedsudstyr i Danmark. Vi er stolte af at være
         det foretrukne valg for virksomheder og enkeltpersoner, der søger pålideligt og effektivt sikkerhedsudstyr til
         ethvert behov. Med vores omfattende sortiment og høje kvalitetsstandarder stræber vi altid efter at opfylde
