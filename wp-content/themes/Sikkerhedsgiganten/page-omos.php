@@ -57,29 +57,29 @@ $omostitel = get_field("om_os_titel");
     <div class="medarbejdereContainer">
         <div class="medArbejderItem">
         <img src="<?php echo esc_url($medarbejderet["url"]); ?>" alt="<?php echo $medarbejderet ["alt"]?>">
-            <h5><?php echo esc_url($medarbejderetnavn["url"]); ?></h5>   
-            <p><?php echo esc_url($medarbejderetjobtitel["url"]); ?> <br>
-            <?php echo esc_url($medarbejderettlfnr["url"]); ?></p>
+            <h5><?php echo esc_html($medarbejderetnavn); ?></h5>   
+            <p><?php echo($medarbejderetjobtitel);?> <br> 
+            <?php echo($medarbejderettlfnr);?></p>   
             <a href="mailto:ma@sikkerhedsgiganten.dk?subject=rick roll&body=never gonna give u upp">
-            <?php echo esc_url($medarbejderetemail["url"]); ?>
+            <?php echo($medarbejderetemail);?>  
             </a>     
         </div>
         <div class="medArbejderItem"> 
         <img src="<?php echo esc_url($medarbejderto["url"]); ?>" alt="<?php echo $medarbejderto ["alt"]?>">
-            <h5><?php echo esc_url($medarbejdertonavn["url"]); ?></h5>  
-            <p><?php echo esc_url($medarbejdertojobtitel["url"]); ?> <br>
-            <?php echo esc_url($medarbejdertotlfnr["url"]); ?></p>
+            <h5><?php echo($medarbejdertonavn);?> </h5>   
+            <p><?php echo($medarbejdertojobtitel);?>  <br> 
+            <?php echo($medarbejdertotlfnr);?> </p> 
             <a href="mailto:mbj@sikkerhedsgiganten.dk?subject=rick roll&body=never gonna give u upp">
-            <?php echo esc_url($medarbejdertoemail["url"]); ?>
+            <?php echo($medarbejdertoemail);?>   
             </a>
         </div>
         <div class="medArbejderItem">
         <img src="<?php echo esc_url($medarbejdertre["url"]); ?>" alt="<?php echo $medarbejdertre ["alt"]?>">
-            <h5><?php echo esc_url($medarbejdertrenavn["url"]); ?></h5>  
-            <p><?php echo esc_url($medarbejdertrejobtitel["url"]); ?> <br>   
-            <?php echo esc_url($medarbejdertretlfnr["url"]); ?></p> 
+            <h5><?php echo($medarbejdertrenavn);?>  </h5>  
+            <p><?php echo($medarbejdertrejobtitel);?>  <br>    
+            <?php echo($medarbejdertretlfnr);?> </p> 
             <a href="mailto:am@sikkerhedsgiganten.dk?subject=rick roll&body=never gonna give u upp">
-            <?php echo esc_url($medarbejdertreemail["url"]); ?>
+            <?php echo($medarbejdertreemail);?>   
             </a>
         </div>
     </div>
@@ -89,10 +89,9 @@ $omostitel = get_field("om_os_titel");
 <img src="<?php echo esc_url($vipasserpadigto["url"]); ?>" alt="<?php echo $vipasserpadigto ["alt"]?>" class="pasImg2">
 <img src="<?php echo esc_url($vipasserpadiget["url"]); ?>" alt="<?php echo $vipasserpadiget ["alt"]?>" class="pasImg1">
     <div class="pasContainer">   
-        <h2><?php echo esc_url($vipasserpadigtitel["url"]); ?></h2>   
-        <p><?php echo esc_url($vipasserpadigbrodtekst["url"]); ?><
-        </p>
-        <a href=""><?php echo esc_url($faenerhvervsaftaletitel["url"]); ?></a>
+        <h2><?php echo($vipasserpadigtitel);?> </h2>   
+        <p><?php echo($vipasserpadigbrodtekst);?> </p>
+        <a href=""><?php echo($faenerhvervsaftaletitel);?></a>   
         
     </div>
 
@@ -101,18 +100,18 @@ $omostitel = get_field("om_os_titel");
     <div class="testimonialsContaner"></div>
     <div class="sGSlider">
         <div class="sGSlider1">   
-            <h2><?php echo esc_url($sikkerhedsgigantenbannerreklametitel["url"]); ?></h2>
-            <h2><?php echo esc_url($sikkerhedsgigantenbannerreklametitel["url"]); ?></h2>
-            <h2><?php echo esc_url($sikkerhedsgigantenbannerreklametitel["url"]); ?></h2>
+            <h2><?php echo($sikkerhedsgigantenbannerreklametitel);?></h2>  
+            <h2><?php echo($sikkerhedsgigantenbannerreklametitel);?></h2>
+            <h2><?php echo($sikkerhedsgigantenbannerreklametitel);?></h2>
 
-            <h2><?php echo esc_url($sikkerhedsgigantenbannerreklametitel["url"]); ?></h2>
-            <h2><?php echo esc_url($sikkerhedsgigantenbannerreklametitel["url"]); ?></h2>
+            <h2><?php echo($sikkerhedsgigantenbannerreklametitel);?></h2>
+            <h2><?php echo($sikkerhedsgigantenbannerreklametitel);?></h2>
 
         </div>
         <div class="sGSlider2">
-            <h2><?php echo esc_url($sikkerhedsgigantenbannerreklametitel["url"]); ?></h2>
-            <h2><?php echo esc_url($sikkerhedsgigantenbannerreklametitel["url"]); ?></h2>
-            <h2><?php echo esc_url($sikkerhedsgigantenbannerreklametitel["url"]); ?></h2>
+            <h2><?php echo($sikkerhedsgigantenbannerreklametitel);?></h2>
+            <h2><?php echo($sikkerhedsgigantenbannerreklametitel);?></h2>
+            <h2><?php echo($sikkerhedsgigantenbannerreklametitel);?></h2>
         </div>
     </div>
     <div class="testimonialsContaner"></div>
@@ -121,38 +120,37 @@ $omostitel = get_field("om_os_titel");
     <div class="osItem" id="osItem1">
     <img src="<?php echo esc_url($butikbillede["url"]); ?>" alt="<?php echo $butikbillede ["alt"]?>">
         <div class="osItemContainer">
-            <h3><?php echo esc_url($fysiskbutiktitel["url"]); ?></h3>   
-            <p><?php echo esc_url($fysiskbutiktekstbrodtekst["url"]); ?></p>
+            <h3><?php echo($fysiskbutiktitel);?></h3>   
+            <p><?php echo($fysiskbutiktekstbrodtekst);?></p>  
         </div>
 
     </div>
     <div class="osItem" id="osItem2">
         <div class="osItemContainer"> 
-            <h3><?php echo esc_url($specialisterifirmabeklaedningtitel["url"]); ?></h3>
-            <p><?php echo esc_url($specialisterifirmabeklaedningbrodtekst["url"]); ?></p>
+            <h3><?php echo($specialisterifirmabeklaedningtitel);?></h3> 
+            <p><?php echo($specialisterifirmabeklaedningbrodtekst);?></p> 
         </div>
         <img src="<?php echo esc_url($firmabeklaedning["url"]); ?>" alt="<?php echo $firmabeklaedning ["alt"]?>">
     </div>
     <div class="osErhverv">  
-        <h3><?php echo esc_url($fordelesomerhvervskundetitel["url"]); ?></h3>
-        <p><?php echo esc_url($fordelesomerhvervskundebrodtekst["url"]); ?></p>
-        <a href=""><?php echo esc_url($faenerhvervsaftaletitel["url"]); ?></a>
+        <h3><?php echo($fordelesomerhvervskundetitel);?></h3> 
+        <p><?php echo($fordelesomerhvervskundebrodtekst);?></p> 
+        <a href=""><?php echo($faenerhvervsaftaletitel);?></a> 
     </div>
     <div class="osItem" id="osItem3">
     <img src="<?php echo esc_url($arbejdstoj["url"]); ?>" alt="<?php echo $arbejdstoj ["alt"]?>">
         <div class="osItemContainer">
-            <h3><?php echo esc_url($arbejdstojtilalletitel["url"]); ?></h3> arbejdstojtilalletitel
-            <p><?php echo esc_url($arbejdstojtilallebrodtekst["url"]); ?></p>
+            <h3><?php echo($arbejdstojtilalletitel);?></h3> 
+            <p><?php echo($arbejdstojtilallebrodtekst);?></p> 
         </div>
     </div>
 </section>
 <section id="sikkerhed"> 
-    <h3><?php echo esc_url($danmarksstorstesortimentafsikkerhedsudstyrtitel["url"]); ?></h3>
-    <p><?php echo esc_url($danmarksstorstesortimentafsikerhedsudstyrbrodtekst["url"]); ?>
-    </p>
+    <h3><?php echo($danmarksstorstesortimentafsikkerhedsudstyrtitel);?></h3> 
+    <p><?php echo($danmarksstorstesortimentafsikerhedsudstyrbrodtekst);?></p>
 </section>
 <section id="socialSektion"> 
-    <h3 class="socialTitel"><?php echo esc_url($folgsikkerhedsgigantenpasometitel["url"]); ?></h3>
+    <h3 class="socialTitel"><?php echo($folgsikkerhedsgigantenpasometitel);?></h3> 
     <div class="someContainer">
     <a href="" target="_blank"><img src="<?php echo esc_url($omosinstagram["url"]); ?>" alt="<?php echo $omosinstagram ["alt"]?>"></a>
             <a href="" target="_blank"><img src="<?php echo esc_url($omosfacebook["url"]); ?>" alt="<?php echo $omosfacebook ["alt"]?>"></a>
@@ -161,10 +159,10 @@ $omostitel = get_field("om_os_titel");
 </section>
 <section id="bottomLinks">
     <div class="bottomLinksContainer">  
-    <a href=""><img src="<?php echo esc_url($omosfindos["url"]); ?>" alt="<?php echo $omosfindos ["alt"]?>"><?php echo esc_url($findoshertitel["url"]); ?></a>
-            <a href=""><img src="<?php echo esc_url($omosnyhedsbrev["url"]); ?>" alt="<?php echo $omosnyhedsbrev ["alt"]?>"><?php echo esc_url($tilmeldnyhedsbrevtitel["url"]); ?></a> 
-            <a href=""><img src="<?php echo esc_url($omoskontakt["url"]); ?>" alt="<?php echo $omoskontakt ["alt"]?>"><?php echo esc_url($kontaktostitel["url"]); ?></a>
-            <a href=""><img src="<?php echo esc_url($omosom["url"]); ?>" alt="<?php echo $omosom ["alt"]?>"><?php echo esc_url($omostitel["url"]); ?></a>
+    <a href=""><img src="<?php echo esc_url($omosfindos["url"]); ?>" alt="<?php echo $omosfindos ["alt"]?>"><?php echo($findoshertitel);?></a> 
+            <a href=""><img src="<?php echo esc_url($omosnyhedsbrev["url"]); ?>" alt="<?php echo $omosnyhedsbrev ["alt"]?>"><?php echo($tilmeldnyhedsbrevtitel);?></a>  
+            <a href=""><img src="<?php echo esc_url($omoskontakt["url"]); ?>" alt="<?php echo $omoskontakt ["alt"]?>"><?php echo($kontaktostitel);?></a> 
+            <a href=""><img src="<?php echo esc_url($omosom["url"]); ?>" alt="<?php echo $omosom ["alt"]?>"><?php echo($omostitel);?></a> 
     </div>
 </section>
 <?php get_footer(); ?>
