@@ -17,10 +17,10 @@ $kontaktomos = get_field("kontakt_om_os");
     </div>
     <div class="kontaktRight">
         <div class="kontaktRightTop">
-            <h2>Sikkerhedsgiganten</h2>
-            <p>Lillebæltsvej 60 - A/B 6715 Esbjerg N</p>
-            <p>Tlf: 71 99 32 60</p>
-            <p>Email: info@sikkerhedsgiganten.dk</p>
+            <h2><?php echo($sikkerhedsgiganten_titel); ?></h2> 
+            <p><?php echo($adresse); ?></p>
+            <p><?php echo($tlf_nr); ?></p>
+            <p><?php echo($email); ?></p>
         </div>
         <div class="kontaktRightBottom">
             <h2>Åbningstider</h2>
@@ -109,9 +109,9 @@ $kontaktomos = get_field("kontakt_om_os");
 <section id="bottomLinks">
     <div class="bottomLinksContainer">
     <a href=""><img src="<?php echo esc_url($kontaktfindos["url"]); ?>" alt="<?php echo $kontaktfindos ["alt"]?>">Find os her</a>
-            <a href=""><img src="<?php echo esc_url($kontaktnyhedsbrev["url"]); ?>" alt="<?php echo $kontaktnyhedsbrev ["alt"]?>"><?php echo($tilmeld_nyhedsbrev); ?></a>
-            <a href=""><img src="<?php echo esc_url($kontaktkontaktos["url"]); ?>" alt="<?php echo $kontaktkontaktos ["alt"]?>"><?php echo($kontakt_os); ?></a>
-            <a href=""><img src="<?php echo esc_url($kontaktomos["url"]); ?>" alt="<?php echo $kontaktomos ["alt"]?>"><?php echo($om_os); ?></a>
+            <a href=""><img src="<?php echo esc_url($kontaktnyhedsbrev["url"]); ?>" alt="<?php echo $kontaktnyhedsbrev ["alt"]?>"><?php echo($kontaktnyhedsbrev); ?></a>
+            <a href=""><img src="<?php echo esc_url($kontaktkontaktos["url"]); ?>" alt="<?php echo $kontaktkontaktos ["alt"]?>"><?php echo($kontaktkontaktos); ?></a>
+            <a href=""><img src="<?php echo esc_url($kontaktomos["url"]); ?>" alt="<?php echo $kontaktomos ["alt"]?>"><?php echo($kontaktomos); ?></a>
     </div>
 </section>
 <?php get_footer(); ?>
