@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 
 <?php
-$medarbejder1 = get_field("medarbejder_1");
-$medarbejder2 = get_field("medarbejder_2");
-$medarbejder3 = get_field("medarbejder_3");
-$vipasserpådig1 = get_field("vi_passer_pa_dig_1");
-$vipasserpådig2 = get_field("vi_passer_pa_dig_2");
+$medarbejderet = get_field("medarbejder_et");
+$medarbejderto = get_field("medarbejder_to");
+$medarbejdertre = get_field("medarbejder_tre");
+$vipasserpadiget = get_field("vi_passer_pa_dig_et");
+$vipasserpadigto = get_field("vi_passer_pa_dig_to");
 $butikbillede = get_field("butik_billede");
 $firmabeklaedning = get_field("firmabeklaedning");
 $arbejdstoj = get_field("arbejdstoj");
@@ -56,7 +56,7 @@ $omostitel = get_field("om_os_titel");
     <div class="line"></div>
     <div class="medarbejdereContainer">
         <div class="medArbejderItem">
-        <img src="<?php echo esc_url($medarbejder1["url"]); ?>" alt="<?php echo $medarbejder1 ["alt"]?>">
+        <img src="<?php echo esc_url($medarbejderet["url"]); ?>" alt="<?php echo $medarbejderet ["alt"]?>">
             <h5><?php echo esc_url($medarbejderetnavn["url"]); ?></h5>   
             <p><?php echo esc_url($medarbejderetjobtitel["url"]); ?> <br>
             <?php echo esc_url($medarbejderettlfnr["url"]); ?></p>
@@ -65,7 +65,7 @@ $omostitel = get_field("om_os_titel");
             </a>     
         </div>
         <div class="medArbejderItem"> 
-        <img src="<?php echo esc_url($medarbejder2["url"]); ?>" alt="<?php echo $medarbejder2 ["alt"]?>">
+        <img src="<?php echo esc_url($medarbejderto["url"]); ?>" alt="<?php echo $medarbejderto ["alt"]?>">
             <h5><?php echo esc_url($medarbejdertonavn["url"]); ?></h5>  
             <p><?php echo esc_url($medarbejdertojobtitel["url"]); ?> <br>
             <?php echo esc_url($medarbejdertotlfnr["url"]); ?></p>
@@ -74,7 +74,7 @@ $omostitel = get_field("om_os_titel");
             </a>
         </div>
         <div class="medArbejderItem">
-        <img src="<?php echo esc_url($medarbejder3["url"]); ?>" alt="<?php echo $medarbejder3 ["alt"]?>">
+        <img src="<?php echo esc_url($medarbejdertre["url"]); ?>" alt="<?php echo $medarbejdertre ["alt"]?>">
             <h5><?php echo esc_url($medarbejdertrenavn["url"]); ?></h5>  
             <p><?php echo esc_url($medarbejdertrejobtitel["url"]); ?> <br>   
             <?php echo esc_url($medarbejdertretlfnr["url"]); ?></p> 
@@ -86,8 +86,8 @@ $omostitel = get_field("om_os_titel");
 </section>
 <section id="passerPaDig">
 
-<img src="<?php echo esc_url($vipasserpådig2["url"]); ?>" alt="<?php echo $vipasserpådig2 ["alt"]?>" class="pasImg2">
-<img src="<?php echo esc_url($vipasserpådig1["url"]); ?>" alt="<?php echo $vipasserpådig1 ["alt"]?>" class="pasImg1">
+<img src="<?php echo esc_url($vipasserpadigto["url"]); ?>" alt="<?php echo $vipasserpadigto ["alt"]?>" class="pasImg2">
+<img src="<?php echo esc_url($vipasserpadiget["url"]); ?>" alt="<?php echo $vipasserpadiget ["alt"]?>" class="pasImg1">
     <div class="pasContainer">   
         <h2><?php echo esc_url($vipasserpadigtitel["url"]); ?></h2>   
         <p><?php echo esc_url($vipasserpadigbrodtekst["url"]); ?><
