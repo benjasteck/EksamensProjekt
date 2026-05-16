@@ -24,13 +24,24 @@ $mantorsabningstider= get_field("man-tors_abningstider");
 $fredag= get_field("fredag");
 $fredagabningstider= get_field("fredag_abningstider");
 $faq= get_field("faq");
-$fredagabningstider= get_field("fredag_abningstider");
-$fredagabningstider= get_field("fredag_abningstider");
-$fredagabningstider= get_field("fredag_abningstider");
-$fredagabningstider= get_field("fredag_abningstider");
+$oftestilledespoergsmaaltitel= get_field("ofte_stillede_spoergsmaal_titel");
+$oftestilledesporgsmalbrodtekst= get_field("ofte_stillede_sporgsmal_brodtekst");
+$direktekontakttitel= get_field("direkte_kontakt_titel");
+$harduetsporgsmaltitel= get_field("har_du_et_sporgsmal_titel");
+$harduetsporgsmalbrodtekst= get_field("har_du_et_sporgsmal_brodtekst");
+$kontaktostitel= get_field("kontakt_os_titel");
+$sporgsmaltilbestillingtitel= get_field("sporgsmal_til_bestilling_titel");
+$sporgsmaltilleveringtitel= get_field("sporgsmal_til_levering_titel");
+$sporgsmaltilbetalingtitel= get_field("sporgsmal_til_betaling_titel");
+$sporgsmaltilreturneringtitel= get_field("sporgsmal_til_returnering_titel");
+$sporgsmalvdrerhvervsaftaletitel= get_field("sporgsmal_vdr_erhvervsaftale_titel");
+$harduetsporgsmaltitel= get_field("har_du_et_sporgsmal_titel");
+$harduetsporgsmaltitel= get_field("har_du_et_sporgsmal_titel");
+$harduetsporgsmaltitel= get_field("har_du_et_sporgsmal_titel");
+$harduetsporgsmaltitel= get_field("har_du_et_sporgsmal_titel");
 
 
-faq
+
 
 
 
@@ -69,28 +80,26 @@ faq
         </div>
         </div>
     </section>
-    <section id="faq">
-        <div class="faqTop">      
+    <section id="faq">      
+        <div class="faqTop">       
             <p class="faqTopOvertitel"><?php echo($faq); ?></p>
-            <h2>Ofte stillede spørgsmål</h2>
-            <p>På denne side finder du vores samling af hyppigt stillede spørgsmål, hvor du kan få svar på en bred vifte
-                af emner, uanset om de er store eller små. Du skal blot klikke på et af punkterne for at få mere
-                information.</p>
+            <h2><?php echo($oftestilledespoergsmaaltitel); ?></h2>
+            <p><?php echo($oftestilledesporgsmalbrodtekst); ?></p>
         </div>
         <div class="faqBottom">
-            <div class="faqBottomLeft">
-                <p id="faqBottomOverTitel">Direkte kontakt</p>
-                <h3>Har du et spørgsmål?</h3>
-                <p>Vi står altid klar til en dialog med dig og hjælpe med dit problem</p>
-                <a href="">Kontakt os</a>
+            <div class="faqBottomLeft">    
+                <p id="faqBottomOverTitel"><?php echo($direktekontakttitel); ?></p>
+                <h3><?php echo($harduetsporgsmaltitel); ?></h3>
+                <p><?php echo($harduetsporgsmalbrodtekst); ?></p>
+                <a href=""><?php echo($kontaktostitel); ?></a>
             </div>
             <div class="faqBottomRight">
-                <div class="accordion">
+                <div class="accordion">      
                     <div class="accordion-item">
                         <div class="accordion-header" id="firstAccordion">
                             <div class="acc-headerLeft">
                             <img src="<?php echo esc_url($faqikonbestilling["url"]); ?>" alt="<?php echo $faqikonbestilling ["alt"]?>">
-                                <p>Spørgsmål til Bestilling</p>
+                                <p><?php echo($sporgsmaltilbestillingtitel); ?></p>
                             </div>
                             <div class="acc-headerRight">
                                 +
@@ -104,8 +113,9 @@ faq
                         <div class="accordion-header">
                             <div class="acc-headerLeft">
                             <img src="<?php echo esc_url($faqikonlevering["url"]); ?>" alt="<?php echo $faqikonlevering ["alt"]?>">
-                                <p>Spørgsmål til Levering</p>
-                            </div>
+                                <p><?php echo($sporgsmaltilleveringtitel); ?>
+                                </p>
+                            </div>     
                             <div class="acc-headerRight">
                                 +
                             </div>
@@ -114,11 +124,11 @@ faq
                             <p>This is the content of section 2.</p>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item"> 
                         <div class="accordion-header">
-                            <div class="acc-headerLeft">
+                            <div class="acc-headerLeft">   
                             <img src="<?php echo esc_url($faqikonbetaling["url"]); ?>" alt="<?php echo $faqikonbetaling ["alt"]?>">
-                                <p>Spørgsmål til betaling</p>
+                                <p><?php echo($sporgsmaltilbetalingtitel); ?></p>
                             </div>
                             <div class="acc-headerRight">
                                 +
@@ -132,7 +142,7 @@ faq
                         <div class="accordion-header">
                             <div class="acc-headerLeft">
                             <img src="<?php echo esc_url($faqikonreturnering["url"]); ?>" alt="<?php echo $faqikonreturnering ["alt"]?>">
-                                <p>Spørgsmål til returnering</p>
+                                <p><?php echo($sporgsmaltilreturneringtitel); ?></p>
                             </div>
                             <div class="acc-headerRight">
                                 +
@@ -146,7 +156,7 @@ faq
                         <div class="accordion-header" id="lastAccordion">
                             <div class="acc-headerLeft">
                                 <img src="img/faqSvg5.svg" alt="">
-                                <p>Spørgsmål vdr. erhvervsaftaler</p>
+                                <p><?php echo($sporgsmalvdrerhvervsaftaletitel); ?></p>
                             </div>
                             <div class="acc-headerRight">
                                 +
