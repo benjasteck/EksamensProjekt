@@ -50,19 +50,6 @@ $kontaktostitel = get_field("kontakt_os_titel");
 $omostitel = get_field("om_os_titel");
 
 
-
-
-arbejdstoj_til_alle_titel
-
-
-
-
-
-
-
-
-
-
 ?>
 <section id="medarbejdere">
     <h2><?php echo($medarbejdere); ?></h2>
