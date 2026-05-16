@@ -115,8 +115,9 @@ $sendforesporgseltekst= get_field("send_foresporgsel_tekst");
 $blogstitel= get_field("blogs_titel");
 $blogsundertitel= get_field("blogs_undertitel");
 $blogtosikkerhedssko= get_field("blog_to_sikkerhedssko");
-$blogtosikkerhedsskobrodtekst= get_field("blogtosikkerhedsskobrodtekst");
+$blogtosikkerhedsskobrodtekst= get_field("blog_to_sikkerhedssko_brodtekst");
 $blogfirearbejdstoj= get_field("blog_fire_arbejdstoj");
+$firmabeklaedningmedlogobrodtekst= get_field("firmabeklaedning_med_logo_brodtekst");
 $blogsetandedraetsvaern= get_field("blogs_et_andedraetsvaern");
 $blogetandedraetsvaernbrodtekst= get_field("blog_et_andedraetsvaern_brodtekst");
 $blogtresikkerhedshjelm= get_field("blog_tre_sikkerhedshjelm");
@@ -447,7 +448,7 @@ $foelgsg= get_field("foelg_sg");
                         <img src="<?php echo esc_url($blogarbejdstoejbillede["url"]); ?>"
                             alt="<?php echo $blogarbejdstoejbillede ["alt"]?>">
                         <h3><?php echo($blogfirearbejdstoj); ?></h3>
-                        <p><?php echo($blogfirearbejdstojbrodtekst); ?></p>
+                        <p><?php echo($firmabeklaedningmedlogobrodtekst); ?></p>
                         <a href="">Læs blog</a>
                     </div>
                 </div>
