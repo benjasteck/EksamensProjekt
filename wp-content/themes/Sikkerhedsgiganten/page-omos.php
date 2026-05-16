@@ -16,27 +16,46 @@ $omosfindos = get_field("om_os_find_os");
 $omosnyhedsbrev = get_field("om_os_nyhedsbrev");
 $omoskontakt = get_field("om_os_kontakt");
 $omosom = get_field("om_os_om");
+$medarbejdere = get_field("medarbejdere");
+$medarbejderetnavn = get_field("medarbejder_et_navn");
+$medarbejderetjobtitel = get_field("medarbejder_et_job_titel");
+$medarbejderettlfnr = get_field("medarbejder_et_tlf_nr");
+$medarbejderetemail = get_field("medarbejder_et_email");
+$medarbejdertonavn = get_field("medarbejder_to_navn");
+$medarbejdertojobtitel = get_field("medarbejder_to_job_titel");
+$medarbejdertotlfnr = get_field("medarbejder_to_tlf_nr");
+$medarbejdertoemail = get_field("medarbejder_to_email");
+$medarbejderettlfnr = get_field("medarbejder_et_tlf_nr");
+$medarbejderettlfnr = get_field("medarbejder_et_tlf_nr");
+$medarbejderettlfnr = get_field("medarbejder_et_tlf_nr");
+$medarbejderettlfnr = get_field("medarbejder_et_tlf_nr");
+
+
+
+
+
+
 ?>
 <section id="medarbejdere">
-    <h2>Medarbejdere</h2>
+    <h2><?php echo($medarbejdere); ?></h2>
     <div class="line"></div>
     <div class="medarbejdereContainer">
         <div class="medArbejderItem">
         <img src="<?php echo esc_url($medarbejder1["url"]); ?>" alt="<?php echo $medarbejder1 ["alt"]?>">
-            <h5>Melanie Ankerstjerne</h5>
-            <p>Chief Operating Officer / COO <br>
-                Tlf: 73 11 13 55</p>
+            <h5><?php echo esc_url($medarbejderetnavn["url"]); ?></h5>   
+            <p><?php echo esc_url($medarbejderetjobtitel["url"]); ?> <br>
+            <?php echo esc_url($medarbejderettlfnr["url"]); ?></p>
             <a href="mailto:ma@sikkerhedsgiganten.dk?subject=rick roll&body=never gonna give u upp">
-                ma@sikkerhedsgiganten.dk
-            </a>
+            <?php echo esc_url($medarbejderetemail["url"]); ?>
+            </a>     
         </div>
-        <div class="medArbejderItem">
+        <div class="medArbejderItem"> 
         <img src="<?php echo esc_url($medarbejder2["url"]); ?>" alt="<?php echo $medarbejder2 ["alt"]?>">
-            <h5>Michel Bjørnskov</h5>
-            <p>Konsulent <br>
-                Tlf: 91 30 20 50</p>
+            <h5><?php echo esc_url($medarbejdertonavn["url"]); ?></h5>  
+            <p><?php echo esc_url($medarbejdertojobtitel["url"]); ?> <br>
+            <?php echo esc_url($medarbejdertotlfnr["url"]); ?></p>
             <a href="mailto:mbj@sikkerhedsgiganten.dk?subject=rick roll&body=never gonna give u upp">
-                mbj@sikkerhedsgiganten.dk
+            <?php echo esc_url($medarbejdertoemail["url"]); ?>
             </a>
         </div>
         <div class="medArbejderItem">
