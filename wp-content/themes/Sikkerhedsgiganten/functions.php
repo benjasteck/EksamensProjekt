@@ -111,4 +111,9 @@ function disable_gutenberg() {
 
 }
 add_action('init', 'disable_gutenberg');
+
+function shop_enable_woocommerce(){
+    add_theme_support("woocommerce");
+}
+add_action("after_setup_theme", "shop_enable_woocommerce")
 ?>
