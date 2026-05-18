@@ -422,7 +422,7 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
                         <div class="inputContainer" id="inputStor">
                             <label for="name"><?php echo($skrivbesked); ?></label>
                             <input type="text" class="bigInput"
-                                placeholder="Beskriv selskab, cirka dato for selskabet samt ekstra tanker og ønsker">
+                                placeholder="Skriv din besked her">
                         </div>
                         <div class="inputBtn">
                             <p><?php echo($sendforesporgseltekst); ?></p>
