@@ -77,26 +77,41 @@ $profiltitel = get_field("profil_titel");
 $profilundersidetitel = get_field("profil_underside_titel");
 $favorittertitel = get_field("favoritter_titel");
 $kurvtitel = get_field("kurv_titel");
+
+$navomos= get_field("nav-om-os");
+$navkontakt= get_field("nav-kontakt");
+$navkundeservice= get_field("nav-kundeservice");
+$navshop= get_field("nav-shop");
+$naverhvervskunde= get_field("nav-erhvervskunde");
 $kurvikon = get_field("kurv_ikon");
 $favoritterikon = get_field("favoritter_ikon");
 $profilundersideikon = get_field("profil_underside_ikon");
 
 
 
-
-
-
 ?>
+?php 
+$navforside = get_field('nav-forside'); 
+
+// 2. Tjek om feltet rent faktisk indeholder noget, så koden ikke fejler
+if ( $navforside ): 
+    $link_url = $navforside['url'];
+    $link_title = $navforside['title'];
+    $link_target = $navforside['target'] ? $navforside['target'] : '_self';
+    ?>
+  
+<?php endif; ?>
+
 
 <body <?php body_class() ?>>
     <nav id="nav">
         <div class="navTop">
-            <div class="navLeftSide">
+            <div class="navLeftSide"> 
                 <ul>
-                    <li><a href="#forside">Forside</a></li>
-                    <li><a href="#omos">Om os</a></li>
-                    <li><a href="#kontakt">Kontakt</a></li>
-                    <li><a href="#kundeservice">Kundeservice</a></li>
+                <li><a href="<?php echo esc_url($link_url); ?>"><?php echo esc_html ($link_title); ?></a></li>  
+                    <li><a href="#omos"><?php echo($navomos); ?></a></li>
+                    <li><a href="#kontakt"><?php echo($navkontakt); ?></a></a></li>
+                    <li><a href="#kundeservice"><?php echo($navkundeservice); ?></a></li>    
                 </ul>
             </div>
             <div class="navMiddle">
@@ -108,8 +123,8 @@ $profilundersideikon = get_field("profil_underside_ikon");
             </div>
             <div class="navRightSide">
                 <ul>
-                    <li><a href="#shop">Shop</a></li>
-                    <li><a href="#erhvervskunde">Erhvervskunde</a></li>
+                    <li><a href="#shop"><?php echo($navshop); ?></a></li>
+                    <li><a href="#erhvervskunde"><?php echo($naverhvervskunde); ?></a></li>
                     <li><a href="#favoritter"><img src="<?php echo esc_url($Navhjerteikon["url"]); ?>"
                                 alt="<?php echo $Navhjerteikon ["alt"]?>"></a></li>
                     <li><a href="#kurv"><img src="<?php echo esc_url($Navkurvikon["url"]); ?>"
