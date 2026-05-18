@@ -98,7 +98,7 @@ $naverhvervskunde= get_field("nav-erhvervskunde");
         <div class="navTop">
             <div class="navLeftSide"> 
                 <ul>
-                    <li><a href="#forside"><?php echo($navforside); ?></a></li>  
+                <li><a href="#forside"><?php print_r($navforside); ?></a></li>
                     <li><a href="#omos"><?php echo($navomos); ?></a></li>
                     <li><a href="#kontakt"><?php echo($navkontakt); ?></a></a></li>
                     <li><a href="#kundeservice"><?php echo($navkundeservice); ?></a></li>    
