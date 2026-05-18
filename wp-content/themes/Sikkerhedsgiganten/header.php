@@ -77,7 +77,6 @@ $profiltitel = get_field("profil_titel");
 $profilundersidetitel = get_field("profil_underside_titel");
 $favorittertitel = get_field("favoritter_titel");
 $kurvtitel = get_field("kurv_titel");
-
 $navomos= get_field("nav-om-os");
 $navforside= get_field("nav-forside");
 $navkontakt= get_field("nav-kontakt");
@@ -87,6 +86,10 @@ $naverhvervskunde= get_field("nav-erhvervskunde");
 $kurvikon = get_field("kurv_ikon");
 $favoritterikon = get_field("favoritter_ikon");
 $profilundersideikon = get_field("profil_underside_ikon");
+$tobdmaskerknap = get_field("tobd_masker_knap");
+
+
+
 
 
 
@@ -140,7 +143,7 @@ $profilundersideikon = get_field("profil_underside_ikon");
             <div class="headerContentLower">
                 <p><?php echo($oftesogt); ?></p>     
                 <ul class="headerContentList">
-                    <li><a href="#handsker"><?php echo($tobdmaskertitel); ?></a></li>
+                    <li><a href="#"><?php echo esc_html($tobdmaskerknap['title']); ?></a></li>
                     <li><a href="#fodtøj"><?php echo($tobdmaskertitel); ?></a></li>
                     <li><a href="#værnemidler"><?php echo($faldsikringtitel); ?></a></li>     
                 </ul>
