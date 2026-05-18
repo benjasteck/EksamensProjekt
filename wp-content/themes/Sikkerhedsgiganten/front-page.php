@@ -284,11 +284,11 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
         <section id="socialSektion">
             <h3 class="socialTitel"><?php echo($folgsgpasometitel); ?></h3>
             <div class="someContainer">
-                <a href="" target="_blank"><img src="<?php echo esc_url($instagramikon["url"]); ?>"
+                <a href="https://www.instagram.com/sikkerhedsgigantendk/" target="_blank"><img src="<?php echo esc_url($instagramikon["url"]); ?>"
                         alt="<?php echo $instagramikon ["alt"]?>"></a>
-                <a href="" target="_blank"><img src="<?php echo esc_url($facebookikon["url"]); ?>"
+                <a href="https://www.facebook.com/sikkerhedsgiganten.dk" target="_blank"><img src="<?php echo esc_url($facebookikon["url"]); ?>"
                         alt="<?php echo $facebookikon ["alt"]?>"></a>
-                <a href="" target="_blank"><img src="<?php echo esc_url($linkedinikon["url"]); ?>"
+                <a href="https://www.linkedin.com/company/sikkerhedsgiganten/" target="_blank"><img src="<?php echo esc_url($linkedinikon["url"]); ?>"
                         alt="<?php echo $linkedinikon ["alt"]?>"></a>
             </div>
             <div class="newsletterContainer">
@@ -487,11 +487,11 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
         <section id="socialSektion">       
             <h3 class="socialTitel"><?php echo($foelgsg); ?></h3>
             <div class="someContainer">
-                <a href="" target="_blank"><img src="<?php echo esc_url($instagramikon["url"]); ?>"
+                <a href="https://www.instagram.com/sikkerhedsgigantendk/" target="_blank"><img src="<?php echo esc_url($instagramikon["url"]); ?>"
                         alt="<?php echo $instagramikon ["alt"]?>"></a>
-                <a href="" target="_blank"><img src="<?php echo esc_url($facebookikon["url"]); ?>"
+                <a href="https://www.facebook.com/sikkerhedsgiganten.dk" target="_blank"><img src="<?php echo esc_url($facebookikon["url"]); ?>"
                         alt="<?php echo $facebookikon ["alt"]?>"></a>
-                <a href="" target="_blank"><img src="<?php echo esc_url($linkedinikon["url"]); ?>"
+                <a href="https://www.linkedin.com/company/sikkerhedsgiganten/" target="_blank"><img src="<?php echo esc_url($linkedinikon["url"]); ?>"
                         alt="<?php echo $linkedinikon ["alt"]?>"></a>
             </div>
         </section>

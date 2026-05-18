@@ -89,13 +89,6 @@ $profilundersideikon = get_field("profil_underside_ikon");
 $tobdmaskerknap = get_field('tobd_masker_knappen');
 $sikkerhedsskoknap = get_field('sikkerhedssko_knap');
 $faldsikringknap = get_field('faldsikring_knap');
-
-
-
-
-
-
-
 ?>
 
 
