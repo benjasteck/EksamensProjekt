@@ -1,13 +1,14 @@
 <footer>
 
-<?php
-$footermailikon = get_field("footer_mail_ikon");
-$footertlfikon = get_field("footer_tlf_ikon");
-$footeradresseikon = get_field("footer_adresse_ikon");
-$footerinstagramikon = get_field("footer_instagram_ikon");
-$footerfacebooknikon = get_field("footer_facebook_ikon");
-$footerlinkedinikon = get_field("footer_linkedin_ikon");
-$footerlogo = get_field("footer_logo");
+    <?php
+$footer_post_id = 1047;
+$footermailikon      = get_field("footer_mail_ikon", $footer_post_id);
+$footertlfikon       = get_field("footer_tlf_ikon", $footer_post_id);
+$footeradresseikon   = get_field("footer_adresse_ikon", $footer_post_id);
+$footerinstagramikon = get_field("footer_instagram_ikon", $footer_post_id);
+$footerfacebooknikon = get_field("footer_facebook_ikon", $footer_post_id);
+$footerlinkedinikon  = get_field("footer_linkedin_ikon", $footer_post_id);
+$footerlogo          = get_field("footer_logo", $footer_post_id);
 ?>
 
 
@@ -30,15 +31,18 @@ $footerlogo = get_field("footer_logo");
                 <div class="footerContentBottomContainer">
                     <h2 class="titelFooter">Kontakt</h2>
                     <div class="footerText">
-                    <img src="<?php echo esc_url($footermailikon["url"]); ?>" alt="<?php echo $footermailikon ["alt"]?>">
+                        <img src="<?php echo esc_url($footermailikon["url"]); ?>"
+                            alt="<?php echo $footermailikon ["alt"]?>">
                         <p>info@sikkerhedsgiganten.dk</p>
                     </div>
                     <div class="footerText">
-                    <img src="<?php echo esc_url($footertlfikon["url"]); ?>" alt="<?php echo $footertlfikon ["alt"]?>">
+                        <img src="<?php echo esc_url($footertlfikon["url"]); ?>"
+                            alt="<?php echo $footertlfikon ["alt"]?>">
                         <p>+45 71 99 32 60</p>
                     </div>
                     <div class="footerText">
-                    <img src="<?php echo esc_url($footeradresseikon["url"]); ?>" alt="<?php echo $footeradresseikon ["alt"]?>">
+                        <img src="<?php echo esc_url($footeradresseikon["url"]); ?>"
+                            alt="<?php echo $footeradresseikon ["alt"]?>">
                         <p>Lillebæltsvej 6 · A/B 6715 Esbjerg N</p>
                     </div>
                 </div>
@@ -65,15 +69,18 @@ $footerlogo = get_field("footer_logo");
                 <div class="footerContentBottomContainer">
                     <h2 class="titelFooter">Socialt</h2>
                     <div class="footerText">
-                        <a href=""><img src="<?php echo esc_url($footerinstagramikon["url"]); ?>" alt="<?php echo $footerinstagramikon ["alt"]?>" class="footerSocial"></a>
-                        <a href=""><img src="<?php echo esc_url($footerfacebooknikon["url"]); ?>" alt="<?php echo $footerfacebooknikon ["alt"]?>" class="footerSocial"></a>
-                        <a href=""><img src="<?php echo esc_url($footerlinkedinikon["url"]); ?>" alt="<?php echo $footerlinkedinikon ["alt"]?>" class="footerSocial"></a>
+                        <a href=""><img src="<?php echo esc_url($footerinstagramikon["url"]); ?>"
+                                alt="<?php echo $footerinstagramikon ["alt"]?>" class="footerSocial"></a>
+                        <a href=""><img src="<?php echo esc_url($footerfacebooknikon["url"]); ?>"
+                                alt="<?php echo $footerfacebooknikon ["alt"]?>" class="footerSocial"></a>
+                        <a href=""><img src="<?php echo esc_url($footerlinkedinikon["url"]); ?>"
+                                alt="<?php echo $footerlinkedinikon ["alt"]?>" class="footerSocial"></a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="footerContentRight">
-        <img src="<?php echo esc_url($footerlogo["url"]); ?>" alt="<?php echo $footerlogo ["alt"]?>">
+            <img src="<?php echo esc_url($footerlogo["url"]); ?>" alt="<?php echo $footerlogo ["alt"]?>">
         </div>
     </div>
 
