@@ -108,7 +108,7 @@ $sendforesporgseltekst= get_field("send_foresporgsel_tekst");
 $forstetekstbenytformularen= get_field("forste_tekst_benyt_formularen");
 $nrtohenvendelsevia= get_field("nr_to_henvendelse_via");
 $navnekasse= get_field("navne_kasse");
-$mailkasse= get_field("mail_kasse");
+$emailkasse= get_field("e-mail_kasse");
 $tlfkasse= get_field("tlf_kasse");
 $skrivbesked= get_field("skriv_besked");
 $sendforesporgseltekst= get_field("send_foresporgsel_tekst");
@@ -410,7 +410,7 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
                         </div>
 
                         <div class="inputContainer">
-                            <label for="name"><?php echo($mailkasse); ?></label>
+                            <label for="name"><?php echo($emailkasse); ?></label>
                             <input type="text" class="nameInput" placeholder="Skriv Din Email">
                         </div>
 
