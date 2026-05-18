@@ -651,9 +651,9 @@ $omostitel= get_field("om_os_titel");
     <section id="socialSektion">
         <h3 class="socialTitel"><?php echo($sikkerhedsgigantenpaasome); ?></h3>
         <div class="someContainer">
-            <a href="" target="_blank"><img src="<?php echo esc_url($kundeservicesomeinstagram["url"]); ?>" alt="<?php echo $kundeservicesomeinstagram ["alt"]?>"></a>
-            <a href="" target="_blank"><img src="<?php echo esc_url($kundeservicesomefacebook["url"]); ?>" alt="<?php echo $kundeservicesomefacebook ["alt"]?>"></a>
-            <a href="" target="_blank"><img src="<?php echo esc_url($kundeservicesomelinkedin["url"]); ?>" alt="<?php echo $kundeservicesomelinkedin ["alt"]?>"></a>
+            <a href="https://www.instagram.com/sikkerhedsgigantendk/" target="_blank"><img src="<?php echo esc_url($kundeservicesomeinstagram["url"]); ?>" alt="<?php echo $kundeservicesomeinstagram ["alt"]?>"></a>
+            <a href="https://www.facebook.com/sikkerhedsgiganten.dk" target="_blank"><img src="<?php echo esc_url($kundeservicesomefacebook["url"]); ?>" alt="<?php echo $kundeservicesomefacebook ["alt"]?>"></a>
+            <a href="https://www.linkedin.com/company/sikkerhedsgiganten/" target="_blank"><img src="<?php echo esc_url($kundeservicesomelinkedin["url"]); ?>" alt="<?php echo $kundeservicesomelinkedin ["alt"]?>"></a>
         </div>
     </section>
     <section id="bottomLinks">    
