@@ -143,7 +143,7 @@ $tobdmaskerknap = get_field("tobd_masker_knap");
             <div class="headerContentLower">
                 <p><?php echo($oftesogt); ?></p>     
                 <ul class="headerContentList">
-                    <li><a href="#"><?php echo esc_html($tobdmaskerknap['title']); ?></a></li>
+                    <li><a href="<?php echo esc_url($tobdmaskerknap ['url']); ?>"><?php echo esc_html($tobdmaskerknap['title']); ?></a></li>
                     <li><a href="#fodtøj"><?php echo($tobdmaskertitel); ?></a></li>
                     <li><a href="#værnemidler"><?php echo($faldsikringtitel); ?></a></li>     
                 </ul>
