@@ -92,18 +92,6 @@ $profilundersideikon = get_field("profil_underside_ikon");
 
 ?>
 
-<?php 
-$navforside = get_field('nav-forside'); 
-
-// 2. Tjek om feltet rent faktisk indeholder noget, så koden ikke fejler
-if ( $navforside ): 
-    $link_url = $navforside['url'];
-    $link_title = $navforside['title'];
-    $link_target = $navforside['target'] ? $navforside['target'] : '_self';
-    ?>
-  
-<?php endif; ?>
-
 
 
 <body <?php body_class() ?>>
@@ -113,8 +101,8 @@ if ( $navforside ):
                 <ul>
                 <li><a href="<?php echo esc_url($navforside ['url']); ?>"><?php echo esc_html($navforside['title']); ?></a></li>  
                     <li><a href="<?php echo esc_url($navomos ['url']); ?>"><?php echo esc_html($navomos['title']); ?></a></li>
-                    <li><a href="#kontakt"><?php echo($navkontakt); ?></a></a></li>
-                    <li><a href="#kundeservice"><?php echo($navkundeservice); ?></a></li>    
+                    <li><a href="<?php echo esc_url($navkontakt ['url']); ?>"><?php echo esc_html($navkontakt['title']); ?></a></li>
+                    <li><a href="<?php echo esc_url($navkundeservice ['url']); ?>"><?php echo esc_html($navkundeservice['title']); ?></a></li> 
                 </ul>
             </div>
             <div class="navMiddle">
@@ -126,8 +114,8 @@ if ( $navforside ):
             </div>
             <div class="navRightSide">
                 <ul>
-                    <li><a href="#shop"><?php echo($navshop); ?></a></li>
-                    <li><a href="#erhvervskunde"><?php echo($naverhvervskunde); ?></a></li>
+                <li><a href="<?php echo esc_url($navshop ['url']); ?>"><?php echo esc_html($navshop['title']); ?></a></li> 
+                <li><a href="<?php echo esc_url($naverhvervskunde ['url']); ?>"><?php echo esc_html($naverhvervskunde['title']); ?></a></li> 
                     <li><a href="#favoritter"><img src="<?php echo esc_url($Navhjerteikon["url"]); ?>"
                                 alt="<?php echo $Navhjerteikon ["alt"]?>"></a></li>
                     <li><a href="#kurv"><img src="<?php echo esc_url($Navkurvikon["url"]); ?>"
