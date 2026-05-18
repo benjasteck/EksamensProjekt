@@ -94,11 +94,7 @@ if ( $navforside ):
     $link_title = $navforside['title'];
     $link_target = $navforside['target'] ? $navforside['target'] : '_self';
     ?>
-    <li>
-        <a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>">
-            <?php echo esc_html ($link_title); ?>
-        </a>
-    </li>
+  
 <?php endif; ?>
 
 
@@ -114,7 +110,7 @@ if ( $navforside ):
         <div class="navTop">
             <div class="navLeftSide"> 
                 <ul>
-                <li><a href="#forside"><?php echo esc_html ($link_title); ?></a></li>  
+                <li><a href="<?php echo esc_url($link_url); ?>"><?php echo esc_html ($link_title); ?></a></li>  
                     <li><a href="#omos"><?php echo($navomos); ?></a></li>
                     <li><a href="#kontakt"><?php echo($navkontakt); ?></a></a></li>
                     <li><a href="#kundeservice"><?php echo($navkundeservice); ?></a></li>    
