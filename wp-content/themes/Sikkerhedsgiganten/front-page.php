@@ -132,6 +132,7 @@ $kontaktos= get_field("kontakt_os");
 $omostekst= get_field("om_os_tekst");
 $foelgsg= get_field("foelg_sg");
 $foelgsg= get_field("foelg_sg");
+$toarbejderebillede= get_field("to_arbejdere_billede");
 
 ?>
 
@@ -480,7 +481,7 @@ $foelgsg= get_field("foelg_sg");
                 <p><?php echo($storstesortimentbrodtekst); ?></p>
             </div>
             <div class="sidsteTekstRight">
-                <img src="img/arbejdstoj.png" alt="">
+                <img src="<?php echo esc_url($toarbejderebillede["url"]); ?>" alt="">                         
             </div>
         </section>
         <section id="socialSektion">       
