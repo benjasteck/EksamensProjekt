@@ -79,6 +79,7 @@ $favorittertitel = get_field("favoritter_titel");
 $kurvtitel = get_field("kurv_titel");
 
 $navomos= get_field("nav-om-os");
+$navforside= get_field("nav-forside");
 $navkontakt= get_field("nav-kontakt");
 $navkundeservice= get_field("nav-kundeservice");
 $navshop= get_field("nav-shop");
@@ -90,7 +91,8 @@ $profilundersideikon = get_field("profil_underside_ikon");
 
 
 ?>
-?php 
+
+<?php 
 $navforside = get_field('nav-forside'); 
 
 // 2. Tjek om feltet rent faktisk indeholder noget, så koden ikke fejler
@@ -103,13 +105,14 @@ if ( $navforside ):
 <?php endif; ?>
 
 
+
 <body <?php body_class() ?>>
     <nav id="nav">
         <div class="navTop">
             <div class="navLeftSide"> 
                 <ul>
-                <li><a href="<?php echo esc_url($link_url); ?>"><?php echo esc_html ($link_title); ?></a></li>  
-                    <li><a href="#omos"><?php echo($navomos); ?></a></li>
+                <li><a href="<?php echo esc_url($navforside); ?>"><?php echo esc_html ($navforside); ?></a></li>  
+                    <li><a href="<?php echo esc_url($navomos); ?>"><?php echo esc_html($navomos['title']); ?></a></li>
                     <li><a href="#kontakt"><?php echo($navkontakt); ?></a></a></li>
                     <li><a href="#kundeservice"><?php echo($navkundeservice); ?></a></li>    
                 </ul>
