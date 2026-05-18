@@ -86,7 +86,10 @@ $naverhvervskunde= get_field("nav-erhvervskunde");
 $kurvikon = get_field("kurv_ikon");
 $favoritterikon = get_field("favoritter_ikon");
 $profilundersideikon = get_field("profil_underside_ikon");
-$tobdmaskerknap = get_field("tobd_masker_knap");
+$tobdmaskerknap = get_field('tobd_masker_knappen');
+$sikkerhedsskoknap = get_field('sikkerhedssko_knap');
+$faldsikringknap = get_field('faldsikring_knap');
+
 
 
 
@@ -100,12 +103,20 @@ $tobdmaskerknap = get_field("tobd_masker_knap");
 <body <?php body_class() ?>>
     <nav id="nav">
         <div class="navTop">
-            <div class="navLeftSide"> 
+            <div class="navLeftSide">
                 <ul>
-                <li><a href="<?php echo esc_url($navforside ['url']); ?>"><?php echo esc_html($navforside['title']); ?></a></li>  
-                    <li><a href="<?php echo esc_url($navomos ['url']); ?>"><?php echo esc_html($navomos['title']); ?></a></li>
-                    <li><a href="<?php echo esc_url($navkontakt ['url']); ?>"><?php echo esc_html($navkontakt['title']); ?></a></li>
-                    <li><a href="<?php echo esc_url($navkundeservice ['url']); ?>"><?php echo esc_html($navkundeservice['title']); ?></a></li> 
+                    <li><a
+                            href="<?php echo esc_url($navforside ['url']); ?>"><?php echo esc_html($navforside['title']); ?></a>
+                    </li>
+                    <li><a
+                            href="<?php echo esc_url($navomos ['url']); ?>"><?php echo esc_html($navomos['title']); ?></a>
+                    </li>
+                    <li><a
+                            href="<?php echo esc_url($navkontakt ['url']); ?>"><?php echo esc_html($navkontakt['title']); ?></a>
+                    </li>
+                    <li><a
+                            href="<?php echo esc_url($navkundeservice ['url']); ?>"><?php echo esc_html($navkundeservice['title']); ?></a>
+                    </li>
                 </ul>
             </div>
             <div class="navMiddle">
@@ -117,8 +128,12 @@ $tobdmaskerknap = get_field("tobd_masker_knap");
             </div>
             <div class="navRightSide">
                 <ul>
-                <li><a href="<?php echo esc_url($navshop ['url']); ?>"><?php echo esc_html($navshop['title']); ?></a></li> 
-                <li><a href="<?php echo esc_url($naverhvervskunde ['url']); ?>"><?php echo esc_html($naverhvervskunde['title']); ?></a></li> 
+                    <li><a
+                            href="<?php echo esc_url($navshop ['url']); ?>"><?php echo esc_html($navshop['title']); ?></a>
+                    </li>
+                    <li><a
+                            href="<?php echo esc_url($naverhvervskunde ['url']); ?>"><?php echo esc_html($naverhvervskunde['title']); ?></a>
+                    </li>
                     <li><a href="#favoritter"><img src="<?php echo esc_url($Navhjerteikon["url"]); ?>"
                                 alt="<?php echo $Navhjerteikon ["alt"]?>"></a></li>
                     <li><a href="#kurv"><img src="<?php echo esc_url($Navkurvikon["url"]); ?>"
@@ -135,80 +150,105 @@ $tobdmaskerknap = get_field("tobd_masker_knap");
             <source src="<?php echo esc_url($headervideo['url']); ?>" type="video/mp4">
         </video>
         <div id="headerOverlay"></div>
-        
+
         <div class="headerContent">
             <h1 id="headerTitle"><?php echo($vivaerneromdigtitel); ?></h1>
             <h4 id="headerUndertitel"><?php echo($forsideundertitel); ?></h4>
             <input type="text" placeholder="Søg her..." id="headerInput">
             <div class="headerContentLower">
-                <p><?php echo($oftesogt); ?></p>     
+                <p><?php echo($oftesogt); ?></p>
                 <ul class="headerContentList">
-                    <li><a href="<?php echo esc_url($tobdmaskerknap ['url']); ?>"><?php echo esc_html($tobdmaskerknap['title']); ?></a></li>
-                    <li><a href="#fodtøj"><?php echo($tobdmaskertitel); ?></a></li>
-                    <li><a href="#værnemidler"><?php echo($faldsikringtitel); ?></a></li>     
+                    <li><?php 
+$tobdmaskerknap = get_field('tobd_masker_knappen');
+
+if ($tobdmaskerknap) : ?>
+                        <a href="<?php echo esc_url($tobdmaskerknap['url']); ?>">
+                            <?php echo esc_html($tobdmaskerknap['title']); ?>
+                        </a>
+                        <?php endif; ?>
+                    </li>
+                    <li><a href="<?php echo esc_url($sikkerhedsskoknap['url']); ?>">
+                            <?php echo esc_html($sikkerhedsskoknap['title']); ?>
+                        </a></li>
+                    <li><a href="<?php echo esc_url($faldsikringknap['url']); ?>">
+                            <?php echo esc_html($faldsikringknap['title']); ?>
+                        </a></li>
                 </ul>
-            </div>       
+            </div>
         </div>
 
-        <div class="headerAds">              
+        <div class="headerAds">
 
         </div>
     </header>
     <div class="headerSideMenuCategories">
         <button class="closeBtn">X</button>
         <h3><?php echo($kategoriertitel); ?></h3>
-        <ul>   
+        <ul>
 
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#arbejdsudstyr"><?php echo($sikkerhedsudstyrtitel); ?></a><img src="<?php echo esc_url($sikkerhedsudstyrikon["url"]); ?>" alt=""></li>
+                </svg><a href="#arbejdsudstyr"><?php echo($sikkerhedsudstyrtitel); ?></a><img
+                    src="<?php echo esc_url($sikkerhedsudstyrikon["url"]); ?>" alt=""></li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#arbejdstoj"><?php echo($arbejdstojtitel); ?></a><img src="<?php echo esc_url($arbejdstojikon["url"]); ?>" alt="">
+                </svg><a href="#arbejdstoj"><?php echo($arbejdstojtitel); ?></a><img
+                    src="<?php echo esc_url($arbejdstojikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#andedretsvern"><?php echo($andedraetsvaerntitel); ?></a><img src="<?php echo esc_url($andedraetsvaernikon["url"]); ?>" alt=""></li>
+                </svg><a href="#andedretsvern"><?php echo($andedraetsvaerntitel); ?></a><img
+                    src="<?php echo esc_url($andedraetsvaernikon["url"]); ?>" alt=""></li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#faldsikring"><?php echo($faldsikringtitel); ?></a><img src="<?php echo esc_url($faldsikringikon["url"]); ?>" alt="">
+                </svg><a href="#faldsikring"><?php echo($faldsikringtitel); ?></a><img
+                    src="<?php echo esc_url($faldsikringikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#forstehjelp"><?php echo($forstehjaelptitel); ?></a><img src="<?php echo esc_url($forstehjaelpikon["url"]); ?>" alt="">
+                </svg><a href="#forstehjelp"><?php echo($forstehjaelptitel); ?></a><img
+                    src="<?php echo esc_url($forstehjaelpikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#skilte"><?php echo($skiltetitel); ?></a><img src="<?php echo esc_url($skilteikon["url"]); ?>" alt=""></li>
+                </svg><a href="#skilte"><?php echo($skiltetitel); ?></a><img
+                    src="<?php echo esc_url($skilteikon["url"]); ?>" alt=""></li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#hygiejne"><?php echo($hygiejnetitel); ?></a><img src="<?php echo esc_url($hygiejneikon["url"]); ?>" alt="">
+                </svg><a href="#hygiejne"><?php echo($hygiejnetitel); ?></a><img
+                    src="<?php echo esc_url($hygiejneikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#rengoring"><?php echo($rengoringsartiklertitel); ?></a><img src="<?php echo esc_url($rengoringsartiklerikon["url"]); ?>" alt="">
+                </svg><a href="#rengoring"><?php echo($rengoringsartiklertitel); ?></a><img
+                    src="<?php echo esc_url($rengoringsartiklerikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#skadedyr"><?php echo($skadedyrtitel); ?></a><img src="<?php echo esc_url($skadedyrikon["url"]); ?>" alt="">
+                </svg><a href="#skadedyr"><?php echo($skadedyrtitel); ?></a><img
+                    src="<?php echo esc_url($skadedyrikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#outlet"><?php echo($outlettitel); ?></a><img src="<?php echo esc_url($outletikon["url"]); ?>" alt=""></li>
+                </svg><a href="#outlet"><?php echo($outlettitel); ?></a><img
+                    src="<?php echo esc_url($outletikon["url"]); ?>" alt=""></li>
 
         </ul>
-        <h3><?php echo($profiltitel); ?></h3>         
+        <h3><?php echo($profiltitel); ?></h3>
         <ul>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#minprofil"><?php echo($profilundersidetitel); ?></a><img src="<?php echo esc_url($profilundersideikon["url"]); ?>" alt="">
+                </svg><a href="#minprofil"><?php echo($profilundersidetitel); ?></a><img
+                    src="<?php echo esc_url($profilundersideikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#favoritter"><?php echo($favorittertitel); ?></a><img src="<?php echo esc_url($favoritterikon["url"]); ?>" alt="">
+                </svg><a href="#favoritter"><?php echo($favorittertitel); ?></a><img
+                    src="<?php echo esc_url($favoritterikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#kurv"><?php echo($kurvtitel); ?></a><img src="<?php echo esc_url($kurvikon["url"]); ?>" alt=""></li>
+                </svg><a href="#kurv"><?php echo($kurvtitel); ?></a><img src="<?php echo esc_url($kurvikon["url"]); ?>"
+                    alt=""></li>
         </ul>
-    </div> 
+    </div>
