@@ -54,7 +54,7 @@ $skilteikon = get_field("skilte_ikon");
 $hygiejneikon = get_field("hygiejne_ikon");
 $rengoringsartiklerikon = get_field("rengoringsartikler_ikon");
 $skadedyrikon = get_field("skadedyr_ikon");
-$outletikon = get_field("outletikon");
+$outletikon = get_field("outlet_ikon");
 $faldsikringikon = get_field("faldsikring_ikon");
 $vivaerneromdigtitel = get_field("vi_vaerner_om_dig_titel");
 $forsideundertitel = get_field("forside_undertitel");
@@ -77,15 +77,32 @@ $profiltitel = get_field("profil_titel");
 $profilundersidetitel = get_field("profil_underside_titel");
 $favorittertitel = get_field("favoritter_titel");
 $kurvtitel = get_field("kurv_titel");
+
 $navomos= get_field("nav-om-os");
 $navforside= get_field("nav-forside");
 $navkontakt= get_field("nav-kontakt");
 $navkundeservice= get_field("nav-kundeservice");
 $navshop= get_field("nav-shop");
 $naverhvervskunde= get_field("nav-erhvervskunde");
+$kurvikon = get_field("kurv_ikon");
+$favoritterikon = get_field("favoritter_ikon");
+$profilundersideikon = get_field("profil_underside_ikon");
+
+
 
 ?>
 
+<?php 
+$navforside = get_field('nav-forside'); 
+
+// 2. Tjek om feltet rent faktisk indeholder noget, så koden ikke fejler
+if ( $navforside ): 
+    $link_url = $navforside['url'];
+    $link_title = $navforside['title'];
+    $link_target = $navforside['target'] ? $navforside['target'] : '_self';
+    ?>
+  
+<?php endif; ?>
 
 
 
@@ -193,14 +210,14 @@ $naverhvervskunde= get_field("nav-erhvervskunde");
         <ul>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#minprofil"><?php echo($profilundersidetitel); ?></a><img src="img/hjelmIkon.svg" alt="">
+                </svg><a href="#minprofil"><?php echo($profilundersidetitel); ?></a><img src="<?php echo esc_url($profilundersideikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#favoritter"><?php echo($favorittertitel); ?></a><img src="img/hjelmIkon.svg" alt="">
+                </svg><a href="#favoritter"><?php echo($favorittertitel); ?></a><img src="<?php echo esc_url($favoritterikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#kurv"><?php echo($kurvtitel); ?></a><img src="img/hjelmIkon.svg" alt=""></li>
+                </svg><a href="#kurv"><?php echo($kurvtitel); ?></a><img src="<?php echo esc_url($kurvikon["url"]); ?>" alt=""></li>
         </ul>
     </div> 
