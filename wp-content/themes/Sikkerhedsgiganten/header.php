@@ -78,18 +78,22 @@ $profiltitel = get_field("profil_titel", $header_post_id);
 $profilundersidetitel = get_field("profil_underside_titel", $header_post_id);
 $favorittertitel = get_field("favoritter_titel", $header_post_id);
 $kurvtitel = get_field("kurv_titel", $header_post_id);
-$navomos= get_field("nav-om-os");
-$navforside= get_field("nav-forside");
-$navkontakt= get_field("nav-kontakt");
-$navkundeservice= get_field("nav-kundeservice");
-$navshop= get_field("nav-shop");
-$naverhvervskunde= get_field("nav-erhvervskunde");
+
+
+$navforside = get_field('nav-forside', $header_post_id);
+$navomos = get_field('nav-om-os', $header_post_id);
+$navkontakt = get_field('nav-kontakt', $header_post_id);
+$navkundeservice = get_field('nav-kundeservice', $header_post_id);
 $kurvikon = get_field("kurv_ikon");
 $favoritterikon = get_field("favoritter_ikon");
 $profilundersideikon = get_field("profil_underside_ikon");
-$tobdmaskerknap = get_field('tobd_masker_knappen');
-$sikkerhedsskoknap = get_field('sikkerhedssko_knap');
-$faldsikringknap = get_field('faldsikring_knap');
+$navshop = get_field('nav-shop', $header_post_id);
+$naverhvervskunde = get_field('nav-erhvervskunde', $header_post_id);
+$tobdmaskerknap = get_field('tobd_masker_knappen', $header_post_id);
+$sikkerhedsskoknap = get_field('sikkerhedssko_knap', $header_post_id);
+$faldsikringknap = get_field('faldsikring_knap', $header_post_id);
+
+
 ?>
 
 
@@ -102,6 +106,7 @@ $faldsikringknap = get_field('faldsikring_knap');
                     <li><a
                             href="<?php echo esc_url($navforside ['url']); ?>"><?php echo esc_html($navforside['title']); ?></a>
                     </li>
+
                     <li><a
                             href="<?php echo esc_url($navomos ['url']); ?>"><?php echo esc_html($navomos['title']); ?></a>
                     </li>
@@ -152,15 +157,11 @@ $faldsikringknap = get_field('faldsikring_knap');
             <div class="headerContentLower">
                 <p><?php echo($oftesogt); ?></p>
                 <ul class="headerContentList">
-
-                    <li><?php 
-$tobdmaskerknap = get_field('tobd_masker_knappen');
-
-if ($tobdmaskerknap) : ?>
+                    <li>
                         <a href="<?php echo esc_url($tobdmaskerknap['url']); ?>">
                             <?php echo esc_html($tobdmaskerknap['title']); ?>
                         </a>
-                        <?php endif; ?>
+
                     </li>
                     <li><a href="<?php echo esc_url($sikkerhedsskoknap['url']); ?>">
                             <?php echo esc_html($sikkerhedsskoknap['title']); ?>
