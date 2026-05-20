@@ -135,8 +135,13 @@ $faldsikringknap = get_field('faldsikring_knap', $header_post_id);
                     </li>
                     <li><a href="#favoritter"><img src="<?php echo esc_url($Navhjerteikon["url"]); ?>"
                                 alt="<?php echo $Navhjerteikon ["alt"]?>"></a></li>
-                    <li><a href="#kurv"><img src="<?php echo esc_url($Navkurvikon["url"]); ?>"
-                                alt="<?php echo $Navkurvikon ["alt"]?>"></a></li>
+                    <li>
+                        <button class="cart-trigger" id="cart-trigger"
+                            style="background:none;border:none;cursor:pointer;padding:0;">
+                            <img src="<?php echo esc_url($Navkurvikon["url"]); ?>"
+                                alt="<?php echo esc_attr($Navkurvikon["alt"]); ?>">
+                        </button>
+                    </li>
                     <li><a href="#sidemenu"><img src="<?php echo esc_url($Navburgerikon["url"]); ?>"
                                 alt="<?php echo $Navburgerikon ["alt"]?>" class="openMenu"></a></li>
                 </ul>
@@ -144,6 +149,16 @@ $faldsikringknap = get_field('faldsikring_knap', $header_post_id);
         </div>
         <div class="navBottom"><input type="text" placeholder="Søg her..."></div>
     </nav>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-sidebar__header">
+            <h3>Din kurv</h3>
+            <button class="cart-sidebar__close" id="cart-close">✕</button>
+        </div>
+        <div class="cart-sidebar__body">
+            <?php the_widget( 'WC_Widget_Cart', [ 'title' => '' ] ); ?>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cart-overlay"></div>
     <header id="header">
         <video class="headerBillede" autoplay muted loop playsinline>
             <source src="<?php echo esc_url($headervideo['url']); ?>" type="video/mp4">

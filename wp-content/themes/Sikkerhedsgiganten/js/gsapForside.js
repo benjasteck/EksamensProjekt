@@ -280,3 +280,23 @@ jQuery(function($){
         $wrap.find('select').val(value).trigger('change');
     });
 });
+jQuery(function($){
+    function openCart() {
+        $('#cart-sidebar, #cart-overlay').addClass('open');
+        $('body').css('overflow', 'hidden');
+    }
+    function closeCart() {
+        $('#cart-sidebar, #cart-overlay').removeClass('open');
+        $('body').css('overflow', '');
+    }
+
+    $('#cart-trigger').on('click', openCart);
+    $('#cart-close, #cart-overlay').on('click', closeCart);
+    $(document.body).on('added_to_cart', openCart);
+
+    // Intercept cart links
+    $(document).on('click', 'a[href*="/cart"]', function(e){
+        e.preventDefault();
+        openCart();
+    });
+});
