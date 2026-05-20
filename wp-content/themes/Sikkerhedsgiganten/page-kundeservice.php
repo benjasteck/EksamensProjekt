@@ -645,7 +645,9 @@ $omostitel= get_field("om_os_titel");
             anvender for meget plastik som ender i havene.
         </section>
         <section id="nyttige-links" class="genOplysningerContent">
-            <a href="pornhub.com">pornhub.com</a>
+            <a href="https://www.facebook.com/sikkerhedsgiganten.dk">Sikkerhedsgigantens Facebook</a>
+            <a href="https://www.instagram.com/sikkerhedsgigantendk/">Sikkerhedsgigantens Instagram</a>
+            <a href="https://www.linkedin.com/company/sikkerhedsgiganten/">Sikkerhedsgigantens LinkedIn</a>
         </section>
     </section>
     <section id="socialSektion">
