@@ -1,0 +1,229 @@
+.woocommerce-account .woocommerce {
+    
+    grid-template-columns: 240px 1fr;
+    gap: 3rem;
+    max-width: var(--screen-width);
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    align-items: flex-start;
+}
+
+/* ── Sidebar nav ─────────────────────────────────────────── */
+.woocommerce-MyAccount-navigation {
+    position: sticky;
+    top: 2rem;
+    background: #f5f5f5;
+    border-radius: var(--medium-border-radious);
+    padding: 1.5rem;
+}
+
+.woocommerce-MyAccount-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.woocommerce-MyAccount-navigation-link {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.woocommerce-MyAccount-navigation-link:last-child {
+    border-bottom: none;
+}
+
+.woocommerce-MyAccount-navigation-link a {
+    display: block;
+    padding: 0.75rem 1rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: var(--fontsize-text-small);
+    color: var(--dark-gray);
+    text-decoration: none;
+    border-radius: var(--small-border-radious);
+    transition: color 0.2s, background 0.2s;
+}
+
+.woocommerce-MyAccount-navigation-link a:hover {
+    color: var(--main-color);
+    background: #efefef;
+}
+
+.woocommerce-MyAccount-navigation-link.is-active a {
+    color: var(--main-color);
+    background: #fff;
+    border-left: 3px solid var(--main-color);
+}
+
+.woocommerce-MyAccount-navigation-link--customer-logout a {
+    color: #a00;
+}
+
+.woocommerce-MyAccount-navigation-link--customer-logout a:hover {
+    color: #fff;
+    background: #a00;
+}
+
+/* ── Content area ────────────────────────────────────────── */
+.woocommerce-MyAccount-content {
+    min-width: 0;
+}
+
+.woocommerce-MyAccount-content p {
+    font-size: var(--fontsize-text-small);
+    color: var(--dark-gray);
+    margin-bottom: 1.5rem;
+}
+
+/* ── Section titles ──────────────────────────────────────── */
+.woocommerce-MyAccount-content h2 {
+    color: var(--main-color);
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: var(--fontsize-title-small);
+    margin-bottom: 1rem;
+}
+
+.woocommerce-MyAccount-content h3 {
+    color: var(--text-color);
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: var(--fontsize-text-big);
+    margin-bottom: 1rem;
+}
+
+/* ── Address boxes ───────────────────────────────────────── */
+.woocommerce-Addresses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.woocommerce-Address {
+    background: #f5f5f5;
+    border-radius: var(--medium-border-radious);
+    padding: 1.5rem;
+}
+
+.woocommerce-Address-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 1rem;
+}
+
+.woocommerce-Address-title h2 {
+    font-size: var(--fontsize-text-medium) !important;
+    margin: 0 !important;
+}
+
+.woocommerce-Address-title .edit {
+    font-family: "Inter", sans-serif;
+    font-size: var(--fontsize-text-small);
+    font-weight: 700;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.woocommerce-Address-title .edit:hover {
+    color: var(--main-color);
+}
+
+address {
+    font-style: normal;
+    font-size: var(--fontsize-text-small);
+    color: var(--dark-gray);
+    line-height: 1.6;
+}
+
+/* ── Orders table ────────────────────────────────────────── */
+.woocommerce-orders-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.woocommerce-orders-table th {
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: var(--fontsize-text-small);
+    color: var(--text-color);
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border-bottom: 2px solid var(--main-color);
+}
+
+.woocommerce-orders-table td {
+    padding: 0.75rem 1rem;
+    font-size: var(--fontsize-text-small);
+    border-bottom: 1px solid #e8e8e8;
+    color: var(--dark-gray);
+}
+
+.woocommerce-orders-table tr:hover td {
+    background: #f9f9f9;
+}
+
+.woocommerce-orders-table .button {
+    font-size: 0.8rem !important;
+    padding: 0.4rem 0.8rem !important;
+}
+
+/* ── Account detail inputs ───────────────────────────────── */
+.woocommerce-MyAccount-content .input-text,
+.woocommerce-MyAccount-content input[type="text"],
+.woocommerce-MyAccount-content input[type="email"],
+.woocommerce-MyAccount-content input[type="tel"],
+.woocommerce-MyAccount-content input[type="password"] {
+    width: 100% !important;
+    height: 50px !important;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: var(--small-border-radious) !important;
+    padding: 0 1rem !important;
+    font-family: "Roboto Slab", serif !important;
+    font-size: var(--fontsize-text-small) !important;
+    color: var(--text-color) !important;
+    box-sizing: border-box !important;
+    transition: border-color 0.2s !important;
+}
+
+.woocommerce-MyAccount-content .input-text:focus,
+.woocommerce-MyAccount-content input[type="text"]:focus,
+.woocommerce-MyAccount-content input[type="email"]:focus,
+.woocommerce-MyAccount-content input[type="password"]:focus {
+    border-color: var(--secondary-color) !important;
+    outline: none !important;
+}
+
+.woocommerce-MyAccount-content label {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: var(--fontsize-text-small);
+    color: var(--dark-gray);
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+.woocommerce-MyAccount-content .form-row {
+    margin-bottom: 1.2rem;
+}
+
+/* ── Save button ─────────────────────────────────────────── */
+.woocommerce-MyAccount-content .button[type="submit"],
+.woocommerce-MyAccount-content button[type="submit"] {
+    background: var(--main-color) !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: var(--small-border-radious) !important;
+    font-family: "Inter", sans-serif !important;
+    font-weight: 900 !important;
+    font-size: var(--fontsize-text-small) !important;
+    padding: 0.75rem 2rem !important;
+    cursor: pointer !important;
+    transition: background 0.2s !important;
+}
+
+.woocommerce-MyAccount-content .button[type="submit"]:hover,
+.woocommerce-MyAccount-content button[type="submit"]:hover {
+    background: var(--orange-background) !important;
+}

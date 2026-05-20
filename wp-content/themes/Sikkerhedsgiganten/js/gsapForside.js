@@ -300,3 +300,12 @@ jQuery(function($){
         openCart();
     });
 });
+$(document.body).on('added_to_cart updated_cart_totals', function() {
+    $.get(wc_cart_params.ajax_url, { action: 'get_cart_count' }, function(count) {
+        if (count > 0) {
+            $('.nav-cart-count').text(count).show();
+        } else {
+            $('.nav-cart-count').hide();
+        }
+    });
+});

@@ -55,7 +55,7 @@ $skilteikon = get_field("skilte_ikon", $header_post_id);
 $hygiejneikon = get_field("hygiejne_ikon", $header_post_id);
 $rengoringsartiklerikon = get_field("rengoringsartikler_ikon", $header_post_id);
 $skadedyrikon = get_field("skadedyr_ikon", $header_post_id);
-$outletikon = get_field("outletikon", $header_post_id);
+$outletikon = get_field("outlet_ikon", $header_post_id);
 $faldsikringikon = get_field("faldsikring_ikon", $header_post_id);
 $vivaerneromdigtitel = get_field("vi_vaerner_om_dig_titel", $header_post_id);
 $forsideundertitel = get_field("forside_undertitel", $header_post_id);
@@ -84,14 +84,24 @@ $navforside = get_field('nav-forside', $header_post_id);
 $navomos = get_field('nav-om-os', $header_post_id);
 $navkontakt = get_field('nav-kontakt', $header_post_id);
 $navkundeservice = get_field('nav-kundeservice', $header_post_id);
-$kurvikon = get_field("kurv_ikon");
-$favoritterikon = get_field("favoritter_ikon");
-$profilundersideikon = get_field("profil_underside_ikon");
+$kurvikon = get_field("kurv_ikon", $header_post_id);
+$favoritterikon = get_field("favoritter_ikon", $header_post_id);
+$profilundersideikon = get_field("profil_underside_ikon", $header_post_id);
 $navshop = get_field('nav-shop', $header_post_id);
 $naverhvervskunde = get_field('nav-erhvervskunde', $header_post_id);
 $tobdmaskerknap = get_field('tobd_masker_knappen', $header_post_id);
 $sikkerhedsskoknap = get_field('sikkerhedssko_knap', $header_post_id);
 $faldsikringknap = get_field('faldsikring_knap', $header_post_id);
+$sikkerhedsudstyrKnap = get_field('sikkerhedsudstyr_knap', $header_post_id);
+$arbejdstojKnap = get_field('arbejdstoj_knap', $header_post_id);
+$andedraetsvaernKnap = get_field('andedraetsvaern_knap', $header_post_id);
+$faldsikringKnap = get_field('faldsikring_knap', $header_post_id);
+$forstehjaelpKnap = get_field('forstehjaelp_knap', $header_post_id);
+$skilteKnap = get_field('skilte_knap', $header_post_id);
+$hygiejneKnap = get_field('hygiejne_knap', $header_post_id);
+$rengoringsartiklerKnap = get_field('rengoringsartikler_knap', $header_post_id);
+$skadedyrKnap = get_field('skadedyr_knap', $header_post_id);
+$outletKnap = get_field('outlet_knap', $header_post_id);
 
 
 ?>
@@ -133,13 +143,29 @@ $faldsikringknap = get_field('faldsikring_knap', $header_post_id);
                     <li><a
                             href="<?php echo esc_url($naverhvervskunde ['url']); ?>"><?php echo esc_html($naverhvervskunde['title']); ?></a>
                     </li>
-                    <li><a href="#favoritter"><img src="<?php echo esc_url($Navhjerteikon["url"]); ?>"
-                                alt="<?php echo $Navhjerteikon ["alt"]?>"></a></li>
                     <li>
+                        <a href="<?php echo esc_url( wc_get_account_endpoint_url( 'wishlist' ) ); ?>">
+                            <img src="<?php echo esc_url($Navhjerteikon["url"]); ?>"
+                                alt="<?php echo esc_attr($Navhjerteikon["alt"]); ?>">
+                            <?php
+        $count = YITH_WCWL()->count_products();
+        if ( $count > 0 ) :
+        ?>
+                            <span class="nav-wishlist-count"><?php echo $count; ?></span>
+                            <?php endif; ?>
+                        </a>
+                    </li>
+                    <li style="position:relative;">
                         <button class="cart-trigger" id="cart-trigger"
-                            style="background:none;border:none;cursor:pointer;padding:0;">
+                            style="background:none;border:none;cursor:pointer;padding:0;position:relative;">
                             <img src="<?php echo esc_url($Navkurvikon["url"]); ?>"
                                 alt="<?php echo esc_attr($Navkurvikon["alt"]); ?>">
+                            <?php
+        $count = WC()->cart->get_cart_contents_count();
+        if ( $count > 0 ) :
+        ?>
+                            <span class="nav-cart-count"><?php echo $count; ?></span>
+                            <?php endif; ?>
                         </button>
                     </li>
                     <li><a href="#sidemenu"><img src="<?php echo esc_url($Navburgerikon["url"]); ?>"
@@ -147,7 +173,7 @@ $faldsikringknap = get_field('faldsikring_knap', $header_post_id);
                 </ul>
             </div>
         </div>
-        <div class="navBottom"><input type="text" placeholder="Søg her..."></div>
+        <div class="navBottom"><input type="search" placeholder="Søg her..."></div>
     </nav>
     <div class="cart-sidebar" id="cart-sidebar">
         <div class="cart-sidebar__header">
@@ -168,7 +194,7 @@ $faldsikringknap = get_field('faldsikring_knap', $header_post_id);
         <div class="headerContent">
             <h1 id="headerTitle"><?php echo($vivaerneromdigtitel); ?></h1>
             <h4 id="headerUndertitel"><?php echo($forsideundertitel); ?></h4>
-            <input type="text" placeholder="Søg her..." id="headerInput">
+            <input type="search" placeholder="Søg her..." id="headerInput">
             <div class="headerContentLower">
                 <p><?php echo($oftesogt); ?></p>
                 <ul class="headerContentList">
@@ -199,49 +225,57 @@ $faldsikringknap = get_field('faldsikring_knap', $header_post_id);
 
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#arbejdsudstyr"><?php echo($sikkerhedsudstyrtitel); ?></a><img
+                </svg><a
+                    href="<?php echo esc_url($sikkerhedsudstyrKnap['url']); ?>"><?php echo($sikkerhedsudstyrKnap['title']); ?></a><img
                     src="<?php echo esc_url($sikkerhedsudstyrikon["url"]); ?>" alt=""></li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#arbejdstoj"><?php echo($arbejdstojtitel); ?></a><img
+                </svg><a
+                    href="<?php echo esc_url($arbejdstojKnap['url']); ?>"><?php echo($arbejdstojKnap['title']); ?></a><img
                     src="<?php echo esc_url($arbejdstojikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#andedretsvern"><?php echo($andedraetsvaerntitel); ?></a><img
+                </svg><a
+                    href="<?php echo esc_url($andedraetsvaernKnap['url']); ?>"><?php echo($andedraetsvaernKnap['title']); ?></a><img
                     src="<?php echo esc_url($andedraetsvaernikon["url"]); ?>" alt=""></li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#faldsikring"><?php echo($faldsikringtitel); ?></a><img
+                </svg><a
+                    href="<?php echo esc_url($faldsikringKnap['url']); ?>"><?php echo($faldsikringKnap['title']); ?></a><img
                     src="<?php echo esc_url($faldsikringikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#forstehjelp"><?php echo($forstehjaelptitel); ?></a><img
+                </svg><a
+                    href="<?php echo esc_url($forstehjaelpKnap['url']); ?>"><?php echo($forstehjaelpKnap['title']); ?></a><img
                     src="<?php echo esc_url($forstehjaelpikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#skilte"><?php echo($skiltetitel); ?></a><img
+                </svg><a href="<?php echo esc_url($skilteKnap['url']); ?>"><?php echo($skilteKnap['title']); ?></a><img
                     src="<?php echo esc_url($skilteikon["url"]); ?>" alt=""></li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#hygiejne"><?php echo($hygiejnetitel); ?></a><img
+                </svg><a
+                    href="<?php echo esc_url($hygiejneKnap['url']); ?>"><?php echo($hygiejneKnap['title']); ?></a><img
                     src="<?php echo esc_url($hygiejneikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#rengoring"><?php echo($rengoringsartiklertitel); ?></a><img
+                </svg><a
+                    href="<?php echo esc_url($rengoringsartiklerKnap['url']); ?>"><?php echo($rengoringsartiklerKnap['title']); ?></a><img
                     src="<?php echo esc_url($rengoringsartiklerikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#skadedyr"><?php echo($skadedyrtitel); ?></a><img
+                </svg><a
+                    href="<?php echo esc_url($skadedyrKnap['url']); ?>"><?php echo($skadedyrKnap['title']); ?></a><img
                     src="<?php echo esc_url($skadedyrikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#outlet"><?php echo($outlettitel); ?></a><img
+                </svg><a href="<?php echo esc_url($outletKnap['url']); ?>"><?php echo($outletKnap['title']); ?></a><img
                     src="<?php echo esc_url($outletikon["url"]); ?>" alt=""></li>
 
         </ul>

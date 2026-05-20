@@ -283,18 +283,17 @@ footer{
     position: relative;
     margin-top: 25px;
 }
-.footerContentTop form input{
-    background: none;
-    border: none;
-    line-height: 33px;
-    padding-left: 0;
-    width: 100%;
-    padding-right: 30px;
-    font-size: 20px;
-    
-    outline: none;
-    color: #404040;
-    padding-bottom: 8px;
+.footerContentTop form input[type="email"] {
+    background: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    height: auto !important;
+    line-height: 33px !important;
+    padding: 0 30px 8px 0 !important;
+    width: 100% !important;
+    font-size: 20px !important;
+    outline: none !important;
+    color: #404040 !important;
 }
 .footerContentTop form input::placeholder{
     color: #404040;
@@ -499,4 +498,48 @@ footer{
 
 .cart-overlay.open {
     display: block;
+}
+.nav-wishlist-count {
+    position: absolute;
+    top: -7px;
+    right: -6px;
+    background: var(--main-color);
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: 11px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+/* Make the li position relative so the badge positions correctly */
+.nav-wishlist-count + img,
+li:has(.nav-wishlist-count) {
+    position: relative;
+}
+
+li:has(.nav-wishlist-count) {
+    position: relative;
+}
+.nav-cart-count {
+    position: absolute;
+    top: -7px;
+    right: -6px;
+    background: var(--main-color);
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: 11px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
 }

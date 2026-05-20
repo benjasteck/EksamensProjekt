@@ -148,7 +148,8 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
                     <img src="<?php echo esc_url($toiletpapir["url"]); ?>" alt="<?php echo $toiletpapir ["alt"]?>">
                     <div class="tilbudContent">
                         <h3><?php echo($toiletpapirtitel); ?></h3>
-                        <p><strike><?php echo($toiletpapirgammelpris); ?></strike><span> <?php echo($toiletpapirnypris); ?></span></p>
+                        <p><strike><?php echo($toiletpapirgammelpris); ?></strike><span>
+                                <?php echo($toiletpapirnypris); ?></span></p>
                         <a class="blueCta" href=""><?php echo($toiletpapirsemeretekst); ?></a>
                         <div class="tilbudsMerke">
                             <p><?php echo($toiletpapirrabat); ?></p>
@@ -159,7 +160,8 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
                     <img src="<?php echo esc_url($faldsikring["url"]); ?>" alt="<?php echo $faldsikring ["alt"]?>">
                     <div class="tilbudContent">
                         <h3><?php echo($faldsikringtitel); ?></h3>
-                        <p><strike><?php echo($faldsikringgammelpris); ?></strike><span><?php echo($faldsikringnypris); ?></span></p>
+                        <p><strike><?php echo($faldsikringgammelpris); ?></strike><span><?php echo($faldsikringnypris); ?></span>
+                        </p>
                         <a class="blueCta" href=""><?php echo($faldsikringsemeretekst); ?></a>
                         <div class="tilbudsMerke">
                             <p><?php echo($faldsikringrabat); ?></p>
@@ -171,7 +173,8 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
                         alt="<?php echo $andedraetsvaern ["alt"]?>">
                     <div class="tilbudContent">
                         <h3><?php echo($andedraetsvaerntitel); ?></h3>
-                        <p><strike><?php echo($andedraetsvaerngammelpris); ?></strike><span><?php echo($andedraetsvaernnypris); ?></span></p>
+                        <p><strike><?php echo($andedraetsvaerngammelpris); ?></strike><span><?php echo($andedraetsvaernnypris); ?></span>
+                        </p>
                         <a class="blueCta" href=""><?php echo($andedraetsvaernsemeretekst); ?></a>
                         <div class="tilbudsMerke">
                             <p><?php echo($andedraetsvaernrabat); ?></p>
@@ -284,12 +287,13 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
         <section id="socialSektion">
             <h3 class="socialTitel"><?php echo($folgsgpasometitel); ?></h3>
             <div class="someContainer">
-                <a href="https://www.instagram.com/sikkerhedsgigantendk/" target="_blank"><img src="<?php echo esc_url($instagramikon["url"]); ?>"
+                <a href="https://www.instagram.com/sikkerhedsgigantendk/" target="_blank"><img
+                        src="<?php echo esc_url($instagramikon["url"]); ?>"
                         alt="<?php echo $instagramikon ["alt"]?>"></a>
-                <a href="https://www.facebook.com/sikkerhedsgiganten.dk" target="_blank"><img src="<?php echo esc_url($facebookikon["url"]); ?>"
-                        alt="<?php echo $facebookikon ["alt"]?>"></a>
-                <a href="https://www.linkedin.com/company/sikkerhedsgiganten/" target="_blank"><img src="<?php echo esc_url($linkedinikon["url"]); ?>"
-                        alt="<?php echo $linkedinikon ["alt"]?>"></a>
+                <a href="https://www.facebook.com/sikkerhedsgiganten.dk" target="_blank"><img
+                        src="<?php echo esc_url($facebookikon["url"]); ?>" alt="<?php echo $facebookikon ["alt"]?>"></a>
+                <a href="https://www.linkedin.com/company/sikkerhedsgiganten/" target="_blank"><img
+                        src="<?php echo esc_url($linkedinikon["url"]); ?>" alt="<?php echo $linkedinikon ["alt"]?>"></a>
             </div>
             <div class="newsletterContainer">
                 <div class="newsletterLeft">
@@ -314,7 +318,7 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
             <div class="logoGrid" id="logoGrid"></div>
             <div class="logoGridFog" id="logoGridFog"></div>
             <div class="logoGridContent">
-            <?php echo($dinefordelesomerhvervskunde); ?>
+                <h2><?php echo($dinefordelesomerhvervskunde); ?></h2>
             </div>
 
         </section>
@@ -323,7 +327,7 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
                 <div class="erhvervHeroBg"></div>
                 <div class="top1Wrapper">
                     <div class="erhvervsHeroTop" id="top0">
-                    <?php echo($dinefordelesomerhvervskunde); ?>
+                        <h2><?php echo($dinefordelesomerhvervskunde); ?></h2>
                         <div class="erhvervsHeroTopLinks">
                             <a href=""> <?php echo($tilmelddiglilletekst); ?></a>
                             <span>|</span>
@@ -421,8 +425,7 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
 
                         <div class="inputContainer" id="inputStor">
                             <label for="name"><?php echo($skrivbesked); ?></label>
-                            <input type="text" class="bigInput"
-                                placeholder="Skriv din besked her">
+                            <input type="text" class="bigInput" placeholder="Skriv din besked her">
                         </div>
                         <div class="inputBtn">
                             <p><?php echo($sendforesporgseltekst); ?></p>
@@ -431,7 +434,7 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
                 </div>
             </div>
         </section>
-        <section id="blogSection">        
+        <section id="blogSection">
             <div class="blogSectionInner">
                 <div class="blogSectionInnerLeft">
                     <div class="blogItem">
@@ -460,7 +463,7 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
                         <h3><?php echo($blogsetandedraetsvaern); ?></h3>
                         <p><?php echo($blogetandedraetsvaernbrodtekst); ?></p>
                         <a href="">Læs blog</a>
-                    </div>      
+                    </div>
                     <div class="blogItem">
                         <img src="<?php echo esc_url($blogsikkerhedshjelmbillede["url"]); ?>"
                             alt="<?php echo $blogsikkerhedshjelmbillede ["alt"]?>">
@@ -470,32 +473,33 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
                     </div>
                     <div class="blogItem">
                         <h2><?php echo($alleblogs); ?></h2>
-                        <a href="">Se mere</a>       
+                        <a href="">Se mere</a>
                     </div>
                 </div>
             </div>
-        </section>        
+        </section>
         <section id="sidsteTekst">
             <div class="sidsteTekstLeft">
                 <h3><?php echo($dksstoerstesortiment); ?></h3>
                 <p><?php echo($storstesortimentbrodtekst); ?></p>
             </div>
             <div class="sidsteTekstRight">
-                <img src="<?php echo esc_url($toarbejderebillede["url"]); ?>" alt="">                         
+                <img src="<?php echo esc_url($toarbejderebillede["url"]); ?>" alt="">
             </div>
         </section>
-        <section id="socialSektion">       
+        <section id="socialSektion">
             <h3 class="socialTitel"><?php echo($foelgsg); ?></h3>
             <div class="someContainer">
-                <a href="https://www.instagram.com/sikkerhedsgigantendk/" target="_blank"><img src="<?php echo esc_url($instagramikon["url"]); ?>"
+                <a href="https://www.instagram.com/sikkerhedsgigantendk/" target="_blank"><img
+                        src="<?php echo esc_url($instagramikon["url"]); ?>"
                         alt="<?php echo $instagramikon ["alt"]?>"></a>
-                <a href="https://www.facebook.com/sikkerhedsgiganten.dk" target="_blank"><img src="<?php echo esc_url($facebookikon["url"]); ?>"
-                        alt="<?php echo $facebookikon ["alt"]?>"></a>
-                <a href="https://www.linkedin.com/company/sikkerhedsgiganten/" target="_blank"><img src="<?php echo esc_url($linkedinikon["url"]); ?>"
-                        alt="<?php echo $linkedinikon ["alt"]?>"></a>
+                <a href="https://www.facebook.com/sikkerhedsgiganten.dk" target="_blank"><img
+                        src="<?php echo esc_url($facebookikon["url"]); ?>" alt="<?php echo $facebookikon ["alt"]?>"></a>
+                <a href="https://www.linkedin.com/company/sikkerhedsgiganten/" target="_blank"><img
+                        src="<?php echo esc_url($linkedinikon["url"]); ?>" alt="<?php echo $linkedinikon ["alt"]?>"></a>
             </div>
         </section>
-        <section id="bottomLinks">              
+        <section id="bottomLinks">
             <div class="bottomLinksContainer">
                 <a href=""><a href="" target="_blank"><img src="<?php echo esc_url($findosikon["url"]); ?>"
                             alt="<?php echo $findosikon ["alt"]?>"><?php echo($findoshertekst); ?></a>

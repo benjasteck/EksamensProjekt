@@ -35,9 +35,34 @@ function mytheme_enqueue_styles() {
             get_template_directory_uri() . '/css/woocommerce.css'
         );
     }
+    if (is_account_page()) {
+        wp_enqueue_style(
+            'contact',
+            get_template_directory_uri() . '/css/myaccount.css'
+        );
+    }
+    if (is_checkout()) {
+        wp_enqueue_style(
+            'contact',
+            get_template_directory_uri() . '/css/checkout.css'
+        );
+    }
 
 }
 function mytheme_enqueue_scripts() {
+    if ( is_checkout() ) {
+        wp_enqueue_style(
+            'checkout',
+            get_template_directory_uri() . '/css/checkout.css'
+        );
+    }
+
+    if ( is_account_page() ) {
+        wp_enqueue_style(
+            'myaccount',
+            get_template_directory_uri() . '/css/myaccount.css'
+        );
+    }
 
     wp_enqueue_script(
         'gsap',
@@ -258,5 +283,27 @@ function show_payment_icons() {
 add_action( 'woocommerce_single_product_summary', 'show_product_actions_block_close', 19 );
 function show_product_actions_block_close() {
     echo '</div>';
+}
+add_action( 'wp_enqueue_scripts', function() {
+    wp_enqueue_script( 'jquery' );
+} );
+
+add_action( 'woocommerce_account_wishlist_endpoint', function() {
+    echo do_shortcode( '[yith_wcwl_wishlist]' );
+} );
+
+add_filter( 'woocommerce_account_menu_items', function( $items ) {
+    $items['wishlist'] = 'Favoritter';
+    return $items;
+} );
+
+add_action( 'init', function() {
+    add_rewrite_endpoint( 'wishlist', EP_ROOT | EP_PAGES );
+} );
+add_action( 'wp_ajax_get_cart_count', 'get_cart_count_handler' );
+add_action( 'wp_ajax_nopriv_get_cart_count', 'get_cart_count_handler' );
+function get_cart_count_handler() {
+    echo WC()->cart->get_cart_contents_count();
+    wp_die();
 }
 ?>
