@@ -420,3 +420,26 @@ footer{
     margin-top: 50px;
     justify-content: center;
 }
+.shop-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.shop-sidebar {
+    width: 260px;
+    flex-shrink: 0;
+}
+
+.shop-sidebar__sticky {
+    position: sticky;
+    top: 2rem;
+}
+
+.shop-main {
+    flex: 1;
+    min-width: 0; /* prevents flex blowout */
+}

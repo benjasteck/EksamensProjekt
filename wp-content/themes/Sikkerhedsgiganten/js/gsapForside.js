@@ -269,3 +269,14 @@ window.addEventListener("scroll", () => {
         ticking = true;
     }
 });
+jQuery(function($){
+    $(document).on('click', '.variation-btn', function(){
+        const $btn = $(this);
+        const $wrap = $btn.closest('.variation-buttons');
+        const value = $btn.data('value');
+
+        $wrap.find('.variation-btn').removeClass('selected');
+        $btn.addClass('selected');
+        $wrap.find('select').val(value).trigger('change');
+    });
+});

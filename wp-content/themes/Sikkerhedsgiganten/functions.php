@@ -29,7 +29,12 @@ function mytheme_enqueue_styles() {
             get_template_directory_uri() . '/css/erhverv.css'
         );
     }
-    
+    if (is_woocommerce() || is_cart() || is_checkout() || is_account_page()) {
+        wp_enqueue_style(
+            'contact',
+            get_template_directory_uri() . '/css/woocommerce.css'
+        );
+    }
 
 }
 function mytheme_enqueue_scripts() {
@@ -115,5 +120,143 @@ add_action('init', 'disable_gutenberg');
 function shop_enable_woocommerce(){
     add_theme_support("woocommerce");
 }
-add_action("after_setup_theme", "shop_enable_woocommerce")
+add_action("after_setup_theme", "shop_enable_woocommerce");
+add_filter( 'woocommerce_loop_add_to_cart_link', '__return_empty_string' );
+
+add_action( 'woocommerce_before_shop_loop_item_title', 'show_product_brand_image', 15 );
+function show_product_brand_image() {
+    $image = get_field( 'product_brand_img' );
+    if ( ! $image ) return;
+    echo '<div class="product-brand-logo">';
+    echo '<img src="' . esc_url( $image['url'] ) . '" alt="brand logo">';
+    echo '</div>';
+}
+
+add_action( 'woocommerce_after_shop_loop_item', 'price_row_open', 5 );
+function price_row_open() {
+    global $product;
+    echo '<div class="price-row">';
+    echo '<span class="price-row__price">' . $product->get_price_html() . '</span>';
+    echo '<span class="price-row__vat">inkl. moms</span>';
+    echo '</div>';
+}
+
+add_action( 'woocommerce_after_shop_loop_item', 'price_row_add_to_cart', 10 );
+function price_row_add_to_cart() {
+    global $product;
+    echo '<a href="' . esc_url( $product->add_to_cart_url() ) . '" class="button add_to_cart_button">';
+    echo esc_html__( 'Add to cart', 'woocommerce' );
+    echo '</a>';
+}
+
+add_action( 'woocommerce_single_product_summary', 'show_brand_above_title', 1 );
+function show_brand_above_title() {
+    $terms = get_the_terms( get_the_ID(), 'product_brand' );
+    if ( ! $terms || is_wp_error( $terms ) ) return;
+    echo '<div class="single-product-brand">';
+    echo '<a href="' . esc_url( get_term_link( $terms[0] ) ) . '">' . esc_html( $terms[0]->name ) . '</a>';
+    echo '</div>';
+}
+
+// SKU just below title (title is priority 5)
+add_action( 'woocommerce_single_product_summary', 'show_sku_below_title', 9 );
+function show_sku_below_title() {
+    global $product;
+    $sku = $product->get_sku();
+    if ( ! $sku ) return;
+    echo '<div class="single-product-sku">SKU: ' . esc_html( $sku ) . '</div>';
+}
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+
+add_action( 'woocommerce_single_product_summary', 'show_single_price', 10 );
+function show_single_price() {
+    global $product;
+    echo '<div class="single-product-price">' . $product->get_price_html() . ' <span class="single-product-price-extra"> (inkl. moms)</span></div>';
+}
+add_action( 'woocommerce_single_product_summary', 'show_stock_delivery', 11 );
+function show_stock_delivery() {
+    global $product;
+    $stock = $product->get_stock_quantity();
+    echo '<div class="single-product-stock">';
+    echo $stock . ' på lager | Leveringstid 1-2 dage';
+    echo '</div>';
+}
+add_action( 'woocommerce_single_product_summary', 'show_product_actions_block_open', 12 );
+function show_product_actions_block_open() {
+    echo '<div class="product-actions-block">';
+}
+add_filter( 'woocommerce_dropdown_variation_attribute_options_html', 'custom_variation_buttons', 10, 2 );
+function custom_variation_buttons( $html, $args ) {
+    $options   = $args['options'];
+    $attribute = $args['attribute'];
+    $product   = $args['product'];
+    $selected  = isset( $_REQUEST[ 'attribute_' . sanitize_title( $attribute ) ] )
+                 ? wc_clean( $_REQUEST[ 'attribute_' . sanitize_title( $attribute ) ] )
+                 : $product->get_variation_default_attribute( $attribute );
+
+    $html = '<div class="variation-buttons" data-attribute="' . esc_attr( sanitize_title( $attribute ) ) . '">';
+
+    foreach ( $options as $option ) {
+        $is_selected = sanitize_title( $option ) === sanitize_title( $selected );
+        $html .= '<button type="button" class="variation-btn ' . ( $is_selected ? 'selected' : '' ) . '"
+                    data-value="' . esc_attr( $option ) . '">'
+                    . esc_html( $option ) .
+                 '</button>';
+    }
+
+    $html .= '<select name="attribute_' . esc_attr( sanitize_title( $attribute ) ) . '" style="display:none">';
+    foreach ( $options as $option ) {
+        $html .= '<option value="' . esc_attr( $option ) . '" ' . selected( $selected, $option, false ) . '>' . esc_html( $option ) . '</option>';
+    }
+    $html .= '</select>';
+    $html .= '</div>';
+
+    return $html;
+}
+
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 12 );
+
+
+
+add_action( 'woocommerce_single_product_summary', 'show_test_product_link', 14 );
+function show_test_product_link() {
+    echo '<a href="#" class="test-product-link">Test produktet - Se butiksoplysninger</a>';
+}
+
+add_action( 'woocommerce_single_product_summary', 'show_pickup_info', 15 );
+function show_pickup_info() {
+    echo '<p class="pickup-info">Afhentning er tilgængelig på Lillebæltsvej 60A, Esbjerg</p>';
+}
+
+add_action( 'woocommerce_single_product_summary', 'show_ready_info', 16 );
+function show_ready_info() {
+    echo '<p class="ready-info">Normalt klar inden for 1-2 dage</p>';
+}
+
+add_action( 'woocommerce_single_product_summary', 'show_divider', 17 );
+function show_divider() {
+    echo '<div class="summary-divider"></div>';
+}
+
+add_action( 'woocommerce_single_product_summary', 'show_payment_icons', 18 );
+function show_payment_icons() {
+    echo '<div class="payment-icons">';
+    $icons = [
+        'visa'       => 'https://upload.wikimedia.org/wikipedia/commons/5/57/Visa_Inc._logo_%282014%E2%80%932021%29.svg',
+        'mastercard' => 'https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg',
+        'mobilepay'  => 'https://upload.wikimedia.org/wikipedia/commons/f/fd/MobilePay_logo.svg',
+        'paypal'     => 'https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg',
+        'klarna'     => 'https://upload.wikimedia.org/wikipedia/commons/4/40/Klarna_Payment_Badge.svg',
+    ];
+    foreach ( $icons as $name => $url ) {
+        echo '<img src="' . esc_url( $url ) . '" alt="' . esc_attr( $name ) . '" class="payment-icon">';
+    }
+    echo '</div>';
+}
+
+add_action( 'woocommerce_single_product_summary', 'show_product_actions_block_close', 19 );
+function show_product_actions_block_close() {
+    echo '</div>';
+}
 ?>

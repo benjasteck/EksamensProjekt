@@ -1,0 +1,272 @@
+.woof_products_top_panel {
+    display: none !important;
+}
+.page-title {
+    display: none !important;
+}
+.woocommerce-ordering {
+    display: none !important;
+}
+.woocommerce-loop-product__title {
+    font-size: 28px;
+    color: var(--text-color);
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+}
+.woocommerce:where(body:not(.woocommerce-uses-block-theme)) ul.products li.product .price {
+    font-size: 24px;
+    color: var(--dark-gray);
+    font-weight: 900;
+}
+
+.woocommerce ul.products li.product a img {
+    object-fit: cover;
+
+}
+.product-brand-logo{
+    height: 40px;
+    width: auto;
+}
+.product-brand-logo img{
+    height: 40px !important;
+    width: auto !important;
+}
+
+.woocommerce ul.products li.product .price-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto !important;
+}
+
+.woocommerce ul.products li.product .price {
+    order: 1;
+}
+
+.price-row__vat {
+    order: 2;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+
+.price-row__vat {
+    font-size: 0.8rem;
+    color: var(--main-color);
+}
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.woocommerce ul.products li.product .woocommerce-loop-product__link {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+.woocommerce ul.products {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+
+    gap: 50px;
+}
+
+.woocommerce ul.products li.product {
+    display: flex;
+    flex-direction: column;
+    
+    width: 100% !important;
+}
+
+.woocommerce ul.products::before {
+    display: none !important;
+}
+.woocommerce ul.products li.product .price-row {
+    margin-top: auto;
+}
+.price{
+    display: none !important;
+}
+.woocommerce span.onsale{
+    background-color: var(--main-color);
+}
+.price-row__price {
+    font-size: 24px;
+    color: var(--dark-gray);
+    font-weight: 900;
+}
+.product-layout{
+    width: var(--screen-width);
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.woocommerce div.product .product_title{
+    font-size: var(--fontsize-title-small);
+    font-weight: 900;
+    color: var(--dark-gray);
+    font-family: "Inter", sans-serif;
+}
+.single-product-brand a{
+    font-size: var(--fontsize-text-small);
+    color: var(--dark-gray);
+}
+.single-product-sku{
+     font-size: var(--fontsize-text-small);
+    color: var(--dark-gray);
+}
+.single-product-price,
+.single-product-price * {
+    font-size: 24px !important;
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin: 20px 0;
+}
+.single-product-price-extra{
+    color: var(--dark-gray);
+}
+.single-product-stock{
+    font-size: var(--fontsize-text-medium);
+    color: var(--main-color);
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(234, 234, 234, 1) 100%);
+    padding: 10px 0;
+    border-radius: 3px;
+}
+.variation-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    
+}
+
+.variation-btn {
+    padding: 2px 1rem;
+    border: 2px solid var(--dark-gray);
+    background: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    transition: all 0.2s;
+}
+
+.variation-btn:hover {
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
+
+.variation-btn.selected {
+    background: var(--main-color);
+    border-color: var(--main-color);
+    color: #fff;
+}
+.woocommerce div.product form.cart .variations th,
+.woocommerce div.product form.cart .reset_variations {
+    display: none !important;
+}
+.test-product-link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: var(--main-color);
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    margin-left: 20px;
+}
+.payment-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 0;
+}
+
+.payment-icon {
+    height: 22px !important;
+    width: auto;
+    object-fit: contain;
+    opacity: 0.8;
+}
+.stock .in-stock{
+    display: none !important;
+}
+.woocommerce-variation-availability{
+    display: none !important;
+}
+.product-actions-block{
+    background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(234, 234, 234, 1) 100%);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.woocommerce div.product form.cart{
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+
+
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button.alt{
+    background-color: var(--secondary-color);
+}
+.woocommerce-variation-add-to-cart {
+    display: flex !important;
+    align-items: stretch !important;
+    gap: 0.5rem;
+}
+
+.woocommerce-variation-add-to-cart .quantity {
+    flex: 1 !important;
+}
+
+.woocommerce-variation-add-to-cart .quantity input.qty {
+    
+    height: 48px !important;
+    margin: 0 !important;
+    padding: 0 1rem !important;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 4px !important;
+    box-sizing: border-box !important;
+}
+
+.woocommerce-variation-add-to-cart .single_add_to_cart_button {
+    width: 100% !important;
+    flex-shrink: 2 !important;
+    height: 48px !important;
+    margin: 0 !important;
+    width: auto !important;
+}
+.woocommerce div.product form.cart .button{
+    flex: 10;
+}
+.pickup-info{
+    font-size: var(--fontsize-text-small);
+    color: var(--text-color);
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.ready-info{
+    font-size: var(--fontsize-text-small);
+    color: var(--dark-gray);
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.summary-divider {
+    border-top: 1px solid var(--dark-gray);
+    margin: 1rem 0;
+}
