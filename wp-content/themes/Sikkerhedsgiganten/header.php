@@ -173,7 +173,7 @@ $outletKnap = get_field('outlet_knap', $header_post_id);
                 </ul>
             </div>
         </div>
-        <div class="navBottom"><input type="search" placeholder="Søg her..." id="headerInputNav"></div>
+        <div class="navBottom hide"><input type="search" placeholder="Søg her..." id="headerInputNav"></div>
     </nav>
     <div class="cart-sidebar" id="cart-sidebar">
         <div class="cart-sidebar__header">

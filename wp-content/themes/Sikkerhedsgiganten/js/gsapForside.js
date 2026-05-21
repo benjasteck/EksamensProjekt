@@ -114,7 +114,7 @@ for (let r = 0; r < rows; r++) {
     const count = isSmallRow ? smallCount : bigCount;
     for (let i = 0; i < count; i++) {
         const item = document.createElement("div");
-        item.style.backgroundImage = "url('img/lilleLogo.jpg')";
+        item.style.backgroundImage = "url('http://sikkerhedsgiganten.local/wp-content/uploads/2026/05/Logo-til-video.png')";
         row.appendChild(item);
     }
     grid.appendChild(row);
@@ -233,6 +233,7 @@ let lastScrollY = window.scrollY;
 let ticking = false;
 
 const nav = document.getElementById("nav");
+const sideMenu2 = document.querySelector(".headerSideMenuCategories");
 const navBottom = document.querySelector(".navBottom");
 
 const SHRINK_START = 80;   // when nav is allowed to shrink
@@ -248,11 +249,13 @@ function updateNav() {
     // Only shrink after user has actually scrolled down a bit
     if (currentScrollY > SHRINK_START && isScrollingDown) {
         nav.classList.add("shrink");
+        sideMenu2.classList.add("shrink");
         navBottom.classList.add("hide");
     }
 
     if (isScrollingUp) {
         nav.classList.remove("shrink");
+        sideMenu2.classList.remove("shrink");
         navBottom.classList.remove("hide");
     }
 

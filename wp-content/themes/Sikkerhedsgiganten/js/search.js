@@ -42,7 +42,8 @@ jQuery(function ($) {
 
     $('#headerInput, #headerInputNav').each(function () {
         const $input = $(this);
-        const $dropdown = $('<div class="search-dropdown"></div>').insertAfter($input);
+        const isNav = $input.attr('id') === 'headerInputNav';
+        const $dropdown = $('<div class="search-dropdown ' + (isNav ? 'search-dropdown--nav' : 'search-dropdown--header') + '"></div>').insertAfter($input);
         let debounce;
 
         $input.on('input', function () {
@@ -72,5 +73,6 @@ jQuery(function ($) {
             $('.search-dropdown').hide();
         }
     });
-
+    $dropdown[0].addEventListener('mouseenter', () => window.lenis && window.lenis.stop());
+$dropdown[0].addEventListener('mouseleave', () => window.lenis && window.lenis.start());
 });

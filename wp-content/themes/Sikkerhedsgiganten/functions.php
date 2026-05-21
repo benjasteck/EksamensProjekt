@@ -150,11 +150,11 @@ wp_localize_script( 'your-main-script-handle', 'huskySearch', [
 ] );
 
     // Example (ACF style - adjust if needed)
-    $erhvervHero1 = get_field('erhvervHero1');
-    $erhvervHero2 = get_field('erhvervHero2');
-    $erhvervHero3 = get_field('erhvervHero3');
-    $erhvervHero4 = get_field('erhvervHero4');
-    $erhvervHero5 = get_field('erhvervHero5');
+    $erhvervHero1 = get_field('erhverv_hero_2');
+    $erhvervHero2 = get_field('erhverv_hero_3');
+    $erhvervHero3 = get_field('erhverv_hero_4');
+    $erhvervHero4 = get_field('erhverv_hero_5');
+    $erhvervHero5 = get_field('erhverv_hero_6');
 
     wp_localize_script('gsap-forside', 'themeData', array(
         'erhvervHero1' => esc_url($erhvervHero1['url'] ?? ''),

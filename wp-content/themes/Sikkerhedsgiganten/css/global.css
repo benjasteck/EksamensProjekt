@@ -137,7 +137,7 @@ video{
 }
 .navBottom{
     margin: 0 auto;
-    width: 700px;
+    width: 730px;
     height: 50px;
     display: flex;
     align-items: center;
@@ -171,11 +171,14 @@ video{
     z-index: 999;
     backdrop-filter: blur(8px);
     border-radius: 5px;
-    transition: 0.3s ease;
+    transition: 0.25s ease;
     
 }
 .headerSideMenuCategories.active {
     right: 0;
+}
+.headerSideMenuCategories.shrink {
+    top: 80px;
 }
 .headerSideMenuCategories h3{
     text-align: center;
@@ -544,10 +547,6 @@ li:has(.nav-wishlist-count) {
     line-height: 1;
 }
 .search-dropdown {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
     background: #fff;
     border-radius: var(--small-border-radious);
     box-shadow: 0 8px 24px rgba(0,0,0,0.12);
@@ -555,8 +554,24 @@ li:has(.nav-wishlist-count) {
     display: none;
     overflow: hidden;
     min-width: 360px;
+    max-height: 33vh;
+    margin: 0 auto;
+    overflow-y: scroll;
+}
+.search-dropdown--nav {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 55px);
+    width: 730px;
 }
 
+.search-dropdown--header {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 10px);
+    width: 730px;
+}
 .search-dropdown__heading {
     display: block;
     padding: 0.6rem 1rem 0.3rem;
