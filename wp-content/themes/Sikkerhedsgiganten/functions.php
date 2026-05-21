@@ -132,6 +132,22 @@ wp_enqueue_script(
         null,
         true
     );
+wp_enqueue_script(
+    'husky-search',
+    get_template_directory_uri() . '/js/search.js',
+    [ 'jquery' ],
+    '1.0.0',
+    true
+);
+
+wp_localize_script( 'husky-search', 'huskySearch', [
+    'ajaxUrl' => admin_url( 'admin-ajax.php' ),
+    'nonce'   => wp_create_nonce( 'husky_search_nonce' ),
+] );
+wp_localize_script( 'your-main-script-handle', 'huskySearch', [
+    'ajaxUrl' => admin_url( 'admin-ajax.php' ),
+    'nonce'   => wp_create_nonce( 'husky_search_nonce' ),
+] );
 
     // Example (ACF style - adjust if needed)
     $erhvervHero1 = get_field('erhvervHero1');
@@ -326,5 +342,71 @@ add_action( 'wp_ajax_nopriv_get_cart_count', 'get_cart_count_handler' );
 function get_cart_count_handler() {
     echo WC()->cart->get_cart_contents_count();
     wp_die();
+}
+add_action( 'wp_ajax_husky_live_search', 'husky_live_search_handler' );
+add_action( 'wp_ajax_nopriv_husky_live_search', 'husky_live_search_handler' );
+
+function husky_live_search_handler() {
+    check_ajax_referer( 'husky_search_nonce', 'nonce' );
+
+    $query = sanitize_text_field( $_POST['query'] );
+    if ( strlen( $query ) < 2 ) wp_send_json_success( [] );
+
+    $results = [];
+
+    // ── Categories ───────────────────────────────────────
+    $categories = get_terms( [
+        'taxonomy'   => 'product_cat',
+        'hide_empty' => true,
+        'search'     => $query,
+        'number'     => 3,
+    ] );
+    if ( $categories && ! is_wp_error( $categories ) ) {
+        foreach ( $categories as $cat ) {
+            $results['categories'][] = [
+                'name' => $cat->name,
+                'url'  => get_term_link( $cat ),
+            ];
+        }
+    }
+
+    // ── Brands ───────────────────────────────────────────
+    $brands = get_terms( [
+        'taxonomy'   => 'product_brand',
+        'hide_empty' => true,
+        'search'     => $query,
+        'number'     => 3,
+    ] );
+    if ( $brands && ! is_wp_error( $brands ) ) {
+        foreach ( $brands as $brand ) {
+            $results['brands'][] = [
+                'name' => $brand->name,
+                'url'  => get_term_link( $brand ),
+            ];
+        }
+    }
+
+    // ── Products ─────────────────────────────────────────
+    $products = new WP_Query( [
+        'post_type'      => 'product',
+        'post_status'    => 'publish',
+        'posts_per_page' => 5,
+        's'              => $query,
+    ] );
+    if ( $products->have_posts() ) {
+        while ( $products->have_posts() ) {
+            $products->the_post();
+            global $product;
+            $results['products'][] = [
+                'name'  => get_the_title(),
+                'url'   => get_permalink(),
+                'price' => $product->get_price_html(),
+                'thumb' => get_the_post_thumbnail_url( get_the_ID(), 'thumbnail' ),
+            ];
+        }
+        wp_reset_postdata();
+    }
+
+    wp_send_json_success( $results );
 }
 ?>

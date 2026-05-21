@@ -55,50 +55,47 @@ tl
   ease: "power2.out",
   duration: 0.4,
 }, "<"); // "<" means start at the same time as previous tween
-gsap.to(".newsLetterRight img", {
-    translateY: 0,
-    ease: "power2.out",
-    duration: 1,
-    scrollTrigger: {
-        trigger: ".newsletterContainer",
-        start: "top 100%",   // starts when container is 80% from top of viewport
-        end: "top -100%",
-        scrub: 2,
-    }
-});
-
-gsap.to(".erhvervHero", {
-    y: "0",
-    width: "100%",
-    height: "110vh",
-    ease: "none",
-    scrollTrigger: {
-        trigger: ".erhvervHerosection",
-        start: "top bottom",
-        end: "top top",
-        scrub: 1,
-        onUpdate: (self) => {
-    if (self.progress >= 0.75) {
-        document.querySelector(".erhvervsHeroTop").classList.add("visible");
-        document.querySelector(".ervhervsHeroBottom").classList.add("visible");
-    } else {
-        document.querySelector(".erhvervsHeroTop").classList.remove("visible");
-        document.querySelector(".ervhervsHeroBottom").classList.remove("visible");
-    }
+if (document.querySelector(".newsletterContainer")) {
+    gsap.to(".newsLetterRight img", {
+        translateY: 0,
+        ease: "power2.out",
+        duration: 1,
+        scrollTrigger: {
+            trigger: ".newsletterContainer",
+            start: "top 100%",
+            end: "top -100%",
+            scrub: 2,
+        }
+    });
 }
-    }
-});
-ScrollTrigger.create({
-    trigger: ".erhvervHerosection",
-    start: "top top",
-    onEnter: () => {
-        document.querySelector(".logoGridSection").style.position = "relative";
-    },
-    onLeaveBack: () => {
-        document.querySelector(".logoGridSection").style.position = "sticky";
-    }
-});
 
+if (document.querySelector(".erhvervHerosection")) {
+    gsap.to(".erhvervHero", {
+        y: "0", width: "100%", height: "110vh", ease: "none",
+        scrollTrigger: {
+            trigger: ".erhvervHerosection",
+            start: "top bottom",
+            end: "top top",
+            scrub: 1,
+            onUpdate: (self) => {
+                if (self.progress >= 0.75) {
+                    document.querySelector(".erhvervsHeroTop").classList.add("visible");
+                    document.querySelector(".ervhervsHeroBottom").classList.add("visible");
+                } else {
+                    document.querySelector(".erhvervsHeroTop").classList.remove("visible");
+                    document.querySelector(".ervhervsHeroBottom").classList.remove("visible");
+                }
+            }
+        }
+    });
+
+    ScrollTrigger.create({
+        trigger: ".erhvervHerosection",
+        start: "top top",
+        onEnter: () => { document.querySelector(".logoGridSection").style.position = "relative"; },
+        onLeaveBack: () => { document.querySelector(".logoGridSection").style.position = "sticky"; }
+    });
+}
 
  
 
@@ -294,18 +291,18 @@ jQuery(function($){
     $('#cart-close, #cart-overlay').on('click', closeCart);
     $(document.body).on('added_to_cart', openCart);
 
-    // Intercept cart links
     $(document).on('click', 'a[href*="/cart"]', function(e){
         e.preventDefault();
         openCart();
     });
-});
-$(document.body).on('added_to_cart updated_cart_totals', function() {
-    $.get(wc_cart_params.ajax_url, { action: 'get_cart_count' }, function(count) {
-        if (count > 0) {
-            $('.nav-cart-count').text(count).show();
-        } else {
-            $('.nav-cart-count').hide();
-        }
+
+    $(document.body).on('added_to_cart updated_cart_totals', function() {
+        $.get(wc_cart_params.ajax_url, { action: 'get_cart_count' }, function(count) {
+            if (count > 0) {
+                $('.nav-cart-count').text(count).show();
+            } else {
+                $('.nav-cart-count').hide();
+            }
+        });
     });
 });
