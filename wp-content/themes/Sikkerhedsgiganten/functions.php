@@ -6,7 +6,14 @@ function mytheme_enqueue_styles() {
         'global',
         get_template_directory_uri() . '/css/global.css'
     );
-
+    wp_enqueue_style(
+        'blogs',
+        get_template_directory_uri() . '/css/blogs.css'
+    );
+    wp_enqueue_style(
+        'single',
+        get_template_directory_uri() . '/css/single.css'
+    );
     // Only on homepage
     if (is_front_page()) {
         wp_enqueue_style(
@@ -48,6 +55,13 @@ function mytheme_enqueue_styles() {
         );
     }
 
+      if ( get_post_type() == 'post' ) {
+        wp_enqueue_style(
+            'blogs',
+            get_template_directory_uri() . '/css/blogs.css'
+        );
+    }
+
 }
 function mytheme_enqueue_scripts() {
     if ( is_checkout() ) {
@@ -63,6 +77,13 @@ function mytheme_enqueue_scripts() {
             get_template_directory_uri() . '/css/myaccount.css'
         );
     }
+
+    if ( is_home() ) {
+    wp_enqueue_style(
+        'blogs',
+        get_template_directory_uri() . '/css/blogs.css'
+    );
+}
 
     wp_enqueue_script(
         'gsap',
