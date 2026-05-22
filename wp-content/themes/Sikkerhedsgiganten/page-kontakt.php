@@ -16,35 +16,44 @@ $kontaktemailtitel = get_field("email_titel");
 $kontaktadressetitel = get_field("adresse_titel");
 $kontaktomos = get_field("kontakt_om_os");
 $kontaktomostitel = get_field("om_os_titel");
-
-
-
+$abningstidertitel = get_field("abningstider_titel");
+$mantors = get_field("man_tors");
+$mantorsabningstid= get_field("man-tors_abningstid");
+$fredag = get_field("fredag");
+$fredagabningstid = get_field("fredag_abningstid");
+$sendosenmailtitel = get_field("send_os_en_mail_titel");
+$udfyldformularellerringtitel = get_field("udfyldformularellerringtitel");
+$benytformularogbeskrivbeskedtekst = get_field("benyt_formular_og_beskriv_besked_tekst");
+$narviharmodtagetdinhenvendelsebrodtekst = get_field("nar_vi_har_modtaget_din_henvendelse_brodtekst");
+$navn = get_field("navn");
+$email = get_field("e-mail");
+$tlf = get_field("tlf");
+$skrivbesked = get_field("skriv_besked");
+$sendforesporgseltitel = get_field("send_foresporgsel_titel");
+$folgsgpasome = get_field("folg_sg_pa_some");
 ?>
 </header>
 <section id="kontaktSide">
     <div class="kontaktLeft">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.2675354895873!2d8.463353166809167!3d55.50357877778977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b1efbc53ab5bb%3A0x635db43dd92d1700!2sSikkerhedsgiganten!5e0!3m2!1sen!2sdk!4v1779423153451!5m2!1sen!2sdk"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <img src="img/kort.jpg" alt="">
     </div>
     <div class="kontaktRight">
         <div class="kontaktRightTop">
-            <h2><?php echo($kontaktsikkerhedsgigantentitel); ?></h2>
+            <h2><?php echo($kontaktsikkerhedsgigantentitel); ?></h2> 
             <p><?php echo($kontaktadressetitel); ?></p>
             <p><?php echo($kontakttlfnrtitel); ?></p>
             <p><?php echo($kontaktemailtitel); ?></p>
         </div>
         <div class="kontaktRightBottom">
-            <h2>Åbningstider</h2>
+            <h2><?php echo($abningstidertitel); ?></h2>     
             <div class="kontaktBottom">
-                <div class="kontaktBottomContainer">
-                    <p class="kontaktBottomTitel">Mandag til torsdag</p>
-                    <p class="kontaktBottomTekst"> 8:00 - 16:00</p>
+                <div class="kontaktBottomContainer">   
+                    <p class="kontaktBottomTitel"><?php echo($mantors); ?></p>
+                    <p class="kontaktBottomTekst"> <?php echo($mantorsabningstid); ?></p>    
                 </div>
                 <div class="kontaktBottomContainer">
-                    <p class="kontaktBottomTitel">Fredag:</p>
-                    <p class="kontaktBottomTekst">8:00 - 15.30</p>
+                    <p class="kontaktBottomTitel"><?php echo($fredag); ?></p> 
+                    <p class="kontaktBottomTekst"><?php echo($fredagabningstid); ?></p>  
                 </div>
             </div>
         </div>
@@ -53,18 +62,17 @@ $kontaktomostitel = get_field("om_os_titel");
 </section>
 <section id="booking">
     <div class="bookingContent">
-        <div class="bookingLeft">
-            <h2 class="bookingTitle">Send os en mail! Få et svar hurtigst muligt!</h2>
-            <h3 class="bookingSubTitle">Udfyld formularen eller ring til os på 75 13 45 10</h3>
+        <div class="bookingLeft">   
+            <h2 class="bookingTitle"><?php echo($sendosenmailtitel); ?></h2>  
+            <h3 class="bookingSubTitle"><?php echo($udfyldformularellerringtitel); ?></h3>
             <div class="bookingLine"></div>
             <div class="bookingText">
                 <div class="bookingText1">
                     <div class="bookingTextLeft">
                         <h1>1</h1>
                     </div>
-                    <div class="bookingTextRight">
-                        <h4>Benyt kontaktformularen og beskriv jeres arrangement. Skriv dine tanker til os, samt
-                            information om antal af gæster til selskabet, menuen, ønsker og de andre vigtige detaljer
+                    <div class="bookingTextRight">  
+                        <h4><?php echo($benytformularogbeskrivbeskedtekst); ?>
                         </h4>
                     </div>
                 </div>
@@ -72,11 +80,8 @@ $kontaktomostitel = get_field("om_os_titel");
                     <div class="bookingTextLeft">
                         <h1>2</h1>
                     </div>
-                    <div class="bookingTextRight">
-                        <h4>Efter vi har modtaget din henvendelse over mail eller telefon får du tilsendt et skriftligt
-                            tilbud til gennemlæsning. Heri er beskrevet alt du skal vide når du booker, som ledige dage
-                            m.m Bekræft den eventuelle dato, forbered særlige ønsker og planer og lad os klare resten af
-                            forberedelserne.</h4>
+                    <div class="bookingTextRight">  
+                        <h4><?php echo($narviharmodtagetdinhenvendelsebrodtekst); ?></h4>
                     </div>
                 </div>
 
@@ -85,65 +90,46 @@ $kontaktomostitel = get_field("om_os_titel");
         <div class="bookingRight">
             <div class="formularContainer">
                 <div class="inputContainer">
-                    <label for="name">Navn</label>
+                    <label for="name"><?php echo($navn); ?></label>  
                     <input type="text" class="nameInput" placeholder="Skriv Dit Navn">
                 </div>
 
                 <div class="inputContainer">
-                    <label for="name">Email</label>
+                    <label for="name"><?php echo($email); ?></label>  
                     <input type="text" class="nameInput" placeholder="Skriv Din Email">
                 </div>
 
                 <div class="inputContainer">
-                    <label for="name">TLF</label>
+                    <label for="name"><?php echo($tlf); ?></label>  
                     <input type="text" class="nameInput" placeholder="Skriv Dit Telefon Nummer">
                 </div>
 
                 <div class="inputContainer" id="inputStor">
-                    <label for="name">Beskrivelse</label>
+                    <label for="name"><?php echo($skrivbesked); ?></label>  
                     <input type="text" class="bigInput"
                         placeholder="Beskriv selskab, cirka dato for selskabet samt ekstra tanker og ønsker">
                 </div>
                 <div class="inputBtn">
-                    <p>Send forespørgsel</p>
+                    <p><?php echo($sendforesporgseltitel); ?></p>   
                 </div>
             </div>
         </div>
     </div>
 </section>
 <section id="socialSektion">
-    <h3 class="socialTitel">Følg Sikkerhedsgiganten</h3>
+    <h3 class="socialTitel"><?php echo($folgsgpasome); ?></h3>   
     <div class="someContainer">
-        <a href="https://www.instagram.com/sikkerhedsgigantendk/" target="_blank"
-            aria-label="en knap ind til Sikkerhedsgiganten Instagram"><img
-                src="<?php echo esc_url($kontaktinstagram["url"]); ?>" alt="<?php echo $kontaktinstagram ["alt"]?>"></a>
-        <a href="https://www.facebook.com/sikkerhedsgiganten.dk" target="_blank"
-            aria-label="en knap ind til Sikkerhedsgiganten Facebook"><img
-                src="<?php echo esc_url($kontaktfacebook["url"]); ?>" alt="<?php echo $kontaktfacebook ["alt"]?>"></a>
-        <a href="https://www.linkedin.com/company/sikkerhedsgiganten/" target="_blank"
-            aria-label="en knap ind til Sikkerhedsgiganten LinkedIn"><img
-                src="<?php echo esc_url($kontaktlinkedin["url"]); ?>" alt="<?php echo $kontaktlinkedin ["alt"]?>"></a>
-        <a href="" target="_blank"><img src="<?php echo esc_url($kontaktinstagram["url"]); ?>" <a href=""
-                target="_blank"><img src="<?php echo esc_url($kontaktfacebook["url"]); ?>"
-                alt="<?php echo $kontaktfacebook ["alt"]?>"></a>
-        <a href="" target="_blank"><img src="<?php echo esc_url($kontaktlinkedin["url"]); ?>"
-                alt="<?php echo $kontaktlinkedin ["alt"]?>"></a>
+    <a href="https://www.instagram.com/sikkerhedsgigantendk/" target="_blank" aria-label="en knap ind til Sikkerhedsgiganten Instagram"><img src="<?php echo esc_url($kontaktinstagram["url"]); ?>" alt="<?php echo $kontaktinstagram ["alt"]?>"></a>
+            <a href="https://www.facebook.com/sikkerhedsgiganten.dk" target="_blank" aria-label="en knap ind til Sikkerhedsgiganten Facebook"><img src="<?php echo esc_url($kontaktfacebook["url"]); ?>" alt="<?php echo $kontaktfacebook ["alt"]?>"></a>
+            <a href="https://www.linkedin.com/company/sikkerhedsgiganten/" target="_blank" aria-label="en knap ind til Sikkerhedsgiganten LinkedIn"><img src="<?php echo esc_url($kontaktlinkedin["url"]); ?>" alt="<?php echo $kontaktlinkedin ["alt"]?>"></a>
     </div>
 </section>
 <section id="bottomLinks">
     <div class="bottomLinksContainer">
-        <a href="http://sikkerhedsgiganten.local/index.php/kontakt/#kontaktSide"
-            aria-label="en knap ind til find os"><img src="<?php echo esc_url($kontaktfindos["url"]); ?>"
-                alt="<?php echo $kontaktfindos ["alt"]?>"><?php echo($kontaktfindoshertitel); ?></a>
-        <a href="http://sikkerhedsgiganten.local/#socialSektion" aria-label="en knap ind til nyhedsbrev"><img
-                src="<?php echo esc_url($kontaktnyhedsbrev["url"]); ?>"
-                alt="<?php echo $kontaktnyhedsbrev ["alt"]?>"><?php echo($kontakttilmeldnyhedsbrevtitel); ?></a>
-        <a href="http://sikkerhedsgiganten.local/index.php/kontakt/" aria-label="en knap ind til kontakt os"><img
-                src="<?php echo esc_url($kontaktkontaktos["url"]); ?>"
-                alt="<?php echo $kontaktkontaktos ["alt"]?>"><?php echo($kontaktkontaktostitel); ?></a>
-        <a href="http://sikkerhedsgiganten.local/index.php/omos/" aria-label="en knap ind til om os"><img
-                src="<?php echo esc_url($kontaktomos["url"]); ?>"
-                alt="<?php echo $kontaktomos ["alt"]?>"><?php echo($kontaktomostitel); ?></a>
+    <a href="" aria-label="en knap ind til find os"><img src="<?php echo esc_url($kontaktfindos["url"]); ?>" alt="<?php echo $kontaktfindos ["alt"]?>"><?php echo($kontaktfindoshertitel); ?></a>
+            <a href="" aria-label="en knap ind til nyhedsbrev"><img src="<?php echo esc_url($kontaktnyhedsbrev["url"]); ?>" alt="<?php echo $kontaktnyhedsbrev ["alt"]?>"><?php echo($kontakttilmeldnyhedsbrevtitel); ?></a>
+            <a href="" aria-label="en knap ind til kontakt os"><img src="<?php echo esc_url($kontaktkontaktos["url"]); ?>" alt="<?php echo $kontaktkontaktos ["alt"]?>"><?php echo($kontaktkontaktostitel); ?></a>
+            <a href="" aria-label="en knap ind til om os"><img src="<?php echo esc_url($kontaktomos["url"]); ?>" alt="<?php echo $kontaktomos ["alt"]?>"><?php echo($kontaktomostitel); ?></a>
     </div>
 </section>
 <?php get_footer(); ?>
