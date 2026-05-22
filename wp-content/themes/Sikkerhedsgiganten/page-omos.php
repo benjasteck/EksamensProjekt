@@ -182,7 +182,7 @@ $omostitel = get_field("om_os_titel");
         <a href="http://sikkerhedsgiganten.local/index.php/kontakt/" aria-label="en knap ind til kontakt os"><img
                 src="<?php echo esc_url($omoskontakt["url"]); ?>"
                 alt="<?php echo $omoskontakt ["alt"]?>"><?php echo($kontaktostitel);?></a>
-        <a href="http://sikkerhedsgiganten.local/index.php/om-os/" aria-label="en knap ind til om os"><img
+        <a href="http://sikkerhedsgiganten.local/index.php/omos/" aria-label="en knap ind til om os"><img
                 src="<?php echo esc_url($omosom["url"]); ?>"
                 alt="<?php echo $omosom ["alt"]?>"><?php echo($omostitel);?></a>
     </div>

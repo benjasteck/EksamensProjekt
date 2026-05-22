@@ -49,7 +49,7 @@ $omostitel = get_field("om_os_titel");
     <div class="logoGridFog" id="logoGridFog"></div>
     <div class="logoGridContent">
         <h2><?php echo($dinefordelesomerhvervskundetitel); ?></h2>
-    </div>     
+    </div>
 
 </section>
 <section class="erhvervHerosection">
@@ -63,18 +63,18 @@ $omostitel = get_field("om_os_titel");
                     <span>|</span>
                     <a href=""><?php echo($logindtekst); ?></a>
                 </div>
-            </div>     
+            </div>
 
             <div class="erhvervsHeroTop1" id="top1">
                 <h2><?php echo($maengderabattitel); ?></h2>
                 <p><?php echo($maengerabatbrodtekst);?></p>
             </div>
             <div class="erhvervsHeroTop1" id="top2">
-                <h2><?php echo($skraeddersyetlosningertitel);?></h2>   
+                <h2><?php echo($skraeddersyetlosningertitel);?></h2>
                 <p><?php echo($skraeddersyetlosningerbrodtekst);?></p>
             </div>
             <div class="erhvervsHeroTop1" id="top3">
-                <h2><?php echo($firmabeklaedningmedlogotitel);?></h2>  
+                <h2><?php echo($firmabeklaedningmedlogotitel);?></h2>
                 <p><?php echo($firmabeklaedningmedlogobrodtekst);?></p>
             </div>
             <div class="erhvervsHeroTop1" id="top4">
@@ -82,12 +82,12 @@ $omostitel = get_field("om_os_titel");
                 <p><?php echo($personaliseredeshopsiderbrodtekst);?></p>
             </div>
             <div class="erhvervsHeroTop1" id="top5">
-                <h2><?php echo($professionelradgivningtitel);?></h2>  
+                <h2><?php echo($professionelradgivningtitel);?></h2>
                 <p><?php echo($professionelradgivningbrodtekst);?></p>
             </div>
         </div>
         <div class="ervhervsHeroBottom">
-            <div class="erhvervHeroItem">  
+            <div class="erhvervHeroItem">
                 <p><?php echo($maengderabatlilletekst);?></p>
                 <img src="img/skaArrow.svg" alt="">
             </div>
@@ -112,7 +112,7 @@ $omostitel = get_field("om_os_titel");
 </section>
 <section id="booking">
     <div class="bookingContent">
-        <div class="bookingLeft">   <?php echo($sendosenmailogvikontakterdigtitel);?>
+        <div class="bookingLeft"> <?php echo($sendosenmailogvikontakterdigtitel);?>
             <h2 class="bookingTitle"><?php echo($sendosenmailfaetsvarhurtigstmuligt);?></h2>
             <h3 class="bookingSubTitle"><?php echo($udfyldformularenellerringtitel);?></h3>
             <div class="bookingLine"></div>
@@ -121,7 +121,7 @@ $omostitel = get_field("om_os_titel");
                     <div class="bookingTextLeft">
                         <h1>1</h1>
                     </div>
-                    <div class="bookingTextRight">  
+                    <div class="bookingTextRight">
                         <h4><?php echo($etbenytkontaktformularentekst);?></h4>
                     </div>
                 </div>
@@ -138,12 +138,12 @@ $omostitel = get_field("om_os_titel");
         </div>
         <div class="bookingRight">
             <div class="formularContainer">
-                <div class="inputContainer">  
+                <div class="inputContainer">
                     <label for="name"><?php echo($navntitel);?></label>
                     <input type="text" class="nameInput" placeholder="Skriv Dit Navn">
                 </div>
 
-                <div class="inputContainer">  
+                <div class="inputContainer">
                     <label for="name"><?php echo($emailtitel);?></label>
                     <input type="text" class="nameInput" placeholder="Skriv Din Email">
                 </div>
@@ -161,24 +161,38 @@ $omostitel = get_field("om_os_titel");
                 <div class="inputBtn">
                     <p><?php echo($sendforesporgseltitel);?></p>
                 </div>
-            </div>   
+            </div>
         </div>
     </div>
 </section>
 <section id="socialSektion">
     <h3 class="socialTitel"><?php echo($folgsikkerhedsgigantentitel);?></h3>
     <div class="someContainer">
-        <a href="https://www.instagram.com/sikkerhedsgigantendk/" target="_blank" aria-label="en knap ind til Sikkerhedsgiganten Instagram"><img src="<?php echo esc_url($erhvervinstagram["url"]); ?>" alt="<?php echo $erhvervinstagram ["alt"]?>"></a>
-        <a href="https://www.facebook.com/sikkerhedsgiganten.dk" target="_blank" aria-label="en knap ind til Sikkerhedsgiganten Facebook"><img src="<?php echo esc_url($erhvervfacebook["url"]); ?>" alt="<?php echo $erhvervfacebook ["alt"]?>"></a>
-        <a href="https://www.linkedin.com/company/sikkerhedsgiganten/" target="_blank" aria-label="en knap ind til Sikkerhedsgiganten LinkedIn"><img src="<?php echo esc_url($erhvervlinkedin["url"]); ?>" alt="<?php echo $erhvervlinkedin ["alt"]?>"></a>
+        <a href="https://www.instagram.com/sikkerhedsgigantendk/" target="_blank"
+            aria-label="en knap ind til Sikkerhedsgiganten Instagram"><img
+                src="<?php echo esc_url($erhvervinstagram["url"]); ?>" alt="<?php echo $erhvervinstagram ["alt"]?>"></a>
+        <a href="https://www.facebook.com/sikkerhedsgiganten.dk" target="_blank"
+            aria-label="en knap ind til Sikkerhedsgiganten Facebook"><img
+                src="<?php echo esc_url($erhvervfacebook["url"]); ?>" alt="<?php echo $erhvervfacebook ["alt"]?>"></a>
+        <a href="https://www.linkedin.com/company/sikkerhedsgiganten/" target="_blank"
+            aria-label="en knap ind til Sikkerhedsgiganten LinkedIn"><img
+                src="<?php echo esc_url($erhvervlinkedin["url"]); ?>" alt="<?php echo $erhvervlinkedin ["alt"]?>"></a>
     </div>
 </section>
 <section id="bottomLinks">
     <div class="bottomLinksContainer">
-        <a href="" aria-label="en knap ind til find os"><img src="<?php echo esc_url($erhvervfindos["url"]); ?>" alt="<?php echo $erhvervfindos ["alt"]?>"><?php echo($findoshertitel);?></a>  
-        <a href="" aria-label="en knap ind til nyhedsbrev"><img src="<?php echo esc_url($erhvervnyhedsbrev["url"]); ?>" alt="<?php echo $erhvervnyhedsbrev ["alt"]?>"><?php echo($tilmeldnyhedsbrevtitel);?></a>
-        <a href="" aria-label="en knap ind til kontakt os"><img src="<?php echo esc_url($erhvervkontaktos["url"]); ?>" alt="<?php echo $erhvervkontaktos ["alt"]?>"><?php echo($kontaktostitel);?></a>
-        <a href="" aria-label="en knap ind til om os"><img src="<?php echo esc_url($erhvervomos["url"]); ?>" alt="<?php echo $erhvervomos ["alt"]?>"><?php echo($omostitel);?></a>
+        <a href="http://sikkerhedsgiganten.local/index.php/kontakt/#kontaktSide"
+            aria-label="en knap ind til find os"><img src="<?php echo esc_url($erhvervfindos["url"]); ?>"
+                alt="<?php echo $erhvervfindos ["alt"]?>"><?php echo($findoshertitel);?></a>
+        <a href="http://sikkerhedsgiganten.local/#socialSektion" aria-label="en knap ind til nyhedsbrev"><img
+                src="<?php echo esc_url($erhvervnyhedsbrev["url"]); ?>"
+                alt="<?php echo $erhvervnyhedsbrev ["alt"]?>"><?php echo($tilmeldnyhedsbrevtitel);?></a>
+        <a href="http://sikkerhedsgiganten.local/index.php/kontakt/#kontaktSide"
+            aria-label="en knap ind til kontakt os"><img src="<?php echo esc_url($erhvervkontaktos["url"]); ?>"
+                alt="<?php echo $erhvervkontaktos ["alt"]?>"><?php echo($kontaktostitel);?></a>
+        <a href="http://sikkerhedsgiganten.local/index.php/omos/" aria-label="en knap ind til om os"><img
+                src="<?php echo esc_url($erhvervomos["url"]); ?>"
+                alt="<?php echo $erhvervomos ["alt"]?>"><?php echo($omostitel);?></a>
     </div>
 </section>
 <?php get_footer(); ?>

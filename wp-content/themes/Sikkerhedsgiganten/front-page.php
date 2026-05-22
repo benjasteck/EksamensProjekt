@@ -217,7 +217,8 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
                     <img src="<?php echo esc_url($horevaern["url"]); ?>" alt="<?php echo $horevaern ["alt"]?>">
                     <div class="itemUdvalgFlex">
                         <p><?php echo($horevaernogearplugstitel); ?></p>
-                        <a href="" aria-label="en knap ind til se mere om horevaernearplugs"><?php echo($horevaernogearplugssemeretekst); ?></a>
+                        <a href=""
+                            aria-label="en knap ind til se mere om horevaernearplugs"><?php echo($horevaernogearplugssemeretekst); ?></a>
                     </div>
                     <p><?php echo($horevaernogearplugsbrodtekst); ?></p>
                 </div>
@@ -226,7 +227,8 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
                         alt="<?php echo $arbejdshandsker ["alt"]?>">
                     <div class="itemUdvalgFlex">
                         <p><?php echo($arbejdshandskertitel); ?></p>
-                        <a href="" aria-label="en knap ind til se mere om arbejdshandsker"><?php echo($arbejdshandskersemeretekst); ?></a>
+                        <a href=""
+                            aria-label="en knap ind til se mere om arbejdshandsker"><?php echo($arbejdshandskersemeretekst); ?></a>
                     </div>
                     <p><?php echo($arbejdshandskerbrodtekst); ?></p>
                 </div>
@@ -234,7 +236,8 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
                     <img src="<?php echo esc_url($sikkerhedssko["url"]); ?>" alt="<?php echo $sikkerhedssko ["alt"]?>">
                     <div class="itemUdvalgFlex">
                         <p><?php echo($sikkerhedsskotitel); ?></p>
-                        <a href="" aria-label="en knap ind til se mere om sikkerhedssko"><?php echo($sikkerhedsskosemeretekst); ?></a>
+                        <a href=""
+                            aria-label="en knap ind til se mere om sikkerhedssko"><?php echo($sikkerhedsskosemeretekst); ?></a>
                     </div>
                     <p><?php echo($sikkerhedsskobrodtekst); ?></p>
                 </div>
@@ -242,7 +245,8 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
                     <img src="<?php echo esc_url($arbejdsjakke["url"]); ?>" alt="<?php echo $arbejdsjakke ["alt"]?>">
                     <div class="itemUdvalgFlex">
                         <p><?php echo($arbejdsjakkertitel); ?></p>
-                        <a href="" aria-label="en knap ind til se mere om arbejdsjakker"><?php echo($arbejdsjakkersemeretekst); ?></a>
+                        <a href=""
+                            aria-label="en knap ind til se mere om arbejdsjakker"><?php echo($arbejdsjakkersemeretekst); ?></a>
                     </div>
                     <p><?php echo($arbejdshandskerbrodtekst); ?></p>
                 </div>
@@ -251,7 +255,8 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
                         alt="<?php echo $andedraetsvaernbillede ["alt"]?>">
                     <div class="itemUdvalgFlex">
                         <p><?php echo($andedraetsvaerntitel); ?></p>
-                        <a href="" aria-label="en knap ind til se mere om andedraetsvaern"><?php echo($andedraetsvaernsemeretekst); ?></a>
+                        <a href=""
+                            aria-label="en knap ind til se mere om andedraetsvaern"><?php echo($andedraetsvaernsemeretekst); ?></a>
                     </div>
                     <p><?php echo($andedraetsvaernbrodtekst); ?></p>
                 </div>
@@ -260,7 +265,8 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
                         alt="<?php echo $faldsikringbillede ["alt"]?>">
                     <div class="itemUdvalgFlex">
                         <p><?php echo($faldsikringtitel); ?></p>
-                        <a href="" aria-label="en knap ind til se mere om faldsikring"><?php echo($faldsikringsemeretekst); ?></a>
+                        <a href=""
+                            aria-label="en knap ind til se mere om faldsikring"><?php echo($faldsikringsemeretekst); ?></a>
                     </div>
                     <p><?php echo($faldsikringbrodtekst); ?></p>
                 </div>
@@ -269,7 +275,8 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
                         alt="<?php echo $ojenskylbillede ["alt"]?>">
                     <div class="itemUdvalgFlex">
                         <p><?php echo($ojenskyltitel); ?></p>
-                        <a href="" aria-label="en knap ind til se mere om ojenskyl"><?php echo($ojenskylsemeretekst); ?></a>
+                        <a href=""
+                            aria-label="en knap ind til se mere om ojenskyl"><?php echo($ojenskylsemeretekst); ?></a>
                     </div>
                     <p><?php echo($ojenskylbrodtekst); ?></p>
                 </div>
@@ -278,7 +285,8 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
                         alt="<?php echo $sikkerhedshjelmbillede ["alt"]?>">
                     <div class="itemUdvalgFlex">
                         <p><?php echo($sikkerhedshjelmtitel); ?></p>
-                        <a href="" aria-label="en knap ind til se mere om sikkerhedshjelme"><?php echo($sikkerhedshjelmsemeretekst); ?></a>
+                        <a href=""
+                            aria-label="en knap ind til se mere om sikkerhedshjelme"><?php echo($sikkerhedshjelmsemeretekst); ?></a>
                     </div>
                     <p><?php echo($sikkerhedshjelmbrodtekst); ?></p>
                 </div>
@@ -287,12 +295,15 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
         <section id="socialSektion">
             <h3 class="socialTitel"><?php echo($folgsgpasometitel); ?></h3>
             <div class="someContainer">
-                <a href="https://www.instagram.com/sikkerhedsgigantendk/" target="_blank" aria-label="en knap ind til Sikkerhedsgiganten Instagram"><img
+                <a href="https://www.instagram.com/sikkerhedsgigantendk/" target="_blank"
+                    aria-label="en knap ind til Sikkerhedsgiganten Instagram"><img
                         src="<?php echo esc_url($instagramikon["url"]); ?>"
                         alt="<?php echo $instagramikon ["alt"]?>"></a>
-                <a href="https://www.facebook.com/sikkerhedsgiganten.dk" target="_blank" aria-label="en knap ind til Sikkerhedsgiganten Facebook"><img
+                <a href="https://www.facebook.com/sikkerhedsgiganten.dk" target="_blank"
+                    aria-label="en knap ind til Sikkerhedsgiganten Facebook"><img
                         src="<?php echo esc_url($facebookikon["url"]); ?>" alt="<?php echo $facebookikon ["alt"]?>"></a>
-                <a href="https://www.linkedin.com/company/sikkerhedsgiganten/" target="_blank" aria-label="en knap ind til Sikkerhedsgiganten LinkedIn"><img
+                <a href="https://www.linkedin.com/company/sikkerhedsgiganten/" target="_blank"
+                    aria-label="en knap ind til Sikkerhedsgiganten LinkedIn"><img
                         src="<?php echo esc_url($linkedinikon["url"]); ?>" alt="<?php echo $linkedinikon ["alt"]?>"></a>
             </div>
             <div class="newsletterContainer">
@@ -510,24 +521,31 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
         <section id="socialSektion">
             <h3 class="socialTitel"><?php echo($foelgsg); ?></h3>
             <div class="someContainer">
-                <a href="https://www.instagram.com/sikkerhedsgigantendk/" target="_blank" aria-label="en knap ind til Sikkerhedsgiganten Instagram"><img
+                <a href="https://www.instagram.com/sikkerhedsgigantendk/" target="_blank"
+                    aria-label="en knap ind til Sikkerhedsgiganten Instagram"><img
                         src="<?php echo esc_url($instagramikon["url"]); ?>"
                         alt="<?php echo $instagramikon ["alt"]?>"></a>
-                <a href="https://www.facebook.com/sikkerhedsgiganten.dk" target="_blank" aria-label="en knap ind til Sikkerhedsgiganten Facebook"><img
+                <a href="https://www.facebook.com/sikkerhedsgiganten.dk" target="_blank"
+                    aria-label="en knap ind til Sikkerhedsgiganten Facebook"><img
                         src="<?php echo esc_url($facebookikon["url"]); ?>" alt="<?php echo $facebookikon ["alt"]?>"></a>
-                <a href="https://www.linkedin.com/company/sikkerhedsgiganten/" target="_blank" aria-label="en knap ind til Sikkerhedsgiganten LinkedIn"><img
+                <a href="https://www.linkedin.com/company/sikkerhedsgiganten/" target="_blank"
+                    aria-label="en knap ind til Sikkerhedsgiganten LinkedIn"><img
                         src="<?php echo esc_url($linkedinikon["url"]); ?>" alt="<?php echo $linkedinikon ["alt"]?>"></a>
             </div>
         </section>
         <section id="bottomLinks">
             <div class="bottomLinksContainer">
-                <a href=""><a href="" target="_blank"><img src="<?php echo esc_url($findosikon["url"]); ?>"
+                <a href="http://sikkerhedsgiganten.local/index.php/kontakt/#kontaktSide"><a href="" target="_blank"><img
+                            src="<?php echo esc_url($findosikon["url"]); ?>"
                             alt="<?php echo $findosikon ["alt"]?>"><?php echo($findoshertekst); ?></a>
-                    <a href=""><a href="" target="_blank"><img src="<?php echo esc_url($nyhedsbrevikon["url"]); ?>"
+                    <a href="http://sikkerhedsgiganten.local/#socialSektion"><a href="" target="_blank"><img
+                                src="<?php echo esc_url($nyhedsbrevikon["url"]); ?>"
                                 alt="<?php echo $nyhedsbrevikon ["alt"]?>"><?php echo($tilmeldnyhedsbrevtekst); ?></a>
-                        <a href=""><a href="" target="_blank"><img src="<?php echo esc_url($mailikon["url"]); ?>"
+                        <a href="http://sikkerhedsgiganten.local/index.php/kontakt/"><a href="" target="_blank"><img
+                                    src="<?php echo esc_url($mailikon["url"]); ?>"
                                     alt="<?php echo $mailikon ["alt"]?>"><?php echo($kontaktos); ?></a>
-                            <a href=""><a href="" target="_blank"><img src="<?php echo esc_url($omosikon["url"]); ?>"
+                            <a href="http://sikkerhedsgiganten.local/index.php/omos/"><a href="" target="_blank"><img
+                                        src="<?php echo esc_url($omosikon["url"]); ?>"
                                         alt="<?php echo $omosikon ["alt"]?>"><?php echo($omostekst); ?></a>
             </div>
         </section>

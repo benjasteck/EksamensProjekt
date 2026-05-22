@@ -58,22 +58,25 @@ $footerlogo          = get_field("footer_logo", $footer_post_id);
                 <div class="footerContentBottomContainer">
                     <h2 class="titelFooter">Navigering</h2>
                     <div class="grid">
-                        <a href="#">Forside</a>
-                        <a href="#">Selskaber</a>
-                        <a href="#">Menu</a>
-                        <a href="#">Blogs</a>
-                        <a href="#">Om Os</a>
-                        <a href="#">Kontakt</a>
+                        <a href="http://sikkerhedsgiganten.local/">Forside</a>
+                        <a href="http://sikkerhedsgiganten.local/shop/">Shop</a>
+                        <a href="http://sikkerhedsgiganten.local/index.php/erhverv/">Erhverv</a>
+                        <a href="http://sikkerhedsgiganten.local/index.php/blogs/">Blogs</a>
+                        <a href="http://sikkerhedsgiganten.local/index.php/om-os/">Om Os</a>
+                        <a href="http://sikkerhedsgiganten.local/index.php/kontakt/">Kontakt</a>
                     </div>
                 </div>
                 <div class="footerContentBottomContainer">
                     <h2 class="titelFooter">Socialt</h2>
                     <div class="footerText">
-                        <a href="https://www.instagram.com/sikkerhedsgigantendk/"><img src="<?php echo esc_url($footerinstagramikon["url"]); ?>"
+                        <a href="https://www.instagram.com/sikkerhedsgigantendk/"><img
+                                src="<?php echo esc_url($footerinstagramikon["url"]); ?>"
                                 alt="<?php echo $footerinstagramikon ["alt"]?>" class="footerSocial"></a>
-                        <a href="https://www.facebook.com/sikkerhedsgiganten.dk"><img src="<?php echo esc_url($footerfacebooknikon["url"]); ?>"
+                        <a href="https://www.facebook.com/sikkerhedsgiganten.dk"><img
+                                src="<?php echo esc_url($footerfacebooknikon["url"]); ?>"
                                 alt="<?php echo $footerfacebooknikon ["alt"]?>" class="footerSocial"></a>
-                        <a href="https://www.linkedin.com/company/sikkerhedsgiganten/"><img src="<?php echo esc_url($footerlinkedinikon["url"]); ?>"
+                        <a href="https://www.linkedin.com/company/sikkerhedsgiganten/"><img
+                                src="<?php echo esc_url($footerlinkedinikon["url"]); ?>"
                                 alt="<?php echo $footerlinkedinikon ["alt"]?>" class="footerSocial"></a>
                     </div>
                 </div>
