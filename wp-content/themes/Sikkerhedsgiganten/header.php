@@ -226,56 +226,56 @@ $outletKnap = get_field('outlet_knap', $header_post_id);
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
                 </svg><a
-                    href="<?php echo esc_url($sikkerhedsudstyrKnap['url']); ?>"><?php echo($sikkerhedsudstyrKnap['title']); ?></a><img
+                    href="<?php echo esc_url($sikkerhedsudstyrKnap['url']); ?>" aria-label="en knap ind til shopsiden af sikkerhedsudstyr"><?php echo($sikkerhedsudstyrKnap['title']); ?></a><img
                     src="<?php echo esc_url($sikkerhedsudstyrikon["url"]); ?>" alt=""></li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
                 </svg><a
-                    href="<?php echo esc_url($arbejdstojKnap['url']); ?>"><?php echo($arbejdstojKnap['title']); ?></a><img
+                    href="<?php echo esc_url($arbejdstojKnap['url']); ?>" aria-label="en knap ind til shopsiden af arbejdstoej"><?php echo($arbejdstojKnap['title']); ?></a><img
                     src="<?php echo esc_url($arbejdstojikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
                 </svg><a
-                    href="<?php echo esc_url($andedraetsvaernKnap['url']); ?>"><?php echo($andedraetsvaernKnap['title']); ?></a><img
+                    href="<?php echo esc_url($andedraetsvaernKnap['url']); ?>" aria-label="en knap ind til shopsiden af andedraetsvaern"><?php echo($andedraetsvaernKnap['title']); ?></a><img
                     src="<?php echo esc_url($andedraetsvaernikon["url"]); ?>" alt=""></li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
                 </svg><a
-                    href="<?php echo esc_url($faldsikringKnap['url']); ?>"><?php echo($faldsikringKnap['title']); ?></a><img
+                    href="<?php echo esc_url($faldsikringKnap['url']); ?>" aria-label="en knap ind til shopsiden af faldsikring"><?php echo($faldsikringKnap['title']); ?></a><img
                     src="<?php echo esc_url($faldsikringikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
                 </svg><a
-                    href="<?php echo esc_url($forstehjaelpKnap['url']); ?>"><?php echo($forstehjaelpKnap['title']); ?></a><img
+                    href="<?php echo esc_url($forstehjaelpKnap['url']); ?>" aria-label="en knap ind til shopsiden af foerstehjaelp"><?php echo($forstehjaelpKnap['title']); ?></a><img
                     src="<?php echo esc_url($forstehjaelpikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="<?php echo esc_url($skilteKnap['url']); ?>"><?php echo($skilteKnap['title']); ?></a><img
+                </svg><a href="<?php echo esc_url($skilteKnap['url']); ?>" aria-label="en knap ind til shopsiden af skilte"><?php echo($skilteKnap['title']); ?></a><img
                     src="<?php echo esc_url($skilteikon["url"]); ?>" alt=""></li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
                 </svg><a
-                    href="<?php echo esc_url($hygiejneKnap['url']); ?>"><?php echo($hygiejneKnap['title']); ?></a><img
+                    href="<?php echo esc_url($hygiejneKnap['url']); ?>" aria-label="en knap ind til shopsiden af hygiejne"><?php echo($hygiejneKnap['title']); ?></a><img
                     src="<?php echo esc_url($hygiejneikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
                 </svg><a
-                    href="<?php echo esc_url($rengoringsartiklerKnap['url']); ?>"><?php echo($rengoringsartiklerKnap['title']); ?></a><img
+                    href="<?php echo esc_url($rengoringsartiklerKnap['url']); ?>" aria-label="en knap ind til shopsiden af rengoringsartikler"><?php echo($rengoringsartiklerKnap['title']); ?></a><img
                     src="<?php echo esc_url($rengoringsartiklerikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
                 </svg><a
-                    href="<?php echo esc_url($skadedyrKnap['url']); ?>"><?php echo($skadedyrKnap['title']); ?></a><img
+                    href="<?php echo esc_url($skadedyrKnap['url']); ?>" aria-label="en knap ind til shopsiden af skadedyr">><?php echo($skadedyrKnap['title']); ?></a><img
                     src="<?php echo esc_url($skadedyrikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="<?php echo esc_url($outletKnap['url']); ?>"><?php echo($outletKnap['title']); ?></a><img
+                </svg><a href="<?php echo esc_url($outletKnap['url']); ?>" aria-label="en knap ind til shopsiden af outlet">><?php echo($outletKnap['title']); ?></a><img
                     src="<?php echo esc_url($outletikon["url"]); ?>" alt=""></li>
 
         </ul>
@@ -283,17 +283,17 @@ $outletKnap = get_field('outlet_knap', $header_post_id);
         <ul>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#minprofil"><?php echo($profilundersidetitel); ?></a><img
+                </svg><a href="#minprofil" aria-label="en knap ind til profil siden"><?php echo($profilundersidetitel); ?></a><img
                     src="<?php echo esc_url($profilundersideikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#favoritter"><?php echo($favorittertitel); ?></a><img
+                </svg><a href="#favoritter" aria-label="en knap ind til favoritter"><?php echo($favorittertitel); ?></a><img
                     src="<?php echo esc_url($favoritterikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
-                </svg><a href="#kurv"><?php echo($kurvtitel); ?></a><img src="<?php echo esc_url($kurvikon["url"]); ?>"
+                </svg><a href="#kurv" aria-label="en knap ind til kurv"><?php echo($kurvtitel); ?></a><img src="<?php echo esc_url($kurvikon["url"]); ?>"
                     alt=""></li>
         </ul>
     </div>
