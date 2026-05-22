@@ -111,17 +111,17 @@ $kontaktomostitel = get_field("om_os_titel");
 <section id="socialSektion">
     <h3 class="socialTitel">Følg Sikkerhedsgiganten</h3>
     <div class="someContainer">
-    <a href="" target="_blank"><img src="<?php echo esc_url($kontaktinstagram["url"]); ?>" alt="<?php echo $kontaktinstagram ["alt"]?>"></a>
-            <a href="" target="_blank"><img src="<?php echo esc_url($kontaktfacebook["url"]); ?>" alt="<?php echo $kontaktfacebook ["alt"]?>"></a>
-            <a href="" target="_blank"><img src="<?php echo esc_url($kontaktlinkedin["url"]); ?>" alt="<?php echo $kontaktlinkedin ["alt"]?>"></a>
+    <a href="https://www.instagram.com/sikkerhedsgigantendk/" target="_blank" aria-label="en knap ind til Sikkerhedsgiganten Instagram"><img src="<?php echo esc_url($kontaktinstagram["url"]); ?>" alt="<?php echo $kontaktinstagram ["alt"]?>"></a>
+            <a href="https://www.facebook.com/sikkerhedsgiganten.dk" target="_blank" aria-label="en knap ind til Sikkerhedsgiganten Facebook"><img src="<?php echo esc_url($kontaktfacebook["url"]); ?>" alt="<?php echo $kontaktfacebook ["alt"]?>"></a>
+            <a href="https://www.linkedin.com/company/sikkerhedsgiganten/" target="_blank" aria-label="en knap ind til Sikkerhedsgiganten LinkedIn"><img src="<?php echo esc_url($kontaktlinkedin["url"]); ?>" alt="<?php echo $kontaktlinkedin ["alt"]?>"></a>
     </div>
 </section>
 <section id="bottomLinks">
     <div class="bottomLinksContainer">
-    <a href=""><img src="<?php echo esc_url($kontaktfindos["url"]); ?>" alt="<?php echo $kontaktfindos ["alt"]?>"><?php echo($kontaktfindoshertitel); ?></a>
-            <a href="https://www.instagram.com/sikkerhedsgigantendk/"><img src="<?php echo esc_url($kontaktnyhedsbrev["url"]); ?>" alt="<?php echo $kontaktnyhedsbrev ["alt"]?>"><?php echo($kontakttilmeldnyhedsbrevtitel); ?></a>
-            <a href="https://www.facebook.com/sikkerhedsgiganten.dk"><img src="<?php echo esc_url($kontaktkontaktos["url"]); ?>" alt="<?php echo $kontaktkontaktos ["alt"]?>"><?php echo($kontaktkontaktostitel); ?></a>
-            <a href="https://www.linkedin.com/company/sikkerhedsgiganten/"><img src="<?php echo esc_url($kontaktomos["url"]); ?>" alt="<?php echo $kontaktomos ["alt"]?>"><?php echo($kontaktomostitel); ?></a>
+    <a href="" aria-label="en knap ind til find os"><img src="<?php echo esc_url($kontaktfindos["url"]); ?>" alt="<?php echo $kontaktfindos ["alt"]?>"><?php echo($kontaktfindoshertitel); ?></a>
+            <a href="" aria-label="en knap ind til nyhedsbrev"><img src="<?php echo esc_url($kontaktnyhedsbrev["url"]); ?>" alt="<?php echo $kontaktnyhedsbrev ["alt"]?>"><?php echo($kontakttilmeldnyhedsbrevtitel); ?></a>
+            <a href="" aria-label="en knap ind til kontakt os"><img src="<?php echo esc_url($kontaktkontaktos["url"]); ?>" alt="<?php echo $kontaktkontaktos ["alt"]?>"><?php echo($kontaktkontaktostitel); ?></a>
+            <a href="" aria-label="en knap ind til om os"><img src="<?php echo esc_url($kontaktomos["url"]); ?>" alt="<?php echo $kontaktomos ["alt"]?>"><?php echo($kontaktomostitel); ?></a>
     </div>
 </section>
 <?php get_footer(); ?>

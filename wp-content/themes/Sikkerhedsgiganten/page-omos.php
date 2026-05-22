@@ -152,17 +152,17 @@ $omostitel = get_field("om_os_titel");
 <section id="socialSektion"> 
     <h3 class="socialTitel"><?php echo($folgsikkerhedsgigantenpasometitel);?></h3> 
     <div class="someContainer">
-    <a href="https://www.instagram.com/sikkerhedsgigantendk/" target="_blank"><img src="<?php echo esc_url($omosinstagram["url"]); ?>" alt="<?php echo $omosinstagram ["alt"]?>"></a>
-            <a href="https://www.facebook.com/sikkerhedsgiganten.dk" target="_blank"><img src="<?php echo esc_url($omosfacebook["url"]); ?>" alt="<?php echo $omosfacebook ["alt"]?>"></a>
-            <a href="https://www.linkedin.com/company/sikkerhedsgiganten/" target="_blank"><img src="<?php echo esc_url($omoslinkedin["url"]); ?>" alt="<?php echo $omoslinkedin ["alt"]?>"></a>
+    <a href="https://www.instagram.com/sikkerhedsgigantendk/" target="_blank" aria-label="en knap ind til Sikkerhedsgiganten Instagram"><img src="<?php echo esc_url($omosinstagram["url"]); ?>" alt="<?php echo $omosinstagram ["alt"]?>"></a>
+            <a href="https://www.facebook.com/sikkerhedsgiganten.dk" target="_blank" aria-label="en knap ind til Sikkerhedsgiganten Facebook"><img src="<?php echo esc_url($omosfacebook["url"]); ?>" alt="<?php echo $omosfacebook ["alt"]?>"></a>
+            <a href="https://www.linkedin.com/company/sikkerhedsgiganten/" target="_blank" aria-label="en knap ind til Sikkerhedsgiganten LinkedIn"><img src="<?php echo esc_url($omoslinkedin["url"]); ?>" alt="<?php echo $omoslinkedin ["alt"]?>"></a>
     </div>
 </section>
 <section id="bottomLinks">
     <div class="bottomLinksContainer">  
-    <a href=""><img src="<?php echo esc_url($omosfindos["url"]); ?>" alt="<?php echo $omosfindos ["alt"]?>"><?php echo($findoshertitel);?></a> 
-            <a href=""><img src="<?php echo esc_url($omosnyhedsbrev["url"]); ?>" alt="<?php echo $omosnyhedsbrev ["alt"]?>"><?php echo($tilmeldnyhedsbrevtitel);?></a>  
-            <a href=""><img src="<?php echo esc_url($omoskontakt["url"]); ?>" alt="<?php echo $omoskontakt ["alt"]?>"><?php echo($kontaktostitel);?></a> 
-            <a href=""><img src="<?php echo esc_url($omosom["url"]); ?>" alt="<?php echo $omosom ["alt"]?>"><?php echo($omostitel);?></a> 
+    <a href="" aria-label="en knap ind til find os"><img src="<?php echo esc_url($omosfindos["url"]); ?>" alt="<?php echo $omosfindos ["alt"]?>"><?php echo($findoshertitel);?></a> 
+            <a href="" aria-label="en knap ind til nyhedsbrev"><img src="<?php echo esc_url($omosnyhedsbrev["url"]); ?>" alt="<?php echo $omosnyhedsbrev ["alt"]?>"><?php echo($tilmeldnyhedsbrevtitel);?></a>  
+            <a href="" aria-label="en knap ind til kontakt os"><img src="<?php echo esc_url($omoskontakt["url"]); ?>" alt="<?php echo $omoskontakt ["alt"]?>"><?php echo($kontaktostitel);?></a> 
+            <a href="" aria-label="en knap ind til om os"><img src="<?php echo esc_url($omosom["url"]); ?>" alt="<?php echo $omosom ["alt"]?>"><?php echo($omostitel);?></a> 
     </div>
 </section>
 <?php get_footer(); ?>
