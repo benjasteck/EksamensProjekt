@@ -29,11 +29,22 @@ function mytheme_enqueue_styles() {
             get_template_directory_uri() . '/css/kundeservice.css'
         );
     }
-
+    if (is_page('omos')) {
+        wp_enqueue_style(
+            'omos',
+            get_template_directory_uri() . '/css/omos.css'
+        );
+    }
     if (is_page('erhvervside')) {
         wp_enqueue_style(
             'contact',
             get_template_directory_uri() . '/css/erhverv.css'
+        );
+    }
+    if (is_page('kontakt')) {
+        wp_enqueue_style(
+            'kontakt',
+            get_template_directory_uri() . '/css/kontakt.css'
         );
     }
     if (is_woocommerce() || is_cart() || is_checkout() || is_account_page()) {

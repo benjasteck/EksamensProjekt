@@ -56,51 +56,53 @@ $omostitel = get_field("om_os_titel");
     <div class="line"></div>
     <div class="medarbejdereContainer">
         <div class="medArbejderItem">
-        <img src="<?php echo esc_url($medarbejderet["url"]); ?>" alt="<?php echo $medarbejderet ["alt"]?>">
-            <h5><?php echo esc_html($medarbejderetnavn); ?></h5>   
-            <p><?php echo($medarbejderetjobtitel);?> <br> 
-            <?php echo($medarbejderettlfnr);?></p>   
+            <img src="<?php echo esc_url($medarbejderet["url"]); ?>" alt="<?php echo $medarbejderet ["alt"]?>">
+            <h5><?php echo esc_html($medarbejderetnavn); ?></h5>
+            <p><?php echo($medarbejderetjobtitel);?> <br>
+                <?php echo($medarbejderettlfnr);?></p>
             <a href="mailto:ma@sikkerhedsgiganten.dk?subject=rick roll&body=never gonna give u upp">
-            <?php echo($medarbejderetemail);?>  
-            </a>     
-        </div>
-        <div class="medArbejderItem"> 
-        <img src="<?php echo esc_url($medarbejderto["url"]); ?>" alt="<?php echo $medarbejderto ["alt"]?>">
-            <h5><?php echo($medarbejdertonavn);?> </h5>   
-            <p><?php echo($medarbejdertojobtitel);?>  <br> 
-            <?php echo($medarbejdertotlfnr);?> </p> 
-            <a href="mailto:mbj@sikkerhedsgiganten.dk?subject=rick roll&body=never gonna give u upp">
-            <?php echo($medarbejdertoemail);?>   
+                <?php echo($medarbejderetemail);?>
             </a>
         </div>
         <div class="medArbejderItem">
-        <img src="<?php echo esc_url($medarbejdertre["url"]); ?>" alt="<?php echo $medarbejdertre ["alt"]?>">
-            <h5><?php echo($medarbejdertrenavn);?>  </h5>  
-            <p><?php echo($medarbejdertrejobtitel);?>  <br>    
-            <?php echo($medarbejdertretlfnr);?> </p> 
+            <img src="<?php echo esc_url($medarbejderto["url"]); ?>" alt="<?php echo $medarbejderto ["alt"]?>">
+            <h5><?php echo($medarbejdertonavn);?> </h5>
+            <p><?php echo($medarbejdertojobtitel);?> <br>
+                <?php echo($medarbejdertotlfnr);?> </p>
+            <a href="mailto:mbj@sikkerhedsgiganten.dk?subject=rick roll&body=never gonna give u upp">
+                <?php echo($medarbejdertoemail);?>
+            </a>
+        </div>
+        <div class="medArbejderItem">
+            <img src="<?php echo esc_url($medarbejdertre["url"]); ?>" alt="<?php echo $medarbejdertre ["alt"]?>">
+            <h5><?php echo($medarbejdertrenavn);?> </h5>
+            <p><?php echo($medarbejdertrejobtitel);?> <br>
+                <?php echo($medarbejdertretlfnr);?> </p>
             <a href="mailto:am@sikkerhedsgiganten.dk?subject=rick roll&body=never gonna give u upp">
-            <?php echo($medarbejdertreemail);?>   
+                <?php echo($medarbejdertreemail);?>
             </a>
         </div>
     </div>
 </section>
 <section id="passerPaDig">
 
-<img src="<?php echo esc_url($vipasserpadigto["url"]); ?>" alt="<?php echo $vipasserpadigto ["alt"]?>" class="pasImg2">
-<img src="<?php echo esc_url($vipasserpadiget["url"]); ?>" alt="<?php echo $vipasserpadiget ["alt"]?>" class="pasImg1">
-    <div class="pasContainer">   
-        <h2><?php echo($vipasserpadigtitel);?> </h2>   
+    <img src="<?php echo esc_url($vipasserpadigto["url"]); ?>" alt="<?php echo $vipasserpadigto ["alt"]?>"
+        class="pasImg2">
+    <img src="<?php echo esc_url($vipasserpadiget["url"]); ?>" alt="<?php echo $vipasserpadiget ["alt"]?>"
+        class="pasImg1">
+    <div class="pasContainer">
+        <h2><?php echo($vipasserpadigtitel);?> </h2>
         <p><?php echo($vipasserpadigbrodtekst);?> </p>
-        <a href=""><?php echo($faenerhvervsaftaletitel);?></a>   
-        
+        <a href=""><?php echo($faenerhvervsaftaletitel);?></a>
+
     </div>
 
 </section>
 <section id="testimonials">
     <div class="testimonialsContaner"></div>
     <div class="sGSlider">
-        <div class="sGSlider1">   
-            <h2><?php echo($sikkerhedsgigantenbannerreklametitel);?></h2>  
+        <div class="sGSlider1">
+            <h2><?php echo($sikkerhedsgigantenbannerreklametitel);?></h2>
             <h2><?php echo($sikkerhedsgigantenbannerreklametitel);?></h2>
             <h2><?php echo($sikkerhedsgigantenbannerreklametitel);?></h2>
 
@@ -116,53 +118,92 @@ $omostitel = get_field("om_os_titel");
     </div>
     <div class="testimonialsContaner"></div>
 </section>
+<section id="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/39gVLs_6ZfM?si=sCtzAdf_dVdET-0x"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
 <section id="os">
     <div class="osItem" id="osItem1">
-    <img src="<?php echo esc_url($butikbillede["url"]); ?>" alt="<?php echo $butikbillede ["alt"]?>">
+        <img src="<?php echo esc_url($butikbillede["url"]); ?>" alt="<?php echo $butikbillede ["alt"]?>">
         <div class="osItemContainer">
-            <h3><?php echo($fysiskbutiktitel);?></h3>   
-            <p><?php echo($fysiskbutiktekstbrodtekst);?></p>  
+            <h3><?php echo($fysiskbutiktitel);?></h3>
+            <p><?php echo($fysiskbutiktekstbrodtekst);?></p>
         </div>
 
     </div>
     <div class="osItem" id="osItem2">
-        <div class="osItemContainer"> 
-            <h3><?php echo($specialisterifirmabeklaedningtitel);?></h3> 
-            <p><?php echo($specialisterifirmabeklaedningbrodtekst);?></p> 
+        <div class="osItemContainer">
+            <h3><?php echo($specialisterifirmabeklaedningtitel);?></h3>
+            <p><?php echo($specialisterifirmabeklaedningbrodtekst);?></p>
         </div>
         <img src="<?php echo esc_url($firmabeklaedning["url"]); ?>" alt="<?php echo $firmabeklaedning ["alt"]?>">
     </div>
-    <div class="osErhverv">  
-        <h3><?php echo($fordelesomerhvervskundetitel);?></h3> 
-        <p><?php echo($fordelesomerhvervskundebrodtekst);?></p> 
-        <a href=""><?php echo($faenerhvervsaftaletitel);?></a> 
+    <div class="osErhverv">
+        <h3><?php echo($fordelesomerhvervskundetitel);?></h3>
+        <p><?php echo($fordelesomerhvervskundebrodtekst);?></p>
+        <a href=""><?php echo($faenerhvervsaftaletitel);?></a>
     </div>
     <div class="osItem" id="osItem3">
-    <img src="<?php echo esc_url($arbejdstoj["url"]); ?>" alt="<?php echo $arbejdstoj ["alt"]?>">
+        <img src="<?php echo esc_url($arbejdstoj["url"]); ?>" alt="<?php echo $arbejdstoj ["alt"]?>">
         <div class="osItemContainer">
-            <h3><?php echo($arbejdstojtilalletitel);?></h3> 
-            <p><?php echo($arbejdstojtilallebrodtekst);?></p> 
+            <h3><?php echo($arbejdstojtilalletitel);?></h3>
+            <p><?php echo($arbejdstojtilallebrodtekst);?></p>
         </div>
     </div>
 </section>
-<section id="sikkerhed"> 
-    <h3><?php echo($danmarksstorstesortimentafsikkerhedsudstyrtitel);?></h3> 
+<section id="sikkerhed">
+    <h3><?php echo($danmarksstorstesortimentafsikkerhedsudstyrtitel);?></h3>
     <p><?php echo($danmarksstorstesortimentafsikerhedsudstyrbrodtekst);?></p>
 </section>
-<section id="socialSektion"> 
-    <h3 class="socialTitel"><?php echo($folgsikkerhedsgigantenpasometitel);?></h3> 
+<section id="socialSektion">
+    <h3 class="socialTitel"><?php echo($folgsikkerhedsgigantenpasometitel);?></h3>
     <div class="someContainer">
-    <a href="https://www.instagram.com/sikkerhedsgigantendk/" target="_blank" aria-label="en knap ind til Sikkerhedsgiganten Instagram"><img src="<?php echo esc_url($omosinstagram["url"]); ?>" alt="<?php echo $omosinstagram ["alt"]?>"></a>
-            <a href="https://www.facebook.com/sikkerhedsgiganten.dk" target="_blank" aria-label="en knap ind til Sikkerhedsgiganten Facebook"><img src="<?php echo esc_url($omosfacebook["url"]); ?>" alt="<?php echo $omosfacebook ["alt"]?>"></a>
-            <a href="https://www.linkedin.com/company/sikkerhedsgiganten/" target="_blank" aria-label="en knap ind til Sikkerhedsgiganten LinkedIn"><img src="<?php echo esc_url($omoslinkedin["url"]); ?>" alt="<?php echo $omoslinkedin ["alt"]?>"></a>
+        <<<<<<< Updated upstream <a href="https://www.instagram.com/sikkerhedsgigantendk/" target="_blank"
+            aria-label="en knap ind til Sikkerhedsgiganten Instagram"><img
+                src="<?php echo esc_url($omosinstagram["url"]); ?>" alt="<?php echo $omosinstagram ["alt"]?>"></a>
+            <a href="https://www.facebook.com/sikkerhedsgiganten.dk" target="_blank"
+                aria-label="en knap ind til Sikkerhedsgiganten Facebook"><img
+                    src="<?php echo esc_url($omosfacebook["url"]); ?>" alt="<?php echo $omosfacebook ["alt"]?>"></a>
+            <a href="https://www.linkedin.com/company/sikkerhedsgiganten/" target="_blank"
+                aria-label="en knap ind til Sikkerhedsgiganten LinkedIn"><img
+                    src="<?php echo esc_url($omoslinkedin["url"]); ?>" alt="<?php echo $omoslinkedin ["alt"]?>"></a>
     </div>
 </section>
 <section id="bottomLinks">
-    <div class="bottomLinksContainer">  
-    <a href="" aria-label="en knap ind til find os"><img src="<?php echo esc_url($omosfindos["url"]); ?>" alt="<?php echo $omosfindos ["alt"]?>"><?php echo($findoshertitel);?></a> 
-            <a href="" aria-label="en knap ind til nyhedsbrev"><img src="<?php echo esc_url($omosnyhedsbrev["url"]); ?>" alt="<?php echo $omosnyhedsbrev ["alt"]?>"><?php echo($tilmeldnyhedsbrevtitel);?></a>  
-            <a href="" aria-label="en knap ind til kontakt os"><img src="<?php echo esc_url($omoskontakt["url"]); ?>" alt="<?php echo $omoskontakt ["alt"]?>"><?php echo($kontaktostitel);?></a> 
-            <a href="" aria-label="en knap ind til om os"><img src="<?php echo esc_url($omosom["url"]); ?>" alt="<?php echo $omosom ["alt"]?>"><?php echo($omostitel);?></a> 
+    <div class="bottomLinksContainer">
+        <a href="" aria-label="en knap ind til find os"><img src="<?php echo esc_url($omosfindos["url"]); ?>"
+                alt="<?php echo $omosfindos ["alt"]?>"><?php echo($findoshertitel);?></a>
+        <a href="" aria-label="en knap ind til nyhedsbrev"><img src="<?php echo esc_url($omosnyhedsbrev["url"]); ?>"
+                alt="<?php echo $omosnyhedsbrev ["alt"]?>"><?php echo($tilmeldnyhedsbrevtitel);?></a>
+        <a href="" aria-label="en knap ind til kontakt os"><img src="<?php echo esc_url($omoskontakt["url"]); ?>"
+                alt="<?php echo $omoskontakt ["alt"]?>"><?php echo($kontaktostitel);?></a>
+        <a href="" aria-label="en knap ind til om os"><img src="<?php echo esc_url($omosom["url"]); ?>"
+                alt="<?php echo $omosom ["alt"]?>"><?php echo($omostitel);?></a>
+        =======
+        <a href="https://www.instagram.com/sikkerhedsgigantendk/" target="_blank"
+            aria-label="en knap ind til Sikkerhedsgiganten Instagram"><img
+                src="<?php echo esc_url($omosinstagram["url"]); ?>" alt="<?php echo $omosinstagram ["alt"]?>"></a>
+        <a href="https://www.facebook.com/sikkerhedsgiganten.dk" target="_blank"
+            aria-label="en knap ind til Sikkerhedsgiganten Facebook"><img
+                src="<?php echo esc_url($omosfacebook["url"]); ?>" alt="<?php echo $omosfacebook ["alt"]?>"></a>
+        <a href="https://www.linkedin.com/company/sikkerhedsgiganten/" target="_blank"
+            aria-label="en knap ind til Sikkerhedsgiganten LinkedIn"><img
+                src="<?php echo esc_url($omoslinkedin["url"]); ?>" alt="<?php echo $omoslinkedin ["alt"]?>"></a>
+    </div>
+</section>
+<section id="bottomLinks">
+    <div class="bottomLinksContainer">
+        <a href="" aria-label="en knap ind til find os"><img src="<?php echo esc_url($omosfindos["url"]); ?>"
+                alt="<?php echo $omosfindos ["alt"]?>"><?php echo($findoshertitel);?></a>
+        <a href="" aria-label="en knap ind til nyhedsbrev"><img src="<?php echo esc_url($omosnyhedsbrev["url"]); ?>"
+                alt="<?php echo $omosnyhedsbrev ["alt"]?>"><?php echo($tilmeldnyhedsbrevtitel);?></a>
+        <a href="" aria-label="en knap ind til kontakt os"><img src="<?php echo esc_url($omoskontakt["url"]); ?>"
+                alt="<?php echo $omoskontakt ["alt"]?>"><?php echo($kontaktostitel);?></a>
+        <a href="" aria-label="en knap ind til om os"><img src="<?php echo esc_url($omosom["url"]); ?>"
+                alt="<?php echo $omosom ["alt"]?>"><?php echo($omostitel);?></a>
+        >>>>>>> Stashed changes
     </div>
 </section>
 <?php get_footer(); ?>

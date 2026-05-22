@@ -1,0 +1,217 @@
+#medarbejdere{
+    width: var(--screen-width);
+    margin-top: var(--margin-top-medium);
+    margin: 0 auto;
+}
+#medarbejdere h2{
+font-size: var(--fontsize-title-medium);
+    color: var(--main-color);
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+}
+.medarbejdereContainer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: var(--margin-top-medium);
+}
+.medArbejderItem{
+ text-align: center;
+ color: var(--main-color);
+}
+.medArbejderItem img{
+    border-radius: var(--medium-border-radious);
+    width: 350px;
+    height: 550px;
+    object-fit: cover;
+}
+.medArbejderItem h5{
+    font-size: var(--fontsize-text-big);
+    margin-top: 20px;
+}
+.medArbejderItem a{
+    color: var(--main-color);
+}
+.medArbejderItem p{
+    margin: 20px 0;
+}
+#testimonials{
+    margin-top: calc(var(--margin-top-big) + 200px);
+}
+.testimonialsContaner{
+    width: var(--screen-width);
+    margin: 0 auto;
+    background-color: #dddddd;
+    height: 205px;
+}
+
+.sGSlider{
+    display: flex;
+    gap: 50px;
+    margin: 20px 0;
+}
+.sGSlider1{
+display: flex;
+    gap: 50px;
+}
+.sGSlider2{
+display: flex;
+    gap: 50px;
+}
+ .sGSlider h2{
+    font-size: var(--fontsize-title-medium);
+    color: var(--main-color);
+
+}
+.sGSlider { overflow: hidden; }
+
+.sGSlider1 {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  animation: scrollLeft 15s linear infinite;
+}
+
+@keyframes scrollLeft {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+#os{
+    width: var(--screen-width);
+    
+    margin: 0 auto;
+    
+}
+.osItem{
+    margin-top: var(--margin-top-big);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.osItemContainer{
+    width: 650px;
+    height: 350px;
+    background: linear-gradient(180deg,rgba(64, 64, 64, 1) 0%, rgba(170, 170, 170, 1) 100%);
+    border-radius: var(--medium-border-radious);
+    color: var(--background-colour);
+    padding: 30px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.osItemContainer h3{
+    font-size: var(--fontsize-title-small);
+    font-weight: 900;
+    margin-bottom: 20px;
+    
+}
+#osItem2 img{
+    margin-left: auto;
+}
+#osItem2 .osItemContainer{
+    left: 0;
+    width: 875px;
+}
+#osItem3 .osItemContainer{
+    
+    width: 800px;
+}
+.osErhverv{
+    margin-top: var(--margin-top-big);
+    text-align: center;
+}
+.osErhverv h3{
+    font-size: var(--fontsize-title-small);
+    font-weight: 900;
+    text-align: center;
+}
+.osErhverv p{
+    text-align: center;
+    width: 66%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.osErhverv a{
+    display: inline-block;
+    color: var(--background-colour);
+    background-color: var(--main-color);
+    text-decoration: none;
+    padding: 5px 100px;
+    margin-top: 30px;
+    border-radius: var(--small-border-radious);
+    
+    
+}
+#sikkerhed{
+    width: var(--screen-width);
+    margin: 0 auto;
+    margin-top: var(--margin-top-big);
+}
+#sikkerhed h3{
+    font-size: var(--fontsize-title-small);
+    font-weight: 900;
+    
+    width: 66%;
+}
+#sikkerhed p{
+    margin-top: 20px;
+}
+#kontaktSide{
+    margin-bottom: var(--margin-top-big);
+}
+#passerPaDig{
+    width: var(--screen-width);
+    min-width: var(--minWidth);
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+    margin-top: 400px;
+    margin-bottom: var(--margin-top-big);
+    position: relative;
+}
+.pasContainer{
+    height: fit-content;
+    width: 66%;
+    background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(235, 235, 235, 1) 100%);
+    padding: 20px;
+    padding-left: 40px;
+    position: relative;
+    border-radius: var(--medium-border-radious);
+}
+.pasContainer h2{
+    font-size: var(--fontsize-title-medium);
+    color: var(--main-color);
+    font-family: "Inter", sans-serif;
+}
+.pasContainer a{
+     display: inline-block;
+    color: var(--background-colour);
+    background-color: var(--main-color);
+    text-decoration: none;
+    padding: 5px 100px;
+    margin-top: 30px;
+    border-radius: var(--small-border-radious);
+}
+.pasContainer p{
+    margin-top: 20px;
+    font-size: var(--fontsize-text-medium);
+}
+.pasImg1{
+    position: absolute;
+    top: -30%;
+    
+    right: calc(40% - 400px);
+    
+}
+.pasImg2{
+     position: absolute;
+    top: -42%;
+    
+    right: calc(25% - 400px);
+    
+}
+#video{
+    margin-top: var(--margin-top-big);
+    display: flex;
+    justify-content: center;
+}

@@ -51,50 +51,54 @@ $omostitel= get_field("om_os_titel");
 <main>
     <section id="kontakt">
         <div class="kontaktLeft">
-            <img src="img/kort.jpg" alt="">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.2675354895873!2d8.463353166809167!3d55.50357877778977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b1efbc53ab5bb%3A0x635db43dd92d1700!2sSikkerhedsgiganten!5e0!3m2!1sen!2sdk!4v1779423153451!5m2!1sen!2sdk"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="kontaktRight">           
+        <div class="kontaktRight">
             <div class="kontaktRightTop">
                 <h2><?php echo($sikkerhedsgigantentitel); ?></h2>
-                <p><?php echo($lillebaeltsvejtresabtekst); ?></p>    
+                <p><?php echo($lillebaeltsvejtresabtekst); ?></p>
                 <p><?php echo($tlfnummertekst); ?></p>
                 <p><?php echo($email); ?></p>
             </div>
             <div class="kontaktRightBottom">
                 <h2><?php echo($abningstidertitel); ?></h2>
-                <div class="kontaktBottom">         
+                <div class="kontaktBottom">
                     <div class="kontaktBottomContainer">
                         <p class="kontaktBottomTitel"><?php echo($mantors); ?></p>
                         <p class="kontaktBottomTekst"> <?php echo($mantorsabningstider); ?></p>
-                    </div>     
-                    <div class="kontaktBottomContainer">    
+                    </div>
+                    <div class="kontaktBottomContainer">
                         <p class="kontaktBottomTitel"><?php echo($fredag); ?>:</p>
-                        <p class="kontaktBottomTekst"><?php echo($fredagabningstider); ?></p>    
+                        <p class="kontaktBottomTekst"><?php echo($fredagabningstider); ?></p>
                     </div>
                 </div>
             </div>
         </div>
         </div>
     </section>
-    <section id="faq">      
-        <div class="faqTop">       
+    <section id="faq">
+        <div class="faqTop">
             <p class="faqTopOvertitel"><?php echo($faq); ?></p>
             <h2><?php echo($oftestilledespoergsmaaltitel); ?></h2>
             <p><?php echo($oftestilledesporgsmalbrodtekst); ?></p>
         </div>
         <div class="faqBottom">
-            <div class="faqBottomLeft">    
+            <div class="faqBottomLeft">
                 <p id="faqBottomOverTitel"><?php echo($direktekontakttitel); ?></p>
                 <h3><?php echo($harduetsporgsmaltitel); ?></h3>
                 <p><?php echo($harduetsporgsmalbrodtekst); ?></p>
                 <a href=""><?php echo($kontaktostitel); ?></a>
             </div>
             <div class="faqBottomRight">
-                <div class="accordion">      
+                <div class="accordion">
                     <div class="accordion-item">
                         <div class="accordion-header" id="firstAccordion">
                             <div class="acc-headerLeft">
-                            <img src="<?php echo esc_url($faqikonbestilling["url"]); ?>" alt="<?php echo $faqikonbestilling ["alt"]?>">
+                                <img src="<?php echo esc_url($faqikonbestilling["url"]); ?>"
+                                    alt="<?php echo $faqikonbestilling ["alt"]?>">
                                 <p><?php echo($sporgsmaltilbestillingtitel); ?></p>
                             </div>
                             <div class="acc-headerRight">
@@ -102,28 +106,59 @@ $omostitel= get_field("om_os_titel");
                             </div>
                         </div>
                         <div class="accordion-content">
-                            <p>This is the content of section 2.</p>
+                            <p>Sikkerhedsgiganten er en onlinebutik, og du kan altid kontakte os via telefon, e-mail
+                                eller chat. Derudover har vi en fysisk butik, som du også er velkommen til at besøge på
+                                følgende adresse: Lillebæltsvej 60 - A/B, 6715 Esbjerg N, Danmark.
+
+                                Du kan ringe til os på 71 99 32 60 syv dage om ugen fra kl. 8.00 til 16.00. I samme
+                                tidsrum står vi også til rådighed på chat og e-mail for at assistere dig.
+
+                                Vi ser frem til at høre fra dig</p>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <div class="accordion-header">
                             <div class="acc-headerLeft">
-                            <img src="<?php echo esc_url($faqikonlevering["url"]); ?>" alt="<?php echo $faqikonlevering ["alt"]?>">
+                                <img src="<?php echo esc_url($faqikonlevering["url"]); ?>"
+                                    alt="<?php echo $faqikonlevering ["alt"]?>">
                                 <p><?php echo($sporgsmaltilleveringtitel); ?>
                                 </p>
-                            </div>     
+                            </div>
                             <div class="acc-headerRight">
                                 +
                             </div>
                         </div>
                         <div class="accordion-content">
-                            <p>This is the content of section 2.</p>
+                            <p>Hvilke leveringsmuligheder tilbyder I?
+                                Vi tilbyder levering med GLS og Danske Fragtmænd. Begge selskaber tilbyder levering til
+                                både privatadresser og erhvervsadresser for din bekvemmelighed.
+
+                                Hvordan kan jeg vælge leveringsmetoden?
+                                Ved checkout-processen på vores hjemmeside vil du blive præsenteret for forskellige
+                                leveringsmuligheder. Vælg den, der passer bedst til dine behov, enten GLS eller Danske
+                                Fragtmænd.
+
+                                Hvordan kan jeg spore min ordre?
+                                Når din ordre er blevet afsendt, vil du modtage en e-mail med et sporingsnummer. Dette
+                                nummer kan du bruge på enten GLS' eller Danske Fragtmænds hjemmeside for at følge din
+                                pakkes rejse fra os til din adresse.
+
+                                Hvad er de forventede leveringstider?
+                                Leveringstider fremgår på alle varer. Generelt stræber vi efter at levere dine varer så
+                                hurtigt som muligt. For mere præcise leveringstider anbefaler vi at følge din pakke via
+                                det tilsendte sporingsnummer.
+
+                                Hvad skal jeg gøre, hvis min ordre ikke er ankommet til tiden?
+                                Hvis din ordre ikke er ankommet inden for den forventede leveringstid, bedes du kontakte
+                                vores kundeservice. Vi vil arbejde sammen med transportøren for at spore din pakke og
+                                løse eventuelle problemer så hurtigt som muligt.</p>
                         </div>
                     </div>
-                    <div class="accordion-item"> 
+                    <div class="accordion-item">
                         <div class="accordion-header">
-                            <div class="acc-headerLeft">   
-                            <img src="<?php echo esc_url($faqikonbetaling["url"]); ?>" alt="<?php echo $faqikonbetaling ["alt"]?>">
+                            <div class="acc-headerLeft">
+                                <img src="<?php echo esc_url($faqikonbetaling["url"]); ?>"
+                                    alt="<?php echo $faqikonbetaling ["alt"]?>">
                                 <p><?php echo($sporgsmaltilbetalingtitel); ?></p>
                             </div>
                             <div class="acc-headerRight">
@@ -131,13 +166,19 @@ $omostitel= get_field("om_os_titel");
                             </div>
                         </div>
                         <div class="accordion-content">
-                            <p>This is the content of section 3.</p>
+                            <p>Vi faciliteterer hurtige og sikre betalingsmuligheder via anerkendte
+                                betalingskortudbydere såsom Visa, Mastercard, Dankort med flere. Vores service
+                                inkluderer også fleksible afbetalingsløsninger gennem Anyday og ViaBill. For offentlige
+                                institutioner, der foretrækker at anvende EAN, faciliterer vi også denne
+                                betalingsmetode. Yderligere tilbyder vi fakturabetaling som en bekvem mulighed til vores
+                                erhvervskunder.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <div class="accordion-header">
                             <div class="acc-headerLeft">
-                            <img src="<?php echo esc_url($faqikonreturnering["url"]); ?>" alt="<?php echo $faqikonreturnering ["alt"]?>">
+                                <img src="<?php echo esc_url($faqikonreturnering["url"]); ?>"
+                                    alt="<?php echo $faqikonreturnering ["alt"]?>">
                                 <p><?php echo($sporgsmaltilreturneringtitel); ?></p>
                             </div>
                             <div class="acc-headerRight">
@@ -145,7 +186,27 @@ $omostitel= get_field("om_os_titel");
                             </div>
                         </div>
                         <div class="accordion-content">
-                            <p>This is the content of section 3.</p>
+                            <p>Vi sikrer en problemfri returprocedure, hvis du fortryder dit køb. Hvis uheldet er ude,
+                                og et eller flere af dine produkter er beskadiget, håndterer vi også dette effektivt og
+                                hurtigt.
+
+                                For at returnere din ordre hos Sikkerhedsgiganten, skal du følge disse trin:
+                                ​
+                                1. For at starte din returnering skal du klikke på dette link.
+                                2. Indtast den e-mail, der er tilknyttet din ordre, og bekræft din e-mail med
+                                aktiveringskoden.
+                                3. Du vil nu få en oversigt over dine seneste ordrer. Klik på den ordre og de varer i
+                                ordren, du vil returnere, for at starte returneringsprocessen.
+                                ​
+                                Bemærk, at fragtomkostningerne forbundet med returnering er 36 kr ekskl. moms / 45 kr.
+                                inkl moms.
+
+                                Er der tale om en reklamation, så er det selvfølgelig os der påtager os
+                                fragtomkostningerne.
+
+                                Du har 14 dages fortrydelsesret fra den dag, du modtager din vare. Hvis du har bestilt
+                                flere forskellige varer i én ordre, men de leveres enkeltvis, løber fristen fra den dag,
+                                hvor du modtager den sidste vare.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -159,7 +220,14 @@ $omostitel= get_field("om_os_titel");
                             </div>
                         </div>
                         <div class="accordion-content">
-                            <p>This is the content of section 3.</p>
+                            <p>Hos Sikkerhedsgiganten.dk forstår vi vigtigheden af professionelt og funktionelt
+                                arbejdstøj for virksomheder. Derfor tilbyder vi skræddersyede firmaaftaler, designet til
+                                at imødekomme netop dit firmas behov. Med en personlig tilgang sikrer vi, at du får
+                                præcis det arbejdstøj, der matcher din virksomheds profil og værdier.
+
+                                Er du klar til at optimere dit firmatøj med en skræddersyet løsning fra
+                                SikkerhedsGiganten? Kontakt os i dag og lad os sammen skabe værdi for din virksomhed
+                                gennem professionelt og funktionelt arbejdstøj.</p>
                         </div>
                     </div>
                 </div>
@@ -168,8 +236,10 @@ $omostitel= get_field("om_os_titel");
     </section>
     <section id="passerPaDig">
 
-    <img src="<?php echo esc_url($vipasserpådig2["url"]); ?>" alt="<?php echo $vipasserpådig2 ["alt"]?>" class="pasImg2">
-        <img src="<?php echo esc_url($vipasserpådig1["url"]); ?>" alt="<?php echo $vipasserpådig1 ["alt"]?>" class="pasImg1">
+        <img src="<?php echo esc_url($vipasserpådig2["url"]); ?>" alt="<?php echo $vipasserpådig2 ["alt"]?>"
+            class="pasImg2">
+        <img src="<?php echo esc_url($vipasserpådig1["url"]); ?>" alt="<?php echo $vipasserpådig1 ["alt"]?>"
+            class="pasImg1">
         <div class="pasContainer">
             <h2><?php echo($vipasserpadigtitel); ?></h2>
             <p><?php echo($vipasserpadigtekstbrodtekst); ?></p>
@@ -180,24 +250,26 @@ $omostitel= get_field("om_os_titel");
     </section>
     <section id="genOplysninger">
         <div class="menuNav">
-            <button class="menuNavBtn active" data-target="handelsbetingelser"
-                data-intro="intro-handelsbetingelser" aria-label="en knap ind til handelsbetingelser">Handelsbetingelser</button>
-            <button class="menuNavBtn" data-target="cookiepolitik"
-                data-intro="intro-cookiepolitik" aria-label="en knap ind til cookiepolitik">Cookiepolitik</button>
-            <button class="menuNavBtn" data-target="privatlivspolitik"
-                data-intro="intro-privatlivspolitik" aria-label="en knap ind til privatlivspolitik">Privatlivspolitik</button>
+            <button class="menuNavBtn active" data-target="handelsbetingelser" data-intro="intro-handelsbetingelser"
+                aria-label="en knap ind til handelsbetingelser">Handelsbetingelser</button>
+            <button class="menuNavBtn" data-target="cookiepolitik" data-intro="intro-cookiepolitik"
+                aria-label="en knap ind til cookiepolitik">Cookiepolitik</button>
+            <button class="menuNavBtn" data-target="privatlivspolitik" data-intro="intro-privatlivspolitik"
+                aria-label="en knap ind til privatlivspolitik">Privatlivspolitik</button>
             <button class="menuNavBtn" data-target="delbetaling" data-intro="intro-delbetaling">Delbetaling</button>
-            <button class="menuNavBtn" data-target="csr" data-intro="intro-csr" aria-label="en knap ind til CSR" >CSR</button>
-            <button class="menuNavBtn" data-target="nyttige-links" data-intro="intro-nyttige-links" aria-label="en knap ind til nyttige links">Nyttige
+            <button class="menuNavBtn" data-target="csr" data-intro="intro-csr"
+                aria-label="en knap ind til CSR">CSR</button>
+            <button class="menuNavBtn" data-target="nyttige-links" data-intro="intro-nyttige-links"
+                aria-label="en knap ind til nyttige links">Nyttige
                 links</button>
             <div class="pill-overlay"></div>
         </div>
         <div class="menuIntro">
-            <div class="menuIntroContainer">     
+            <div class="menuIntroContainer">
                 <div class="menuIntroItem activeIntro" id="intro-handelsbetingelser">
                     <p><?php echo($generelleoplysningertitel); ?></p>
                     <h2><?php echo($handelsbetingelsertitel); ?></h2>
-                    <p><?php echo($handelsbetingelserbrodtekst); ?></p>        
+                    <p><?php echo($handelsbetingelserbrodtekst); ?></p>
                 </div>
                 <div class="menuIntroItem" id="intro-cookiepolitik">
                     <p>Generelle oplysninger</p>
@@ -653,17 +725,36 @@ $omostitel= get_field("om_os_titel");
     <section id="socialSektion">
         <h3 class="socialTitel"><?php echo($sikkerhedsgigantenpaasome); ?></h3>
         <div class="someContainer">
-            <a href="https://www.instagram.com/sikkerhedsgigantendk/" target="_blank" aria-label="en knap ind til Sikkerhedsgiganten Instagram"><img src="<?php echo esc_url($kundeservicesomeinstagram["url"]); ?>" alt="<?php echo $kundeservicesomeinstagram ["alt"]?>"></a>
-            <a href="https://www.facebook.com/sikkerhedsgiganten.dk" target="_blank" aria-label="en knap ind til Sikkerhedsgiganten Facebook"><img src="<?php echo esc_url($kundeservicesomefacebook["url"]); ?>" alt="<?php echo $kundeservicesomefacebook ["alt"]?>"></a>
-            <a href="https://www.linkedin.com/company/sikkerhedsgiganten/" target="_blank" aria-label="en knap ind til Sikkerhedsgiganten LinkedIn"><img src="<?php echo esc_url($kundeservicesomelinkedin["url"]); ?>" alt="<?php echo $kundeservicesomelinkedin ["alt"]?>"></a>
+            <a href="https://www.instagram.com/sikkerhedsgigantendk/" target="_blank"
+                aria-label="en knap ind til Sikkerhedsgiganten Instagram"><img
+                    src="<?php echo esc_url($kundeservicesomeinstagram["url"]); ?>"
+                    alt="<?php echo $kundeservicesomeinstagram ["alt"]?>"></a>
+            <a href="https://www.facebook.com/sikkerhedsgiganten.dk" target="_blank"
+                aria-label="en knap ind til Sikkerhedsgiganten Facebook"><img
+                    src="<?php echo esc_url($kundeservicesomefacebook["url"]); ?>"
+                    alt="<?php echo $kundeservicesomefacebook ["alt"]?>"></a>
+            <a href="https://www.linkedin.com/company/sikkerhedsgiganten/" target="_blank"
+                aria-label="en knap ind til Sikkerhedsgiganten LinkedIn"><img
+                    src="<?php echo esc_url($kundeservicesomelinkedin["url"]); ?>"
+                    alt="<?php echo $kundeservicesomelinkedin ["alt"]?>"></a>
         </div>
     </section>
-    <section id="bottomLinks">    
+    <section id="bottomLinks">
         <div class="bottomLinksContainer">
-            <a href="" aria-label="en knap ind til find os"><img src="<?php echo esc_url($kundeservicefindos["url"]); ?>" alt="<?php echo $kundeservicefindos ["alt"]?>"><?php echo($findoshertitel); ?></a>
-            <a href="" aria-label="en knap ind til kundeservice"><img src="<?php echo esc_url($kundeservicenyhedsbrev["url"]); ?>" alt="<?php echo $kundeservicenyhedsbrev ["alt"]?>"><?php echo($tilmeldnyhedsbrevtitel); ?></a>  
-            <a href="" aria-label="en knap ind til kontakt os"><img src="<?php echo esc_url($kundeservicekontaktos["url"]); ?>" alt="<?php echo $kundeservicekontaktos ["alt"]?>"><?php echo($kontaktostitel); ?></a>  
-            <a href="" aria-label="en knap ind til om os"><img src="<?php echo esc_url($kundeserviceomos["url"]); ?>" alt="<?php echo $kundeserviceomos ["alt"]?>"><?php echo($omostitel); ?></a>   
+
+            <a href="http://sikkerhedsgiganten.local/index.php/kontakt/#kontaktSide"
+                aria-label="en knap ind til find os"><img src="<?php echo esc_url($kundeservicefindos["url"]); ?>"
+                    alt="<?php echo $kundeservicefindos ["alt"]?>"><?php echo($findoshertitel); ?></a>
+            <a href="http://sikkerhedsgiganten.local/#socialSektion" aria-label="en knap ind til kundeservice"><img
+                    src="<?php echo esc_url($kundeservicenyhedsbrev["url"]); ?>"
+                    alt="<?php echo $kundeservicenyhedsbrev ["alt"]?>"><?php echo($tilmeldnyhedsbrevtitel); ?></a>
+            <a href="http://sikkerhedsgiganten.local/index.php/kontakt/" aria-label="en knap ind til kontakt os"><img
+                    src="<?php echo esc_url($kundeservicekontaktos["url"]); ?>"
+                    alt="<?php echo $kundeservicekontaktos ["alt"]?>"><?php echo($kontaktostitel); ?></a>
+            <a href="http://sikkerhedsgiganten.local/index.php/omos/" aria-label="en knap ind til om os"><img
+                    src="<?php echo esc_url($kundeserviceomos["url"]); ?>"
+                    alt="<?php echo $kundeserviceomos ["alt"]?>"><?php echo($omostitel); ?></a>
+
         </div>
     </section>
 </main>

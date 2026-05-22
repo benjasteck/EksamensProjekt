@@ -47,7 +47,7 @@
 }
 .kontaktBottomTekst{
    font-size: 24px;
-   color: #559469; 
+   color: var(--main-color); 
    
 }
 .kontaktBottomContainer{

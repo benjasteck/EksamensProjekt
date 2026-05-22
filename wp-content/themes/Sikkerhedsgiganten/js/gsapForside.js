@@ -309,3 +309,19 @@ jQuery(function($){
         });
     });
 });
+document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        const isOpen = content.classList.contains('active');
+
+        // Close all
+        document.querySelectorAll('.accordion-content').forEach(c => c.classList.remove('active'));
+        document.querySelectorAll('.acc-headerRight').forEach(r => r.textContent = '+');
+
+        // Open clicked if it was closed
+        if (!isOpen) {
+            content.classList.add('active');
+            header.querySelector('.acc-headerRight').textContent = '−';
+        }
+    });
+});
