@@ -14,15 +14,15 @@ gsap.ticker.lagSmoothing(0);
 
 // 2. ScrollTrigger sync with Lenis
 lenis.on('scroll', ScrollTrigger.update);
+const clampedSize = `${Math.min(Math.max(window.innerWidth * 0.07, 40), 100)}px`;
 
-// 3. Header animation
 const tl = gsap.timeline({
   scrollTrigger: {
     trigger: "#header",
     start: "top top",
-    end: `+=${window.innerHeight * 0.5}`,      // how many px of scroll to complete the animation
-    scrub: 1,            // ties animation directly to scroll position
-    pin: true,           // pins the header while animating
+    end: `+=${window.innerHeight * 0.5}`,      
+    scrub: 1,            
+    pin: true,           
   }
 });
 
@@ -41,7 +41,7 @@ tl
   }, "<")
   .to("#headerTitle", {
   color: "#FF6000",
-  fontSize: "100px",
+  fontSize: clampedSize,
   ease: "power2.out",
   duration: 0.4,
 }, "<")
