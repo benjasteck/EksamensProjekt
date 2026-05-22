@@ -51,6 +51,7 @@ $sporgsmaltilleveringbrodtekst= get_field("sporgsmal_til_levering_brodtekst");
 $sporgsmaltilbetalingbrodtekst= get_field("sporgsmal_til_betaling_brodtekst");
 $sporgsmaltilreturneringbrodtekst= get_field("sporgsmal_til_returnering_brodtekst");
 $sporgsmalvdrerhvervsaftalebrodtekst= get_field("sporgsmal_vdr_erhvervsaftale_brodtekst");
+$faqikonerhvervsaftale= get_field("faq_ikon_erhvervsaftale");
 
 ?>
 
@@ -164,10 +165,10 @@ $sporgsmalvdrerhvervsaftalebrodtekst= get_field("sporgsmal_vdr_erhvervsaftale_br
                     <div class="accordion-item">
                         <div class="accordion-header" id="lastAccordion">
                             <div class="acc-headerLeft">
-                                <img src="img/faqSvg5.svg" alt="">
+                                <img src="<?php echo esc_url($faqikonerhvervsaftale["url"]); ?>"
                                 <p><?php echo($sporgsmalvdrerhvervsaftaletitel); ?></p>
                             </div>
-                            <div class="acc-headerRight">
+                            <div class="acc-headerRight">   
                                 +
                             </div>  
                         </div>
