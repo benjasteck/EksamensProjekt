@@ -420,4 +420,202 @@ function husky_live_search_handler() {
 
     wp_send_json_success( $results );
 }
+
+function create_bookings_cpt() {
+    $labels = array(
+        'name' => 'Bookings',
+        'singular_name' => 'Booking',
+        'menu_name' => 'Bookings',
+        'add_new_item' => 'Add Booking'
+    );
+
+    $args = array(
+        'labels' => $labels,
+        'public' => false, // not visible on front-end
+        'show_ui' => true,  // visible in admin
+        'menu_icon' => 'dashicons-calendar-alt',
+        'supports' => array('title')
+    );
+
+    register_post_type('bookings', $args);
+}
+add_action('init', 'create_bookings_cpt');
+
+function booking_form_handler() {
+
+    // Nonce check
+    if ( ! isset( $_POST['booking_form_nonce'] ) || ! wp_verify_nonce( $_POST['booking_form_nonce'], 'booking_form_action' ) ) {
+        wp_die( 'Security check failed.' );
+    }
+
+    // Sanitize inputs
+    $name = sanitize_text_field($_POST['booking_name'] ?? '');
+    $email = sanitize_email($_POST['booking_email'] ?? '');
+    $tlf = sanitize_text_field($_POST['booking_tlf'] ?? '');
+    $description = sanitize_textarea_field($_POST['booking_description'] ?? '');
+
+    if ( empty($name) || empty($email) || !is_email($email) ) {
+        wp_die('Name and valid email are required.');
+    }
+
+    // Insert booking post
+    $post_id = wp_insert_post([
+        'post_type' => 'bookings',
+        'post_status' => 'publish',
+        'post_title' => $name
+    ]);
+
+    if ( ! is_wp_error($post_id) ) {
+        update_field('booking_name', $name, $post_id);
+        update_field('booking_email', $email, $post_id);
+        update_field('booking_tlf', $tlf, $post_id);
+        update_field('booking_description', $description, $post_id);
+    }
+
+    // Optional: send email notification to admin
+    wp_mail(
+        'jeppewestergaard@gmail.com',
+        'Ny booking fra erhverv formularen',
+        "Name: $name\nEmail: $email\nPhone: $tlf\nDescription:\n$description"
+    );
+
+    wp_redirect( wp_get_referer() );
+    exit;
+}
+add_action('admin_post_nopriv_booking_form', 'booking_form_handler');
+add_action('admin_post_booking_form', 'booking_form_handler');
+
+function create_subscribers_cpt() {
+    $labels = array(
+        'name' => 'Subscribers',
+        'singular_name' => 'Subscriber',
+        'menu_name' => 'Subscribers',
+        'add_new_item' => 'Add Subscriber'
+    );
+
+    $args = array(
+        'labels' => $labels,
+        'public' => false,
+        'show_ui' => true,
+        'menu_icon' => 'dashicons-email',
+        'supports' => array('title')
+    );
+
+    register_post_type('subscriber', $args);
+}
+add_action('init', 'create_subscribers_cpt');
+
+
+// 2. Handle secure form submission
+function subscriber_form_handler() {
+    // Nonce check
+    if ( ! isset( $_POST['subscriber_nonce'] ) || ! wp_verify_nonce( $_POST['subscriber_nonce'], 'subscriber_form_action' ) ) {
+        wp_die( 'Security check failed.' );
+    }
+
+    if ( empty( $_POST['Email'] ) ) {
+        wp_die( 'Email is required.' );
+    }
+
+    $email = sanitize_email( $_POST['Email'] );
+
+    if ( ! is_email( $email ) ) {
+        wp_die( 'Invalid email.' );
+    }
+
+    // Exact duplicate check via ACF meta field
+    $existing = new WP_Query([
+        'post_type'      => 'subscriber',
+        'post_status'    => 'any',
+        'posts_per_page' => 1,
+        'meta_query'     => [
+            [
+                'key'     => 'email',  // ACF field slug
+                'value'   => $email,
+                'compare' => '='
+            ]
+        ]
+    ]);
+
+    if ( ! $existing->have_posts() ) {  // ← the fix
+        $post_id = wp_insert_post([
+            'post_type'   => 'subscriber',
+            'post_status' => 'publish',
+            'post_title'  => $email
+        ]);
+
+        if ( ! is_wp_error( $post_id ) ) {
+            update_field( 'email', $email, $post_id );
+        }
+    }
+
+    wp_redirect( wp_get_referer() );
+    exit;
+}
+add_action( 'admin_post_nopriv_subscriber_form', 'subscriber_form_handler' );
+add_action( 'admin_post_subscriber_form',        'subscriber_form_handler' );
+
+function create_kontakter_cpt() {
+    $labels = array(
+        'name' => 'Kontakter',
+        'singular_name' => 'Kontakt',
+        'menu_name' => 'Kontakter',
+        'add_new_item' => 'Add Kontakt'
+    );
+
+    $args = array(
+        'labels' => $labels,
+        'public' => false, // not visible on front-end
+        'show_ui' => true,  // visible in admin
+        'menu_icon' => 'dashicons-email',
+        'supports' => array('title')
+    );
+
+    register_post_type('kontakter', $args);
+}
+add_action('init', 'create_kontakter_cpt');
+
+function kontakt_form_handler() {
+
+    // Nonce check
+    if ( ! isset( $_POST['kontakt_form_nonce'] ) || ! wp_verify_nonce( $_POST['kontakt_form_nonce'], 'kontakt_form_action' ) ) {
+        wp_die( 'Security check failed.' );
+    }
+
+    // Sanitize inputs
+    $name = sanitize_text_field($_POST['kontakt_name'] ?? '');
+    $email = sanitize_email($_POST['kontakt_email'] ?? '');
+    $tlf = sanitize_text_field($_POST['kontakt_tlf'] ?? '');
+    $description = sanitize_textarea_field($_POST['kontakt_description'] ?? '');
+
+    if ( empty($name) || empty($email) || !is_email($email) ) {
+        wp_die('Name and valid email are required.');
+    }
+
+    // Insert kontakt post
+    $post_id = wp_insert_post([
+        'post_type' => 'kontakter',
+        'post_status' => 'publish',
+        'post_title' => $name
+    ]);
+
+    if ( ! is_wp_error($post_id) ) {
+        update_field('kontakt_name', $name, $post_id);
+        update_field('kontakt_email', $email, $post_id);
+        update_field('kontakt_tlf', $tlf, $post_id);
+        update_field('kontakt_description', $description, $post_id);
+    }
+
+    // Optional: send email notification to admin
+    wp_mail(
+        'jeppewestergaard@gmail.com',
+        'Ny kontakt fra kontakt formularen',
+        "Name: $name\nEmail: $email\nPhone: $tlf\nDescription:\n$description"
+    );
+
+    wp_redirect( wp_get_referer() );
+    exit;
+}
+add_action('admin_post_nopriv_kontakt_form', 'kontakt_form_handler');
+add_action('admin_post_kontakt_form', 'kontakt_form_handler');
 ?>

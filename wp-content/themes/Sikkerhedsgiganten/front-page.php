@@ -310,8 +310,10 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
                 <div class="newsletterLeft">
                     <h3><?php echo($holddigopdateretnyhedsmailtitel); ?></h3>
                     <p><?php echo($holddigopdateretnyhedsmailunderteksttilmelddig); ?></p>
-                    <form method="post">
-                        <input type="email" name="Email" placeholder="Din Email">
+                    <form method="post" action="<?php echo esc_url( admin_url('admin-post.php') ); ?>">
+                        <input type="email" name="Email" placeholder="Din Email" required>
+                        <?php wp_nonce_field('subscriber_form_action','subscriber_nonce'); ?>
+                        <input type="hidden" name="action" value="subscriber_form">
                         <button type="submit" value=" ">
                             <img src="data:image/svg+xml,%3Csvg width='30' height='10' viewBox='0 0 16 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='2.71973' width='15.4286' height='2.56061' fill='%23404040'/%3E%3Cpath d='M18 4.00009L14.1429 7.32641L14.1429 0.673764L18 4.00009Z' fill='%23404040'/%3E%3C/svg%3E"
                                 alt="">
@@ -439,28 +441,36 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
                 </div>
                 <div class="bookingRight">
                     <div class="formularContainer">
-                        <div class="inputContainer">
-                            <label for="name"><?php echo($navnekasse); ?></label>
-                            <input type="text" class="nameInput" placeholder="Skriv Dit Navn">
-                        </div>
+                        <form method="post" action="<?php echo esc_url( admin_url('admin-post.php') ); ?>">
+                            <?php wp_nonce_field('booking_form_action','booking_form_nonce'); ?>
+                            <input type="hidden" name="action" value="booking_form">
+                            <div class="inputContainer">
+                                <label for="name"><?php echo($navnekasse); ?></label>
+                                <input type="text" class="nameInput" name="booking_name" placeholder="Skriv Dit Navn"
+                                    autocomplete="off" required>
+                            </div>
 
-                        <div class="inputContainer">
-                            <label for="name"><?php echo($emailkasse); ?></label>
-                            <input type="text" class="nameInput" placeholder="Skriv Din Email">
-                        </div>
+                            <div class="inputContainer">
+                                <label for="name"><?php echo($emailkasse); ?></label>
+                                <input type="email" class="nameInput" name="booking_email" placeholder="Skriv Din Email"
+                                    autocomplete="off" required>
+                            </div>
 
-                        <div class="inputContainer">
-                            <label for="name"><?php echo($tlfkasse); ?></label>
-                            <input type="text" class="nameInput" placeholder="Skriv Dit Telefon Nummer">
-                        </div>
+                            <div class="inputContainer">
+                                <label for="name"><?php echo($tlfkasse); ?></label>
+                                <input type="text" class="nameInput" name="booking_tlf"
+                                    placeholder="Skriv Dit Telefon Nummer" autocomplete="off" required>
+                            </div>
 
-                        <div class="inputContainer" id="inputStor">
-                            <label for="name"><?php echo($skrivbesked); ?></label>
-                            <input type="text" class="bigInput" placeholder="Skriv din besked her">
-                        </div>
-                        <div class="inputBtn">
-                            <p><?php echo($sendforesporgseltekst); ?></p>
-                        </div>
+                            <div class="inputContainer" id="inputStor">
+                                <label for="name"><?php echo($skrivbesked); ?></label>
+                                <input type="text" class="bigInput" placeholder="Skriv din besked her"
+                                    name="booking_description" autocomplete="off">
+                            </div>
+                            <div class="inputBtn">
+                                <button type="submit"><?php echo($sendforesporgseltekst); ?></button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
