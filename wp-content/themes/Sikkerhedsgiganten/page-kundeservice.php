@@ -46,6 +46,12 @@ $findoshertitel= get_field("find_os_her_titel");
 $tilmeldnyhedsbrevtitel= get_field("tilmeld_nyhedsbrev_titel");
 $kontaktostitel= get_field("kontakt_os_titel");
 $omostitel= get_field("om_os_titel");
+$sporgsmaltilbestillingbrodtekst= get_field("sporgsmal_til_bestilling_brodtekst");
+$sporgsmaltilleveringbrodtekst= get_field("sporgsmal_til_levering_brodtekst");
+$sporgsmaltilbetalingbrodtekst= get_field("sporgsmal_til_betaling_brodtekst");
+$sporgsmaltilreturneringbrodtekst= get_field("sporgsmal_til_returnering_brodtekst");
+$sporgsmalvdrerhvervsaftalebrodtekst= get_field("sporgsmal_vdr_erhvervsaftale_brodtekst");
+
 ?>
 
 <main>
@@ -103,17 +109,10 @@ $omostitel= get_field("om_os_titel");
                             </div>
                             <div class="acc-headerRight">
                                 +
-                            </div>
+                            </div>    
                         </div>
                         <div class="accordion-content">
-                            <p>Sikkerhedsgiganten er en onlinebutik, og du kan altid kontakte os via telefon, e-mail
-                                eller chat. Derudover har vi en fysisk butik, som du også er velkommen til at besøge på
-                                følgende adresse: Lillebæltsvej 60 - A/B, 6715 Esbjerg N, Danmark.
-
-                                Du kan ringe til os på 71 99 32 60 syv dage om ugen fra kl. 8.00 til 16.00. I samme
-                                tidsrum står vi også til rådighed på chat og e-mail for at assistere dig.
-
-                                Vi ser frem til at høre fra dig</p>
+                            <p><?php echo($sporgsmaltilbestillingbrodtekst); ?></p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -127,31 +126,9 @@ $omostitel= get_field("om_os_titel");
                             <div class="acc-headerRight">
                                 +
                             </div>
-                        </div>
+                        </div>   
                         <div class="accordion-content">
-                            <p>Hvilke leveringsmuligheder tilbyder I?
-                                Vi tilbyder levering med GLS og Danske Fragtmænd. Begge selskaber tilbyder levering til
-                                både privatadresser og erhvervsadresser for din bekvemmelighed.
-
-                                Hvordan kan jeg vælge leveringsmetoden?
-                                Ved checkout-processen på vores hjemmeside vil du blive præsenteret for forskellige
-                                leveringsmuligheder. Vælg den, der passer bedst til dine behov, enten GLS eller Danske
-                                Fragtmænd.
-
-                                Hvordan kan jeg spore min ordre?
-                                Når din ordre er blevet afsendt, vil du modtage en e-mail med et sporingsnummer. Dette
-                                nummer kan du bruge på enten GLS' eller Danske Fragtmænds hjemmeside for at følge din
-                                pakkes rejse fra os til din adresse.
-
-                                Hvad er de forventede leveringstider?
-                                Leveringstider fremgår på alle varer. Generelt stræber vi efter at levere dine varer så
-                                hurtigt som muligt. For mere præcise leveringstider anbefaler vi at følge din pakke via
-                                det tilsendte sporingsnummer.
-
-                                Hvad skal jeg gøre, hvis min ordre ikke er ankommet til tiden?
-                                Hvis din ordre ikke er ankommet inden for den forventede leveringstid, bedes du kontakte
-                                vores kundeservice. Vi vil arbejde sammen med transportøren for at spore din pakke og
-                                løse eventuelle problemer så hurtigt som muligt.</p>
+                            <p><?php echo($sporgsmaltilleveringbrodtekst); ?></p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -164,14 +141,9 @@ $omostitel= get_field("om_os_titel");
                             <div class="acc-headerRight">
                                 +
                             </div>
-                        </div>
+                        </div>    
                         <div class="accordion-content">
-                            <p>Vi faciliteterer hurtige og sikre betalingsmuligheder via anerkendte
-                                betalingskortudbydere såsom Visa, Mastercard, Dankort med flere. Vores service
-                                inkluderer også fleksible afbetalingsløsninger gennem Anyday og ViaBill. For offentlige
-                                institutioner, der foretrækker at anvende EAN, faciliterer vi også denne
-                                betalingsmetode. Yderligere tilbyder vi fakturabetaling som en bekvem mulighed til vores
-                                erhvervskunder.</p>
+                            <p><?php echo($sporgsmaltilbetalingbrodtekst); ?></p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -184,29 +156,9 @@ $omostitel= get_field("om_os_titel");
                             <div class="acc-headerRight">
                                 +
                             </div>
-                        </div>
+                        </div>   
                         <div class="accordion-content">
-                            <p>Vi sikrer en problemfri returprocedure, hvis du fortryder dit køb. Hvis uheldet er ude,
-                                og et eller flere af dine produkter er beskadiget, håndterer vi også dette effektivt og
-                                hurtigt.
-
-                                For at returnere din ordre hos Sikkerhedsgiganten, skal du følge disse trin:
-                                ​
-                                1. For at starte din returnering skal du klikke på dette link.
-                                2. Indtast den e-mail, der er tilknyttet din ordre, og bekræft din e-mail med
-                                aktiveringskoden.
-                                3. Du vil nu få en oversigt over dine seneste ordrer. Klik på den ordre og de varer i
-                                ordren, du vil returnere, for at starte returneringsprocessen.
-                                ​
-                                Bemærk, at fragtomkostningerne forbundet med returnering er 36 kr ekskl. moms / 45 kr.
-                                inkl moms.
-
-                                Er der tale om en reklamation, så er det selvfølgelig os der påtager os
-                                fragtomkostningerne.
-
-                                Du har 14 dages fortrydelsesret fra den dag, du modtager din vare. Hvis du har bestilt
-                                flere forskellige varer i én ordre, men de leveres enkeltvis, løber fristen fra den dag,
-                                hvor du modtager den sidste vare.</p>
+                            <p><?php echo($sporgsmaltilreturneringbrodtekst); ?></p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -217,17 +169,10 @@ $omostitel= get_field("om_os_titel");
                             </div>
                             <div class="acc-headerRight">
                                 +
-                            </div>
+                            </div>  
                         </div>
                         <div class="accordion-content">
-                            <p>Hos Sikkerhedsgiganten.dk forstår vi vigtigheden af professionelt og funktionelt
-                                arbejdstøj for virksomheder. Derfor tilbyder vi skræddersyede firmaaftaler, designet til
-                                at imødekomme netop dit firmas behov. Med en personlig tilgang sikrer vi, at du får
-                                præcis det arbejdstøj, der matcher din virksomheds profil og værdier.
-
-                                Er du klar til at optimere dit firmatøj med en skræddersyet løsning fra
-                                SikkerhedsGiganten? Kontakt os i dag og lad os sammen skabe værdi for din virksomhed
-                                gennem professionelt og funktionelt arbejdstøj.</p>
+                            <p><?php echo($sporgsmalvdrerhvervsaftalebrodtekst); ?></p>
                         </div>
                     </div>
                 </div>
