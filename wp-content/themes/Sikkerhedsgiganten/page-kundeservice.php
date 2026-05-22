@@ -165,7 +165,7 @@ $faqikonerhvervsaftale= get_field("faq_ikon_erhvervsaftale");
                     <div class="accordion-item">
                         <div class="accordion-header" id="lastAccordion">
                             <div class="acc-headerLeft">
-                                <img src="<?php echo esc_url($faqikonerhvervsaftale["url"]); ?>"
+                                <img src="<?php echo esc_url($faqikonerhvervsaftale["url"]); ?>">
                                 <p><?php echo($sporgsmalvdrerhvervsaftaletitel); ?></p>
                             </div>
                             <div class="acc-headerRight">   

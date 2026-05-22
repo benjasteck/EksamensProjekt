@@ -12,6 +12,7 @@ $footerlogo          = get_field("footer_logo", $footer_post_id);
 $blivendelafnyhedsbrevettitel          = get_field("bliv_en_del_af_nyhedsbrevet_titel", $footer_post_id);
 $kontakttitel          = get_field("kontakt_titel", $footer_post_id);
 $tlfnr          = get_field("tlf_nr", $footer_post_id);
+$emailadressetitel          = get_field("email_adresse_titel", $footer_post_id);
 $adresselokation          = get_field("adresse_lokation", $footer_post_id);
 $abningstidertitel          = get_field("abningstider_titel", $footer_post_id);
 $mantiltorsabningstider          = get_field("man_til_tors_abningstider", $footer_post_id);
