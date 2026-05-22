@@ -181,14 +181,14 @@ $omostitel= get_field("om_os_titel");
     <section id="genOplysninger">
         <div class="menuNav">
             <button class="menuNavBtn active" data-target="handelsbetingelser"
-                data-intro="intro-handelsbetingelser">Handelsbetingelser</button>
+                data-intro="intro-handelsbetingelser" aria-label="en knap ind til handelsbetingelser">Handelsbetingelser</button>
             <button class="menuNavBtn" data-target="cookiepolitik"
-                data-intro="intro-cookiepolitik">Cookiepolitik</button>
+                data-intro="intro-cookiepolitik" aria-label="en knap ind til cookiepolitik">Cookiepolitik</button>
             <button class="menuNavBtn" data-target="privatlivspolitik"
-                data-intro="intro-privatlivspolitik">Privatlivspolitik</button>
+                data-intro="intro-privatlivspolitik" aria-label="en knap ind til privatlivspolitik">Privatlivspolitik</button>
             <button class="menuNavBtn" data-target="delbetaling" data-intro="intro-delbetaling">Delbetaling</button>
-            <button class="menuNavBtn" data-target="csr" data-intro="intro-csr">CSR</button>
-            <button class="menuNavBtn" data-target="nyttige-links" data-intro="intro-nyttige-links">Nyttige
+            <button class="menuNavBtn" data-target="csr" data-intro="intro-csr" aria-label="en knap ind til CSR" >CSR</button>
+            <button class="menuNavBtn" data-target="nyttige-links" data-intro="intro-nyttige-links" aria-label="en knap ind til nyttige links">Nyttige
                 links</button>
             <div class="pill-overlay"></div>
         </div>
@@ -653,17 +653,17 @@ $omostitel= get_field("om_os_titel");
     <section id="socialSektion">
         <h3 class="socialTitel"><?php echo($sikkerhedsgigantenpaasome); ?></h3>
         <div class="someContainer">
-            <a href="https://www.instagram.com/sikkerhedsgigantendk/" target="_blank"><img src="<?php echo esc_url($kundeservicesomeinstagram["url"]); ?>" alt="<?php echo $kundeservicesomeinstagram ["alt"]?>"></a>
-            <a href="https://www.facebook.com/sikkerhedsgiganten.dk" target="_blank"><img src="<?php echo esc_url($kundeservicesomefacebook["url"]); ?>" alt="<?php echo $kundeservicesomefacebook ["alt"]?>"></a>
-            <a href="https://www.linkedin.com/company/sikkerhedsgiganten/" target="_blank"><img src="<?php echo esc_url($kundeservicesomelinkedin["url"]); ?>" alt="<?php echo $kundeservicesomelinkedin ["alt"]?>"></a>
+            <a href="https://www.instagram.com/sikkerhedsgigantendk/" target="_blank" aria-label="en knap ind til Sikkerhedsgiganten Instagram"><img src="<?php echo esc_url($kundeservicesomeinstagram["url"]); ?>" alt="<?php echo $kundeservicesomeinstagram ["alt"]?>"></a>
+            <a href="https://www.facebook.com/sikkerhedsgiganten.dk" target="_blank" aria-label="en knap ind til Sikkerhedsgiganten Facebook"><img src="<?php echo esc_url($kundeservicesomefacebook["url"]); ?>" alt="<?php echo $kundeservicesomefacebook ["alt"]?>"></a>
+            <a href="https://www.linkedin.com/company/sikkerhedsgiganten/" target="_blank" aria-label="en knap ind til Sikkerhedsgiganten LinkedIn"><img src="<?php echo esc_url($kundeservicesomelinkedin["url"]); ?>" alt="<?php echo $kundeservicesomelinkedin ["alt"]?>"></a>
         </div>
     </section>
     <section id="bottomLinks">    
         <div class="bottomLinksContainer">
-            <a href=""><img src="<?php echo esc_url($kundeservicefindos["url"]); ?>" alt="<?php echo $kundeservicefindos ["alt"]?>"><?php echo($findoshertitel); ?></a>
-            <a href=""><img src="<?php echo esc_url($kundeservicenyhedsbrev["url"]); ?>" alt="<?php echo $kundeservicenyhedsbrev ["alt"]?>"><?php echo($tilmeldnyhedsbrevtitel); ?></a>  
-            <a href=""><img src="<?php echo esc_url($kundeservicekontaktos["url"]); ?>" alt="<?php echo $kundeservicekontaktos ["alt"]?>"><?php echo($kontaktostitel); ?></a>  
-            <a href=""><img src="<?php echo esc_url($kundeserviceomos["url"]); ?>" alt="<?php echo $kundeserviceomos ["alt"]?>"><?php echo($omostitel); ?></a>   
+            <a href="" aria-label="en knap ind til find os"><img src="<?php echo esc_url($kundeservicefindos["url"]); ?>" alt="<?php echo $kundeservicefindos ["alt"]?>"><?php echo($findoshertitel); ?></a>
+            <a href="" aria-label="en knap ind til kundeservice"><img src="<?php echo esc_url($kundeservicenyhedsbrev["url"]); ?>" alt="<?php echo $kundeservicenyhedsbrev ["alt"]?>"><?php echo($tilmeldnyhedsbrevtitel); ?></a>  
+            <a href="" aria-label="en knap ind til kontakt os"><img src="<?php echo esc_url($kundeservicekontaktos["url"]); ?>" alt="<?php echo $kundeservicekontaktos ["alt"]?>"><?php echo($kontaktostitel); ?></a>  
+            <a href="" aria-label="en knap ind til om os"><img src="<?php echo esc_url($kundeserviceomos["url"]); ?>" alt="<?php echo $kundeserviceomos ["alt"]?>"><?php echo($omostitel); ?></a>   
         </div>
     </section>
 </main>
