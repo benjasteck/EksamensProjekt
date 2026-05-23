@@ -186,24 +186,38 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
         <section id="brandSection">
             <div class="logoLine">
                 <div class="brandscontainer">
-                    <img src="<?php echo esc_url($snickerslogo["url"]); ?>" alt="<?php echo $snickerslogo ["alt"]?>">
-                    <img src="<?php echo esc_url($torklogo["url"]); ?>" alt="<?php echo $torklogo ["alt"]?>">
-                    <img src="<?php echo esc_url($kasklogo["url"]); ?>" alt="<?php echo $kasklogo ["alt"]?>">
-                    <img src="<?php echo esc_url($hellberglogo["url"]); ?>" alt="<?php echo $hellberglogo ["alt"]?>">
-                    <img src="<?php echo esc_url($petzllogo["url"]); ?>" alt="<?php echo $petzllogo ["alt"]?>">
-                    <img src="<?php echo esc_url($elkalogo["url"]); ?>" alt="<?php echo $elkalogo ["alt"]?>">
-                    <img src="<?php echo esc_url($petzllogo["url"]); ?>" alt="<?php echo $petzllogo ["alt"]?>">
-                    <img src="<?php echo esc_url($blakladerlogo["url"]); ?>" alt="<?php echo $blakladerlogo ["alt"]?>">
+                    <a href="https://www.snickersworkwear.dk/"><img src="<?php echo esc_url($snickerslogo["url"]); ?>"
+                            alt="<?php echo $snickerslogo ["alt"]?>"></a>
+                    <a
+                        href="https://www.torkglobal.com/dk/da?utm_source=google&utm_medium=cpc&utm_campaign=DK_Tork_Search_PH-All_PH-All_Sales_Brand_Other_RSA_PureBrand_Always-on_Always-on_Zenith%20Hub_0041_SRCHPUREBRANDDK_OSE00007QW&gclsrc=aw.ds&gad_source=1&gad_campaignid=21186873510&gbraid=0AAAAAqJOvojsKfzo_mR-yLWwFEEzcX6HZ&gclid=Cj0KCQjwoMXQBhDcARIsAH-eEtuqsIyFHx5I_OIxIX5t5tTkMNy8WhDkgDGMh2N--cPYdjOTajA3m9YaAoi-EALw_wcB"><img
+                            src="<?php echo esc_url($torklogo["url"]); ?>" alt="<?php echo $torklogo ["alt"]?>"></a>
+                    <a href="https://www.kask-safety.com/"><img src="<?php echo esc_url($kasklogo["url"]); ?>"
+                            alt="<?php echo $kasklogo ["alt"]?>"></a>
+                    <a href="https://www.hellbergsafety.dk/"><img src="<?php echo esc_url($hellberglogo["url"]); ?>"
+                            alt="<?php echo $hellberglogo ["alt"]?>"></a>
+                    <a href="https://www.petzl.com/DK/en"><img src="<?php echo esc_url($petzllogo["url"]); ?>"
+                            alt="<?php echo $petzllogo ["alt"]?>"></a>
+                    <a href="https://elkarainwear.dk/da"><img src="<?php echo esc_url($elkalogo["url"]); ?>"
+                            alt="<?php echo $elkalogo ["alt"]?>"></a>
+                    <a href="https://www.blaklader.dk/da"><img src="<?php echo esc_url($blakladerlogo["url"]); ?>"
+                            alt="<?php echo $blakladerlogo ["alt"]?>"></a>
                 </div>
                 <div class="brandscontainer">
-                    <img src="<?php echo esc_url($snickerslogo["url"]); ?>" alt="<?php echo $snickerslogo ["alt"]?>">
-                    <img src="<?php echo esc_url($torklogo["url"]); ?>" alt="<?php echo $torklogo ["alt"]?>">
-                    <img src="<?php echo esc_url($kasklogo["url"]); ?>" alt="<?php echo $kasklogo ["alt"]?>">
-                    <img src="<?php echo esc_url($hellberglogo["url"]); ?>" alt="<?php echo $hellberglogo ["alt"]?>">
-                    <img src="<?php echo esc_url($petzllogo["url"]); ?>" alt="<?php echo $petzllogo ["alt"]?>">
-                    <img src="<?php echo esc_url($elkalogo["url"]); ?>" alt="<?php echo $elkalogo ["alt"]?>">
-                    <img src="<?php echo esc_url($petzllogo["url"]); ?>" alt="<?php echo $petzllogo ["alt"]?>">
-                    <img src="<?php echo esc_url($blakladerlogo["url"]); ?>" alt="<?php echo $blakladerlogo ["alt"]?>">
+                    <a href="https://www.snickersworkwear.dk/"><img src="<?php echo esc_url($snickerslogo["url"]); ?>"
+                            alt="<?php echo $snickerslogo ["alt"]?>"></a>
+                    <a
+                        href="https://www.torkglobal.com/dk/da?utm_source=google&utm_medium=cpc&utm_campaign=DK_Tork_Search_PH-All_PH-All_Sales_Brand_Other_RSA_PureBrand_Always-on_Always-on_Zenith%20Hub_0041_SRCHPUREBRANDDK_OSE00007QW&gclsrc=aw.ds&gad_source=1&gad_campaignid=21186873510&gbraid=0AAAAAqJOvojsKfzo_mR-yLWwFEEzcX6HZ&gclid=Cj0KCQjwoMXQBhDcARIsAH-eEtuqsIyFHx5I_OIxIX5t5tTkMNy8WhDkgDGMh2N--cPYdjOTajA3m9YaAoi-EALw_wcB"><img
+                            src="<?php echo esc_url($torklogo["url"]); ?>" alt="<?php echo $torklogo ["alt"]?>"></a>
+                    <a href="https://www.kask-safety.com/"><img src="<?php echo esc_url($kasklogo["url"]); ?>"
+                            alt="<?php echo $kasklogo ["alt"]?>"></a>
+                    <a href="https://www.hellbergsafety.dk/"><img src="<?php echo esc_url($hellberglogo["url"]); ?>"
+                            alt="<?php echo $hellberglogo ["alt"]?>"></a>
+                    <a href="https://www.petzl.com/DK/en"><img src="<?php echo esc_url($petzllogo["url"]); ?>"
+                            alt="<?php echo $petzllogo ["alt"]?>"></a>
+                    <a href="https://elkarainwear.dk/da"><img src="<?php echo esc_url($elkalogo["url"]); ?>"
+                            alt="<?php echo $elkalogo ["alt"]?>"></a>
+                    <a href="https://www.blaklader.dk/da"><img src="<?php echo esc_url($blakladerlogo["url"]); ?>"
+                            alt="<?php echo $blakladerlogo ["alt"]?>"></a>
                 </div>
             </div>
         </section>
