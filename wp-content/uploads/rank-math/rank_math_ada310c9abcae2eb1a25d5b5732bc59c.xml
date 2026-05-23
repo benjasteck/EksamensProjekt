@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//sikkerhedsgiganten.local/index.php/main-sitemap.xsl"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>http://sikkerhedsgiganten.local/</loc>
+		<lastmod>2026-05-23T01:05:54+00:00</lastmod>
+	</url>
+	<url>
+		<loc>http://sikkerhedsgiganten.local/index.php/kundeservice/</loc>
+		<lastmod>2026-05-22T10:10:06+00:00</lastmod>
+	</url>
+	<url>
+		<loc>http://sikkerhedsgiganten.local/index.php/shop/</loc>
+		<lastmod>2026-05-22T09:25:55+00:00</lastmod>
+	</url>
+	<url>
+		<loc>http://sikkerhedsgiganten.local/index.php/kontakt/</loc>
+		<lastmod>2026-05-22T08:42:25+00:00</lastmod>
+	</url>
+	<url>
+		<loc>http://sikkerhedsgiganten.local/index.php/wishlist/</loc>
+		<lastmod>2026-05-20T17:03:44+00:00</lastmod>
+	</url>
+	<url>
+		<loc>http://sikkerhedsgiganten.local/index.php/erhverv/</loc>
+		<lastmod>2026-05-16T19:44:31+00:00</lastmod>
+	</url>
+	<url>
+		<loc>http://sikkerhedsgiganten.local/index.php/omos/</loc>
+		<lastmod>2026-05-16T19:34:29+00:00</lastmod>
+	</url>
+	<url>
+		<loc>http://sikkerhedsgiganten.local/index.php/footer-billeder/</loc>
+		<lastmod>2026-05-12T09:23:31+00:00</lastmod>
+	</url>
+	<url>
+		<loc>http://sikkerhedsgiganten.local/index.php/sample-page/</loc>
+		<lastmod>2026-03-27T08:49:20+00:00</lastmod>
+	</url>
+</urlset>

@@ -629,14 +629,14 @@ li:has(.nav-wishlist-count) {
     top: 100%;
     left: 50%;
     transform: translate(-50%, 55px);
-    width: 730px;
+    width: min(730px, 90%);
 }
 
 .search-dropdown--header {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 10px);
-    width: 730px;
+    width: min(730px, 90%);
 }
 .search-dropdown__heading {
     display: block;
