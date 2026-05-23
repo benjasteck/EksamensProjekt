@@ -109,6 +109,7 @@ $outletKnap = get_field('outlet_knap', $header_post_id);
 
 
 <body <?php body_class() ?>>
+    <a href="#main" class="skip-link">Spring til indhold</a>
     <nav id="nav">
         <div class="navTop">
             <div class="navLeftSide">
@@ -156,7 +157,7 @@ $outletKnap = get_field('outlet_knap', $header_post_id);
                         </a>
                     </li>
                     <li style="position:relative;">
-                        <button class="cart-trigger" id="cart-trigger"
+                        <button class="cart-trigger" id="cart-trigger" aria-label="Åbn kurv"
                             style="background:none;border:none;cursor:pointer;padding:0;position:relative;">
                             <img src="<?php echo esc_url($Navkurvikon["url"]); ?>"
                                 alt="<?php echo esc_attr($Navkurvikon["alt"]); ?>">
@@ -168,7 +169,8 @@ $outletKnap = get_field('outlet_knap', $header_post_id);
                             <?php endif; ?>
                         </button>
                     </li>
-                    <li><a href="#sidemenu"><img src="<?php echo esc_url($Navburgerikon["url"]); ?>"
+                    <li><a href="#sidemenu" aria-label="Åbn side menu"><img
+                                src="<?php echo esc_url($Navburgerikon["url"]); ?>"
                                 alt="<?php echo $Navburgerikon ["alt"]?>" class="openMenu"></a></li>
                 </ul>
             </div>
@@ -178,7 +180,7 @@ $outletKnap = get_field('outlet_knap', $header_post_id);
     <div class="cart-sidebar" id="cart-sidebar">
         <div class="cart-sidebar__header">
             <h3>Din kurv</h3>
-            <button class="cart-sidebar__close" id="cart-close">✕</button>
+            <button class="cart-sidebar__close" id="cart-close" aria-label="Luk kurv">✕</button>
         </div>
         <div class="cart-sidebar__body">
             <?php the_widget( 'WC_Widget_Cart', [ 'title' => '' ] ); ?>
@@ -219,84 +221,84 @@ $outletKnap = get_field('outlet_knap', $header_post_id);
         </div>
     </header>
     <aside class="headerSideMenuCategories">
-        <button class="closeBtn">X</button>
+        <button class="closeBtn" aria-label="Luk side menu">X</button>
         <h3><?php echo($kategoriertitel); ?></h3>
         <ul>
 
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
+                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" aria-hidden="true" />
                 </svg><a href="<?php echo esc_url($sikkerhedsudstyrKnap['url']); ?>"
                     aria-label="en knap ind til shopsiden af sikkerhedsudstyr"><?php echo($sikkerhedsudstyrKnap['title']); ?></a><img
-                    src="<?php echo esc_url($sikkerhedsudstyrikon["url"]); ?>" alt=""></li>
+                    src="<?php echo esc_url($sikkerhedsudstyrikon["url"]); ?>" alt="" aria-hidden="true"></li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
+                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" aria-hidden="true" />
                 </svg><a href="<?php echo esc_url($arbejdstojKnap['url']); ?>"
                     aria-label="en knap ind til shopsiden af arbejdstoej"><?php echo($arbejdstojKnap['title']); ?></a><img
-                    src="<?php echo esc_url($arbejdstojikon["url"]); ?>" alt="">
+                    src="<?php echo esc_url($arbejdstojikon["url"]); ?>" alt="" aria-hidden="true">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
+                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" aria-hidden="true" />
                 </svg><a href="<?php echo esc_url($andedraetsvaernKnap['url']); ?>"
                     aria-label="en knap ind til shopsiden af andedraetsvaern"><?php echo($andedraetsvaernKnap['title']); ?></a><img
-                    src="<?php echo esc_url($andedraetsvaernikon["url"]); ?>" alt=""></li>
+                    src="<?php echo esc_url($andedraetsvaernikon["url"]); ?>" alt="" aria-hidden="true"></li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
+                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" aria-hidden="true" />
                 </svg><a href="<?php echo esc_url($faldsikringKnap['url']); ?>"
                     aria-label="en knap ind til shopsiden af faldsikring"><?php echo($faldsikringKnap['title']); ?></a><img
-                    src="<?php echo esc_url($faldsikringikon["url"]); ?>" alt="">
+                    src="<?php echo esc_url($faldsikringikon["url"]); ?>" alt="" aria-hidden="true">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
+                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" aria-hidden="true" />
                 </svg><a href="<?php echo esc_url($forstehjaelpKnap['url']); ?>"
                     aria-label="en knap ind til shopsiden af foerstehjaelp"><?php echo($forstehjaelpKnap['title']); ?></a><img
-                    src="<?php echo esc_url($forstehjaelpikon["url"]); ?>" alt="">
+                    src="<?php echo esc_url($forstehjaelpikon["url"]); ?>" alt="" aria-hidden="true">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
+                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" aria-hidden="true" />
                 </svg><a href="<?php echo esc_url($skilteKnap['url']); ?>"
                     aria-label="en knap ind til shopsiden af skilte"><?php echo($skilteKnap['title']); ?></a><img
-                    src="<?php echo esc_url($skilteikon["url"]); ?>" alt=""></li>
+                    src="<?php echo esc_url($skilteikon["url"]); ?>" alt="" aria-hidden="true"></li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
+                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" aria-hidden="true" />
                 </svg><a href="<?php echo esc_url($hygiejneKnap['url']); ?>"
                     aria-label="en knap ind til shopsiden af hygiejne"><?php echo($hygiejneKnap['title']); ?></a><img
-                    src="<?php echo esc_url($hygiejneikon["url"]); ?>" alt="">
+                    src="<?php echo esc_url($hygiejneikon["url"]); ?>" alt="" aria-hidden="true">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
+                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" aria-hidden="true" />
                 </svg><a href="<?php echo esc_url($rengoringsartiklerKnap['url']); ?>"
                     aria-label="en knap ind til shopsiden af rengoringsartikler"><?php echo($rengoringsartiklerKnap['title']); ?></a><img
-                    src="<?php echo esc_url($rengoringsartiklerikon["url"]); ?>" alt="">
+                    src="<?php echo esc_url($rengoringsartiklerikon["url"]); ?>" alt="" aria-hidden="true">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
+                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" aria-hidden="true" />
                 </svg><a href="<?php echo esc_url($skadedyrKnap['url']); ?>"
                     aria-label="en knap ind til shopsiden af skadedyr"><?php echo($skadedyrKnap['title']); ?></a><img
-                    src="<?php echo esc_url($skadedyrikon["url"]); ?>" alt="">
+                    src="<?php echo esc_url($skadedyrikon["url"]); ?>" alt="" aria-hidden="true">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
+                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" aria-hidden="true" />
                 </svg><a href="<?php echo esc_url($outletKnap['url']); ?>"
                     aria-label="en knap ind til shopsiden af outlet"><?php echo($outletKnap['title']); ?></a><img
-                    src="<?php echo esc_url($outletikon["url"]); ?>" alt=""></li>
+                    src="<?php echo esc_url($outletikon["url"]); ?>" alt="" aria-hidden="true"></li>
 
         </ul>
         <h3><?php echo($profiltitel); ?></h3>
         <ul>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
+                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" aria-hidden="true" />
                 </svg><a href="#minprofil"
                     aria-label="en knap ind til profil siden"><?php echo($profilundersidetitel); ?></a><img
                     src="<?php echo esc_url($profilundersideikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
+                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" aria-hidden="true" />
                 </svg><a href="#favoritter"
                     aria-label="en knap ind til favoritter"><?php echo($favorittertitel); ?></a><img
                     src="<?php echo esc_url($favoritterikon["url"]); ?>" alt="">
             </li>
             <li><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" />
+                    <path d="M0 7.79395L13.5 -0.000282288L13.5 15.5882L0 7.79395Z" fill="#020202" aria-hidden="true" />
                 </svg><a href="#kurv" aria-label="en knap ind til kurv"><?php echo($kurvtitel); ?></a><img
                     src="<?php echo esc_url($kurvikon["url"]); ?>" alt=""></li>
         </ul>

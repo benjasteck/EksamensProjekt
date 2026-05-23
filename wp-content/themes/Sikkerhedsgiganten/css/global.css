@@ -322,6 +322,15 @@ video {
     }
 }
 
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 0;
+}
+.skip-link:focus {
+    top: 0;
+}
+
 footer{
     background: var(--background-colour);
     height: 500px;
