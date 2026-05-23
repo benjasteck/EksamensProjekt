@@ -388,6 +388,9 @@ footer{
 .footerContentTop form button img{
     overflow-clip-margin: content-box;
     overflow: clip;
+    min-height: 24px;
+    max-width: 30px;
+    margin-top: 25%;
 }
 .footerContentBottom{
     width: 100%;

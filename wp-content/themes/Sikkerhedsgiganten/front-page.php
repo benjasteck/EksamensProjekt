@@ -328,7 +328,7 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
                         <input type="email" name="Email" placeholder="Din Email" required>
                         <?php wp_nonce_field('subscriber_form_action','subscriber_nonce'); ?>
                         <input type="hidden" name="action" value="subscriber_form">
-                        <button type="submit" value=" ">
+                        <button type="submit" value="submit" aria-label="en knap til at tilmelde sig nyhedsbrevet">
                             <img src="data:image/svg+xml,%3Csvg width='30' height='10' viewBox='0 0 16 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='2.71973' width='15.4286' height='2.56061' fill='%23404040'/%3E%3Cpath d='M18 4.00009L14.1429 7.32641L14.1429 0.673764L18 4.00009Z' fill='%23404040'/%3E%3C/svg%3E"
                                 alt="">
                         </button>
@@ -556,21 +556,30 @@ $toarbejderebillede= get_field("to_arbejdere_billede");
                     aria-label="en knap ind til Sikkerhedsgiganten LinkedIn"><img
                         src="<?php echo esc_url($linkedinikon["url"]); ?>" alt="<?php echo $linkedinikon ["alt"]?>"></a>
             </div>
+
         </section>
         <section id="bottomLinks">
             <div class="bottomLinksContainer">
-                <a href="http://sikkerhedsgiganten.local/index.php/kontakt/#kontaktSide"><a href="" target="_blank"><img
-                            src="<?php echo esc_url($findosikon["url"]); ?>"
-                            alt="<?php echo $findosikon ["alt"]?>"><?php echo($findoshertekst); ?></a>
-                    <a href="http://sikkerhedsgiganten.local/#socialSektion"><a href="" target="_blank"><img
-                                src="<?php echo esc_url($nyhedsbrevikon["url"]); ?>"
-                                alt="<?php echo $nyhedsbrevikon ["alt"]?>"><?php echo($tilmeldnyhedsbrevtekst); ?></a>
-                        <a href="http://sikkerhedsgiganten.local/index.php/kontakt/"><a href="" target="_blank"><img
-                                    src="<?php echo esc_url($mailikon["url"]); ?>"
-                                    alt="<?php echo $mailikon ["alt"]?>"><?php echo($kontaktos); ?></a>
-                            <a href="http://sikkerhedsgiganten.local/index.php/omos/"><a href="" target="_blank"><img
-                                        src="<?php echo esc_url($omosikon["url"]); ?>"
-                                        alt="<?php echo $omosikon ["alt"]?>"><?php echo($omostekst); ?></a>
+                <a href="http://sikkerhedsgiganten.local/index.php/kontakt/#kontaktSide" alt>
+                    <img src="<?php echo esc_url($findosikon["url"]); ?>" alt="<?php echo $findosikon["alt"]; ?>">
+                    <?php echo($findoshertekst); ?>
+                </a>
+
+                <a href="http://sikkerhedsgiganten.local/#socialSektion">
+                    <img src="<?php echo esc_url($nyhedsbrevikon["url"]); ?>"
+                        alt="<?php echo $nyhedsbrevikon["alt"]; ?>">
+                    <?php echo($tilmeldnyhedsbrevtekst); ?>
+                </a>
+
+                <a href="http://sikkerhedsgiganten.local/index.php/kontakt/">
+                    <img src="<?php echo esc_url($mailikon["url"]); ?>" alt="<?php echo $mailikon["alt"]; ?>">
+                    <?php echo($kontaktos); ?>
+                </a>
+
+                <a href="http://sikkerhedsgiganten.local/index.php/omos/">
+                    <img src="<?php echo esc_url($omosikon["url"]); ?>" alt="<?php echo $omosikon["alt"]; ?>">
+                    <?php echo($omostekst); ?>
+                </a>
             </div>
         </section>
     </main>
