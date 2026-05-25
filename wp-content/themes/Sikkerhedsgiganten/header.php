@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 
-    <link rel="icon" href="http://sikkerhedsgiganten.local/wp-content/uploads/2026/05/Logo-til-video.png"
-        type="image/png">
+    <link rel="icon" href="http://sikkerhedsgigant./wp-content/uploads/2026/05/Logo-til-video.png" type="image/png">
 
     <?php 
     $current_url = get_permalink();
@@ -28,8 +27,7 @@ echo '<link rel="alternate" hreflang="x-default" href="' . esc_url($current_url)
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <?php wp_head(); ?>
 </head>
 
